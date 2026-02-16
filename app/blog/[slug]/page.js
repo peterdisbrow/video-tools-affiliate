@@ -2,90 +2,12 @@
 
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-
-const blogData = {
-  'best-cameras-for-youtube': {
-    title: 'Best Cameras for YouTube Videos in 2026',
-    date: '2026-02-16',
-    readTime: '8 min read',
-    image: 'https://images.unsplash.com/photo-1606986628025-35d57e735ae0?w=1200&h=600&fit=crop',
-    content: `<h2>Introduction</h2>
-<p>Creating quality YouTube videos starts with the right camera. Whether you're just starting out or scaling up your production, choosing the right camera can make or break your channel's success.</p>
-<h2>Budget Cameras: Starting Your YouTube Journey ($300-$800)</h2>
-<p>You don't need to spend thousands to create engaging YouTube content. The DJI Osmo Pocket 3 ($749) is a game-changer for budget creators.</p>
-<h2>Mid-Range Cameras: Serious Creators ($1,000-$2,500)</h2>
-<p>When you're ready to invest more, mid-range cameras unlock professional features without pro-level budgets.</p>`,
-    relatedProducts: [
-      { name: 'Sony Alpha a7 IV', link: 'https://www.bhphotovideo.com/c/product/1670807-REG/sony_ilce7m4b_a7_iv_mirrorless_digital.html' },
-      { name: 'Canon EOS R6 Mark II', link: 'https://www.amazon.com/Canon-Mirrorless-Full-Frame-Compact-Lightweight/dp/B0BNG9554T' },
-      { name: 'DJI Osmo Pocket 3', link: 'https://www.amazon.com/DJI-Osmo-Pocket-Stabilization-Handheld/dp/B0C6XMPZ23' },
-      { name: 'Peak Design Travel Tripod', link: 'https://www.amazon.com/Peak-Design-Travel-Tripod-Aluminum/dp/B00JXCLO1U' }
-    ]
-  },
-  'pro-audio-budget': {
-    title: 'Pro Audio on a Budget: Getting Studio Quality Sound',
-    date: '2026-02-14',
-    readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1516721318423-f06f70259b51?w=1200&h=600&fit=crop',
-    content: `<h2>Why Audio Matters</h2>
-<p>Viewers will forgive mediocre video quality if your audio is excellent. But they'll abandon your content immediately if the audio is bad.</p>`,
-    relatedProducts: [
-      { name: 'Rode NT-USB+ Microphone', link: 'https://www.amazon.com/Rode-NT-USB-Condenser-Microphone-Streaming/dp/B09P7X1X39' },
-      { name: 'Shure SM7B Microphone', link: 'https://www.amazon.com/Shure-SM7B-Cardioid-Dynamic-Microphone/dp/B0002E4Z8M' }
-    ]
-  },
-  'video-lighting-101': {
-    title: 'Video Lighting 101: Essential Techniques for Creators',
-    date: '2026-02-12',
-    readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=1200&h=600&fit=crop',
-    content: `<h2>Lighting is Photography</h2>
-<p>Professional video starts with professional lighting. Even a smartphone camera with great lighting will outproduce an expensive cinema camera in a dark room.</p>`,
-    relatedProducts: [
-      { name: 'Neewer LED Panel Light', link: 'https://www.amazon.com/Neewer-Bi-color-Dimmable-Professional-Photography/dp/B07Q7G7JGP' },
-      { name: 'Godox SL60W LED', link: 'https://www.amazon.com/Godox-SL60W-Bi-Color-Professional-Photography/dp/B08DXHLVWD' }
-    ]
-  },
-  'free-vs-paid-editing': {
-    title: 'Free vs Paid Video Editing Software: Complete Comparison',
-    date: '2026-02-10',
-    readTime: '9 min read',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop',
-    content: `<h2>The Software Debate</h2>
-<p>Video editing software ranges from free open-source tools to professional suites costing $10k+. Where should you start?</p>`,
-    relatedProducts: [
-      { name: 'Adobe Premiere Pro', link: 'https://www.adobe.com/products/premiere.html' },
-      { name: 'DaVinci Resolve', link: 'https://www.blackmagicdesign.com/products/davinciresolve/' },
-      { name: 'Final Cut Pro', link: 'https://www.apple.com/final-cut-pro/' }
-    ]
-  },
-  'streaming-gear-essentials': {
-    title: 'Streaming Gear Essentials: Everything You Need to Go Live',
-    date: '2026-02-08',
-    readTime: '8 min read',
-    image: 'https://images.unsplash.com/photo-1587829191301-4b68341245cb?w=1200&h=600&fit=crop',
-    content: `<h2>Building Your First Streaming Setup</h2>
-<p>Live streaming has never been more accessible. With the right gear, you can broadcast professional-quality streams from your home.</p>`,
-    relatedProducts: [
-      { name: 'Elgato Stream Deck', link: 'https://www.amazon.com/Elgato-Stream-Deck-Official-Customizable/dp/B06XRNRWZY' },
-      { name: 'Rode Wireless GO II', link: 'https://www.amazon.com/RODE-Wireless-Microphone-System-Content/dp/B08NFQD3LL' },
-      { name: 'Logitech C920 Webcam', link: 'https://www.amazon.com/Logitech-Widescreen-Calling-Recording-Desktop/dp/B006JH8T3S' }
-    ]
-  }
-};
-
-const otherPosts = [
-  { slug: 'pro-audio-budget', title: 'Pro Audio on a Budget' },
-  { slug: 'video-lighting-101', title: 'Video Lighting 101' },
-  { slug: 'free-vs-paid-editing', title: 'Free vs Paid Editing' },
-  { slug: 'streaming-gear-essentials', title: 'Streaming Gear Essentials' },
-  { slug: 'best-cameras-for-youtube', title: 'Best Cameras for YouTube' }
-];
+import { blogPosts } from '../blogData';
 
 export default function BlogPost() {
   const params = useParams();
   const slug = params.slug;
-  const post = blogData[slug];
+  const post = blogPosts.find(p => p.slug === slug);
 
   if (!post) {
     return (
@@ -98,7 +20,7 @@ export default function BlogPost() {
     );
   }
 
-  const relatedOtherPosts = otherPosts.filter(p => p.slug !== slug);
+  const relatedOtherPosts = blogPosts.filter(p => p.slug !== slug).slice(0, 3);
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>

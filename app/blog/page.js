@@ -1,49 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-
-const blogPosts = [
-  {
-    slug: 'best-cameras-for-youtube',
-    title: 'Best Cameras for YouTube Videos in 2026',
-    excerpt: 'Find the perfect YouTube camera with our comprehensive guide. We review top budget, mid-range, and professional cameras for every creator level.',
-    date: '2026-02-16',
-    readTime: '8 min read',
-    image: 'https://images.unsplash.com/photo-1606986628025-35d57e735ae0?w=800&h=400&fit=crop'
-  },
-  {
-    slug: 'pro-audio-budget',
-    title: 'Pro Audio on a Budget: Getting Studio Quality Sound',
-    excerpt: 'Learn how to achieve professional-grade audio without spending thousands. Our guide covers microphones, interfaces, and techniques for clean recordings.',
-    date: '2026-02-14',
-    readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1516721318423-f06f70259b51?w=800&h=400&fit=crop'
-  },
-  {
-    slug: 'video-lighting-101',
-    title: 'Video Lighting 101: Essential Techniques for Creators',
-    excerpt: 'Master the fundamentals of video lighting. From three-point setups to color temperature, learn how proper lighting transforms your content quality.',
-    date: '2026-02-12',
-    readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&h=400&fit=crop'
-  },
-  {
-    slug: 'free-vs-paid-editing',
-    title: 'Free vs Paid Video Editing Software: Complete Comparison',
-    excerpt: 'Compare the best free and paid editing platforms available today. Discover which tool matches your skill level and production needs.',
-    date: '2026-02-10',
-    readTime: '9 min read',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop'
-  },
-  {
-    slug: 'streaming-gear-essentials',
-    title: 'Streaming Gear Essentials: Everything You Need to Go Live',
-    excerpt: 'Build your streaming setup from the ground up. We cover cameras, audio, lighting, and software to help you broadcast like a pro.',
-    date: '2026-02-08',
-    readTime: '8 min read',
-    image: 'https://images.unsplash.com/photo-1587829191301-4b68341245cb?w=800&h=400&fit=crop'
-  }
-];
+import { blogPosts } from './blogData';
 
 export default function BlogPage() {
   return (
