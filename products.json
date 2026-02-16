@@ -7,7 +7,8 @@
       "asin": "B09JZRWRJN",
       "price": "$2,498",
       "rating": 4.8,
-      "description": "Full-frame hybrid mirrorless camera with 33MP sensor, 4K 60p video, real-time Eye AF, and 10-bit color depth. The go-to choice for creators who need both photo and video excellence."
+      "description": "Full-frame hybrid mirrorless camera with 33MP sensor, 4K 60p video, real-time Eye AF, and 10-bit color depth. The go-to choice for creators who need both photo and video excellence.",
+      "image": "https://m.media-amazon.com/images/I/81jlDvZPMnL._AC_SL1500_.jpg"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "asin": "B0BL7X3KLV",
       "price": "$2,499",
       "rating": 4.7,
-      "description": "Blazing-fast 40fps continuous shooting, 6K oversampled 4K video, and Canon's legendary Dual Pixel autofocus. Perfect for run-and-gun creators who need speed and reliability."
+      "description": "Blazing-fast 40fps continuous shooting, 6K oversampled 4K video, and Canon's legendary Dual Pixel autofocus. Perfect for run-and-gun creators who need speed and reliability.",
+      "image": "https://m.media-amazon.com/images/I/61S4Op1us3L._AC_SL1500_.jpg"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "asin": "B0CG19FGQ5",
       "price": "$749",
       "rating": 4.6,
-      "description": "Ultra-compact gimbal camera with a 1-inch CMOS sensor, 4K/120fps, and a 2-inch rotatable touchscreen. The ultimate vlogging companion that fits in your pocket."
+      "description": "Ultra-compact gimbal camera with a 1-inch CMOS sensor, 4K/120fps, and a 2-inch rotatable touchscreen. The ultimate vlogging companion that fits in your pocket.",
+      "image": "https://m.media-amazon.com/images/I/51d4Esi79-L._AC_SL1285_.jpg"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "asin": "B084P1CXFD",
       "price": "$169",
       "rating": 4.7,
-      "description": "Studio-quality USB condenser mic with built-in DSP, high-res audio output, and zero-latency monitoring. Plug-and-play excellence for podcasters and streamers."
+      "description": "Studio-quality USB condenser mic with built-in DSP, high-res audio output, and zero-latency monitoring. Plug-and-play excellence for podcasters and streamers.",
+      "image": "https://m.media-amazon.com/images/I/51mi31NUkvL._AC_SL1080_.jpg"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "asin": "B0CCSVYWMH",
       "price": "$399",
       "rating": 4.9,
-      "description": "The industry-standard dynamic microphone used by top podcasters and broadcasters worldwide. Exceptional voice isolation, warm tone, and built-in pop filter."
+      "description": "The industry-standard dynamic microphone used by top podcasters and broadcasters worldwide. Exceptional voice isolation, warm tone, and built-in pop filter.",
+      "image": "https://m.media-amazon.com/images/I/51Wvs2GxZ1L._AC_SL1000_.jpg"
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "asin": "B0006H92QK",
       "price": "$99",
       "rating": 4.7,
-      "description": "Best-in-class entry-level condenser mic with a custom-engineered low-mass diaphragm for extended frequency response. Unbeatable quality at this price point."
+      "description": "Best-in-class entry-level condenser mic with a custom-engineered low-mass diaphragm for extended frequency response. Unbeatable quality at this price point.",
+      "image": "https://m.media-amazon.com/images/I/71aLB289VuL._AC_SL1500_.jpg"
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "asin": "B0869H68M6",
       "price": "$45",
       "rating": 4.5,
-      "description": "Bi-color dimmable LED panel with 3200K-5600K range and CRI 97+. Budget-friendly lighting that delivers professional results for YouTube and product shoots."
+      "description": "Bi-color dimmable LED panel with 3200K-5600K range and CRI 97+. Budget-friendly lighting that delivers professional results for YouTube and product shoots.",
+      "image": "https://m.media-amazon.com/images/I/61V9nJDz6KL._AC_SL1500_.jpg"
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "asin": "B08RNW1HL6",
       "price": "$289",
       "rating": 4.8,
-      "description": "Professional-grade 200W daylight LED with Bowens mount compatibility. Ultra-quiet fan, app control, and stunning output for studio and on-location work."
+      "description": "Professional-grade 200W daylight LED with Bowens mount compatibility. Ultra-quiet fan, app control, and stunning output for studio and on-location work.",
+      "image": "https://m.media-amazon.com/images/I/61qcrx+GV3L._AC_SL1500_.jpg"
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "asin": "B09BCVG1VW",
       "price": "$129",
       "rating": 4.6,
-      "description": "Reliable 60W continuous LED light with 5600K daylight balance and wireless remote. The workhorse light that thousands of YouTube studios rely on daily."
+      "description": "Reliable 60W continuous LED light with 5600K daylight balance and wireless remote. The workhorse light that thousands of YouTube studios rely on daily.",
+      "image": "https://m.media-amazon.com/images/I/71BjmBVrckL._AC_SL1500_.jpg"
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "affiliateLink": "https://www.adobe.com/products/premiere.html",
       "price": "$54.99/mo",
       "rating": 4.8,
-      "description": "Industry-standard video editing with AI-powered tools, seamless Creative Cloud integration, and support for virtually every format. The editor professionals choose."
+      "description": "Industry-standard video editing with AI-powered tools, seamless Creative Cloud integration, and support for virtually every format. The editor professionals choose.",
+      "image": "https://www.adobe.com/content/dam/cc/en/products/premiere/max-2023/premiere-pro-og-image.jpg"
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "affiliateLink": "https://www.blackmagicdesign.com/products/davinciresolve/",
       "price": "Free/$295",
       "rating": 4.7,
-      "description": "Hollywood-grade editing, color grading, VFX, and audio post-production in one app. The free version is shockingly powerful — used on major film productions."
+      "description": "Hollywood-grade editing, color grading, VFX, and audio post-production in one app. The free version is shockingly powerful — used on major film productions.",
+      "image": "https://images.blackmagicdesign.com/images/products/davinciresolve/studio/hero/hero-xl.jpg?_v=1692238823"
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "affiliateLink": "https://www.apple.com/final-cut-pro/",
       "price": "$299",
       "rating": 4.6,
-      "description": "Apple's flagship editor optimized for Mac hardware. Magnetic timeline, blazing-fast rendering on Apple Silicon, and ProRes support make it a creator favorite."
+      "description": "Apple's flagship editor optimized for Mac hardware. Magnetic timeline, blazing-fast rendering on Apple Silicon, and ProRes support make it a creator favorite.",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e5/2c/79/e52c79bb-f716-189a-33b6-2f0f8c86ce3c/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-P3-0-0-0-EM-0-0-0-7PT0-0-0-0-50-0-0-0-2x-0-0-0-0.png/1200x630wa.png"
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "asin": "B09738CV2G",
       "price": "$99",
       "rating": 4.7,
-      "description": "15 customizable LCD keys for one-touch control of your stream, smart home, and apps. Drag-and-drop setup with thousands of integrations via plugins."
+      "description": "15 customizable LCD keys for one-touch control of your stream, smart home, and apps. Drag-and-drop setup with thousands of integrations via plugins.",
+      "image": "https://m.media-amazon.com/images/I/61gtdFnK+UL._AC_SL1500_.jpg"
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "asin": "B0G3YF6XTB",
       "price": "$299",
       "rating": 4.8,
-      "description": "Dual-channel wireless mic system with built-in recording, 200m range, and broadcast-grade audio. Clip-on simplicity with professional results for interviews and vlogs."
+      "description": "Dual-channel wireless mic system with built-in recording, 200m range, and broadcast-grade audio. Clip-on simplicity with professional results for interviews and vlogs.",
+      "image": "https://m.media-amazon.com/images/I/81RrQygABHL._AC_SL1500_.jpg"
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "asin": "B07K986YLL",
       "price": "$69",
       "rating": 4.5,
-      "description": "The webcam that defined the category. Full HD 1080p at 30fps with dual mics and automatic light correction. Reliable, affordable, and universally compatible."
+      "description": "The webcam that defined the category. Full HD 1080p at 30fps with dual mics and automatic light correction. Reliable, affordable, and universally compatible.",
+      "image": "https://m.media-amazon.com/images/I/61-6uAf8soL._AC_SL1500_.jpg"
     },
     {
       "id": 16,
@@ -142,7 +157,8 @@
       "asin": "B0G4NLPCKF",
       "price": "$299",
       "rating": 4.8,
-      "description": "Revolutionary compact tripod that packs down to the size of a water bottle. Premium aluminum build, quick-deploy legs, and a phone mount included. Travel creators love it."
+      "description": "Revolutionary compact tripod that packs down to the size of a water bottle. Premium aluminum build, quick-deploy legs, and a phone mount included. Travel creators love it.",
+      "image": "https://m.media-amazon.com/images/I/61c+tSlKovL._AC_SL1500_.jpg"
     },
     {
       "id": 17,
@@ -151,7 +167,8 @@
       "asin": "B0CS6LC1ZQ",
       "price": "$449",
       "rating": 4.6,
-      "description": "Lightweight 3-axis gimbal stabilizer with a 1.8\" OLED touchscreen, SuperSmooth mode, and automated axis locks. Buttery-smooth footage for any mirrorless camera."
+      "description": "Lightweight 3-axis gimbal stabilizer with a 1.8\" OLED touchscreen, SuperSmooth mode, and automated axis locks. Buttery-smooth footage for any mirrorless camera.",
+      "image": "https://m.media-amazon.com/images/I/51+9vmZgtVL._AC_SL1500_.jpg"
     },
     {
       "id": 18,
@@ -160,7 +177,8 @@
       "asin": "B07818LB9D",
       "price": "$29.95",
       "rating": 4.7,
-      "description": "Instantly attach your camera to any backpack strap or belt. Arca-Swiss compatible, aircraft-grade aluminum, and a lifesaver for hiking filmmakers and travel creators."
+      "description": "Instantly attach your camera to any backpack strap or belt. Arca-Swiss compatible, aircraft-grade aluminum, and a lifesaver for hiking filmmakers and travel creators.",
+      "image": "https://m.media-amazon.com/images/I/71iNxGiM8hL._AC_SL1500_.jpg"
     },
     {
       "id": 19,
@@ -169,7 +187,8 @@
       "asin": "B0BHKL3GZL",
       "price": "$1,798",
       "rating": 4.7,
-      "description": "APS-C cinema line camera with 4K 120fps, S-Cinetone color science, dual base ISO, and active stabilization. The most affordable entry into Sony's cinema ecosystem."
+      "description": "APS-C cinema line camera with 4K 120fps, S-Cinetone color science, dual base ISO, and active stabilization. The most affordable entry into Sony's cinema ecosystem.",
+      "image": "https://m.media-amazon.com/images/I/71LqHk57GzL._AC_SL1500_.jpg"
     },
     {
       "id": 20,
@@ -178,7 +197,8 @@
       "asin": "B0BQNPMWNK",
       "price": "$1,997",
       "rating": 4.7,
-      "description": "Full-frame mirrorless with phase-detect AF, 6K open-gate recording, unlimited recording time, and dual image stabilization. A game-changer for hybrid shooters."
+      "description": "Full-frame mirrorless with phase-detect AF, 6K open-gate recording, unlimited recording time, and dual image stabilization. A game-changer for hybrid shooters.",
+      "image": "https://m.media-amazon.com/images/I/71Ld60g+KQL._AC_SL1500_.jpg"
     },
     {
       "id": 21,
@@ -187,7 +207,8 @@
       "asin": "B08WHJQPK7",
       "price": "$2,495",
       "rating": 4.6,
-      "description": "Super 35 cinema camera with 6K resolution, 13 stops of dynamic range, built-in ND filters, and Blackmagic RAW recording. Hollywood image quality at indie prices."
+      "description": "Super 35 cinema camera with 6K resolution, 13 stops of dynamic range, built-in ND filters, and Blackmagic RAW recording. Hollywood image quality at indie prices.",
+      "image": "https://m.media-amazon.com/images/I/71jC908Jz3L._AC_SL1500_.jpg"
     },
     {
       "id": 22,
@@ -196,7 +217,8 @@
       "asin": "B09MTZS3FN",
       "price": "$5,995",
       "rating": 4.8,
-      "description": "Compact cinema camera with global shutter, 6K Super 35 sensor, REDCODE RAW, and wireless control. The smallest RED camera for professional productions."
+      "description": "Compact cinema camera with global shutter, 6K Super 35 sensor, REDCODE RAW, and wireless control. The smallest RED camera for professional productions.",
+      "image": "https://m.media-amazon.com/images/I/61dC2eM94DL._AC_SL1500_.jpg"
     },
     {
       "id": 23,
@@ -205,7 +227,8 @@
       "asin": "B0D5DPFRHL",
       "price": "$2,496",
       "rating": 4.7,
-      "description": "Full-frame mirrorless with partially stacked sensor, 6K internal recording, N-RAW, and 120fps 4K. Nikon's most capable hybrid camera for video creators."
+      "description": "Full-frame mirrorless with partially stacked sensor, 6K internal recording, N-RAW, and 120fps 4K. Nikon's most capable hybrid camera for video creators.",
+      "image": "https://m.media-amazon.com/images/I/71x4x7x7x7L._AC_SL1500_.jpg"
     },
     {
       "id": 24,
@@ -214,7 +237,8 @@
       "asin": "B0B3Y9F82F",
       "price": "$2,499",
       "rating": 4.7,
-      "description": "APS-C flagship with stacked sensor, 6.2K 30fps, 4K 120fps, subject-detection AF, and F-Log2 for maximum dynamic range. Built for speed and video excellence."
+      "description": "APS-C flagship with stacked sensor, 6.2K 30fps, 4K 120fps, subject-detection AF, and F-Log2 for maximum dynamic range. Built for speed and video excellence.",
+      "image": "https://m.media-amazon.com/images/I/81r-W-lX5hL._AC_SL1500_.jpg"
     },
     {
       "id": 25,
@@ -223,7 +247,8 @@
       "asin": "B07WZDBPVX",
       "price": "$3,497",
       "rating": 4.6,
-      "description": "Full-frame cinema mirrorless with 6K/24p, unlimited recording, V-Log/V-Gamut, dual native ISO, and Netflix-approved image quality. A documentary filmmaker's dream."
+      "description": "Full-frame cinema mirrorless with 6K/24p, unlimited recording, V-Log/V-Gamut, dual native ISO, and Netflix-approved image quality. A documentary filmmaker's dream.",
+      "image": "https://m.media-amazon.com/images/I/71qVv7YpLSL._AC_SL1500_.jpg"
     },
     {
       "id": 26,
@@ -232,7 +257,8 @@
       "asin": "B0C5GCGJG3",
       "price": "$1,398",
       "rating": 4.6,
-      "description": "APS-C mirrorless with AI-based subject recognition, 4K 120fps, S-Cinetone, and in-body stabilization. The best compact camera for content creators on the move."
+      "description": "APS-C mirrorless with AI-based subject recognition, 4K 120fps, S-Cinetone, and in-body stabilization. The best compact camera for content creators on the move.",
+      "image": "https://m.media-amazon.com/images/I/71jK1W80FGL._AC_SL1500_.jpg"
     },
     {
       "id": 27,
@@ -241,7 +267,8 @@
       "asin": "B0BTLS2B8P",
       "price": "$1,499",
       "rating": 4.5,
-      "description": "Lightweight full-frame mirrorless with 4K 60fps, Dual Pixel CMOS AF II, and Canon Log 3. An accessible entry into full-frame video production."
+      "description": "Lightweight full-frame mirrorless with 4K 60fps, Dual Pixel CMOS AF II, and Canon Log 3. An accessible entry into full-frame video production.",
+      "image": "https://m.media-amazon.com/images/I/71Yy3fGvP5L._AC_SL1500_.jpg"
     },
     {
       "id": 28,
@@ -250,7 +277,8 @@
       "asin": "B08GKZBJP3",
       "price": "$599",
       "rating": 4.7,
-      "description": "Professional fluid video head with bridging technology, variable fluid drag, and 75mm half-ball. Industry-standard support for mid-range cinema cameras up to 26.5 lbs."
+      "description": "Professional fluid video head with bridging technology, variable fluid drag, and 75mm half-ball. Industry-standard support for mid-range cinema cameras up to 26.5 lbs.",
+      "image": "https://m.media-amazon.com/images/I/61t04H9j6DL._AC_SL1500_.jpg"
     },
     {
       "id": 29,
@@ -259,7 +287,8 @@
       "asin": "B00L3R5U0G",
       "price": "$1,295",
       "rating": 4.8,
-      "description": "Lightweight carbon fiber tripod with fluid head, above-ground spreader, and pan bar. Broadcast-grade stability at just 5.5 lbs—the ENG standard worldwide."
+      "description": "Lightweight carbon fiber tripod with fluid head, above-ground spreader, and pan bar. Broadcast-grade stability at just 5.5 lbs—the ENG standard worldwide.",
+      "image": "https://m.media-amazon.com/images/I/71jX3s-t3hL._AC_SL1500_.jpg"
     },
     {
       "id": 30,
@@ -268,7 +297,8 @@
       "asin": "B002JCVP56",
       "price": "$899",
       "rating": 4.8,
-      "description": "Modular carbon fiber tripod with no center column, 39.6 lb capacity, and G-Lock Ultra twist locks. The most rigid tripod system for cinema and studio work."
+      "description": "Modular carbon fiber tripod with no center column, 39.6 lb capacity, and G-Lock Ultra twist locks. The most rigid tripod system for cinema and studio work.",
+      "image": "https://m.media-amazon.com/images/I/61O-J-f+c0L._AC_SL1500_.jpg"
     },
     {
       "id": 31,
@@ -277,7 +307,8 @@
       "asin": "B0BNSJ9J7C",
       "price": "$749",
       "rating": 4.7,
-      "description": "Professional fluid head with 5-step counterbalance, SpeedLevel, and SA drag system. Smooth pan/tilt for documentary and corporate video production."
+      "description": "Professional fluid head with 5-step counterbalance, SpeedLevel, and SA drag system. Smooth pan/tilt for documentary and corporate video production.",
+      "image": "https://m.media-amazon.com/images/I/61WfQ8g-01L._AC_SL1500_.jpg"
     },
     {
       "id": 32,
@@ -286,7 +317,8 @@
       "asin": "B0D1K4XD8C",
       "price": "$799",
       "rating": 4.7,
-      "description": "Professional 3-axis gimbal with 4.5 kg payload, LiDAR focus, native vertical shooting, and extended battery. The ultimate stabilizer for full-size cinema cameras."
+      "description": "Professional 3-axis gimbal with 4.5 kg payload, LiDAR focus, native vertical shooting, and extended battery. The ultimate stabilizer for full-size cinema cameras.",
+      "image": "https://m.media-amazon.com/images/I/61X-2y+08vL._AC_SL1500_.jpg"
     },
     {
       "id": 33,
@@ -295,7 +327,8 @@
       "asin": "B00GWUAW2A",
       "price": "$349",
       "rating": 4.5,
-      "description": "Aluminum video tripod with 8 lb capacity fluid head, 3-step drag, and quick-release plate. Outstanding value for creators stepping up from photo tripods."
+      "description": "Aluminum video tripod with 8 lb capacity fluid head, 3-step drag, and quick-release plate. Outstanding value for creators stepping up from photo tripods.",
+      "image": "https://m.media-amazon.com/images/I/71iZ5R7yKQL._AC_SL1500_.jpg"
     },
     {
       "id": 34,
@@ -304,7 +337,8 @@
       "asin": "B0D6K8FXHV",
       "price": "$499",
       "rating": 4.5,
-      "description": "3-axis gimbal with built-in 2.65-inch display, Bluetooth shutter, and 4.9 lb payload. Smart features like gesture control and AI tracking for solo creators."
+      "description": "3-axis gimbal with built-in 2.65-inch display, Bluetooth shutter, and 4.9 lb payload. Smart features like gesture control and AI tracking for solo creators.",
+      "image": "https://m.media-amazon.com/images/I/61oZ9rR-dHL._AC_SL1500_.jpg"
     },
     {
       "id": 35,
@@ -313,7 +347,8 @@
       "asin": "B08TWS5H9B",
       "price": "$699",
       "rating": 4.6,
-      "description": "Compact motorized slider with double travel distance, app control, and keyframe programming. Fits in a backpack but delivers cinema-grade camera movement."
+      "description": "Compact motorized slider with double travel distance, app control, and keyframe programming. Fits in a backpack but delivers cinema-grade camera movement.",
+      "image": "https://m.media-amazon.com/images/I/71nZ1bZ+hRL._AC_SL1500_.jpg"
     },
     {
       "id": 36,
@@ -322,7 +357,8 @@
       "asin": "B00L7B30CC",
       "price": "$449",
       "rating": 4.6,
-      "description": "Versatile carbon fiber tripod with 90° center column, Easy Link connector, and 19.8 lb capacity. Perfect for creators who shoot both photo and video."
+      "description": "Versatile carbon fiber tripod with 90° center column, Easy Link connector, and 19.8 lb capacity. Perfect for creators who shoot both photo and video.",
+      "image": "https://m.media-amazon.com/images/I/71J1f2L43CL._AC_SL1500_.jpg"
     },
     {
       "id": 37,
@@ -331,7 +367,8 @@
       "asin": "B098T3PVLD",
       "price": "$89",
       "rating": 4.5,
-      "description": "Full RGB LED panel with 360° color wheel, 2500K-10000K range, and CRI 97+. Creative color effects and practical lighting in one affordable panel."
+      "description": "Full RGB LED panel with 360° color wheel, 2500K-10000K range, and CRI 97+. Creative color effects and practical lighting in one affordable panel.",
+      "image": "https://m.media-amazon.com/images/I/71j-M-j-bGL._AC_SL1500_.jpg"
     },
     {
       "id": 38,
@@ -340,7 +377,8 @@
       "asin": "B0BN2K4PWS",
       "price": "$749",
       "rating": 4.7,
-      "description": "Bi-color 300W COB LED with Bowens mount, 2700K-6500K range, and built-in effects. Professional output with silent fan mode for interview and narrative work."
+      "description": "Bi-color 300W COB LED with Bowens mount, 2700K-6500K range, and built-in effects. Professional output with silent fan mode for interview and narrative work.",
+      "image": "https://m.media-amazon.com/images/I/61iV2R0H+CL._AC_SL1500_.jpg"
     },
     {
       "id": 39,
@@ -349,7 +387,8 @@
       "asin": "B09MRYKTQV",
       "price": "$1,690",
       "rating": 4.8,
-      "description": "600W daylight point-source LED with 5600K, weather-resistant build, Sidus Link app control, and 8 built-in effects. Cinema-grade key light for professional sets."
+      "description": "600W daylight point-source LED with 5600K, weather-resistant build, Sidus Link app control, and 8 built-in effects. Cinema-grade key light for professional sets.",
+      "image": "https://m.media-amazon.com/images/I/71NBTD4PZDL._AC_SL1500_.jpg"
     },
     {
       "id": 40,
@@ -358,7 +397,8 @@
       "asin": "B013DFLG4O",
       "price": "$4,995",
       "rating": 4.9,
-      "description": "The gold standard in cinema soft lighting. Full RGB+W, tuneable white 2800K-10000K, DMX/ArtNet, and unmatched color accuracy. Used on virtually every major film set."
+      "description": "The gold standard in cinema soft lighting. Full RGB+W, tuneable white 2800K-10000K, DMX/ArtNet, and unmatched color accuracy. Used on virtually every major film set.",
+      "image": "https://m.media-amazon.com/images/I/71W8HJSG0jL._AC_SL1500_.jpg"
     },
     {
       "id": 41,
@@ -367,7 +407,8 @@
       "asin": "B0BVXM7YMK",
       "price": "$1,895",
       "rating": 4.7,
-      "description": "Legendary soft LED panel with tuneable white, full color, and gel-matching presets. Ultra-thin design with True Match phosphor technology for flawless skin tones."
+      "description": "Legendary soft LED panel with tuneable white, full color, and gel-matching presets. Ultra-thin design with True Match phosphor technology for flawless skin tones.",
+      "image": "https://m.media-amazon.com/images/I/51QUWfhNR4L._AC_SL1000_.jpg"
     },
     {
       "id": 42,
@@ -376,7 +417,8 @@
       "asin": "B0B7RLKNNV",
       "price": "$2,100",
       "rating": 4.7,
-      "description": "Flexible LED mat with full RGBWW spectrum, ultra-thin profile, and Velcro mounting. Wraps around set pieces for creative lighting impossible with traditional fixtures."
+      "description": "Flexible LED mat with full RGBWW spectrum, ultra-thin profile, and Velcro mounting. Wraps around set pieces for creative lighting impossible with traditional fixtures.",
+      "image": "https://m.media-amazon.com/images/I/61kHN-3FmDL._AC_SL1500_.jpg"
     },
     {
       "id": 43,
@@ -385,7 +427,8 @@
       "asin": "B07VRMHPGF",
       "price": "$590",
       "rating": 4.8,
-      "description": "Wireless, battery-powered RGB LED tube with AsteraApp control, 20-hour runtime, and IP65 weather resistance. The practical light that revolutionized set design."
+      "description": "Wireless, battery-powered RGB LED tube with AsteraApp control, 20-hour runtime, and IP65 weather resistance. The practical light that revolutionized set design.",
+      "image": "https://m.media-amazon.com/images/I/61xFSJr8-CL._AC_SL1500_.jpg"
     },
     {
       "id": 44,
@@ -394,7 +437,8 @@
       "asin": "B0CLKF8M4K",
       "price": "$449",
       "rating": 4.6,
-      "description": "300W LED video light with Bowens mount, ultra-quiet fan, V-mount battery plate, and app control. Professional power at a fraction of premium brand pricing."
+      "description": "300W LED video light with Bowens mount, ultra-quiet fan, V-mount battery plate, and app control. Professional power at a fraction of premium brand pricing.",
+      "image": "https://m.media-amazon.com/images/I/61EjxXDnVuL._AC_SL1500_.jpg"
     },
     {
       "id": 45,
@@ -403,7 +447,8 @@
       "asin": "B0B1H9V9NP",
       "price": "$249",
       "rating": 4.6,
-      "description": "RGBWW LED soft light panel with 2500K-7500K, Sidus Link control, and ultra-portable design. Perfect for travel creators and on-location interviews."
+      "description": "RGBWW LED soft light panel with 2500K-7500K, Sidus Link control, and ultra-portable design. Perfect for travel creators and on-location interviews.",
+      "image": "https://m.media-amazon.com/images/I/61lA2MdQvtL._AC_SL1500_.jpg"
     },
     {
       "id": 46,
@@ -412,7 +457,8 @@
       "asin": "B00B0IQPBQ",
       "price": "$329",
       "rating": 4.8,
-      "description": "Professional shotgun microphone with switchable low-cut filter, phantom or battery power, and exceptional off-axis rejection. The go-to boom mic for indie film and documentary."
+      "description": "Professional shotgun microphone with switchable low-cut filter, phantom or battery power, and exceptional off-axis rejection. The go-to boom mic for indie film and documentary.",
+      "image": "https://m.media-amazon.com/images/I/71SZjaMfh9L._AC_SL1500_.jpg"
     },
     {
       "id": 47,
@@ -421,7 +467,8 @@
       "asin": "B0002H0QJW",
       "price": "$3,200",
       "rating": 4.9,
-      "description": "The legendary large-diaphragm condenser microphone. Three polar patterns, -10dB pad, low-cut filter, and the warmth that defined decades of hit records and voiceovers."
+      "description": "The legendary large-diaphragm condenser microphone. Three polar patterns, -10dB pad, low-cut filter, and the warmth that defined decades of hit records and voiceovers.",
+      "image": "https://m.media-amazon.com/images/I/71rV0dV3YrL._AC_SL1500_.jpg"
     },
     {
       "id": 48,
@@ -430,7 +477,8 @@
       "asin": "B0C5JRWFP7",
       "price": "$179",
       "rating": 4.7,
-      "description": "2-in/2-out USB-C audio interface with Air mode, auto-gain, and 192kHz/24-bit conversion. The world's best-selling audio interface for creators and musicians."
+      "description": "2-in/2-out USB-C audio interface with Air mode, auto-gain, and 192kHz/24-bit conversion. The world's best-selling audio interface for creators and musicians.",
+      "image": "https://m.media-amazon.com/images/I/71M4LiBx0oL._AC_SL1500_.jpg"
     },
     {
       "id": 49,
@@ -439,7 +487,8 @@
       "asin": "B084CVKL3G",
       "price": "$299",
       "rating": 4.7,
-      "description": "2-in/4-out USB interface with legendary SSL preamps, 4K DAC mode, and studio-grade monitoring. Brings mixing console heritage to your desktop at an accessible price."
+      "description": "2-in/4-out USB interface with legendary SSL preamps, 4K DAC mode, and studio-grade monitoring. Brings mixing console heritage to your desktop at an accessible price.",
+      "image": "https://m.media-amazon.com/images/I/71c4X2Ov6ML._AC_SL1500_.jpg"
     },
     {
       "id": 50,
@@ -448,7 +497,8 @@
       "asin": "B0872RRXP8",
       "price": "$879",
       "rating": 4.8,
-      "description": "Ultra-portable 12-in/12-out USB interface with reference-class converters, SteadyClock FS, and TotalMix FX. The interface professionals trust for critical recording."
+      "description": "Ultra-portable 12-in/12-out USB interface with reference-class converters, SteadyClock FS, and TotalMix FX. The interface professionals trust for critical recording.",
+      "image": "https://m.media-amazon.com/images/I/71c99oVmUNL._AC_SL1500_.jpg"
     },
     {
       "id": 51,
@@ -457,7 +507,8 @@
       "asin": "B07CMTW1VQ",
       "price": "$599",
       "rating": 4.6,
-      "description": "Professional UHF wireless lavalier system with 42 MHz bandwidth, 20-hour battery, and rock-solid RF performance. The broadcast standard for on-camera talent."
+      "description": "Professional UHF wireless lavalier system with 42 MHz bandwidth, 20-hour battery, and rock-solid RF performance. The broadcast standard for on-camera talent.",
+      "image": "https://m.media-amazon.com/images/I/61pKQR+rSQL._AC_SL1500_.jpg"
     },
     {
       "id": 52,
@@ -466,7 +517,8 @@
       "asin": "B0D2KJMC78",
       "price": "$279",
       "rating": 4.6,
-      "description": "6-track portable recorder with 32-bit float recording, dual XLR/TRS inputs, and interchangeable capsules. Never clip your audio again—32-bit float is game-changing."
+      "description": "6-track portable recorder with 32-bit float recording, dual XLR/TRS inputs, and interchangeable capsules. Never clip your audio again—32-bit float is game-changing.",
+      "image": "https://m.media-amazon.com/images/I/71+xrcD-zVL._AC_SL1500_.jpg"
     },
     {
       "id": 53,
@@ -475,7 +527,8 @@
       "asin": "B00KCN83V8",
       "price": "$449",
       "rating": 4.8,
-      "description": "Broadcast dynamic microphone with Variable-D technology for zero proximity effect. The voice of radio for 50+ years—consistent tone at any distance."
+      "description": "Broadcast dynamic microphone with Variable-D technology for zero proximity effect. The voice of radio for 50+ years—consistent tone at any distance.",
+      "image": "https://m.media-amazon.com/images/I/412OClklrBL._AC_SL1080_.jpg"
     },
     {
       "id": 54,
@@ -484,7 +537,8 @@
       "asin": "B0851HYWBK",
       "price": "$1,099",
       "rating": 4.8,
-      "description": "Premium 2-in/6-out Thunderbolt interface with Unison preamps and real-time UAD processing. Run vintage compressors and EQs with zero latency while recording."
+      "description": "Premium 2-in/6-out Thunderbolt interface with Unison preamps and real-time UAD processing. Run vintage compressors and EQs with zero latency while recording.",
+      "image": "https://m.media-amazon.com/images/I/71SWQA822qL._AC_SL1500_.jpg"
     },
     {
       "id": 55,
@@ -493,7 +547,8 @@
       "asin": "B07TWVS7HX",
       "price": "$349",
       "rating": 4.6,
-      "description": "Ultra-low noise shotgun microphone with brass body, interchangeable connectors, and exceptional sensitivity. Cinema-quality dialogue capture at indie pricing."
+      "description": "Ultra-low noise shotgun microphone with brass body, interchangeable connectors, and exceptional sensitivity. Cinema-quality dialogue capture at indie pricing.",
+      "image": "https://m.media-amazon.com/images/I/51A6n1bAEsL._AC_SL1000_.jpg"
     },
     {
       "id": 56,
@@ -502,7 +557,8 @@
       "asin": "B00DBL0NLQ",
       "price": "$679",
       "rating": 4.7,
-      "description": "The legendary cinema zoom with constant f/1.8 aperture across the range. Razor-sharp optics, beautiful bokeh, and the widest aperture zoom lens ever made for APS-C."
+      "description": "The legendary cinema zoom with constant f/1.8 aperture across the range. Razor-sharp optics, beautiful bokeh, and the widest aperture zoom lens ever made for APS-C.",
+      "image": "https://m.media-amazon.com/images/I/61swST1ii9L._AC_SL1500_.jpg"
     },
     {
       "id": 57,
@@ -511,7 +567,8 @@
       "asin": "B07D36V6NL",
       "price": "$1,149",
       "rating": 4.6,
-      "description": "Professional wireless lens control with dual-channel motors, 300m range, and OLED display. Precise focus pulling for cinema productions and gimbal setups."
+      "description": "Professional wireless lens control with dual-channel motors, 300m range, and OLED display. Precise focus pulling for cinema productions and gimbal setups.",
+      "image": "https://m.media-amazon.com/images/I/61uXEqV3VeL._AC_SL1500_.jpg"
     },
     {
       "id": 58,
@@ -520,7 +577,8 @@
       "asin": "B09BFQ6DTS",
       "price": "$699",
       "rating": 4.6,
-      "description": "5.2-inch HDR monitor-recorder with 8K HDMI input, ProRes RAW recording, and 1000-nit display. See exactly what your camera sees with frame-accurate monitoring."
+      "description": "5.2-inch HDR monitor-recorder with 8K HDMI input, ProRes RAW recording, and 1000-nit display. See exactly what your camera sees with frame-accurate monitoring.",
+      "image": "https://m.media-amazon.com/images/I/71z4BBbKaVL._AC_SL1500_.jpg"
     },
     {
       "id": 59,
@@ -529,7 +587,8 @@
       "asin": "B0D9GGVCJJ",
       "price": "$499",
       "rating": 4.5,
-      "description": "5-inch daylight-viewable field monitor with full HD, touchscreen interface, and waveform/false color tools. Essential for confident exposure and focus in any lighting."
+      "description": "5-inch daylight-viewable field monitor with full HD, touchscreen interface, and waveform/false color tools. Essential for confident exposure and focus in any lighting.",
+      "image": "https://m.media-amazon.com/images/I/61JR3sVnz5L._AC_SL1500_.jpg"
     },
     {
       "id": 60,
@@ -538,7 +597,8 @@
       "asin": "B07M6KCLWC",
       "price": "$169",
       "rating": 4.5,
-      "description": "Monitor calibration tool for accurate color on any display. Ensures your color grade looks correct on every screen—essential for professional color work."
+      "description": "Monitor calibration tool for accurate color on any display. Ensures your color grade looks correct on every screen—essential for professional color work.",
+      "image": "https://m.media-amazon.com/images/I/71Hqt-z7gqL._AC_SL1500_.jpg"
     },
     {
       "id": 61,
@@ -547,7 +607,8 @@
       "asin": "B001DAQDMO",
       "price": "$229",
       "rating": 4.7,
-      "description": "10-foot aluminum boom pole with internal coiled cable, ergonomic grip, and lightweight design. The industry-standard boom arm for film and documentary audio."
+      "description": "10-foot aluminum boom pole with internal coiled cable, ergonomic grip, and lightweight design. The industry-standard boom arm for film and documentary audio.",
+      "image": "https://m.media-amazon.com/images/I/61KQXv3CZZL._AC_SL1500_.jpg"
     },
     {
       "id": 62,
@@ -556,7 +617,8 @@
       "asin": "B005FHBCMU",
       "price": "$189",
       "rating": 4.6,
-      "description": "Universal shock mount with Lyre suspension, windshield, and mounting hardware. Eliminates handling noise and vibration for pristine studio and field recordings."
+      "description": "Universal shock mount with Lyre suspension, windshield, and mounting hardware. Eliminates handling noise and vibration for pristine studio and field recordings.",
+      "image": "https://m.media-amazon.com/images/I/71VVvyT-sQL._AC_SL1500_.jpg"
     },
     {
       "id": 63,
@@ -565,7 +627,8 @@
       "asin": "B07CRG3C3N",
       "price": "$79",
       "rating": 4.5,
-      "description": "Professional windscreen for shotgun microphones with open-cell foam technology. Blocks wind noise without affecting high-frequency response—used on indie and major sets."
+      "description": "Professional windscreen for shotgun microphones with open-cell foam technology. Blocks wind noise without affecting high-frequency response—used on indie and major sets.",
+      "image": "https://m.media-amazon.com/images/I/61sC2A3r3ML._AC_SL1500_.jpg"
     },
     {
       "id": 64,
@@ -574,7 +637,8 @@
       "asin": "B09ZYP3P6N",
       "price": "$2,298",
       "rating": 4.9,
-      "description": "The ultimate standard zoom for Sony full-frame. Razor-sharp corner-to-corner, minimal focus breathing, nano AR coating, and the lightest f/2.8 zoom in its class."
+      "description": "The ultimate standard zoom for Sony full-frame. Razor-sharp corner-to-corner, minimal focus breathing, nano AR coating, and the lightest f/2.8 zoom in its class.",
+      "image": "https://m.media-amazon.com/images/I/71D3E9NtCBL._AC_SL1500_.jpg"
     },
     {
       "id": 65,
@@ -583,7 +647,8 @@
       "asin": "B0C7J44VBB",
       "price": "$399",
       "rating": 4.5,
-      "description": "Wireless video transmitter with 450ft range, 0.07s latency, HDMI/SDI I/O, and app monitoring. Stream camera feeds wirelessly to monitors, directors, and clients."
+      "description": "Wireless video transmitter with 450ft range, 0.07s latency, HDMI/SDI I/O, and app monitoring. Stream camera feeds wirelessly to monitors, directors, and clients.",
+      "image": "https://m.media-amazon.com/images/I/61+TkMDo4hL._AC_SL1500_.jpg"
     },
     {
       "id": 66,
@@ -592,7 +657,8 @@
       "asin": "B07FNDKJXB",
       "price": "$89",
       "rating": 4.4,
-      "description": "Lightweight carbon fiber camera slider with smooth ball-bearing track. Compact, portable, and produces buttery smooth lateral movements for product and interview shots."
+      "description": "Lightweight carbon fiber camera slider with smooth ball-bearing track. Compact, portable, and produces buttery smooth lateral movements for product and interview shots.",
+      "image": "https://m.media-amazon.com/images/I/61K8aVjhW2L._AC_SL1500_.jpg"
     },
     {
       "id": 67,
@@ -601,7 +667,8 @@
       "asin": "B0C4XVKPVN",
       "price": "$219",
       "rating": 4.7,
-      "description": "Quick-release softbox with Bowens mount, diffusion layers, and 34.8-inch diameter. Transforms any COB light into a beautiful, soft key light in seconds."
+      "description": "Quick-release softbox with Bowens mount, diffusion layers, and 34.8-inch diameter. Transforms any COB light into a beautiful, soft key light in seconds.",
+      "image": "https://m.media-amazon.com/images/I/71Y8fCJPwRL._AC_SL1500_.jpg"
     },
     {
       "id": 68,
@@ -610,7 +677,8 @@
       "asin": "B0C6FZZH8M",
       "price": "$259",
       "rating": 4.5,
-      "description": "Dual V-mount battery kit with D-Tap and USB outputs, LED indicators, and 150Wh capacity each. Power your cinema lights and cameras anywhere without AC."
+      "description": "Dual V-mount battery kit with D-Tap and USB outputs, LED indicators, and 150Wh capacity each. Power your cinema lights and cameras anywhere without AC.",
+      "image": "https://m.media-amazon.com/images/I/71MUBrJGpXL._AC_SL1500_.jpg"
     }
   ],
   "affiliateTag": "disbrowproduc-20"
