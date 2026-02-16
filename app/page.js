@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import NewsletterSignup from './components/NewsletterSignup';
 import productsData from '../products.json';
 
 const AFFILIATE_TAG = productsData.affiliateTag;
@@ -138,6 +139,9 @@ export default function Home() {
           <a href="#tools" style={{ display: 'inline-block', backgroundColor: '#fff', color: '#667eea', padding: '0.75rem 2rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold', cursor: 'pointer', transition: 'transform 0.2s' }}>Explore Recommended Gear</a>
         </div>
       </section>
+
+      {/* Newsletter Signup */}
+      <NewsletterSignup />
 
       {/* Products Section */}
       <section id="tools" style={{ maxWidth: '1200px', margin: '0 auto', padding: '3rem 2rem' }}>
