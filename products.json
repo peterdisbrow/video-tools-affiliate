@@ -1,0 +1,167 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Sony Alpha a7 IV",
+      "category": "cameras",
+      "asin": "B09JZRWRJN",
+      "price": "$2,498",
+      "rating": 4.8,
+      "description": "Full-frame hybrid mirrorless camera with 33MP sensor, 4K 60p video, real-time Eye AF, and 10-bit color depth. The go-to choice for creators who need both photo and video excellence."
+    },
+    {
+      "id": 2,
+      "name": "Canon EOS R6 Mark II",
+      "category": "cameras",
+      "asin": "B0BL7X3KLV",
+      "price": "$2,499",
+      "rating": 4.7,
+      "description": "Blazing-fast 40fps continuous shooting, 6K oversampled 4K video, and Canon's legendary Dual Pixel autofocus. Perfect for run-and-gun creators who need speed and reliability."
+    },
+    {
+      "id": 3,
+      "name": "DJI Osmo Pocket 3",
+      "category": "cameras",
+      "asin": "B0CG19FGQ5",
+      "price": "$749",
+      "rating": 4.6,
+      "description": "Ultra-compact gimbal camera with a 1-inch CMOS sensor, 4K/120fps, and a 2-inch rotatable touchscreen. The ultimate vlogging companion that fits in your pocket."
+    },
+    {
+      "id": 4,
+      "name": "Rode NT-USB+ Microphone",
+      "category": "audio",
+      "asin": "B084P1CXFD",
+      "price": "$169",
+      "rating": 4.7,
+      "description": "Studio-quality USB condenser mic with built-in DSP, high-res audio output, and zero-latency monitoring. Plug-and-play excellence for podcasters and streamers."
+    },
+    {
+      "id": 5,
+      "name": "Shure SM7B Microphone",
+      "category": "audio",
+      "asin": "B0CCSVYWMH",
+      "price": "$399",
+      "rating": 4.9,
+      "description": "The industry-standard dynamic microphone used by top podcasters and broadcasters worldwide. Exceptional voice isolation, warm tone, and built-in pop filter."
+    },
+    {
+      "id": 6,
+      "name": "Audio-Technica AT2020",
+      "category": "audio",
+      "asin": "B0006H92QK",
+      "price": "$99",
+      "rating": 4.7,
+      "description": "Best-in-class entry-level condenser mic with a custom-engineered low-mass diaphragm for extended frequency response. Unbeatable quality at this price point."
+    },
+    {
+      "id": 7,
+      "name": "Neewer LED Panel Light",
+      "category": "lighting",
+      "asin": "B0869H68M6",
+      "price": "$45",
+      "rating": 4.5,
+      "description": "Bi-color dimmable LED panel with 3200K-5600K range and CRI 97+. Budget-friendly lighting that delivers professional results for YouTube and product shoots."
+    },
+    {
+      "id": 8,
+      "name": "Aputure Amaran 200d",
+      "category": "lighting",
+      "asin": "B08RNW1HL6",
+      "price": "$289",
+      "rating": 4.8,
+      "description": "Professional-grade 200W daylight LED with Bowens mount compatibility. Ultra-quiet fan, app control, and stunning output for studio and on-location work."
+    },
+    {
+      "id": 9,
+      "name": "Godox SL60W LED",
+      "category": "lighting",
+      "asin": "B09BCVG1VW",
+      "price": "$129",
+      "rating": 4.6,
+      "description": "Reliable 60W continuous LED light with 5600K daylight balance and wireless remote. The workhorse light that thousands of YouTube studios rely on daily."
+    },
+    {
+      "id": 10,
+      "name": "Adobe Premiere Pro",
+      "category": "software",
+      "affiliateLink": "https://www.adobe.com/products/premiere.html",
+      "price": "$54.99/mo",
+      "rating": 4.8,
+      "description": "Industry-standard video editing with AI-powered tools, seamless Creative Cloud integration, and support for virtually every format. The editor professionals choose."
+    },
+    {
+      "id": 11,
+      "name": "DaVinci Resolve",
+      "category": "software",
+      "affiliateLink": "https://www.blackmagicdesign.com/products/davinciresolve/",
+      "price": "Free/$295",
+      "rating": 4.7,
+      "description": "Hollywood-grade editing, color grading, VFX, and audio post-production in one app. The free version is shockingly powerful — used on major film productions."
+    },
+    {
+      "id": 12,
+      "name": "Final Cut Pro",
+      "category": "software",
+      "affiliateLink": "https://www.apple.com/final-cut-pro/",
+      "price": "$299",
+      "rating": 4.6,
+      "description": "Apple's flagship editor optimized for Mac hardware. Magnetic timeline, blazing-fast rendering on Apple Silicon, and ProRes support make it a creator favorite."
+    },
+    {
+      "id": 13,
+      "name": "Elgato Stream Deck",
+      "category": "streaming",
+      "asin": "B09738CV2G",
+      "price": "$99",
+      "rating": 4.7,
+      "description": "15 customizable LCD keys for one-touch control of your stream, smart home, and apps. Drag-and-drop setup with thousands of integrations via plugins."
+    },
+    {
+      "id": 14,
+      "name": "Rode Wireless GO II",
+      "category": "streaming",
+      "asin": "B0G3YF6XTB",
+      "price": "$299",
+      "rating": 4.8,
+      "description": "Dual-channel wireless mic system with built-in recording, 200m range, and broadcast-grade audio. Clip-on simplicity with professional results for interviews and vlogs."
+    },
+    {
+      "id": 15,
+      "name": "Logitech C920 Webcam",
+      "category": "streaming",
+      "asin": "B07K986YLL",
+      "price": "$69",
+      "rating": 4.5,
+      "description": "The webcam that defined the category. Full HD 1080p at 30fps with dual mics and automatic light correction. Reliable, affordable, and universally compatible."
+    },
+    {
+      "id": 16,
+      "name": "Peak Design Travel Tripod",
+      "category": "accessories",
+      "asin": "B0G4NLPCKF",
+      "price": "$299",
+      "rating": 4.8,
+      "description": "Revolutionary compact tripod that packs down to the size of a water bottle. Premium aluminum build, quick-deploy legs, and a phone mount included. Travel creators love it."
+    },
+    {
+      "id": 17,
+      "name": "DJI RS 3 Gimbal",
+      "category": "accessories",
+      "asin": "B0CS6LC1ZQ",
+      "price": "$449",
+      "rating": 4.6,
+      "description": "Lightweight 3-axis gimbal stabilizer with a 1.8\" OLED touchscreen, SuperSmooth mode, and automated axis locks. Buttery-smooth footage for any mirrorless camera."
+    },
+    {
+      "id": 18,
+      "name": "Peak Design Capture Clip",
+      "category": "accessories",
+      "asin": "B07818LB9D",
+      "price": "$29.95",
+      "rating": 4.7,
+      "description": "Instantly attach your camera to any backpack strap or belt. Arca-Swiss compatible, aircraft-grade aluminum, and a lifesaver for hiking filmmakers and travel creators."
+    }
+  ],
+  "affiliateTag": "disbrowproduc-20"
+}
