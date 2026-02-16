@@ -2,12 +2,51 @@
 
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { useEffect } from 'react';
 import { blogPosts } from '../blogData';
+
+// Category mapping for smart related posts
+const categories = {
+  cameras: ['best-cameras-for-youtube', 'best-cameras-under-1000', 'best-cameras-under-2000', 'best-cameras-under-5000'],
+  lighting: ['video-lighting-101', 'best-video-lights-under-300', 'best-video-lights-under-800', 'best-video-lights-under-2000'],
+  audio: ['pro-audio-budget', 'best-microphones-under-200', 'best-microphones-under-500', 'best-audio-interfaces-under-300'],
+  tripods: ['best-tripods-under-200', 'best-tripods-under-500', 'best-tripods-under-1500', 'stabilization-techniques'],
+  general: ['free-vs-paid-editing', 'streaming-gear-essentials', 'youtube-equipment-timeline', 'diy-green-screen-setup'],
+};
+
+function getRelatedPosts(slug) {
+  // Find which category current post belongs to
+  let currentCategory = 'general';
+  for (const [cat, slugs] of Object.entries(categories)) {
+    if (slugs.includes(slug)) { currentCategory = cat; break; }
+  }
+  // Get same-category posts first, then others
+  const sameCat = categories[currentCategory].filter(s => s !== slug);
+  const otherCats = Object.entries(categories)
+    .filter(([cat]) => cat !== currentCategory)
+    .flatMap(([, slugs]) => slugs);
+  const orderedSlugs = [...sameCat, ...otherCats].slice(0, 4);
+  return orderedSlugs.map(s => blogPosts.find(p => p.slug === s)).filter(Boolean);
+}
 
 export default function BlogPost() {
   const params = useParams();
   const slug = params.slug;
   const post = blogPosts.find(p => p.slug === slug);
+
+  useEffect(() => {
+    if (post) {
+      document.title = `${post.title} | Creator Gear`;
+      // Set meta description
+      let metaDesc = document.querySelector('meta[name="description"]');
+      if (!metaDesc) {
+        metaDesc = document.createElement('meta');
+        metaDesc.name = 'description';
+        document.head.appendChild(metaDesc);
+      }
+      metaDesc.content = post.metaDescription || post.excerpt;
+    }
+  }, [post]);
 
   if (!post) {
     return (
@@ -20,7 +59,7 @@ export default function BlogPost() {
     );
   }
 
-  const relatedOtherPosts = blogPosts.filter(p => p.slug !== slug).slice(0, 3);
+  const relatedPosts = getRelatedPosts(slug);
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
@@ -56,6 +95,7 @@ export default function BlogPost() {
         <div style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#374151', marginBottom: '3rem' }}>
           <style>{`
             article h2 { font-size: 1.5rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; color: #1f2937; }
+            article h3 { font-size: 1.2rem; font-weight: bold; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1f2937; }
             article p { margin-bottom: 1rem; }
             article ul, article ol { margin-left: 1.5rem; margin-bottom: 1rem; }
             article li { margin-bottom: 0.5rem; }
@@ -66,15 +106,15 @@ export default function BlogPost() {
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
 
-        {/* Related Products Sidebar */}
+        {/* Related Products Box */}
         {post.relatedProducts && post.relatedProducts.length > 0 && (
-          <section style={{ backgroundColor: '#f0f4ff', padding: '2rem', borderRadius: '0.75rem', marginBottom: '3rem' }}>
-            <h3 style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1f2937' }}>Products Mentioned in This Post</h3>
-            <ul style={{ listStyle: 'none', padding: 0 }}>
+          <section style={{ backgroundColor: '#f0f4ff', padding: '2rem', borderRadius: '0.75rem', marginBottom: '3rem', border: '1px solid #d4deff' }}>
+            <h3 style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1f2937' }}>🛒 Products Mentioned in This Post</h3>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               {post.relatedProducts.map((product, i) => (
-                <li key={i} style={{ marginBottom: '0.75rem' }}>
-                  <a href={product.link} target="_blank" rel="noopener noreferrer" style={{ color: '#667eea', textDecoration: 'none', fontWeight: '500' }}>
-                    {product.name} →
+                <li key={i} style={{ marginBottom: '0.75rem', padding: '0.5rem 0', borderBottom: i < post.relatedProducts.length - 1 ? '1px solid #e0e7ff' : 'none' }}>
+                  <a href={product.link} target="_blank" rel="noopener noreferrer" style={{ color: '#667eea', textDecoration: 'none', fontWeight: '600', fontSize: '1rem' }}>
+                    {product.name} <span style={{ fontSize: '0.85rem' }}>→ Check Price on Amazon</span>
                   </a>
                 </li>
               ))}
@@ -82,15 +122,15 @@ export default function BlogPost() {
           </section>
         )}
 
-        {/* Continue Reading */}
-        <section style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '0.75rem', borderTop: '2px solid #e5e7eb' }}>
-          <h3 style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '1.5rem', color: '#1f2937' }}>Continue Reading</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
-            {relatedOtherPosts.map((relPost, i) => (
+        {/* Continue Reading - Smart Related */}
+        <section style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '0.75rem', border: '1px solid #e5e7eb' }}>
+          <h3 style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '1.5rem', color: '#1f2937' }}>📖 Continue Reading</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
+            {relatedPosts.map((relPost, i) => (
               <Link key={i} href={`/blog/${relPost.slug}`} style={{ textDecoration: 'none' }}>
-                <div style={{ padding: '1rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem', transition: 'background-color 0.2s', cursor: 'pointer' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f0f4ff'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#f9fafb'}>
-                  <p style={{ fontWeight: 'bold', color: '#667eea', marginBottom: '0.5rem' }}>{relPost.title}</p>
-                  <span style={{ color: '#667eea', fontSize: '0.9rem' }}>Read more →</span>
+                <div style={{ padding: '1rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem', transition: 'background-color 0.2s', cursor: 'pointer', height: '100%' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f0f4ff'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#f9fafb'}>
+                  <p style={{ fontWeight: 'bold', color: '#667eea', marginBottom: '0.5rem', fontSize: '0.95rem' }}>{relPost.title}</p>
+                  <span style={{ color: '#667eea', fontSize: '0.85rem' }}>Read more →</span>
                 </div>
               </Link>
             ))}
