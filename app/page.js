@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import NewsletterSignup from './components/NewsletterSignup';
+import ProductReview from './components/ProductReview';
 import productsData from '../products.json';
 
 const AFFILIATE_TAG = productsData.affiliateTag;
@@ -45,7 +46,7 @@ const faqs = [
   { q: 'Can I get a discount?', a: 'Some products have sales periodically. Check the retailer directly for current pricing and deals.' },
 ];
 
-function ProductCard({ product }) {
+function ProductCard({ product, onReview }) {
   const [showDesc, setShowDesc] = useState(false);
 
   return (
@@ -100,14 +101,30 @@ function ProductCard({ product }) {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
           <span style={{ fontSize: '1.35rem', fontWeight: 'bold', color: '#667eea' }}>{product.price}</span>
         </div>
-        <a href={product.link} target="_blank" rel="noopener noreferrer" style={{
-          display: 'block', width: '100%', padding: '0.7rem', backgroundColor: '#667eea', color: '#fff',
-          textAlign: 'center', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold',
-          cursor: 'pointer', transition: 'background-color 0.2s', boxSizing: 'border-box',
-        }}
-          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a6fd6'}
-          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#667eea'}
-        >View & Buy →</a>
+        <div style={{ display: 'flex', gap: '0.5rem' }}>
+          {product.review && (
+            <button
+              onClick={() => onReview(product)}
+              style={{
+                flex: 1, padding: '0.7rem', backgroundColor: '#f3f4f6', color: '#667eea',
+                textAlign: 'center', borderRadius: '0.5rem', fontWeight: 'bold',
+                cursor: 'pointer', transition: 'background-color 0.2s', border: '2px solid #667eea',
+                fontSize: '0.85rem',
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#eef2ff'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#f3f4f6'; }}
+            >⭐ Reviews</button>
+          )}
+          <a href={product.link} target="_blank" rel="noopener noreferrer" style={{
+            flex: 1, padding: '0.7rem', backgroundColor: '#667eea', color: '#fff',
+            textAlign: 'center', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold',
+            cursor: 'pointer', transition: 'background-color 0.2s', boxSizing: 'border-box',
+            fontSize: '0.85rem',
+          }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a6fd6'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#667eea'}
+          >View & Buy →</a>
+        </div>
       </div>
     </div>
   );
@@ -116,11 +133,16 @@ function ProductCard({ product }) {
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [expandedFaq, setExpandedFaq] = useState(null);
+  const [reviewProduct, setReviewProduct] = useState(null);
 
   const filteredProducts = activeCategory === 'all' ? products : products.filter(p => p.category === activeCategory);
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
+      {/* Review Modal */}
+      {reviewProduct && (
+        <ProductReview product={reviewProduct} onClose={() => setReviewProduct(null)} />
+      )}
       {/* Navigation */}
       <nav style={{ backgroundColor: '#fff', borderBottom: '1px solid #e5e7eb', position: 'sticky', top: 0, zIndex: 10 }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -190,7 +212,7 @@ export default function Home() {
         {/* Product Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
           {filteredProducts.map(product => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} onReview={setReviewProduct} />
           ))}
         </div>
       </section>
