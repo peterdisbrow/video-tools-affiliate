@@ -113,15 +113,22 @@ function ListRow({ post, showImage = true }) {
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState('All');
 
-  const featured3 = FEATURED_SLUGS.slice(0, 3).map(s => blogPosts.find(p => p.slug === s)).filter(Boolean);
   const trending = TRENDING.map(s => blogPosts.find(p => p.slug === s)).filter(Boolean);
 
-  const latestPosts = useMemo(() => {
-    const filtered = activeTab === 'All'
-      ? blogPosts
-      : blogPosts.filter(p => p.category?.toLowerCase() === activeTab.toLowerCase());
-    return filtered.slice(0, 8);
+  const filteredPosts = useMemo(() => {
+    if (activeTab === 'All') return blogPosts;
+    return blogPosts.filter(p => p.category?.toLowerCase() === activeTab.toLowerCase());
   }, [activeTab]);
+
+  // Featured 3-up: curated picks on All, top 3 from category otherwise
+  const featured3 = useMemo(() => {
+    if (activeTab === 'All') {
+      return FEATURED_SLUGS.slice(0, 3).map(s => blogPosts.find(p => p.slug === s)).filter(Boolean);
+    }
+    return filteredPosts.slice(0, 3);
+  }, [activeTab, filteredPosts]);
+
+  const latestPosts = useMemo(() => filteredPosts.slice(0, 12), [filteredPosts]);
 
   const topProducts = productsData.products
     .filter(p => p.asin)
@@ -191,7 +198,10 @@ export default function HomePage() {
             {/* Latest posts — list style */}
             <div style={{ borderTop: '3px solid #111827', paddingTop: '1rem', marginBottom: '0.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span style={{ fontSize: '0.78rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#111827' }}>
-                The Latest
+                {activeTab === 'All' ? 'The Latest' : activeTab}
+                <span style={{ fontWeight: '400', color: '#9CA3AF', marginLeft: '0.5rem' }}>
+                  {filteredPosts.length} posts
+                </span>
               </span>
               <Link href="/blog" style={{ fontSize: '0.75rem', color: ACCENT, textDecoration: 'none', fontWeight: '700' }}>
                 View All →
@@ -203,7 +213,7 @@ export default function HomePage() {
             </div>
 
             {latestPosts.length === 0 && (
-              <p style={{ color: '#9CA3AF', padding: '2rem 0' }}>No posts in this category yet.</p>
+              <p style={{ color: '#9CA3AF', padding: '2rem 0' }}>No posts in this category yet — check back soon.</p>
             )}
           </div>
 
