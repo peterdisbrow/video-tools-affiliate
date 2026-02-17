@@ -7,37 +7,59 @@ import SiteFooter from '../../components/SiteFooter';
 export default function LightingComparison() {
   const lighting = [
     {
-      name: 'Nanlite Pavo 15X RGB',
-      price: '$389',
+      name: 'Aputure Amaran 200d',
+      price: '$289',
       rating: 4.8,
-      image: 'https://m.media-amazon.com/images/I/71KxzOF8VqL._AC_SL1500_.jpg',
-      slug: 'nanlite-pavo-15x-rgb',
-      pros: ['Full RGB color control', 'Silent operation', 'Compact and portable', 'Professional build quality'],
-      cons: ['Higher price point', 'Requires external ballast', 'Not as bright as HMI'],
-      verdict: 'Best RGB LED panel for color grading',
-      bestFor: 'Film productions, professional studios',
+      image: 'https://m.media-amazon.com/images/I/61qcrx+GV3L._AC_SL1500_.jpg',
+      slug: 'aputure-amaran-200d',
+      pros: ['CRI 96+ / TLCI 97+ color accuracy', 'Bowens mount for modifiers', 'Ultra-quiet fan operation', 'Bluetooth app control via Sidus Link'],
+      cons: ['Daylight-only (no bi-color)', 'Needs separate battery for portable use', 'Pricier than budget alternatives'],
+      verdict: 'Best overall studio LED for creators',
+      bestFor: 'YouTube studios, interviews, professional video',
     },
     {
-      name: 'Elgato Key Light Air',
-      price: '$199',
+      name: 'Amaran 60d S',
+      price: '$99',
+      rating: 4.7,
+      image: 'https://m.media-amazon.com/images/I/61qWY7ey1gL._AC_SL1500_.jpg',
+      slug: 'amaran-60d-s',
+      pros: ['Incredible value at $99', 'Bowens mount compatible', 'Compact and lightweight', 'App control via Bluetooth'],
+      cons: ['65W output (not for large sets)', 'Daylight-balanced only', 'No built-in battery'],
+      verdict: 'Best value LED for video creators',
+      bestFor: 'Budget studios, YouTube creators, beginners',
+    },
+    {
+      name: 'Amaran F22C',
+      price: '$369',
+      rating: 4.7,
+      image: 'https://m.media-amazon.com/images/I/71pMKVbZURL._AC_SL1500_.jpg',
+      slug: 'amaran-f22c',
+      pros: ['Full RGBWW color control', 'Ultra-thin foldable design', 'Sidus Link app control', 'Professional color accuracy'],
+      cons: ['Higher price than basic panels', 'Requires external power', 'Learning curve for RGB modes'],
+      verdict: 'Best flexible RGB panel for creative lighting',
+      bestFor: 'Film productions, creative shoots, portable setups',
+    },
+    {
+      name: 'Aputure MC',
+      price: '$95',
       rating: 4.6,
-      image: 'https://m.media-amazon.com/images/I/31U+yN0gTEL._AC_SL500_.jpg',
-      slug: 'elgato-key-light-air',
-      pros: ['Color temperature control', 'App control', 'Mount-friendly', 'Great for streaming'],
-      cons: ['Limited RGB options', 'Moderate brightness', 'Proprietary software'],
-      verdict: 'Best streaming light',
-      bestFor: 'Streamers, content creators, gaming',
+      image: 'https://m.media-amazon.com/images/I/61Jx8xMnURL._AC_SL1500_.jpg',
+      slug: 'aputure-mc',
+      pros: ['Ultra-portable pocket size', 'Full RGBWW color', 'Magnetic mount', 'Built-in battery'],
+      cons: ['Low output for key lighting', 'Short battery at full power', 'Small coverage area'],
+      verdict: 'Best portable accent light',
+      bestFor: 'Travel creators, accent lighting, on-the-go',
     },
     {
-      name: 'Godox SL-60W LED',
-      price: '$249',
-      rating: 4.5,
-      image: 'https://m.media-amazon.com/images/I/61tQAl8cVaL._AC_SL1000_.jpg',
-      slug: 'godox-sl-60w-led',
-      pros: ['High brightness output', 'Good color rendering', 'Affordable price', 'Lightweight'],
-      cons: ['Gets hot during use', 'Fan can be noisy', 'Limited color options'],
-      verdict: 'Best value bright LED for video',
-      bestFor: 'Studio work, video production on budget',
+      name: 'Aputure LS 300X',
+      price: '$1,395',
+      rating: 4.8,
+      image: 'https://m.media-amazon.com/images/I/61jfT9L3I5L._AC_SL1500_.jpg',
+      slug: 'aputure-ls-300x',
+      pros: ['300W bi-color output', '2700K-6500K range', 'Weather-resistant build', 'Sidus Link ecosystem'],
+      cons: ['Premium price point', 'Heavy for location work', 'Requires ballast'],
+      verdict: 'Best professional bi-color LED',
+      bestFor: 'Professional studios, film sets, commercial work',
     },
   ];
 
@@ -67,9 +89,11 @@ export default function LightingComparison() {
         }}>
           <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#2563EB' }}>Quick Verdict</h3>
           <ul style={{ margin: 0, paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <li><strong>Best Overall:</strong> Nanlite Pavo 15X RGB - Professional RGB panel with unlimited color grading</li>
-            <li><strong>Best for Streaming:</strong> Elgato Key Light Air - Simple, reliable, app-controlled lighting</li>
-            <li><strong>Best Value:</strong> Godox SL-60W - Bright LED panel at an affordable price</li>
+            <li><strong>Best Overall:</strong> Aputure Amaran 200d - Professional 200W daylight LED with stunning color accuracy</li>
+            <li><strong>Best Value:</strong> Amaran 60d S - Incredible 65W LED at just $99 with Bowens mount</li>
+            <li><strong>Best RGB:</strong> Amaran F22C - Flexible RGBWW panel for creative lighting</li>
+            <li><strong>Best Portable:</strong> Aputure MC - Pocket-sized RGBWW with magnetic mount</li>
+            <li><strong>Best Pro:</strong> Aputure LS 300X - 300W bi-color powerhouse for professional sets</li>
           </ul>
         </div>
 

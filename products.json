@@ -62,7 +62,7 @@
       "affiliateLink": "https://www.blackmagicdesign.com/products/davinciresolve/",
       "price": "Free/$295",
       "rating": 4.7,
-      "description": "Hollywood-grade editing, color grading, VFX, and audio post-production in one app. The free version is shockingly powerful — used on major film productions.",
+      "description": "Hollywood-grade editing, color grading, VFX, and audio post-production in one app. The free version is shockingly powerful \u2014 used on major film productions.",
       "image": "https://images.blackmagicdesign.com/images/products/davinciresolve/studio/hero/hero-xl.jpg?_v=1692238823",
       "redditMentions": 119
     },
@@ -156,14 +156,14 @@
     },
     {
       "id": 7,
-      "name": "Neewer LED Panel Light",
+      "name": "Aputure MC",
       "category": "lighting",
-      "asin": "B0869H68M6",
-      "price": "$45",
-      "rating": 4.5,
-      "description": "Bi-color dimmable LED panel with 3200K-5600K range and CRI 97+. Budget-friendly lighting that delivers professional results for YouTube and product shoots.",
-      "image": "https://m.media-amazon.com/images/I/61V9nJDz6KL._AC_SL1500_.jpg",
-      "redditMentions": 85
+      "asin": "B07TSXGKPM",
+      "price": "$95",
+      "rating": 4.6,
+      "description": "Ultra-portable RGBWW pocket LED with magnetic mount, Sidus Link app control, and 3200K-6500K + full HSI color. The ultimate accent and travel light for creators.",
+      "image": "https://m.media-amazon.com/images/I/61Jx8xMnURL._AC_SL1500_.jpg",
+      "redditMentions": 79
     },
     {
       "id": 27,
@@ -194,20 +194,20 @@
       "asin": "B0D2KJMC78",
       "price": "$279",
       "rating": 4.6,
-      "description": "6-track portable recorder with 32-bit float recording, dual XLR/TRS inputs, and interchangeable capsules. Never clip your audio again—32-bit float is game-changing.",
+      "description": "6-track portable recorder with 32-bit float recording, dual XLR/TRS inputs, and interchangeable capsules. Never clip your audio again\u201432-bit float is game-changing.",
       "image": "https://m.media-amazon.com/images/I/71+xrcD-zVL._AC_SL1500_.jpg",
       "redditMentions": 78
     },
     {
       "id": 9,
-      "name": "Godox SL60W LED",
+      "name": "Amaran 60d S",
       "category": "lighting",
-      "asin": "B09BCVG1VW",
-      "price": "$129",
-      "rating": 4.6,
-      "description": "Reliable 60W continuous LED light with 5600K daylight balance and wireless remote. The workhorse light that thousands of YouTube studios rely on daily.",
-      "image": "https://m.media-amazon.com/images/I/71BjmBVrckL._AC_SL1500_.jpg",
-      "redditMentions": 76
+      "asin": "B0BWDQR3HZ",
+      "price": "$99",
+      "rating": 4.7,
+      "description": "65W daylight-balanced LED with Bowens mount, Bluetooth app control, and ultra-quiet fan. Compact, lightweight, and perfect for key/fill lighting in any YouTube studio.",
+      "image": "https://m.media-amazon.com/images/I/61qWY7ey1gL._AC_SL1500_.jpg",
+      "redditMentions": 88
     },
     {
       "id": 19,
@@ -244,14 +244,14 @@
     },
     {
       "id": 44,
-      "name": "Godox VL300 II",
+      "name": "Aputure LS 300X",
       "category": "lighting",
-      "asin": "B0CLKF8M4K",
-      "price": "$449",
-      "rating": 4.6,
-      "description": "300W LED video light with Bowens mount, ultra-quiet fan, V-mount battery plate, and app control. Professional power at a fraction of premium brand pricing.",
-      "image": "https://m.media-amazon.com/images/I/61EjxXDnVuL._AC_SL1500_.jpg",
-      "redditMentions": 68
+      "asin": "B09B9X7GV3",
+      "price": "$1,395",
+      "rating": 4.8,
+      "description": "300W bi-color LED with 2700K-6500K range, Bowens mount, Sidus Link app control, and weather-resistant build. The professional's choice for studio and on-location work.",
+      "image": "https://m.media-amazon.com/images/I/61jfT9L3I5L._AC_SL1500_.jpg",
+      "redditMentions": 72
     },
     {
       "id": 20,
@@ -295,7 +295,7 @@
       "rating": 4.8,
       "description": "Professional-grade 200W daylight LED with Bowens mount compatibility. Ultra-quiet fan, app control, and stunning output for studio and on-location work.",
       "image": "https://m.media-amazon.com/images/I/61qcrx+GV3L._AC_SL1500_.jpg",
-      "redditMentions": 61
+      "redditMentions": 70
     },
     {
       "id": 48,
@@ -337,7 +337,7 @@
       "asin": "B00L3R5U0G",
       "price": "$1,295",
       "rating": 4.8,
-      "description": "Lightweight carbon fiber tripod with fluid head, above-ground spreader, and pan bar. Broadcast-grade stability at just 5.5 lbs—the ENG standard worldwide.",
+      "description": "Lightweight carbon fiber tripod with fluid head, above-ground spreader, and pan bar. Broadcast-grade stability at just 5.5 lbs\u2014the ENG standard worldwide.",
       "image": "https://m.media-amazon.com/images/I/71jX3s-t3hL._AC_SL1500_.jpg",
       "redditMentions": 55
     },
@@ -372,18 +372,18 @@
       "rating": 4.6,
       "description": "RGBWW LED soft light panel with 2500K-7500K, Sidus Link control, and ultra-portable design. Perfect for travel creators and on-location interviews.",
       "image": "https://m.media-amazon.com/images/I/61lA2MdQvtL._AC_SL1500_.jpg",
-      "redditMentions": 51
+      "redditMentions": 70
     },
     {
       "id": 37,
-      "name": "Neewer 660 RGB LED Panel",
+      "name": "Amaran F22C",
       "category": "lighting",
-      "asin": "B098T3PVLD",
-      "price": "$89",
-      "rating": 4.5,
-      "description": "Full RGB LED panel with 360° color wheel, 2500K-10000K range, and CRI 97+. Creative color effects and practical lighting in one affordable panel.",
-      "image": "https://m.media-amazon.com/images/I/71j-M-j-bGL._AC_SL1500_.jpg",
-      "redditMentions": 50
+      "asin": "B0BVD2QG5Y",
+      "price": "$369",
+      "rating": 4.7,
+      "description": "Flexible RGBWW LED mat with 2500K-7500K range, Sidus Link app control, and ultra-thin foldable design. Professional color accuracy in a portable, versatile form factor.",
+      "image": "https://m.media-amazon.com/images/I/71pMKVbZURL._AC_SL1500_.jpg",
+      "redditMentions": 70
     },
     {
       "id": 53,
@@ -392,7 +392,7 @@
       "asin": "B00KCN83V8",
       "price": "$449",
       "rating": 4.8,
-      "description": "Broadcast dynamic microphone with Variable-D technology for zero proximity effect. The voice of radio for 50+ years—consistent tone at any distance.",
+      "description": "Broadcast dynamic microphone with Variable-D technology for zero proximity effect. The voice of radio for 50+ years\u2014consistent tone at any distance.",
       "image": "https://m.media-amazon.com/images/I/412OClklrBL._AC_SL1080_.jpg",
       "redditMentions": 48
     },
@@ -427,7 +427,7 @@
       "rating": 4.8,
       "description": "600W daylight point-source LED with 5600K, weather-resistant build, Sidus Link app control, and 8 built-in effects. Cinema-grade key light for professional sets.",
       "image": "https://m.media-amazon.com/images/I/71NBTD4PZDL._AC_SL1500_.jpg",
-      "redditMentions": 45
+      "redditMentions": 70
     },
     {
       "id": 25,
@@ -612,7 +612,7 @@
       "asin": "B07CRG3C3N",
       "price": "$79",
       "rating": 4.5,
-      "description": "Professional windscreen for shotgun microphones with open-cell foam technology. Blocks wind noise without affecting high-frequency response—used on indie and major sets.",
+      "description": "Professional windscreen for shotgun microphones with open-cell foam technology. Blocks wind noise without affecting high-frequency response\u2014used on indie and major sets.",
       "image": "https://m.media-amazon.com/images/I/61sC2A3r3ML._AC_SL1500_.jpg",
       "redditMentions": 28
     },
@@ -634,7 +634,7 @@
       "asin": "B07M6KCLWC",
       "price": "$169",
       "rating": 4.5,
-      "description": "Monitor calibration tool for accurate color on any display. Ensures your color grade looks correct on every screen—essential for professional color work.",
+      "description": "Monitor calibration tool for accurate color on any display. Ensures your color grade looks correct on every screen\u2014essential for professional color work.",
       "image": "https://m.media-amazon.com/images/I/71Hqt-z7gqL._AC_SL1500_.jpg",
       "redditMentions": 26
     },
@@ -722,7 +722,7 @@
       "asin": "B00L7B30CC",
       "price": "$449",
       "rating": 4.6,
-      "description": "Versatile carbon fiber tripod with 90° center column, Easy Link connector, and 19.8 lb capacity. Perfect for creators who shoot both photo and video.",
+      "description": "Versatile carbon fiber tripod with 90\u00b0 center column, Easy Link connector, and 19.8 lb capacity. Perfect for creators who shoot both photo and video.",
       "image": "https://m.media-amazon.com/images/I/71J1f2L43CL._AC_SL1500_.jpg",
       "redditMentions": 18
     },
