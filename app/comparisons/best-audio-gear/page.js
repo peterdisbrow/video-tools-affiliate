@@ -81,7 +81,7 @@ export default function BestAudioGearComparison() {
             fontSize: '14px',
           }}>
             <thead>
-              <tr style={{ borderBottom: '2px solid #FF6B35' }}>
+              <tr style={{ borderBottom: '2px solid #2563EB' }}>
                 <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Audio Gear</th>
                 <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Price</th>
                 <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Rating</th>
@@ -149,7 +149,7 @@ export default function BestAudioGearComparison() {
                   display: 'block',
                   width: '100%',
                   padding: '10px',
-                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)',
                   color: '#111827',
                   textAlign: 'center',
                   borderRadius: '6px',

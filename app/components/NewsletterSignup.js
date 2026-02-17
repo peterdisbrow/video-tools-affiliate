@@ -121,7 +121,7 @@ export default function NewsletterSignup() {
             disabled={status === 'loading'}
             style={{
               padding: '0.75rem 1.5rem', borderRadius: '0.5rem', border: 'none',
-              backgroundColor: '#f59e0b', color: '#1f2937', fontWeight: 'bold',
+              backgroundColor: '#2563EB', color: '#FFFFFF', fontWeight: 'bold',
               fontSize: '1rem', cursor: status === 'loading' ? 'wait' : 'pointer',
               whiteSpace: 'nowrap', transition: 'background-color 0.2s',
             }}
@@ -130,9 +130,9 @@ export default function NewsletterSignup() {
           </button>
         </form>
         {status === 'error' && (
-          <p style={{ color: '#fca5a5', marginTop: '0.75rem', fontSize: '0.9rem' }}>{errorMsg}</p>
+          <p style={{ color: '#DC2626', marginTop: '0.75rem', fontSize: '0.9rem' }}>{errorMsg}</p>
         )}
-        <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem', marginTop: '1rem' }}>
+        <p style={{ color: '#9CA3AF', fontSize: '0.8rem', marginTop: '1rem' }}>
           No spam, ever. Unsubscribe anytime.
         </p>
       </div>

@@ -46,7 +46,7 @@ export default function ProductsPage() {
                 padding: '10px 20px',
                 borderRadius: '6px',
                 border: 'none',
-                backgroundColor: selectedCategory === cat ? '#FF6B35' : '#333',
+                backgroundColor: selectedCategory === cat ? '#2563EB' : '#333',
                 color: selectedCategory === cat ? '#fff' : '#aaa',
                 cursor: 'pointer',
                 fontSize: '14px',
@@ -107,7 +107,7 @@ export default function ProductsPage() {
 
                 {/* Product Info */}
                 <div style={{ padding: '15px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                  <div style={{ fontSize: '12px', color: '#FF6B35', textTransform: 'uppercase', marginBottom: '5px' }}>
+                  <div style={{ fontSize: '12px', color: '#2563EB', textTransform: 'uppercase', marginBottom: '5px' }}>
                     {product.category}
                   </div>
                   <h3 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '8px', lineHeight: '1.3' }}>
@@ -135,7 +135,7 @@ export default function ProductsPage() {
                       <span style={{ fontSize: '13px' }}>{product.rating.toFixed(1)}</span>
                     </div>
                     {product.price && (
-                      <span style={{ fontSize: '13px', color: '#FF6B35', fontWeight: 'bold' }}>
+                      <span style={{ fontSize: '13px', color: '#2563EB', fontWeight: 'bold' }}>
                         {product.price}
                       </span>
                     )}

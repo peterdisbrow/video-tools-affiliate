@@ -233,7 +233,7 @@ export default function HowWeReview() {
       </section>
 
       {/* Affiliate & Transparency */}
-      <section style={{ marginBottom: '2.5rem', backgroundColor: '#fef3c7', border: '1px solid #fcd34d', borderRadius: '0.5rem', padding: '1.5rem' }}>
+      <section style={{ marginBottom: '2.5rem', backgroundColor: '#EFF6FF', border: '1px solid #BFDBFE', borderRadius: '0.5rem', padding: '1.5rem' }}>
         <h2 style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#92400e', marginBottom: '1rem' }}>
           How We Make Money (Transparency)
         </h2>
@@ -271,7 +271,7 @@ export default function HowWeReview() {
 
       {/* CTA */}
       <section style={{
-        backgroundColor: '#f59e0b',
+        backgroundColor: '#2563EB',
         color: '#fff',
         padding: '2rem',
         borderRadius: '0.5rem',
@@ -286,7 +286,7 @@ export default function HowWeReview() {
         <Link href="/guides" style={{
           display: 'inline-block',
           backgroundColor: '#fff',
-          color: '#f59e0b',
+          color: '#2563EB',
           padding: '0.75rem 2rem',
           borderRadius: '0.5rem',
           textDecoration: 'none',

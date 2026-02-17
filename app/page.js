@@ -125,7 +125,7 @@ function ProductCard({ product, onReview }) {
             cursor: 'pointer', transition: 'background-color 0.2s', boxSizing: 'border-box',
             fontSize: '0.85rem',
           }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a6fd6'}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#1D4ED8'}
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#2563EB'}
           >View & Buy (Affiliate) →</a>
         </div>

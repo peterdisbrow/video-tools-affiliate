@@ -97,7 +97,7 @@ export default function About() {
           </div>
         </div>
 
-        <div style={{ backgroundColor: '#fef3c7', border: '1px solid #fcd34d', borderRadius: '0.5rem', padding: '1.5rem' }}>
+        <div style={{ backgroundColor: '#EFF6FF', border: '1px solid #BFDBFE', borderRadius: '0.5rem', padding: '1.5rem' }}>
           <p style={{ color: '#78350f', fontSize: '0.95rem', lineHeight: '1.8', margin: 0 }}>
             <strong>Why no personal names?</strong> Because you should trust data and methodology, not influencer status. A camera review is just as valid whether it comes from a 100K-sub creator or a 1M-sub creator. We strip away the personality so you focus on what actually matters: Does this gear work for your budget and workflow?
           </p>
@@ -178,7 +178,7 @@ export default function About() {
       </section>
 
       {/* Affiliate Disclosure */}
-      <section style={{ marginBottom: '3rem', backgroundColor: '#fef3c7', border: '1px solid #fcd34d', borderRadius: '0.5rem', padding: '2rem' }}>
+      <section style={{ marginBottom: '3rem', backgroundColor: '#EFF6FF', border: '1px solid #BFDBFE', borderRadius: '0.5rem', padding: '2rem' }}>
         <h2 style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#92400e', marginBottom: '1rem' }}>
           💼 Affiliate Disclosure
         </h2>
@@ -221,7 +221,7 @@ export default function About() {
 
       {/* CTA */}
       <section style={{
-        backgroundColor: '#f59e0b',
+        backgroundColor: '#2563EB',
         color: '#fff',
         padding: '2rem',
         borderRadius: '0.5rem',
@@ -237,7 +237,7 @@ export default function About() {
         <Link href="/guides" style={{
           display: 'inline-block',
           backgroundColor: '#fff',
-          color: '#f59e0b',
+          color: '#2563EB',
           padding: '0.75rem 2rem',
           borderRadius: '0.5rem',
           textDecoration: 'none',
