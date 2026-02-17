@@ -140,13 +140,15 @@ export default function HomePage() {
         .top-bar { display: flex; justify-content: space-between; align-items: center; }
         @media (max-width: 768px) {
           .home-grid { grid-template-columns: 1fr; }
-          .feature-grid { grid-template-columns: 1fr; }
+          .feature-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
           .list-grid { grid-template-columns: 1fr; }
           .top-bar { flex-direction: column; gap: 0.25rem; text-align: center; padding: 0.5rem 1rem; }
-          .sidebar-order { order: -1; }
+          .sidebar-order { order: 2; }
+          .main-content { order: 1; }
+          .main-container { padding: 1rem !important; }
         }
         @media (max-width: 480px) {
-          .feature-grid { grid-template-columns: 1fr 1fr; }
+          .feature-grid { grid-template-columns: 1fr; }
         }
       `}</style>
 
@@ -185,11 +187,11 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1.5rem 2rem' }}>
+      <div className="main-container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '1.5rem 2rem' }}>
         <div className="home-grid">
 
           {/* ─── MAIN CONTENT ─── */}
-          <div>
+          <div className="main-content">
             {/* Featured 3-up grid */}
             <div className="feature-grid">
               {featured3.map(post => <FeatureCard key={post.slug} post={post} />)}
