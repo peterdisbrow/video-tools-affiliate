@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { blogPosts } from '../guides/blogData';
 import { useState, useMemo } from 'react';
+import SocialProofBadges from '../components/SocialProofBadges';
+import UrgencySignals from '../components/UrgencySignals';
 
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -111,9 +113,20 @@ export default function ProductsPage() {
                   <h3 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '8px', lineHeight: '1.3' }}>
                     {product.title.split(' Review')[0]}
                   </h3>
+                  
+                  {/* Social Proof Badges */}
+                  <div style={{ marginBottom: '10px' }}>
+                    <SocialProofBadges product={product} />
+                  </div>
+
                   <p style={{ fontSize: '13px', color: '#aaa', marginBottom: '10px', flex: 1 }}>
                     {product.excerpt}
                   </p>
+
+                  {/* Urgency Signals */}
+                  <div style={{ marginBottom: '10px' }}>
+                    <UrgencySignals product={product} />
+                  </div>
 
                   {/* Rating & Price */}
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto', paddingTop: '10px', borderTop: '1px solid #333' }}>

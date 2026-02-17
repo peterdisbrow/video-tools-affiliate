@@ -123,7 +123,7 @@ function ProductCard({ product, onReview }) {
           }}
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a6fd6'}
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#667eea'}
-          >View & Buy →</a>
+          >View & Buy (Affiliate) →</a>
         </div>
       </div>
     </div>
@@ -149,6 +149,7 @@ export default function Home() {
           <Link href="/" style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#1f2937', textDecoration: 'none' }}>🎬 Creator Gear</Link>
           <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
             <a href="#tools" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Tools</a>
+            <Link href="/comparisons" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Comparisons</Link>
             <Link href="/guides" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Guides</Link>
             <Link href="/how-we-review" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>How We Review</Link>
             <Link href="/about" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>About</Link>
@@ -192,6 +193,170 @@ export default function Home() {
 
       {/* Newsletter Signup */}
       <NewsletterSignup />
+
+      {/* Featured Comparisons Section */}
+      <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '3rem 2rem' }}>
+        <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+          <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem', color: '#1f2937', fontWeight: 'bold' }}>Featured Comparisons</h2>
+          <p style={{ color: '#6b7280', marginBottom: '2rem' }}>In-depth analysis to help you make the right choice</p>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
+          <Link href="/comparisons/best-cameras" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div style={{
+              backgroundColor: '#fff',
+              borderRadius: '0.75rem',
+              padding: '1.5rem',
+              border: '1px solid #e5e7eb',
+              transition: 'all 0.3s',
+              cursor: 'pointer',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)';
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
+              e.currentTarget.style.borderColor = '#667eea';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = '#e5e7eb';
+            }}
+            >
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>📷</div>
+              <h3 style={{ marginTop: 0, marginBottom: '0.5rem', color: '#1f2937' }}>Best Cameras</h3>
+              <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: 0 }}>Full-frame vs. compact comparison</p>
+            </div>
+          </Link>
+
+          <Link href="/comparisons/best-audio-gear" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div style={{
+              backgroundColor: '#fff',
+              borderRadius: '0.75rem',
+              padding: '1.5rem',
+              border: '1px solid #e5e7eb',
+              transition: 'all 0.3s',
+              cursor: 'pointer',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)';
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
+              e.currentTarget.style.borderColor = '#667eea';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = '#e5e7eb';
+            }}
+            >
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🎙️</div>
+              <h3 style={{ marginTop: 0, marginBottom: '0.5rem', color: '#1f2937' }}>Audio Gear</h3>
+              <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: 0 }}>Microphones & monitoring</p>
+            </div>
+          </Link>
+
+          <Link href="/comparisons/lighting-comparison" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div style={{
+              backgroundColor: '#fff',
+              borderRadius: '0.75rem',
+              padding: '1.5rem',
+              border: '1px solid #e5e7eb',
+              transition: 'all 0.3s',
+              cursor: 'pointer',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)';
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
+              e.currentTarget.style.borderColor = '#667eea';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = '#e5e7eb';
+            }}
+            >
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>💡</div>
+              <h3 style={{ marginTop: 0, marginBottom: '0.5rem', color: '#1f2937' }}>Lighting</h3>
+              <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: 0 }}>LED panels & studio lights</p>
+            </div>
+          </Link>
+
+          <Link href="/comparisons/streaming-setups" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div style={{
+              backgroundColor: '#fff',
+              borderRadius: '0.75rem',
+              padding: '1.5rem',
+              border: '1px solid #e5e7eb',
+              transition: 'all 0.3s',
+              cursor: 'pointer',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)';
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
+              e.currentTarget.style.borderColor = '#667eea';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = '#e5e7eb';
+            }}
+            >
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🎬</div>
+              <h3 style={{ marginTop: 0, marginBottom: '0.5rem', color: '#1f2937' }}>Setups</h3>
+              <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: 0 }}>Complete streaming configs</p>
+            </div>
+          </Link>
+
+          <Link href="/comparisons/video-software" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div style={{
+              backgroundColor: '#fff',
+              borderRadius: '0.75rem',
+              padding: '1.5rem',
+              border: '1px solid #e5e7eb',
+              transition: 'all 0.3s',
+              cursor: 'pointer',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)';
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
+              e.currentTarget.style.borderColor = '#667eea';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = '#e5e7eb';
+            }}
+            >
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>💻</div>
+              <h3 style={{ marginTop: 0, marginBottom: '0.5rem', color: '#1f2937' }}>Software</h3>
+              <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: 0 }}>Video editing tools</p>
+            </div>
+          </Link>
+
+          <Link href="/comparisons" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div style={{
+              backgroundColor: '#fff',
+              borderRadius: '0.75rem',
+              padding: '1.5rem',
+              border: '2px solid #667eea',
+              transition: 'all 0.3s',
+              cursor: 'pointer',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)';
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(102, 126, 234, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>👀</div>
+              <h3 style={{ marginTop: 0, marginBottom: '0.5rem', color: '#667eea' }}>View All</h3>
+              <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: 0 }}>See all comparisons</p>
+            </div>
+          </Link>
+        </div>
+      </section>
 
       {/* Products Section */}
       <section id="tools" style={{ maxWidth: '1200px', margin: '0 auto', padding: '3rem 2rem' }}>

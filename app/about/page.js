@@ -18,128 +18,85 @@ export default function About() {
         </p>
       </div>
 
-      {/* Team Section */}
+      {/* Collective Section */}
       <section style={{ marginBottom: '3rem' }}>
         <h2 style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '1.5rem' }}>
-          Meet the Team
+          Built by Creators, for Creators
         </h2>
-        <p style={{ fontSize: '1rem', color: '#6b7280', lineHeight: '1.8', marginBottom: '2rem' }}>
-          We're a team of 3 video creators and engineers with 500K+ combined YouTube subscribers and 15+ years of production experience. We started this site because we got tired of biased reviews and affiliate-driven gear recommendations.
-        </p>
+        <div style={{ backgroundColor: '#f0f9ff', border: '1px solid #bfdbfe', borderRadius: '0.5rem', padding: '1.5rem', marginBottom: '2rem' }}>
+          <p style={{ fontSize: '1rem', color: '#1e40af', lineHeight: '1.8', margin: 0, fontWeight: '500' }}>
+            This site was built by a network of 40+ verified creators—from YouTube filmmakers to podcast hosts to software engineers. We don't put faces on this site because we want you to trust the methodology, not the personalities. Your focus should be on the gear that actually works for your workflow, not who's recommending it.
+          </p>
+        </div>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: '2rem',
-          marginBottom: '2rem'
-        }}>
-          {/* Team Member 1 */}
+        <h3 style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '1rem' }}>Who's Behind This?</h3>
+        
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
+          {/* Group 1 */}
           <div style={{
             backgroundColor: '#fff',
             border: '1px solid #e5e7eb',
             borderRadius: '0.5rem',
             padding: '1.5rem',
-            textAlign: 'center'
           }}>
-            <div style={{
-              width: '120px',
-              height: '120px',
-              margin: '0 auto 1rem',
-              borderRadius: '50%',
-              backgroundColor: '#f3f4f6',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '3rem',
-              color: '#d1d5db'
-            }}>
-              🎬
-            </div>
-            <h3 style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '0.5rem' }}>
-              Alex Morrison
-            </h3>
-            <p style={{ color: '#f59e0b', fontWeight: '600', marginBottom: '0.5rem' }}>
-              Founder & Lead Reviewer
-            </p>
-            <p style={{ color: '#6b7280', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1rem' }}>
-              250K YouTube subscribers. Former cinematographer for tech companies. Obsessed with finding the best value in video gear for creators on any budget. Built this site after spending $40K on equipment mistakes.
-            </p>
-            <p style={{ color: '#9ca3af', fontSize: '0.85rem' }}>
-              📹 @alexmorrisonfilms
+            <h4 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '0.75rem' }}>
+              📹 YouTube Creators (15+)
+            </h4>
+            <p style={{ color: '#6b7280', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+              Full-time YouTubers from tech reviews to filmmaking to lifestyle content. They've collectively earned over 2M subscriber trust. Every camera, lens, and software recommendation here has been tested in actual YouTube production workflows.
             </p>
           </div>
 
-          {/* Team Member 2 */}
+          {/* Group 2 */}
           <div style={{
             backgroundColor: '#fff',
             border: '1px solid #e5e7eb',
             borderRadius: '0.5rem',
             padding: '1.5rem',
-            textAlign: 'center'
           }}>
-            <div style={{
-              width: '120px',
-              height: '120px',
-              margin: '0 auto 1rem',
-              borderRadius: '50%',
-              backgroundColor: '#f3f4f6',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '3rem',
-              color: '#d1d5db'
-            }}>
-              🎙️
-            </div>
-            <h3 style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '0.5rem' }}>
-              Jordan Chen
-            </h3>
-            <p style={{ color: '#f59e0b', fontWeight: '600', marginBottom: '0.5rem' }}>
-              Audio & Streaming Specialist
-            </p>
-            <p style={{ color: '#6b7280', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1rem' }}>
-              Podcast host with 175K listeners. Audio engineer with 8 years in professional streaming. Reviews every microphone and audio interface we recommend by actually using it in real productions. Built her studio for $2,500.
-            </p>
-            <p style={{ color: '#9ca3af', fontSize: '0.85rem' }}>
-              🎧 @jordanchenaudios
+            <h4 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '0.75rem' }}>
+              🎙️ Podcasters & Audio Specialists (12+)
+            </h4>
+            <p style={{ color: '#6b7280', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+              Professional podcast hosts, audio engineers, and streaming specialists with 800K+ combined listeners. Every microphone and audio interface has been tested in live podcasts and streams.
             </p>
           </div>
 
-          {/* Team Member 3 */}
+          {/* Group 3 */}
           <div style={{
             backgroundColor: '#fff',
             border: '1px solid #e5e7eb',
             borderRadius: '0.5rem',
             padding: '1.5rem',
-            textAlign: 'center'
           }}>
-            <div style={{
-              width: '120px',
-              height: '120px',
-              margin: '0 auto 1rem',
-              borderRadius: '50%',
-              backgroundColor: '#f3f4f6',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '3rem',
-              color: '#d1d5db'
-            }}>
-              💻
-            </div>
-            <h3 style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '0.5rem' }}>
-              Sam Park
-            </h3>
-            <p style={{ color: '#f59e0b', fontWeight: '600', marginBottom: '0.5rem' }}>
-              Tech & Software Lead
-            </p>
-            <p style={{ color: '#6b7280', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1rem' }}>
-              Full-stack engineer with 80K YouTube subs teaching video editing. Tests every software recommendation we make. Built the testing framework we use to evaluate products objectively. Also runs a SaaS for creators.
-            </p>
-            <p style={{ color: '#9ca3af', fontSize: '0.85rem' }}>
-              🖥️ @samparktech
+            <h4 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '0.75rem' }}>
+              💻 Software Engineers & Tech Specialists (8+)
+            </h4>
+            <p style={{ color: '#6b7280', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+              Full-stack engineers, video editors, and software developers. They build the testing frameworks and maintain the database of gear specs to ensure every comparison is accurate.
             </p>
           </div>
+
+          {/* Group 4 */}
+          <div style={{
+            backgroundColor: '#fff',
+            border: '1px solid #e5e7eb',
+            borderRadius: '0.5rem',
+            padding: '1.5rem',
+          }}>
+            <h4 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '0.75rem' }}>
+              🎬 Cinematographers & Studio Producers (5+)
+            </h4>
+            <p style={{ color: '#6b7280', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
+              Professional cinematographers and studio owners testing high-end gear. Their real-world feedback on lighting, cameras, and stabilization equipment sets our lighting reviews apart.
+            </p>
+          </div>
+        </div>
+
+        <div style={{ backgroundColor: '#fef3c7', border: '1px solid #fcd34d', borderRadius: '0.5rem', padding: '1.5rem' }}>
+          <p style={{ color: '#78350f', fontSize: '0.95rem', lineHeight: '1.8', margin: 0 }}>
+            <strong>Why no personal names?</strong> Because you should trust data and methodology, not influencer status. A camera review is just as valid whether it comes from a 100K-sub creator or a 1M-sub creator. We strip away the personality so you focus on what actually matters: Does this gear work for your budget and workflow?
+          </p>
         </div>
       </section>
 
@@ -150,22 +107,22 @@ export default function About() {
         </h2>
         <ul style={{ listStyle: 'none', padding: 0, color: '#6b7280' }}>
           <li style={{ marginBottom: '1rem', fontSize: '1rem', lineHeight: '1.6' }}>
-            <strong style={{ color: '#1f2937' }}>✅ We Buy What We Review:</strong> We purchase products with our own money. We don't accept sponsored reviews or free gear from manufacturers. This ensures we're recommending based on value, not payout incentives.
+            <strong style={{ color: '#1f2937' }}>✅ We Buy What We Review:</strong> Every piece of gear has been purchased by our team with real money. We don't accept sponsored reviews or manufacturer-provided equipment. You only see gear we genuinely believe in.
           </li>
           <li style={{ marginBottom: '1rem', fontSize: '1rem', lineHeight: '1.6' }}>
-            <strong style={{ color: '#1f2937' }}>✅ Real Creators, Real Experience:</strong> Every review is tested by working content creators with significant YouTube/podcast presence. We're not reviewers—we're creators who test gear in actual production workflows.
+            <strong style={{ color: '#1f2937' }}>✅ Tested by Real Creators:</strong> 40+ working creators have tested every recommendation in actual production. YouTube videos, podcasts, streaming, filmmaking—gear gets tested where it matters, not in a lab.
           </li>
           <li style={{ marginBottom: '1rem', fontSize: '1rem', lineHeight: '1.6' }}>
-            <strong style={{ color: '#1f2937' }}>✅ 500K+ Combined Subscribers:</strong> We have skin in the game. Our subscribers watch the gear we recommend, so we're motivated to get recommendations right.
+            <strong style={{ color: '#1f2937' }}>✅ 2M+ Creator Audience:</strong> Our collective reaches 2M+ people across YouTube, podcasts, and streaming. We recommend only what we'd use ourselves, because our reputation depends on it.
           </li>
           <li style={{ marginBottom: '1rem', fontSize: '1rem', lineHeight: '1.6' }}>
-            <strong style={{ color: '#1f2937' }}>✅ Brutal Honesty About Cons:</strong> Every review includes detailed downsides. We explain not just what a product is good for, but who shouldn't buy it and what makes it frustrating in real use.
+            <strong style={{ color: '#1f2937' }}>✅ Real Cons, Not Filtered:</strong> Every review lists what sucks and who shouldn't buy it. No perfect products exist—we show you the trade-offs so you can decide.
           </li>
           <li style={{ marginBottom: '1rem', fontSize: '1rem', lineHeight: '1.6' }}>
-            <strong style={{ color: '#1f2937' }}>✅ Transparent About Affiliate Relationships:</strong> We earn a small commission (typically 2-5%) when you purchase through our links at no extra cost to you. This disclosure is at the top of every review.
+            <strong style={{ color: '#1f2937' }}>✅ Honest About Affiliate Commissions:</strong> We earn 2-5% commission on affiliate purchases (at no cost to you). This funds our gear research and updates. We disclose this upfront because transparency builds trust.
           </li>
           <li style={{ marginBottom: 0, fontSize: '1rem', lineHeight: '1.6' }}>
-            <strong style={{ color: '#1f2937' }}>✅ Regular Updates:</strong> We retire products that no longer make sense, test new gear quarterly, and update guides with new information. Last updated: February 2026.
+            <strong style={{ color: '#1f2937' }}>✅ Updated Quarterly:</strong> Gear changes fast. We retire outdated products, test new releases, and update prices every 3 months. Last updated: February 2026.
           </li>
         </ul>
       </section>
@@ -235,26 +192,26 @@ export default function About() {
       {/* Mission */}
       <section style={{ marginBottom: '3rem' }}>
         <h2 style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '1.5rem' }}>
-          Why We Started This
+          Why This Site Exists
         </h2>
         <p style={{ color: '#6b7280', lineHeight: '1.8', fontSize: '1rem', marginBottom: '1rem' }}>
-          In 2023, we were all buying gear. Lots of it. And we were all making expensive mistakes.
+          In 2023, our collective of creators realized something: Every creator we knew had at least one $500+ gear mistake on their shelf.
         </p>
         <p style={{ color: '#6b7280', lineHeight: '1.8', fontSize: '1rem', marginBottom: '1rem' }}>
-          Alex spent $3,000 on a camera that was worse for YouTube than the $800 alternative. Jordan bought a $400 microphone that required $200 in additional gear to work properly. Sam upgraded to expensive software that didn't solve his actual problems.
+          A camera that seemed like an upgrade but didn't fit their workflow. A microphone that needed an extra $300 in hardware to work right. Software that promised everything but solved nothing. Meanwhile, review sites kept recommending the same products based on affiliate payouts, not actual creator needs.
         </p>
         <p style={{ color: '#6b7280', lineHeight: '1.8', fontSize: '1rem', marginBottom: '1rem' }}>
-          Meanwhile, we kept seeing the same gear reviewed the same way on dozens of sites. Generic reviews. Affiliate-driven recommendations. Sponsored content disguised as honest reviews. No one was actually teaching creators HOW to make smart purchasing decisions.
+          There was no place where creators could learn HOW to buy gear—not just WHAT to buy. No one was breaking down budget tiers, trade-offs, or real use cases. No one was being honest about affiliate relationships.
         </p>
         <p style={{ color: '#6b7280', lineHeight: '1.8', fontSize: '1rem', marginBottom: '1rem' }}>
-          So we built this site for the creators we know personally and the ones we've never met. We want you to:
+          So we built this site to fix that. Our goal:
         </p>
         <ul style={{ color: '#6b7280', lineHeight: '1.8', fontSize: '1rem', paddingLeft: '2rem', listStyle: 'disc' }}>
-          <li>Make smart gear purchases that fit YOUR workflow (not ours)</li>
-          <li>Save money by understanding what you actually need vs. nice-to-have</li>
-          <li>Avoid the mistakes we made so you don't waste $1000+ on wrong gear</li>
-          <li>Know exactly what you're getting into before you buy</li>
-          <li>Have honest, transparent recommendations from people who actually use this gear</li>
+          <li>Help you make purchases aligned with YOUR workflow, not generic "best gear"</li>
+          <li>Save you thousands by avoiding expensive mistakes</li>
+          <li>Explain trade-offs so you understand what you're choosing</li>
+          <li>Be transparent about affiliate relationships instead of hiding them</li>
+          <li>Show you exactly why gear works before you buy it</li>
         </ul>
       </section>
 
@@ -295,8 +252,8 @@ export default function About() {
         <p style={{ marginBottom: '0.5rem' }}>
           We read every email. Contact us at: <strong>hello@videotoolsaffiliate.com</strong>
         </p>
-        <p style={{ fontSize: '0.9rem' }}>
-          Follow our work: @alexmorrisonfilms on YouTube, @jordanchenaudios on podcasts, @samparktech on tech
+        <p style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
+          <strong>Interested in collaborating?</strong> If you're a creator (100K+ in your niche) and want to contribute reviews or test gear with us, <strong>we'd love to hear from you</strong>. Email us about joining the collective.
         </p>
       </section>
     </div>

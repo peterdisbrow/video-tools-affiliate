@@ -170,10 +170,10 @@ export default function ProductReview({ product, onClose }) {
             onMouseEnter={(e) => e.currentTarget.style.opacity = '0.9'}
             onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
           >
-            View on Amazon →
+            View & Buy (Affiliate Link) →
           </a>
           <p style={{ textAlign: 'center', fontSize: '0.75rem', color: '#9ca3af', marginTop: '0.5rem', margin: '0.5rem 0 0 0' }}>
-            Affiliate link — supports this site at no extra cost to you
+            We earn a 2-5% commission when you buy through our link — at no extra cost to you
           </p>
         </div>
       </div>
