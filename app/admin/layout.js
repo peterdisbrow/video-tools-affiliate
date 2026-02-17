@@ -13,7 +13,11 @@ const navItems = [
   { href: '/admin', label: '📊 Dashboard', exact: true },
   { href: '/admin/products', label: '📦 Products' },
   { href: '/admin/blog', label: '✍️ Blog Posts' },
+  { href: '/admin/blog/new', label: '🤖 AI Writer' },
+  { href: '/admin/homepage', label: '🏠 Homepage' },
+  { href: '/admin/seo', label: '🔍 SEO' },
   { href: '/admin/analytics', label: '📈 Analytics' },
+  { href: '/admin/settings', label: '⚙️ Settings' },
   { href: '/admin/email', label: '📧 Email' },
 ];
 

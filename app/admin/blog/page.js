@@ -94,7 +94,10 @@ export default function BlogManager() {
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
         <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#111827' }}>Blog Posts ({posts.length})</h2>
-        <button onClick={startNew} style={{ ...btnStyle, background: ACCENT, color: '#fff' }}>+ New Post</button>
+        <div style={{ display: 'flex', gap: '0.5rem' }}>
+          <a href="/admin/blog/new" style={{ ...btnStyle, background: '#16a34a', color: '#fff', textDecoration: 'none', display: 'inline-block' }}>🤖 AI Writer</a>
+          <button onClick={startNew} style={{ ...btnStyle, background: ACCENT, color: '#fff' }}>+ New Post</button>
+        </div>
       </div>
       {msg && <div style={{ padding: '0.5rem 1rem', background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '8px', color: '#166534', fontSize: '0.9rem', marginBottom: '1rem' }}>{msg}</div>}
       <input placeholder="Search posts..." value={search} onChange={e => setSearch(e.target.value)} style={{ ...inputStyle, marginBottom: '1rem', maxWidth: '400px' }} />
