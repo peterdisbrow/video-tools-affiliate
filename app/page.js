@@ -205,6 +205,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Newsletter Signup — ABOVE FOLD CONVERSION */}
+      <NewsletterSignup />
+
       {/* Free Guides CTA — light version */}
       <section style={{
         backgroundColor: '#F8F9FA',
@@ -219,9 +222,6 @@ export default function Home() {
           <Link href="/free-gear-guide" style={{ background: '#EFF6FF', color: ACCENT, border: `1px solid #BFDBFE`, padding: '0.4rem 0.9rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: '600', fontSize: '0.875rem' }}>🚀 30-Day Action Plan</Link>
         </div>
       </section>
-
-      {/* Newsletter Signup */}
-      <NewsletterSignup />
 
       {/* Featured Comparisons Section */}
       <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '3rem 2rem' }}>
