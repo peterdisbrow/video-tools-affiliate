@@ -1,0 +1,826 @@
+{
+  "timestamp": "2026-02-17T05:54:31.440Z",
+  "totalImages": 82,
+  "images": [
+    {
+      "slug": "sony-alpha-a7-iv",
+      "title": "Sony Alpha a7 IV Review: Full-frame hybrid mirrorless camera",
+      "category": "cameras",
+      "imagePath": "/images/blog/sony-alpha-a7-iv-hero.jpg",
+      "localPath": "public/images/blog/sony-alpha-a7-iv-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "canon-eos-r6-mark-ii",
+      "title": "Canon EOS R6 Mark II Review: Blazing-fast 40fps continuous s",
+      "category": "cameras",
+      "imagePath": "/images/blog/canon-eos-r6-mark-ii-hero.jpg",
+      "localPath": "public/images/blog/canon-eos-r6-mark-ii-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "dji-osmo-pocket-3",
+      "title": "DJI Osmo Pocket 3 Review: Ultra-compact gimbal camera with a",
+      "category": "cameras",
+      "imagePath": "/images/blog/dji-osmo-pocket-3-hero.jpg",
+      "localPath": "public/images/blog/dji-osmo-pocket-3-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "rode-nt-usb-microphone",
+      "title": "Rode NT-USB+ Microphone Review: Studio-quality USB condenser",
+      "category": "audio",
+      "imagePath": "/images/blog/rode-nt-usb-microphone-hero.jpg",
+      "localPath": "public/images/blog/rode-nt-usb-microphone-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "shure-sm7b-microphone",
+      "title": "Shure SM7B Microphone Review: The industry-standard dynamic ",
+      "category": "audio",
+      "imagePath": "/images/blog/shure-sm7b-microphone-hero.jpg",
+      "localPath": "public/images/blog/shure-sm7b-microphone-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "audio-technica-at2020",
+      "title": "Audio-Technica AT2020 Review: Best-in-class entry-level cond",
+      "category": "audio",
+      "imagePath": "/images/blog/audio-technica-at2020-hero.jpg",
+      "localPath": "public/images/blog/audio-technica-at2020-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "neewer-led-panel-light",
+      "title": "Neewer LED Panel Light Review: Bi-color dimmable LED panel w",
+      "category": "lighting",
+      "imagePath": "/images/blog/neewer-led-panel-light-hero.jpg",
+      "localPath": "public/images/blog/neewer-led-panel-light-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "aputure-amaran-200d",
+      "title": "Aputure Amaran 200d Review: Professional-grade 200W daylight",
+      "category": "lighting",
+      "imagePath": "/images/blog/aputure-amaran-200d-hero.jpg",
+      "localPath": "public/images/blog/aputure-amaran-200d-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "godox-sl60w-led",
+      "title": "Godox SL60W LED Review: Reliable 60W continuous LED light wi",
+      "category": "lighting",
+      "imagePath": "/images/blog/godox-sl60w-led-hero.jpg",
+      "localPath": "public/images/blog/godox-sl60w-led-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "adobe-premiere-pro",
+      "title": "Adobe Premiere Pro Review: Industry-standard video editing w",
+      "category": "software",
+      "imagePath": "/images/blog/adobe-premiere-pro-hero.jpg",
+      "localPath": "public/images/blog/adobe-premiere-pro-hero.jpg",
+      "prompt": "Modern video editing or production software interface displayed on professional monitor in cinema production environment. Editing workflow. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "davinci-resolve",
+      "title": "DaVinci Resolve Review: Hollywood-grade editing, color gradi",
+      "category": "software",
+      "imagePath": "/images/blog/davinci-resolve-hero.jpg",
+      "localPath": "public/images/blog/davinci-resolve-hero.jpg",
+      "prompt": "Modern video editing or production software interface displayed on professional monitor in cinema production environment. Editing workflow. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "final-cut-pro",
+      "title": "Final Cut Pro Review: Apple's flagship editor optimized for ",
+      "category": "software",
+      "imagePath": "/images/blog/final-cut-pro-hero.jpg",
+      "localPath": "public/images/blog/final-cut-pro-hero.jpg",
+      "prompt": "Modern video editing or production software interface displayed on professional monitor in cinema production environment. Editing workflow. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "elgato-stream-deck",
+      "title": "Elgato Stream Deck Review: 15 customizable LCD keys for one-",
+      "category": "streaming",
+      "imagePath": "/images/blog/elgato-stream-deck-hero.jpg",
+      "localPath": "public/images/blog/elgato-stream-deck-hero.jpg",
+      "prompt": "Professional streaming setup with camera, microphone, lighting, computer monitors showing streaming interface. Gaming/streaming aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "rode-wireless-go-ii",
+      "title": "Rode Wireless GO II Review: Dual-channel wireless mic system",
+      "category": "audio",
+      "imagePath": "/images/blog/rode-wireless-go-ii-hero.jpg",
+      "localPath": "public/images/blog/rode-wireless-go-ii-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "logitech-c920-webcam",
+      "title": "Logitech C920 Webcam Review: The webcam that defined the cat",
+      "category": "streaming",
+      "imagePath": "/images/blog/logitech-c920-webcam-hero.jpg",
+      "localPath": "public/images/blog/logitech-c920-webcam-hero.jpg",
+      "prompt": "Professional streaming setup with camera, microphone, lighting, computer monitors showing streaming interface. Gaming/streaming aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "peak-design-travel-tripod",
+      "title": "Peak Design Travel Tripod Review: Revolutionary compact trip",
+      "category": "tripods",
+      "imagePath": "/images/blog/peak-design-travel-tripod-hero.jpg",
+      "localPath": "public/images/blog/peak-design-travel-tripod-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "dji-rs-3-gimbal",
+      "title": "DJI RS 3 Gimbal Review: Lightweight 3-axis gimbal stabilizer",
+      "category": "tripods",
+      "imagePath": "/images/blog/dji-rs-3-gimbal-hero.jpg",
+      "localPath": "public/images/blog/dji-rs-3-gimbal-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "peak-design-capture-clip",
+      "title": "Peak Design Capture Clip Review: Instantly attach your camer",
+      "category": "accessories",
+      "imagePath": "/images/blog/peak-design-capture-clip-hero.jpg",
+      "localPath": "public/images/blog/peak-design-capture-clip-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "sony-fx30",
+      "title": "Sony FX30 Review: APS-C cinema line camera with 4K 120fps, S",
+      "category": "cameras",
+      "imagePath": "/images/blog/sony-fx30-hero.jpg",
+      "localPath": "public/images/blog/sony-fx30-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "panasonic-lumix-s5-ii",
+      "title": "Panasonic Lumix S5 II Review: Full-frame mirrorless with pha",
+      "category": "cameras",
+      "imagePath": "/images/blog/panasonic-lumix-s5-ii-hero.jpg",
+      "localPath": "public/images/blog/panasonic-lumix-s5-ii-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "blackmagic-pocket-cinema-camera-6k-pro",
+      "title": "Blackmagic Pocket Cinema Camera 6K Pro Review: Super 35 cine",
+      "category": "cameras",
+      "imagePath": "/images/blog/blackmagic-pocket-cinema-camera-6k-pro-hero.jpg",
+      "localPath": "public/images/blog/blackmagic-pocket-cinema-camera-6k-pro-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "red-komodo-6k",
+      "title": "RED Komodo 6K Review: Compact cinema camera with global shut",
+      "category": "cameras",
+      "imagePath": "/images/blog/red-komodo-6k-hero.jpg",
+      "localPath": "public/images/blog/red-komodo-6k-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "nikon-z6-iii",
+      "title": "Nikon Z6 III Review: Full-frame mirrorless with partially st",
+      "category": "cameras",
+      "imagePath": "/images/blog/nikon-z6-iii-hero.jpg",
+      "localPath": "public/images/blog/nikon-z6-iii-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "fujifilm-x-h2s",
+      "title": "Fujifilm X-H2S Review: APS-C flagship with stacked sensor, 6",
+      "category": "cameras",
+      "imagePath": "/images/blog/fujifilm-x-h2s-hero.jpg",
+      "localPath": "public/images/blog/fujifilm-x-h2s-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "panasonic-lumix-s1h",
+      "title": "Panasonic Lumix S1H Review: Full-frame cinema mirrorless wit",
+      "category": "cameras",
+      "imagePath": "/images/blog/panasonic-lumix-s1h-hero.jpg",
+      "localPath": "public/images/blog/panasonic-lumix-s1h-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "sony-a6700",
+      "title": "Sony a6700 Review: APS-C mirrorless with AI-based subject re",
+      "category": "cameras",
+      "imagePath": "/images/blog/sony-a6700-hero.jpg",
+      "localPath": "public/images/blog/sony-a6700-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "canon-eos-r8",
+      "title": "Canon EOS R8 Review: Lightweight full-frame mirrorless with ",
+      "category": "cameras",
+      "imagePath": "/images/blog/canon-eos-r8-hero.jpg",
+      "localPath": "public/images/blog/canon-eos-r8-hero.jpg",
+      "prompt": "Professional mirrorless camera in bright studio with dramatic lighting, tripod, and modern video production equipment. High-end broadcast quality. Shot composition: product-focused with cinematic depth of field. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "manfrotto-504x-fluid-video-head-with-645-tripod",
+      "title": "Manfrotto 504X Fluid Video Head with 645 Tripod Review: Prof",
+      "category": "tripods",
+      "imagePath": "/images/blog/manfrotto-504x-fluid-video-head-with-645-tripod-hero.jpg",
+      "localPath": "public/images/blog/manfrotto-504x-fluid-video-head-with-645-tripod-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "miller-air-tripod-system",
+      "title": "Miller Air Tripod System Review: Lightweight carbon fiber tr",
+      "category": "tripods",
+      "imagePath": "/images/blog/miller-air-tripod-system-hero.jpg",
+      "localPath": "public/images/blog/miller-air-tripod-system-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "gitzo-systematic-series-3-carbon-fiber-tripod",
+      "title": "Gitzo Systematic Series 3 Carbon Fiber Tripod Review: Modula",
+      "category": "tripods",
+      "imagePath": "/images/blog/gitzo-systematic-series-3-carbon-fiber-tripod-hero.jpg",
+      "localPath": "public/images/blog/gitzo-systematic-series-3-carbon-fiber-tripod-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "sachtler-ace-xl-fluid-head-tripod",
+      "title": "Sachtler Ace XL Fluid Head Tripod Review: Professional fluid",
+      "category": "tripods",
+      "imagePath": "/images/blog/sachtler-ace-xl-fluid-head-tripod-hero.jpg",
+      "localPath": "public/images/blog/sachtler-ace-xl-fluid-head-tripod-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "dji-rs-4-pro",
+      "title": "DJI RS 4 Pro Review: Professional 3-axis gimbal with 4",
+      "category": "tripods",
+      "imagePath": "/images/blog/dji-rs-4-pro-hero.jpg",
+      "localPath": "public/images/blog/dji-rs-4-pro-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "benro-s8-pro-fluid-video-head-with-a373f-tripod",
+      "title": "Benro S8 Pro Fluid Video Head with A373F Tripod Review: Alum",
+      "category": "tripods",
+      "imagePath": "/images/blog/benro-s8-pro-fluid-video-head-with-a373f-tripod-hero.jpg",
+      "localPath": "public/images/blog/benro-s8-pro-fluid-video-head-with-a373f-tripod-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "zhiyun-crane-4",
+      "title": "Zhiyun Crane 4 Review: 3-axis gimbal with built-in 2",
+      "category": "tripods",
+      "imagePath": "/images/blog/zhiyun-crane-4-hero.jpg",
+      "localPath": "public/images/blog/zhiyun-crane-4-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "edelkrone-sliderplus-v5-pro",
+      "title": "Edelkrone SliderPLUS v5 PRO Review: Compact motorized slider",
+      "category": "tripods",
+      "imagePath": "/images/blog/edelkrone-sliderplus-v5-pro-hero.jpg",
+      "localPath": "public/images/blog/edelkrone-sliderplus-v5-pro-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "manfrotto-055-carbon-fiber-tripod",
+      "title": "Manfrotto 055 Carbon Fiber Tripod Review: Versatile carbon f",
+      "category": "tripods",
+      "imagePath": "/images/blog/manfrotto-055-carbon-fiber-tripod-hero.jpg",
+      "localPath": "public/images/blog/manfrotto-055-carbon-fiber-tripod-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "neewer-660-rgb-led-panel",
+      "title": "Neewer 660 RGB LED Panel Review: Full RGB LED panel with 360",
+      "category": "lighting",
+      "imagePath": "/images/blog/neewer-660-rgb-led-panel-hero.jpg",
+      "localPath": "public/images/blog/neewer-660-rgb-led-panel-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "nanlite-forza-300b",
+      "title": "Nanlite Forza 300B Review: Bi-color 300W COB LED with Bowens",
+      "category": "lighting",
+      "imagePath": "/images/blog/nanlite-forza-300b-hero.jpg",
+      "localPath": "public/images/blog/nanlite-forza-300b-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "aputure-600d-pro",
+      "title": "Aputure 600d Pro Review: 600W daylight point-source LED with",
+      "category": "lighting",
+      "imagePath": "/images/blog/aputure-600d-pro-hero.jpg",
+      "localPath": "public/images/blog/aputure-600d-pro-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "arri-skypanel-s60-c",
+      "title": "ARRI SkyPanel S60-C Review: The gold standard in cinema soft",
+      "category": "lighting",
+      "imagePath": "/images/blog/arri-skypanel-s60-c-hero.jpg",
+      "localPath": "public/images/blog/arri-skypanel-s60-c-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "kino-flo-diva-lite-31",
+      "title": "Kino Flo Diva-Lite 31 Review: Legendary soft LED panel with ",
+      "category": "lighting",
+      "imagePath": "/images/blog/kino-flo-diva-lite-31-hero.jpg",
+      "localPath": "public/images/blog/kino-flo-diva-lite-31-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "litegear-litemat-spectrum-4",
+      "title": "LiteGear LiteMat Spectrum 4 Review: Flexible LED mat with fu",
+      "category": "lighting",
+      "imagePath": "/images/blog/litegear-litemat-spectrum-4-hero.jpg",
+      "localPath": "public/images/blog/litegear-litemat-spectrum-4-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "astera-titan-tube",
+      "title": "Astera Titan Tube Review: Wireless, battery-powered RGB LED ",
+      "category": "lighting",
+      "imagePath": "/images/blog/astera-titan-tube-hero.jpg",
+      "localPath": "public/images/blog/astera-titan-tube-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "godox-vl300-ii",
+      "title": "Godox VL300 II Review: 300W LED video light with Bowens moun",
+      "category": "lighting",
+      "imagePath": "/images/blog/godox-vl300-ii-hero.jpg",
+      "localPath": "public/images/blog/godox-vl300-ii-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "aputure-amaran-p60c",
+      "title": "Aputure Amaran P60c Review: RGBWW LED soft light panel with ",
+      "category": "lighting",
+      "imagePath": "/images/blog/aputure-amaran-p60c-hero.jpg",
+      "localPath": "public/images/blog/aputure-amaran-p60c-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "sennheiser-mke-600",
+      "title": "Sennheiser MKE 600 Review: Professional shotgun microphone w",
+      "category": "audio",
+      "imagePath": "/images/blog/sennheiser-mke-600-hero.jpg",
+      "localPath": "public/images/blog/sennheiser-mke-600-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "neumann-u87-ai",
+      "title": "Neumann U87 Ai Review: The legendary large-diaphragm condens",
+      "category": "audio",
+      "imagePath": "/images/blog/neumann-u87-ai-hero.jpg",
+      "localPath": "public/images/blog/neumann-u87-ai-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "focusrite-scarlett-2i2-4th-gen",
+      "title": "Focusrite Scarlett 2i2 (4th Gen) Review: 2-in/2-out USB-C au",
+      "category": "audio",
+      "imagePath": "/images/blog/focusrite-scarlett-2i2-4th-gen-hero.jpg",
+      "localPath": "public/images/blog/focusrite-scarlett-2i2-4th-gen-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "ssl2-audio-interface",
+      "title": "SSL2+ Audio Interface Review: 2-in/4-out USB interface with ",
+      "category": "audio",
+      "imagePath": "/images/blog/ssl2-audio-interface-hero.jpg",
+      "localPath": "public/images/blog/ssl2-audio-interface-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "rme-babyface-pro-fs",
+      "title": "RME Babyface Pro FS Review: Ultra-portable 12-in/12-out USB ",
+      "category": "audio",
+      "imagePath": "/images/blog/rme-babyface-pro-fs-hero.jpg",
+      "localPath": "public/images/blog/rme-babyface-pro-fs-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "sennheiser-ew-112p-g4-wireless-lavalier",
+      "title": "Sennheiser EW 112P G4 Wireless Lavalier Review: Professional",
+      "category": "audio",
+      "imagePath": "/images/blog/sennheiser-ew-112p-g4-wireless-lavalier-hero.jpg",
+      "localPath": "public/images/blog/sennheiser-ew-112p-g4-wireless-lavalier-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "zoom-h6essential-recorder",
+      "title": "Zoom H6essential Recorder Review: 6-track portable recorder ",
+      "category": "audio",
+      "imagePath": "/images/blog/zoom-h6essential-recorder-hero.jpg",
+      "localPath": "public/images/blog/zoom-h6essential-recorder-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "electro-voice-re20",
+      "title": "Electro-Voice RE20 Review: Broadcast dynamic microphone with",
+      "category": "audio",
+      "imagePath": "/images/blog/electro-voice-re20-hero.jpg",
+      "localPath": "public/images/blog/electro-voice-re20-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "universal-audio-apollo-twin-x",
+      "title": "Universal Audio Apollo Twin X Review: Premium 2-in/6-out Thu",
+      "category": "audio",
+      "imagePath": "/images/blog/universal-audio-apollo-twin-x-hero.jpg",
+      "localPath": "public/images/blog/universal-audio-apollo-twin-x-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "deity-s-mic-2",
+      "title": "Deity S-Mic 2 Review: Ultra-low noise shotgun microphone wit",
+      "category": "audio",
+      "imagePath": "/images/blog/deity-s-mic-2-hero.jpg",
+      "localPath": "public/images/blog/deity-s-mic-2-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "sigma-18-35mm-f18-dc-hsm-art",
+      "title": "Sigma 18-35mm f/1.8 DC HSM Art Review: The legendary cinema ",
+      "category": "accessories",
+      "imagePath": "/images/blog/sigma-18-35mm-f18-dc-hsm-art-hero.jpg",
+      "localPath": "public/images/blog/sigma-18-35mm-f18-dc-hsm-art-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "tilta-nucleus-m-wireless-follow-focus",
+      "title": "Tilta Nucleus-M Wireless Follow Focus Review: Professional w",
+      "category": "accessories",
+      "imagePath": "/images/blog/tilta-nucleus-m-wireless-follow-focus-hero.jpg",
+      "localPath": "public/images/blog/tilta-nucleus-m-wireless-follow-focus-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "atomos-ninja-v",
+      "title": "Atomos Ninja V+ Review: 5",
+      "category": "accessories",
+      "imagePath": "/images/blog/atomos-ninja-v-hero.jpg",
+      "localPath": "public/images/blog/atomos-ninja-v-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "smallhd-focus-5-monitor",
+      "title": "SmallHD Focus 5 Monitor Review: 5-inch daylight-viewable fie",
+      "category": "accessories",
+      "imagePath": "/images/blog/smallhd-focus-5-monitor-hero.jpg",
+      "localPath": "public/images/blog/smallhd-focus-5-monitor-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "datacolor-spyderx-pro",
+      "title": "Datacolor SpyderX Pro Review: Monitor calibration tool for a",
+      "category": "accessories",
+      "imagePath": "/images/blog/datacolor-spyderx-pro-hero.jpg",
+      "localPath": "public/images/blog/datacolor-spyderx-pro-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "k-tek-kp10-boom-pole",
+      "title": "K-Tek KP10 Boom Pole Review: 10-foot aluminum boom pole with",
+      "category": "accessories",
+      "imagePath": "/images/blog/k-tek-kp10-boom-pole-hero.jpg",
+      "localPath": "public/images/blog/k-tek-kp10-boom-pole-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "rycote-invision-studio-kit",
+      "title": "Rycote InVision Studio Kit Review: Universal shock mount wit",
+      "category": "accessories",
+      "imagePath": "/images/blog/rycote-invision-studio-kit-hero.jpg",
+      "localPath": "public/images/blog/rycote-invision-studio-kit-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "bubblebee-industries-windkiller",
+      "title": "Bubblebee Industries Windkiller Review: Professional windscr",
+      "category": "accessories",
+      "imagePath": "/images/blog/bubblebee-industries-windkiller-hero.jpg",
+      "localPath": "public/images/blog/bubblebee-industries-windkiller-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "sony-fe-24-70mm-f28-gm-ii",
+      "title": "Sony FE 24-70mm f/2.8 GM II Review: The ultimate standard zo",
+      "category": "accessories",
+      "imagePath": "/images/blog/sony-fe-24-70mm-f28-gm-ii-hero.jpg",
+      "localPath": "public/images/blog/sony-fe-24-70mm-f28-gm-ii-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "hollyland-mars-400s-pro-ii",
+      "title": "Hollyland Mars 400S Pro II Review: Wireless video transmitte",
+      "category": "accessories",
+      "imagePath": "/images/blog/hollyland-mars-400s-pro-ii-hero.jpg",
+      "localPath": "public/images/blog/hollyland-mars-400s-pro-ii-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "neewer-carbon-fiber-slider-24-inch",
+      "title": "Neewer Carbon Fiber Slider 24-inch Review: Lightweight carbo",
+      "category": "tripods",
+      "imagePath": "/images/blog/neewer-carbon-fiber-slider-24-inch-hero.jpg",
+      "localPath": "public/images/blog/neewer-carbon-fiber-slider-24-inch-hero.jpg",
+      "prompt": "Professional camera tripod with mounted cinema camera and lighting in bright production studio. Stable professional equipment. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "aputure-light-dome-iii",
+      "title": "Aputure Light Dome III Review: Quick-release softbox with Bo",
+      "category": "accessories",
+      "imagePath": "/images/blog/aputure-light-dome-iii-hero.jpg",
+      "localPath": "public/images/blog/aputure-light-dome-iii-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "v-mount-battery-kit-2x-150wh",
+      "title": "V-Mount Battery Kit (2x 150Wh) Review: Dual V-mount battery ",
+      "category": "accessories",
+      "imagePath": "/images/blog/v-mount-battery-kit-2x-150wh-hero.jpg",
+      "localPath": "public/images/blog/v-mount-battery-kit-2x-150wh-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "godox-sl300-ii",
+      "title": "Godox SL300 II Review: 300W daylight LED with DMX control, u",
+      "category": "lighting",
+      "imagePath": "/images/blog/godox-sl300-ii-hero.jpg",
+      "localPath": "public/images/blog/godox-sl300-ii-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "gopro-hero-12",
+      "title": "GoPro Hero 12 Review: \"4K120fps action camera with rugged IP",
+      "category": "Cameras",
+      "imagePath": "/images/blog/gopro-hero-12-hero.jpg",
+      "localPath": "public/images/blog/gopro-hero-12-hero.jpg",
+      "prompt": "Modern video editing or production software interface displayed on professional monitor in cinema production environment. Editing workflow. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "aputure-amaran-p80c",
+      "title": "Aputure Amaran P80c Review: Compact RGBWW LED panel with 80W",
+      "category": "lighting",
+      "imagePath": "/images/blog/aputure-amaran-p80c-hero.jpg",
+      "localPath": "public/images/blog/aputure-amaran-p80c-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "dji-air-3s",
+      "title": "DJI Air 3S Review: \"Drone + 4K120fps aerial + 1-inch sensor",
+      "category": "Cameras",
+      "imagePath": "/images/blog/dji-air-3s-hero.jpg",
+      "localPath": "public/images/blog/dji-air-3s-hero.jpg",
+      "prompt": "Modern video editing or production software interface displayed on professional monitor in cinema production environment. Editing workflow. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "sennheiser-ew-135p-g4-wireless-lavalier",
+      "title": "Sennheiser EW 135P G4 Wireless Lavalier Review: Professional",
+      "category": "audio",
+      "imagePath": "/images/blog/sennheiser-ew-135p-g4-wireless-lavalier-hero.jpg",
+      "localPath": "public/images/blog/sennheiser-ew-135p-g4-wireless-lavalier-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "iphone-16-pro-max",
+      "title": "iPhone 16 Pro Max Review: \"The most recommended camera on Re",
+      "category": "Cameras",
+      "imagePath": "/images/blog/iphone-16-pro-max-hero.jpg",
+      "localPath": "public/images/blog/iphone-16-pro-max-hero.jpg",
+      "prompt": "Modern video editing or production software interface displayed on professional monitor in cinema production environment. Editing workflow. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "deity-d-mic-2",
+      "title": "Deity D-Mic 2 Review: Ultra-compact supercardioid condenser ",
+      "category": "audio",
+      "imagePath": "/images/blog/deity-d-mic-2-hero.jpg",
+      "localPath": "public/images/blog/deity-d-mic-2-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "elgato-facecam-pro-2",
+      "title": "Elgato Facecam Pro 2 Review: \"Next-gen webcam with 1080p/60f",
+      "category": "Streaming",
+      "imagePath": "/images/blog/elgato-facecam-pro-2-hero.jpg",
+      "localPath": "public/images/blog/elgato-facecam-pro-2-hero.jpg",
+      "prompt": "Modern video editing or production software interface displayed on professional monitor in cinema production environment. Editing workflow. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "tilta-tacktum-m-wireless-follow-focus",
+      "title": "Tilta Tacktum M Wireless Follow Focus Review: Wireless lens ",
+      "category": "accessories",
+      "imagePath": "/images/blog/tilta-tacktum-m-wireless-follow-focus-hero.jpg",
+      "localPath": "public/images/blog/tilta-tacktum-m-wireless-follow-focus-hero.jpg",
+      "prompt": "Professional video production accessories and gear organization in modern studio. Cable management and mounting systems. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "capcut",
+      "title": "CapCut Review: \"Free cloud-based video editor that's taking ",
+      "category": "Software",
+      "imagePath": "/images/blog/capcut-hero.jpg",
+      "localPath": "public/images/blog/capcut-hero.jpg",
+      "prompt": "Modern video editing or production software interface displayed on professional monitor in cinema production environment. Editing workflow. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "focusrite-scarlett-2i2-8th-gen",
+      "title": "Focusrite Scarlett 2i2 (8th Gen) Review: Latest USB-C audio ",
+      "category": "audio",
+      "imagePath": "/images/blog/focusrite-scarlett-2i2-8th-gen-hero.jpg",
+      "localPath": "public/images/blog/focusrite-scarlett-2i2-8th-gen-hero.jpg",
+      "prompt": "Professional podcast recording studio with high-end microphone, audio interface, acoustic treatment. Warm professional lighting. Modern content creator setup. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "canon-eos-r50",
+      "title": "Canon EOS R50 Review: \"Budget full-frame gateway camera with",
+      "category": "Cameras",
+      "imagePath": "/images/blog/canon-eos-r50-hero.jpg",
+      "localPath": "public/images/blog/canon-eos-r50-hero.jpg",
+      "prompt": "Modern video editing or production software interface displayed on professional monitor in cinema production environment. Editing workflow. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "amaran-vs-aputure-lights",
+      "title": "Amaran vs Aputure LED Lights: Which Brand Should You Choose ",
+      "category": "lighting",
+      "imagePath": "/images/blog/amaran-vs-aputure-lights-hero.jpg",
+      "localPath": "public/images/blog/amaran-vs-aputure-lights-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "slug": "amaran-ray-series",
+      "title": "Amaran Ray Series Lights: The Creator's RGB Powerhouse for C",
+      "category": "lighting",
+      "imagePath": "/images/blog/amaran-ray-series-hero.jpg",
+      "localPath": "public/images/blog/amaran-ray-series-hero.jpg",
+      "prompt": "Professional video lighting setup with multiple LED panels, color-graded lights, reflectors, and bright creative lighting environment. Production studio aesthetic. 1200x630px",
+      "width": 1200,
+      "height": 630
+    }
+  ]
+}

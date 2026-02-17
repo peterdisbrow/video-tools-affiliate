@@ -1,0 +1,416 @@
+{
+  "timestamp": "2026-02-17T05:54:55.852Z",
+  "totalUpdated": 82,
+  "changes": [
+    {
+      "slug": "sony-alpha-a7-iv",
+      "category": "cameras",
+      "heroImage": "/images/blog/sony-alpha-a7-iv-hero.jpg"
+    },
+    {
+      "slug": "canon-eos-r6-mark-ii",
+      "category": "cameras",
+      "heroImage": "/images/blog/canon-eos-r6-mark-ii-hero.jpg"
+    },
+    {
+      "slug": "dji-osmo-pocket-3",
+      "category": "cameras",
+      "heroImage": "/images/blog/dji-osmo-pocket-3-hero.jpg"
+    },
+    {
+      "slug": "rode-nt-usb-microphone",
+      "category": "audio",
+      "heroImage": "/images/blog/rode-nt-usb-microphone-hero.jpg"
+    },
+    {
+      "slug": "shure-sm7b-microphone",
+      "category": "audio",
+      "heroImage": "/images/blog/shure-sm7b-microphone-hero.jpg"
+    },
+    {
+      "slug": "audio-technica-at2020",
+      "category": "audio",
+      "heroImage": "/images/blog/audio-technica-at2020-hero.jpg"
+    },
+    {
+      "slug": "neewer-led-panel-light",
+      "category": "lighting",
+      "heroImage": "/images/blog/neewer-led-panel-light-hero.jpg"
+    },
+    {
+      "slug": "aputure-amaran-200d",
+      "category": "lighting",
+      "heroImage": "/images/blog/aputure-amaran-200d-hero.jpg"
+    },
+    {
+      "slug": "godox-sl60w-led",
+      "category": "lighting",
+      "heroImage": "/images/blog/godox-sl60w-led-hero.jpg"
+    },
+    {
+      "slug": "adobe-premiere-pro",
+      "category": "software",
+      "heroImage": "/images/blog/adobe-premiere-pro-hero.jpg"
+    },
+    {
+      "slug": "davinci-resolve",
+      "category": "software",
+      "heroImage": "/images/blog/davinci-resolve-hero.jpg"
+    },
+    {
+      "slug": "final-cut-pro",
+      "category": "software",
+      "heroImage": "/images/blog/final-cut-pro-hero.jpg"
+    },
+    {
+      "slug": "elgato-stream-deck",
+      "category": "streaming",
+      "heroImage": "/images/blog/elgato-stream-deck-hero.jpg"
+    },
+    {
+      "slug": "rode-wireless-go-ii",
+      "category": "audio",
+      "heroImage": "/images/blog/rode-wireless-go-ii-hero.jpg"
+    },
+    {
+      "slug": "logitech-c920-webcam",
+      "category": "streaming",
+      "heroImage": "/images/blog/logitech-c920-webcam-hero.jpg"
+    },
+    {
+      "slug": "peak-design-travel-tripod",
+      "category": "tripods",
+      "heroImage": "/images/blog/peak-design-travel-tripod-hero.jpg"
+    },
+    {
+      "slug": "dji-rs-3-gimbal",
+      "category": "tripods",
+      "heroImage": "/images/blog/dji-rs-3-gimbal-hero.jpg"
+    },
+    {
+      "slug": "peak-design-capture-clip",
+      "category": "accessories",
+      "heroImage": "/images/blog/peak-design-capture-clip-hero.jpg"
+    },
+    {
+      "slug": "sony-fx30",
+      "category": "cameras",
+      "heroImage": "/images/blog/sony-fx30-hero.jpg"
+    },
+    {
+      "slug": "panasonic-lumix-s5-ii",
+      "category": "cameras",
+      "heroImage": "/images/blog/panasonic-lumix-s5-ii-hero.jpg"
+    },
+    {
+      "slug": "blackmagic-pocket-cinema-camera-6k-pro",
+      "category": "cameras",
+      "heroImage": "/images/blog/blackmagic-pocket-cinema-camera-6k-pro-hero.jpg"
+    },
+    {
+      "slug": "red-komodo-6k",
+      "category": "cameras",
+      "heroImage": "/images/blog/red-komodo-6k-hero.jpg"
+    },
+    {
+      "slug": "nikon-z6-iii",
+      "category": "cameras",
+      "heroImage": "/images/blog/nikon-z6-iii-hero.jpg"
+    },
+    {
+      "slug": "fujifilm-x-h2s",
+      "category": "cameras",
+      "heroImage": "/images/blog/fujifilm-x-h2s-hero.jpg"
+    },
+    {
+      "slug": "panasonic-lumix-s1h",
+      "category": "cameras",
+      "heroImage": "/images/blog/panasonic-lumix-s1h-hero.jpg"
+    },
+    {
+      "slug": "sony-a6700",
+      "category": "cameras",
+      "heroImage": "/images/blog/sony-a6700-hero.jpg"
+    },
+    {
+      "slug": "canon-eos-r8",
+      "category": "cameras",
+      "heroImage": "/images/blog/canon-eos-r8-hero.jpg"
+    },
+    {
+      "slug": "manfrotto-504x-fluid-video-head-with-645-tripod",
+      "category": "tripods",
+      "heroImage": "/images/blog/manfrotto-504x-fluid-video-head-with-645-tripod-hero.jpg"
+    },
+    {
+      "slug": "miller-air-tripod-system",
+      "category": "tripods",
+      "heroImage": "/images/blog/miller-air-tripod-system-hero.jpg"
+    },
+    {
+      "slug": "gitzo-systematic-series-3-carbon-fiber-tripod",
+      "category": "tripods",
+      "heroImage": "/images/blog/gitzo-systematic-series-3-carbon-fiber-tripod-hero.jpg"
+    },
+    {
+      "slug": "sachtler-ace-xl-fluid-head-tripod",
+      "category": "tripods",
+      "heroImage": "/images/blog/sachtler-ace-xl-fluid-head-tripod-hero.jpg"
+    },
+    {
+      "slug": "dji-rs-4-pro",
+      "category": "tripods",
+      "heroImage": "/images/blog/dji-rs-4-pro-hero.jpg"
+    },
+    {
+      "slug": "benro-s8-pro-fluid-video-head-with-a373f-tripod",
+      "category": "tripods",
+      "heroImage": "/images/blog/benro-s8-pro-fluid-video-head-with-a373f-tripod-hero.jpg"
+    },
+    {
+      "slug": "zhiyun-crane-4",
+      "category": "tripods",
+      "heroImage": "/images/blog/zhiyun-crane-4-hero.jpg"
+    },
+    {
+      "slug": "edelkrone-sliderplus-v5-pro",
+      "category": "tripods",
+      "heroImage": "/images/blog/edelkrone-sliderplus-v5-pro-hero.jpg"
+    },
+    {
+      "slug": "manfrotto-055-carbon-fiber-tripod",
+      "category": "tripods",
+      "heroImage": "/images/blog/manfrotto-055-carbon-fiber-tripod-hero.jpg"
+    },
+    {
+      "slug": "neewer-660-rgb-led-panel",
+      "category": "lighting",
+      "heroImage": "/images/blog/neewer-660-rgb-led-panel-hero.jpg"
+    },
+    {
+      "slug": "nanlite-forza-300b",
+      "category": "lighting",
+      "heroImage": "/images/blog/nanlite-forza-300b-hero.jpg"
+    },
+    {
+      "slug": "aputure-600d-pro",
+      "category": "lighting",
+      "heroImage": "/images/blog/aputure-600d-pro-hero.jpg"
+    },
+    {
+      "slug": "arri-skypanel-s60-c",
+      "category": "lighting",
+      "heroImage": "/images/blog/arri-skypanel-s60-c-hero.jpg"
+    },
+    {
+      "slug": "kino-flo-diva-lite-31",
+      "category": "lighting",
+      "heroImage": "/images/blog/kino-flo-diva-lite-31-hero.jpg"
+    },
+    {
+      "slug": "litegear-litemat-spectrum-4",
+      "category": "lighting",
+      "heroImage": "/images/blog/litegear-litemat-spectrum-4-hero.jpg"
+    },
+    {
+      "slug": "astera-titan-tube",
+      "category": "lighting",
+      "heroImage": "/images/blog/astera-titan-tube-hero.jpg"
+    },
+    {
+      "slug": "godox-vl300-ii",
+      "category": "lighting",
+      "heroImage": "/images/blog/godox-vl300-ii-hero.jpg"
+    },
+    {
+      "slug": "aputure-amaran-p60c",
+      "category": "lighting",
+      "heroImage": "/images/blog/aputure-amaran-p60c-hero.jpg"
+    },
+    {
+      "slug": "sennheiser-mke-600",
+      "category": "audio",
+      "heroImage": "/images/blog/sennheiser-mke-600-hero.jpg"
+    },
+    {
+      "slug": "neumann-u87-ai",
+      "category": "audio",
+      "heroImage": "/images/blog/neumann-u87-ai-hero.jpg"
+    },
+    {
+      "slug": "focusrite-scarlett-2i2-4th-gen",
+      "category": "audio",
+      "heroImage": "/images/blog/focusrite-scarlett-2i2-4th-gen-hero.jpg"
+    },
+    {
+      "slug": "ssl2-audio-interface",
+      "category": "audio",
+      "heroImage": "/images/blog/ssl2-audio-interface-hero.jpg"
+    },
+    {
+      "slug": "rme-babyface-pro-fs",
+      "category": "audio",
+      "heroImage": "/images/blog/rme-babyface-pro-fs-hero.jpg"
+    },
+    {
+      "slug": "sennheiser-ew-112p-g4-wireless-lavalier",
+      "category": "audio",
+      "heroImage": "/images/blog/sennheiser-ew-112p-g4-wireless-lavalier-hero.jpg"
+    },
+    {
+      "slug": "zoom-h6essential-recorder",
+      "category": "audio",
+      "heroImage": "/images/blog/zoom-h6essential-recorder-hero.jpg"
+    },
+    {
+      "slug": "electro-voice-re20",
+      "category": "audio",
+      "heroImage": "/images/blog/electro-voice-re20-hero.jpg"
+    },
+    {
+      "slug": "universal-audio-apollo-twin-x",
+      "category": "audio",
+      "heroImage": "/images/blog/universal-audio-apollo-twin-x-hero.jpg"
+    },
+    {
+      "slug": "deity-s-mic-2",
+      "category": "audio",
+      "heroImage": "/images/blog/deity-s-mic-2-hero.jpg"
+    },
+    {
+      "slug": "sigma-18-35mm-f18-dc-hsm-art",
+      "category": "accessories",
+      "heroImage": "/images/blog/sigma-18-35mm-f18-dc-hsm-art-hero.jpg"
+    },
+    {
+      "slug": "tilta-nucleus-m-wireless-follow-focus",
+      "category": "accessories",
+      "heroImage": "/images/blog/tilta-nucleus-m-wireless-follow-focus-hero.jpg"
+    },
+    {
+      "slug": "atomos-ninja-v",
+      "category": "accessories",
+      "heroImage": "/images/blog/atomos-ninja-v-hero.jpg"
+    },
+    {
+      "slug": "smallhd-focus-5-monitor",
+      "category": "accessories",
+      "heroImage": "/images/blog/smallhd-focus-5-monitor-hero.jpg"
+    },
+    {
+      "slug": "datacolor-spyderx-pro",
+      "category": "accessories",
+      "heroImage": "/images/blog/datacolor-spyderx-pro-hero.jpg"
+    },
+    {
+      "slug": "k-tek-kp10-boom-pole",
+      "category": "accessories",
+      "heroImage": "/images/blog/k-tek-kp10-boom-pole-hero.jpg"
+    },
+    {
+      "slug": "rycote-invision-studio-kit",
+      "category": "accessories",
+      "heroImage": "/images/blog/rycote-invision-studio-kit-hero.jpg"
+    },
+    {
+      "slug": "bubblebee-industries-windkiller",
+      "category": "accessories",
+      "heroImage": "/images/blog/bubblebee-industries-windkiller-hero.jpg"
+    },
+    {
+      "slug": "sony-fe-24-70mm-f28-gm-ii",
+      "category": "accessories",
+      "heroImage": "/images/blog/sony-fe-24-70mm-f28-gm-ii-hero.jpg"
+    },
+    {
+      "slug": "hollyland-mars-400s-pro-ii",
+      "category": "accessories",
+      "heroImage": "/images/blog/hollyland-mars-400s-pro-ii-hero.jpg"
+    },
+    {
+      "slug": "neewer-carbon-fiber-slider-24-inch",
+      "category": "tripods",
+      "heroImage": "/images/blog/neewer-carbon-fiber-slider-24-inch-hero.jpg"
+    },
+    {
+      "slug": "aputure-light-dome-iii",
+      "category": "accessories",
+      "heroImage": "/images/blog/aputure-light-dome-iii-hero.jpg"
+    },
+    {
+      "slug": "v-mount-battery-kit-2x-150wh",
+      "category": "accessories",
+      "heroImage": "/images/blog/v-mount-battery-kit-2x-150wh-hero.jpg"
+    },
+    {
+      "slug": "godox-sl300-ii",
+      "category": "lighting",
+      "heroImage": "/images/blog/godox-sl300-ii-hero.jpg"
+    },
+    {
+      "slug": "gopro-hero-12",
+      "category": "Cameras",
+      "heroImage": "/images/blog/gopro-hero-12-hero.jpg"
+    },
+    {
+      "slug": "aputure-amaran-p80c",
+      "category": "lighting",
+      "heroImage": "/images/blog/aputure-amaran-p80c-hero.jpg"
+    },
+    {
+      "slug": "dji-air-3s",
+      "category": "Cameras",
+      "heroImage": "/images/blog/dji-air-3s-hero.jpg"
+    },
+    {
+      "slug": "sennheiser-ew-135p-g4-wireless-lavalier",
+      "category": "audio",
+      "heroImage": "/images/blog/sennheiser-ew-135p-g4-wireless-lavalier-hero.jpg"
+    },
+    {
+      "slug": "iphone-16-pro-max",
+      "category": "Cameras",
+      "heroImage": "/images/blog/iphone-16-pro-max-hero.jpg"
+    },
+    {
+      "slug": "deity-d-mic-2",
+      "category": "audio",
+      "heroImage": "/images/blog/deity-d-mic-2-hero.jpg"
+    },
+    {
+      "slug": "elgato-facecam-pro-2",
+      "category": "Streaming",
+      "heroImage": "/images/blog/elgato-facecam-pro-2-hero.jpg"
+    },
+    {
+      "slug": "tilta-tacktum-m-wireless-follow-focus",
+      "category": "accessories",
+      "heroImage": "/images/blog/tilta-tacktum-m-wireless-follow-focus-hero.jpg"
+    },
+    {
+      "slug": "capcut",
+      "category": "Software",
+      "heroImage": "/images/blog/capcut-hero.jpg"
+    },
+    {
+      "slug": "focusrite-scarlett-2i2-8th-gen",
+      "category": "audio",
+      "heroImage": "/images/blog/focusrite-scarlett-2i2-8th-gen-hero.jpg"
+    },
+    {
+      "slug": "canon-eos-r50",
+      "category": "Cameras",
+      "heroImage": "/images/blog/canon-eos-r50-hero.jpg"
+    },
+    {
+      "slug": "amaran-vs-aputure-lights",
+      "category": "lighting",
+      "heroImage": "/images/blog/amaran-vs-aputure-lights-hero.jpg"
+    },
+    {
+      "slug": "amaran-ray-series",
+      "category": "lighting",
+      "heroImage": "/images/blog/amaran-ray-series-hero.jpg"
+    }
+  ]
+}

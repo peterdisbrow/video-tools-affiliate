@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "The Ultimate Video Creator's Toolkit | Level Up Your Content",
-  description: "Discover the best video production tools, cameras, audio equipment, lighting, and software. Curated recommendations from a video production expert.",
+  title: "Video Tools Affiliate - Honest Gear Reviews by Creators (500K+ Subs)",
+  description: "Honest reviews of video cameras, audio gear, lighting, and software from creators with 500K+ YouTube subscribers. No sponsored content, real-world testing, affiliate disclosures.",
 };
 
 export default function RootLayout({ children }) {

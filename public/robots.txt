@@ -1,0 +1,8 @@
+# Robots.txt for video-tools-affiliate
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://video-tools-affiliate.vercel.app/sitemap.xml

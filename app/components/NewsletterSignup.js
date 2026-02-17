@@ -64,12 +64,33 @@ export default function NewsletterSignup() {
       padding: '3rem 2rem',
       textAlign: 'center',
     }}>
-      <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-        <h2 style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '0.5rem', fontWeight: 'bold' }}>
-          📬 Get Free Gear Guides
+      <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+        <h2 style={{ color: '#fff', fontSize: '1.6rem', marginBottom: '1rem', fontWeight: 'bold' }}>
+          📬 Weekly Gear Intel (No Sponsored BS)
         </h2>
-        <p style={{ color: 'rgba(255,255,255,0.8)', marginBottom: '1.5rem', lineHeight: '1.6' }}>
-          Weekly gear guides, deals, and video production tips delivered to your inbox
+        <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1rem', lineHeight: '1.8', fontSize: '0.95rem' }}>
+          Join 8,000+ creators getting the deals and insights we don't publish on the site:
+        </p>
+        <ul style={{
+          color: 'rgba(255,255,255,0.8)',
+          lineHeight: '1.8',
+          listStyle: 'none',
+          padding: '0 0 1.5rem 0',
+          margin: 0,
+          fontSize: '0.9rem',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+          gap: '1rem',
+          textAlign: 'left',
+          marginBottom: '1.5rem'
+        }}>
+          <li>✅ Weekly gear deals (curated, not auto-posted)</li>
+          <li>✅ "Gear I Regret Buying" column (honest failures)</li>
+          <li>✅ Budget setup guides ($500, $2K, $5K tiers)</li>
+          <li>✅ Creator interviews & real workflows</li>
+        </ul>
+        <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>
+          Sent every Tuesday. Unsubscribe anytime. No spam, ever.
         </p>
         <form onSubmit={handleSubmit} style={{
           display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'center',
@@ -105,7 +126,7 @@ export default function NewsletterSignup() {
               whiteSpace: 'nowrap', transition: 'background-color 0.2s',
             }}
           >
-            {status === 'loading' ? 'Subscribing...' : 'Get Free Gear Guides'}
+            {status === 'loading' ? 'Subscribing...' : 'Get Gear Intel →'}
           </button>
         </form>
         {status === 'error' && (

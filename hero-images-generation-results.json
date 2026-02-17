@@ -1,0 +1,504 @@
+{
+  "timestamp": "2026-02-17T06:06:20.577Z",
+  "summary": {
+    "total": 82,
+    "generated": 82,
+    "skipped": 0,
+    "failed": 0,
+    "elapsedSeconds": 0.821
+  },
+  "results": [
+    {
+      "slug": "sony-alpha-a7-iv",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/sony-alpha-a7-iv-hero.jpg",
+      "size": 31099
+    },
+    {
+      "slug": "canon-eos-r6-mark-ii",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/canon-eos-r6-mark-ii-hero.jpg",
+      "size": 31183
+    },
+    {
+      "slug": "dji-osmo-pocket-3",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/dji-osmo-pocket-3-hero.jpg",
+      "size": 31055
+    },
+    {
+      "slug": "rode-nt-usb-microphone",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/rode-nt-usb-microphone-hero.jpg",
+      "size": 26543
+    },
+    {
+      "slug": "shure-sm7b-microphone",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/shure-sm7b-microphone-hero.jpg",
+      "size": 26411
+    },
+    {
+      "slug": "audio-technica-at2020",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/audio-technica-at2020-hero.jpg",
+      "size": 26278
+    },
+    {
+      "slug": "neewer-led-panel-light",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/neewer-led-panel-light-hero.jpg",
+      "size": 31632
+    },
+    {
+      "slug": "aputure-amaran-200d",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/aputure-amaran-200d-hero.jpg",
+      "size": 31749
+    },
+    {
+      "slug": "godox-sl60w-led",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/godox-sl60w-led-hero.jpg",
+      "size": 31837
+    },
+    {
+      "slug": "adobe-premiere-pro",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/adobe-premiere-pro-hero.jpg",
+      "size": 19123
+    },
+    {
+      "slug": "davinci-resolve",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/davinci-resolve-hero.jpg",
+      "size": 19096
+    },
+    {
+      "slug": "final-cut-pro",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/final-cut-pro-hero.jpg",
+      "size": 19048
+    },
+    {
+      "slug": "elgato-stream-deck",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/elgato-stream-deck-hero.jpg",
+      "size": 26874
+    },
+    {
+      "slug": "rode-wireless-go-ii",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/rode-wireless-go-ii-hero.jpg",
+      "size": 26300
+    },
+    {
+      "slug": "logitech-c920-webcam",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/logitech-c920-webcam-hero.jpg",
+      "size": 26910
+    },
+    {
+      "slug": "peak-design-travel-tripod",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/peak-design-travel-tripod-hero.jpg",
+      "size": 28271
+    },
+    {
+      "slug": "dji-rs-3-gimbal",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/dji-rs-3-gimbal-hero.jpg",
+      "size": 28385
+    },
+    {
+      "slug": "peak-design-capture-clip",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/peak-design-capture-clip-hero.jpg",
+      "size": 22410
+    },
+    {
+      "slug": "sony-fx30",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/sony-fx30-hero.jpg",
+      "size": 31360
+    },
+    {
+      "slug": "panasonic-lumix-s5-ii",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/panasonic-lumix-s5-ii-hero.jpg",
+      "size": 30982
+    },
+    {
+      "slug": "blackmagic-pocket-cinema-camera-6k-pro",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/blackmagic-pocket-cinema-camera-6k-pro-hero.jpg",
+      "size": 31257
+    },
+    {
+      "slug": "red-komodo-6k",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/red-komodo-6k-hero.jpg",
+      "size": 31126
+    },
+    {
+      "slug": "nikon-z6-iii",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/nikon-z6-iii-hero.jpg",
+      "size": 30856
+    },
+    {
+      "slug": "fujifilm-x-h2s",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/fujifilm-x-h2s-hero.jpg",
+      "size": 31146
+    },
+    {
+      "slug": "panasonic-lumix-s1h",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/panasonic-lumix-s1h-hero.jpg",
+      "size": 31043
+    },
+    {
+      "slug": "sony-a6700",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/sony-a6700-hero.jpg",
+      "size": 31251
+    },
+    {
+      "slug": "canon-eos-r8",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/canon-eos-r8-hero.jpg",
+      "size": 31125
+    },
+    {
+      "slug": "manfrotto-504x-fluid-video-head-with-645-tripod",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/manfrotto-504x-fluid-video-head-with-645-tripod-hero.jpg",
+      "size": 28077
+    },
+    {
+      "slug": "miller-air-tripod-system",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/miller-air-tripod-system-hero.jpg",
+      "size": 28256
+    },
+    {
+      "slug": "gitzo-systematic-series-3-carbon-fiber-tripod",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/gitzo-systematic-series-3-carbon-fiber-tripod-hero.jpg",
+      "size": 28265
+    },
+    {
+      "slug": "sachtler-ace-xl-fluid-head-tripod",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/sachtler-ace-xl-fluid-head-tripod-hero.jpg",
+      "size": 28191
+    },
+    {
+      "slug": "dji-rs-4-pro",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/dji-rs-4-pro-hero.jpg",
+      "size": 28120
+    },
+    {
+      "slug": "benro-s8-pro-fluid-video-head-with-a373f-tripod",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/benro-s8-pro-fluid-video-head-with-a373f-tripod-hero.jpg",
+      "size": 28093
+    },
+    {
+      "slug": "zhiyun-crane-4",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/zhiyun-crane-4-hero.jpg",
+      "size": 28055
+    },
+    {
+      "slug": "edelkrone-sliderplus-v5-pro",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/edelkrone-sliderplus-v5-pro-hero.jpg",
+      "size": 28354
+    },
+    {
+      "slug": "manfrotto-055-carbon-fiber-tripod",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/manfrotto-055-carbon-fiber-tripod-hero.jpg",
+      "size": 28263
+    },
+    {
+      "slug": "neewer-660-rgb-led-panel",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/neewer-660-rgb-led-panel-hero.jpg",
+      "size": 31869
+    },
+    {
+      "slug": "nanlite-forza-300b",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/nanlite-forza-300b-hero.jpg",
+      "size": 31825
+    },
+    {
+      "slug": "aputure-600d-pro",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/aputure-600d-pro-hero.jpg",
+      "size": 31781
+    },
+    {
+      "slug": "arri-skypanel-s60-c",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/arri-skypanel-s60-c-hero.jpg",
+      "size": 31632
+    },
+    {
+      "slug": "kino-flo-diva-lite-31",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/kino-flo-diva-lite-31-hero.jpg",
+      "size": 31447
+    },
+    {
+      "slug": "litegear-litemat-spectrum-4",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/litegear-litemat-spectrum-4-hero.jpg",
+      "size": 31613
+    },
+    {
+      "slug": "astera-titan-tube",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/astera-titan-tube-hero.jpg",
+      "size": 31589
+    },
+    {
+      "slug": "godox-vl300-ii",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/godox-vl300-ii-hero.jpg",
+      "size": 31770
+    },
+    {
+      "slug": "aputure-amaran-p60c",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/aputure-amaran-p60c-hero.jpg",
+      "size": 31887
+    },
+    {
+      "slug": "sennheiser-mke-600",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/sennheiser-mke-600-hero.jpg",
+      "size": 26397
+    },
+    {
+      "slug": "neumann-u87-ai",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/neumann-u87-ai-hero.jpg",
+      "size": 26363
+    },
+    {
+      "slug": "focusrite-scarlett-2i2-4th-gen",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/focusrite-scarlett-2i2-4th-gen-hero.jpg",
+      "size": 26387
+    },
+    {
+      "slug": "ssl2-audio-interface",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/ssl2-audio-interface-hero.jpg",
+      "size": 26353
+    },
+    {
+      "slug": "rme-babyface-pro-fs",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/rme-babyface-pro-fs-hero.jpg",
+      "size": 26526
+    },
+    {
+      "slug": "sennheiser-ew-112p-g4-wireless-lavalier",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/sennheiser-ew-112p-g4-wireless-lavalier-hero.jpg",
+      "size": 26272
+    },
+    {
+      "slug": "zoom-h6essential-recorder",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/zoom-h6essential-recorder-hero.jpg",
+      "size": 26259
+    },
+    {
+      "slug": "electro-voice-re20",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/electro-voice-re20-hero.jpg",
+      "size": 26379
+    },
+    {
+      "slug": "universal-audio-apollo-twin-x",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/universal-audio-apollo-twin-x-hero.jpg",
+      "size": 26347
+    },
+    {
+      "slug": "deity-s-mic-2",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/deity-s-mic-2-hero.jpg",
+      "size": 26309
+    },
+    {
+      "slug": "sigma-18-35mm-f18-dc-hsm-art",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/sigma-18-35mm-f18-dc-hsm-art-hero.jpg",
+      "size": 22434
+    },
+    {
+      "slug": "tilta-nucleus-m-wireless-follow-focus",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/tilta-nucleus-m-wireless-follow-focus-hero.jpg",
+      "size": 22309
+    },
+    {
+      "slug": "atomos-ninja-v",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/atomos-ninja-v-hero.jpg",
+      "size": 21250
+    },
+    {
+      "slug": "smallhd-focus-5-monitor",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/smallhd-focus-5-monitor-hero.jpg",
+      "size": 22401
+    },
+    {
+      "slug": "datacolor-spyderx-pro",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/datacolor-spyderx-pro-hero.jpg",
+      "size": 22375
+    },
+    {
+      "slug": "k-tek-kp10-boom-pole",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/k-tek-kp10-boom-pole-hero.jpg",
+      "size": 22420
+    },
+    {
+      "slug": "rycote-invision-studio-kit",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/rycote-invision-studio-kit-hero.jpg",
+      "size": 22360
+    },
+    {
+      "slug": "bubblebee-industries-windkiller",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/bubblebee-industries-windkiller-hero.jpg",
+      "size": 22284
+    },
+    {
+      "slug": "sony-fe-24-70mm-f28-gm-ii",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/sony-fe-24-70mm-f28-gm-ii-hero.jpg",
+      "size": 22426
+    },
+    {
+      "slug": "hollyland-mars-400s-pro-ii",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/hollyland-mars-400s-pro-ii-hero.jpg",
+      "size": 22343
+    },
+    {
+      "slug": "neewer-carbon-fiber-slider-24-inch",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/neewer-carbon-fiber-slider-24-inch-hero.jpg",
+      "size": 28327
+    },
+    {
+      "slug": "aputure-light-dome-iii",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/aputure-light-dome-iii-hero.jpg",
+      "size": 22398
+    },
+    {
+      "slug": "v-mount-battery-kit-2x-150wh",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/v-mount-battery-kit-2x-150wh-hero.jpg",
+      "size": 22463
+    },
+    {
+      "slug": "godox-sl300-ii",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/godox-sl300-ii-hero.jpg",
+      "size": 31853
+    },
+    {
+      "slug": "gopro-hero-12",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/gopro-hero-12-hero.jpg",
+      "size": 31149
+    },
+    {
+      "slug": "aputure-amaran-p80c",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/aputure-amaran-p80c-hero.jpg",
+      "size": 32083
+    },
+    {
+      "slug": "dji-air-3s",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/dji-air-3s-hero.jpg",
+      "size": 30987
+    },
+    {
+      "slug": "sennheiser-ew-135p-g4-wireless-lavalier",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/sennheiser-ew-135p-g4-wireless-lavalier-hero.jpg",
+      "size": 26306
+    },
+    {
+      "slug": "iphone-16-pro-max",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/iphone-16-pro-max-hero.jpg",
+      "size": 31046
+    },
+    {
+      "slug": "deity-d-mic-2",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/deity-d-mic-2-hero.jpg",
+      "size": 26209
+    },
+    {
+      "slug": "elgato-facecam-pro-2",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/elgato-facecam-pro-2-hero.jpg",
+      "size": 27022
+    },
+    {
+      "slug": "tilta-tacktum-m-wireless-follow-focus",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/tilta-tacktum-m-wireless-follow-focus-hero.jpg",
+      "size": 22212
+    },
+    {
+      "slug": "capcut",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/capcut-hero.jpg",
+      "size": 19179
+    },
+    {
+      "slug": "focusrite-scarlett-2i2-8th-gen",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/focusrite-scarlett-2i2-8th-gen-hero.jpg",
+      "size": 26387
+    },
+    {
+      "slug": "canon-eos-r50",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/canon-eos-r50-hero.jpg",
+      "size": 31191
+    },
+    {
+      "slug": "amaran-vs-aputure-lights",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/amaran-vs-aputure-lights-hero.jpg",
+      "size": 31700
+    },
+    {
+      "slug": "amaran-ray-series",
+      "status": "success",
+      "path": "/Users/peter/.openclaw/workspace/video-tools-affiliate/public/images/blog/amaran-ray-series-hero.jpg",
+      "size": 31818
+    }
+  ]
+}

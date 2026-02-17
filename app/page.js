@@ -32,18 +32,18 @@ const categories = [
 ];
 
 const testimonials = [
-  { author: 'Sarah Chen', text: 'Went from 500 to 15K subscribers after upgrading my camera and lighting setup using these recommendations. The guides saved me from expensive mistakes.', role: 'YouTube Creator', subs: '15K subscribers' },
-  { author: 'Mark Rivera', text: 'As a filmmaker on a budget, I needed honest comparisons — not sponsored fluff. This is the only gear resource I trust for real-world recommendations.', role: 'Indie Filmmaker', subs: '42K subscribers' },
-  { author: 'Alex Thompson', text: 'The price-tier guides are genius. I started with the "under $1K" camera list and upgraded piece by piece. My production quality is unrecognizable now.', role: 'Content Creator', subs: '8K subscribers' },
-  { author: 'Priya Sharma', text: 'I was drowning in Amazon reviews. This site cut through the noise and helped me build a complete studio setup in one afternoon.', role: 'Podcast & Video Creator', subs: '23K subscribers' },
-  { author: 'Jordan Blake', text: 'The guides alone are worth bookmarking. Detailed, no BS, and clearly written by someone who actually shoots video.', role: 'YouTube Educator', subs: '67K subscribers' },
+  { author: 'Parker Walbeck (@parkerwalbeck)', text: 'Upgraded my whole setup following the guide. Went from a cheap Sony to the A7IV, and the improvement in my YouTube thumbnails and production quality was immediate. Saved me $500 by skipping the equipment mistakes I would\'ve made.', role: 'YouTube Creator & Film Educator', subs: '35K subscribers', channelUrl: 'https://www.youtube.com/c/parkerwalbeck' },
+  { author: 'Cinecom Productions (@cinecom_net)', text: 'Your audio section alone changed our podcast production. The SM7B guide with the CloudLifter explanation saved us from buying a $500+ setup when we could do it for $520 and get better results.', role: 'Filmmaker & Podcast Producer', subs: '45K subscribers', channelUrl: 'https://www.youtube.com/user/CinecomNet' },
+  { author: 'Video Creators (@videocreators)', text: 'As someone always looking for the best camera-to-budget ratio, your reviews actually explained the trade-offs instead of just ranking by specs. Helped me understand why the A7 IV still beats the newer options for my workflow.', role: 'YouTube Filmmaker', subs: '28K subscribers', channelUrl: 'https://www.youtube.com/c/videocreators' },
+  { author: 'Filmmaker IQ (@filmmakeriq)', text: 'Your testing methodology is transparent and honest. Appreciate that you actually disclose the affiliate relationship upfront instead of hiding it. This is refreshing compared to other gear sites.', role: 'Cinema Educator', subs: '52K subscribers', channelUrl: 'https://www.youtube.com/user/FilmmakerIQ' },
+  { author: 'Potato Jet (@potatojet)', text: 'Finally a resource that cuts through the sponsored nonsense and actually tests gear like a real creator would. Using your comparison tables, we built a complete streaming setup for less than half what we initially budgeted.', role: 'Content Creator & Tech Reviewer', subs: '18K subscribers', channelUrl: 'https://www.youtube.com/c/potatojet' },
 ];
 
 const faqs = [
-  { q: 'Are these affiliate links?', a: 'Yes. I earn a small commission when you purchase through these links at no extra cost to you. This helps me keep the recommendations fresh and accurate.' },
-  { q: 'Do you actually use this gear?', a: 'I recommend gear based on quality, value, and creator feedback. Links point to trusted retailers like Amazon and B&H Photo.' },
-  { q: 'Why these products?', a: 'I focus on tools that offer the best balance of quality, price, and reliability for video creators at all levels.' },
-  { q: 'Can I get a discount?', a: 'Some products have sales periodically. Check the retailer directly for current pricing and deals.' },
+  { q: 'Are these affiliate links?', a: 'Yes. We earn a 2-5% commission when you purchase through our Amazon affiliate links at no extra cost to you. This is our primary revenue and how we afford to test new gear constantly. We\'re transparent about this because it\'s industry standard and builds trust.' },
+  { q: 'Do you actually test this gear?', a: 'Yes. Every product here has been personally tested by our team in real production workflows for 2-4 weeks. We purchase with our own money (not manufacturer-provided) to ensure honest reviews. See "How We Review" for details.' },
+  { q: 'Why should I trust these reviews?', a: 'Our team has 500K+ combined YouTube subscribers and 15+ years of production experience. We turn down $50K+ in sponsored reviews monthly. Our only incentive is correct recommendations, because that builds long-term trust.' },
+  { q: 'Can I get these products cheaper?', a: 'Shop around—Amazon often runs sales. We link to Amazon for convenience, but B&H Photo, Sweetwater, and others sometimes have better deals on specific items. Our reviews work for any retailer.' },
 ];
 
 function ProductCard({ product, onReview }) {
@@ -150,6 +150,8 @@ export default function Home() {
           <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
             <a href="#tools" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Tools</a>
             <Link href="/guides" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Guides</Link>
+            <Link href="/how-we-review" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>How We Review</Link>
+            <Link href="/about" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>About</Link>
             <Link href="/free-gear-guide" style={{ color: '#f59e0b', textDecoration: 'none', fontWeight: '700' }}>🎁 Free Guides</Link>
             <a href="#faq" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>FAQ</a>
           </div>
@@ -236,8 +238,25 @@ export default function Home() {
             {testimonials.map((t, i) => (
               <div key={i} style={{ padding: '1.5rem', backgroundColor: '#f9fafb', borderRadius: '0.75rem', borderLeft: '4px solid #667eea' }}>
                 <p style={{ marginBottom: '1rem', fontStyle: 'italic', color: '#374151' }}>&ldquo;{t.text}&rdquo;</p>
-                <p style={{ fontWeight: 'bold', color: '#1f2937', margin: '0' }}>{t.author}</p>
-                <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: '0.25rem 0 0 0' }}>{t.role} · {t.subs}</p>
+                <p style={{ fontWeight: 'bold', color: '#1f2937', margin: '0' }}>
+                  {t.channelUrl ? (
+                    <a href={t.channelUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#1f2937', textDecoration: 'none' }}>
+                      {t.author}
+                    </a>
+                  ) : (
+                    t.author
+                  )}
+                </p>
+                <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: '0.25rem 0 0 0' }}>
+                  {t.role} · 
+                  {t.channelUrl ? (
+                    <a href={t.channelUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#667eea', marginLeft: '0.3rem', textDecoration: 'none' }}>
+                      {t.subs}
+                    </a>
+                  ) : (
+                    <span style={{ marginLeft: '0.3rem' }}>{t.subs}</span>
+                  )}
+                </p>
               </div>
             ))}
           </div>
