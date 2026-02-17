@@ -131,8 +131,27 @@ export default function HomePage() {
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
 
+      <style>{`
+        .home-grid { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; }
+        .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+        .list-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; }
+        .cat-nav { display: flex; gap: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .cat-nav::-webkit-scrollbar { display: none; }
+        .top-bar { display: flex; justify-content: space-between; align-items: center; }
+        @media (max-width: 768px) {
+          .home-grid { grid-template-columns: 1fr; }
+          .feature-grid { grid-template-columns: 1fr; }
+          .list-grid { grid-template-columns: 1fr; }
+          .top-bar { flex-direction: column; gap: 0.25rem; text-align: center; padding: 0.5rem 1rem; }
+          .sidebar-order { order: -1; }
+        }
+        @media (max-width: 480px) {
+          .feature-grid { grid-template-columns: 1fr 1fr; }
+        }
+      `}</style>
+
       {/* ─── TOP BAR ─── */}
-      <div style={{ backgroundColor: NAV_BG, color: '#fff', padding: '0.4rem 2rem', fontSize: '0.75rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div className="top-bar" style={{ backgroundColor: NAV_BG, color: '#fff', padding: '0.4rem 2rem', fontSize: '0.75rem' }}>
         <span style={{ color: '#aaa' }}>15 years broadcast engineering · Blackmagic Design reseller</span>
         <a href="https://atemschool.com" target="_blank" rel="noopener noreferrer"
           style={{ color: ACCENT, fontWeight: '700', textDecoration: 'none', fontSize: '0.75rem' }}>
@@ -144,7 +163,7 @@ export default function HomePage() {
 
       {/* ─── CATEGORY NAV BAR ─── */}
       <div style={{ borderBottom: '3px solid #111827', backgroundColor: '#fff' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem', display: 'flex', gap: 0 }}>
+        <div className="cat-nav" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
           {TAB_CATEGORIES.map(tab => (
             <button key={tab} onClick={() => setActiveTab(tab)} style={{
               padding: '0.7rem 1.1rem',
@@ -167,12 +186,12 @@ export default function HomePage() {
       </div>
 
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1.5rem 2rem' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '2rem' }}>
+        <div className="home-grid">
 
           {/* ─── MAIN CONTENT ─── */}
           <div>
             {/* Featured 3-up grid */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '2rem' }}>
+            <div className="feature-grid">
               {featured3.map(post => <FeatureCard key={post.slug} post={post} />)}
             </div>
 
@@ -186,7 +205,7 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 2rem' }}>
+            <div className="list-grid">
               {latestPosts.map(post => <ListRow key={post.slug} post={post} />)}
             </div>
 
@@ -196,7 +215,7 @@ export default function HomePage() {
           </div>
 
           {/* ─── SIDEBAR ─── */}
-          <aside>
+          <aside className="sidebar-order">
             {/* Trending */}
             <div style={{ marginBottom: '2rem' }}>
               <div style={{ borderTop: '3px solid #111827', paddingTop: '0.75rem', marginBottom: '0.75rem', display: 'flex', gap: '1rem' }}>
