@@ -11,7 +11,7 @@ export default function HowWeReview() {
     <div style={{ maxWidth: '900px', margin: '0 auto', padding: '3rem 2rem' }}>
       {/* Header */}
       <div style={{ marginBottom: '2rem' }}>
-        <Link href="/" style={{ color: '#2563EB', textDecoration: 'none', fontSize: '0.875rem', marginBottom: '1.5rem', display: 'inline-block', fontWeight: '500' }}>
+        <Link href="/" style={{ color: '#E84C3D', textDecoration: 'none', fontSize: '0.875rem', marginBottom: '1.5rem', display: 'inline-block', fontWeight: '500' }}>
           ← Back to Home
         </Link>
         <h1 style={{ fontSize: '2.2rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '1rem' }}>
@@ -271,7 +271,7 @@ export default function HowWeReview() {
 
       {/* CTA */}
       <section style={{
-        backgroundColor: '#2563EB',
+        backgroundColor: '#E84C3D',
         color: '#fff',
         padding: '2rem',
         borderRadius: '0.5rem',
@@ -286,7 +286,7 @@ export default function HowWeReview() {
         <Link href="/guides" style={{
           display: 'inline-block',
           backgroundColor: '#fff',
-          color: '#2563EB',
+          color: '#E84C3D',
           padding: '0.75rem 2rem',
           borderRadius: '0.5rem',
           textDecoration: 'none',

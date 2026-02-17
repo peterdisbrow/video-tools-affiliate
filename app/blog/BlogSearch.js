@@ -184,7 +184,7 @@ export default function BlogSearch() {
           }}
           onKeyUp={(e) => {
             if (e.currentTarget.matches(':focus')) {
-              e.currentTarget.style.borderColor = '#2563EB';
+              e.currentTarget.style.borderColor = '#E84C3D';
             }
           }}
         />
@@ -209,7 +209,7 @@ export default function BlogSearch() {
               padding: '4px 8px',
               transition: 'color 0.2s ease',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = '#2563EB')}
+            onMouseEnter={(e) => (e.currentTarget.style.color = '#E84C3D')}
             onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}
             title="Clear search"
           >
@@ -244,7 +244,7 @@ export default function BlogSearch() {
             left: 0,
             right: 0,
             backgroundColor: '#fff',
-            border: '2px solid #2563EB',
+            border: '2px solid #E84C3D',
             borderTop: 'none',
             borderRadius: '0 0 0.5rem 0.5rem',
             maxHeight: '500px',

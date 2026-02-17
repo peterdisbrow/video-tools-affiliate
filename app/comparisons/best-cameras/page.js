@@ -46,7 +46,7 @@ export default function BestCamerasComparison() {
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Header */}
         <div style={{ marginBottom: '50px', textAlign: 'center' }}>
-          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '15px', background: '#2563EB', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '15px', background: '#E84C3D', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Best Cameras for Video Creators (2026)
           </h1>
           <p style={{ fontSize: '18px', color: '#6B7280', marginBottom: '10px', maxWidth: '600px', margin: '15px auto' }}>
@@ -65,7 +65,7 @@ export default function BestCamerasComparison() {
           border: '1px solid #BFDBFE',
           marginBottom: '40px',
         }}>
-          <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#2563EB' }}>Quick Verdict</h3>
+          <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#E84C3D' }}>Quick Verdict</h3>
           <ul style={{ margin: 0, paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <li><strong>Best Overall:</strong> Sony Alpha a7 IV - Full-frame workhorse with outstanding autofocus</li>
             <li><strong>Best for Speed:</strong> Canon EOS R6 Mark II - Industry-leading tracking autofocus</li>
@@ -81,12 +81,12 @@ export default function BestCamerasComparison() {
             fontSize: '14px',
           }}>
             <thead>
-              <tr style={{ borderBottom: '2px solid #2563EB' }}>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Camera</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Price</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Rating</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Key Strength</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Best For</th>
+              <tr style={{ borderBottom: '2px solid #E84C3D' }}>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#E84C3D', fontWeight: 'bold' }}>Camera</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#E84C3D', fontWeight: 'bold' }}>Price</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#E84C3D', fontWeight: 'bold' }}>Rating</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#E84C3D', fontWeight: 'bold' }}>Key Strength</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#E84C3D', fontWeight: 'bold' }}>Best For</th>
               </tr>
             </thead>
             <tbody>
@@ -96,11 +96,11 @@ export default function BestCamerasComparison() {
                   backgroundColor: idx % 2 === 0 ? '#222' : 'transparent',
                 }}>
                   <td style={{ padding: '15px' }}>
-                    <Link href={`/guides/${camera.slug}`} style={{ color: '#2563EB', textDecoration: 'none', fontWeight: '600' }}>
+                    <Link href={`/guides/${camera.slug}`} style={{ color: '#E84C3D', textDecoration: 'none', fontWeight: '600' }}>
                       {camera.name} →
                     </Link>
                   </td>
-                  <td style={{ padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>{camera.price}</td>
+                  <td style={{ padding: '15px', color: '#E84C3D', fontWeight: 'bold' }}>{camera.price}</td>
                   <td style={{ padding: '15px' }}>
                     <span style={{ color: '#F59E0B' }}>★</span> {camera.rating}
                   </td>
@@ -135,7 +135,7 @@ export default function BestCamerasComparison() {
               <img src={camera.image} alt={camera.name} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
               <div style={{ padding: '20px' }}>
                 <h3 style={{ marginTop: 0, marginBottom: '8px', fontSize: '18px' }}>{camera.name}</h3>
-                <p style={{ color: '#2563EB', fontWeight: 'bold', marginBottom: '15px' }}>{camera.price}</p>
+                <p style={{ color: '#E84C3D', fontWeight: 'bold', marginBottom: '15px' }}>{camera.price}</p>
 
                 <div style={{ marginBottom: '15px' }}>
                   <h4 style={{ color: '#059669', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', marginBottom: '8px' }}>✅ Pros</h4>
@@ -159,7 +159,7 @@ export default function BestCamerasComparison() {
                   display: 'block',
                   width: '100%',
                   padding: '10px',
-                  background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)',
+                  background: 'linear-gradient(135deg, #E84C3D 0%, #B91C1C 100%)',
                   color: '#111827',
                   textAlign: 'center',
                   borderRadius: '6px',
@@ -214,7 +214,7 @@ export default function BestCamerasComparison() {
           <Link href="/products" style={{
             display: 'inline-block',
             padding: '12px 30px',
-            background: '#2563EB',
+            background: '#E84C3D',
             color: '#111827',
             textDecoration: 'none',
             borderRadius: '6px',

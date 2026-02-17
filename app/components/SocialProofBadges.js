@@ -36,7 +36,7 @@ export default function SocialProofBadges({ product }) {
         </div>
       )}
       {data.creatorFavorite && (
-        <div style={{ ...badgeStyle, background: '#EFF6FF', color: '#2563EB', fontWeight: '700', textTransform: 'uppercase' }}>
+        <div style={{ ...badgeStyle, background: '#EFF6FF', color: '#E84C3D', fontWeight: '700', textTransform: 'uppercase' }}>
           <span>⭐</span> Creator Fav
         </div>
       )}

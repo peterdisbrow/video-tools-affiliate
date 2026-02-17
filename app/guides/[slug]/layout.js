@@ -5,7 +5,7 @@ export async function generateMetadata({ params }) {
 
   if (!post) {
     return {
-      title: 'Guide Not Found | Creator Gear',
+      title: 'Guide Not Found | Gear Guide',
       description: 'This guide could not be found.',
     };
   }
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
   const truncatedDesc = description.length > 160 ? description.substring(0, 157) + '...' : description;
 
   return {
-    title: `${post.title} | Creator Gear`,
+    title: `${post.title} | Gear Guide`,
     description: truncatedDesc,
     keywords: [post.category, 'video equipment', 'creator gear', 'review'],
     openGraph: {
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
           type: 'image/jpeg',
         },
       ],
-      authors: ['Creator Gear'],
+      authors: ['Gear Guide'],
       publishedTime: post.date,
     },
     twitter: {

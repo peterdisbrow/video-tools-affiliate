@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const ACCENT = '#2563EB';
+const ACCENT = '#E84C3D';
 
 const inputStyle = {
   width: '100%',

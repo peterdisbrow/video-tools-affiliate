@@ -5,7 +5,7 @@ import { blogPosts } from './blogData';
 import SiteNav from '../components/SiteNav';
 import SiteFooter from '../components/SiteFooter';
 
-const ACCENT = '#2563EB';
+const ACCENT = '#E84C3D';
 
 export default function GuidesPage() {
   return (

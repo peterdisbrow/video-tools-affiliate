@@ -21,7 +21,7 @@ export default function SiteFooter() {
           {/* Brand */}
           <div>
             <div style={{ fontSize: '1.1rem', fontWeight: '700', color: '#111827', marginBottom: '0.5rem' }}>
-              🎬 Creator Gear
+              🎬 Gear Guide
             </div>
             <p style={{ fontSize: '0.85rem', color: '#6B7280', maxWidth: '240px', lineHeight: '1.5', margin: 0 }}>
               Honest gear reviews by creators, for creators. No fluff, no sponsored bias.
@@ -60,7 +60,7 @@ export default function SiteFooter() {
           gap: '1rem',
         }}>
           <p style={{ fontSize: '0.8rem', color: '#9CA3AF', margin: 0 }}>
-            © 2026 Creator Gear. Affiliate links support this site at no extra cost to you.
+            © 2026 Gear Guide. Affiliate links support this site at no extra cost to you.
           </p>
           <p style={{ fontSize: '0.8rem', color: '#9CA3AF', margin: 0 }}>
             Curated recommendations for video creators &amp; filmmakers.

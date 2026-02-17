@@ -12,7 +12,7 @@ export default function SiteNav() {
   };
 
   const linkStyle = (href) => ({
-    color: isActive(href) ? '#2563EB' : '#374151',
+    color: isActive(href) ? '#E84C3D' : '#374151',
     textDecoration: 'none',
     fontWeight: isActive(href) ? '600' : '500',
     fontSize: '0.95rem',
@@ -47,7 +47,7 @@ export default function SiteNav() {
           alignItems: 'center',
           gap: '0.4rem',
         }}>
-          🎬 <span>Creator Gear</span>
+          <span style={{ color: '#E84C3D', fontWeight: '900' }}>GG</span><span style={{ marginLeft: '0.3rem' }}>Gear Guide</span>
         </Link>
 
         {/* Nav Links */}
@@ -66,20 +66,22 @@ export default function SiteNav() {
             gap: '0.3rem',
             transition: 'color 0.15s',
           }}
-          onMouseEnter={e => e.currentTarget.style.color = '#2563EB'}
+          onMouseEnter={e => e.currentTarget.style.color = '#E84C3D'}
           onMouseLeave={e => e.currentTarget.style.color = '#374151'}
           >
             ATEM School ↗
           </a>
           <Link href="/free-gear-guide" style={{
-            backgroundColor: '#2563EB',
+            backgroundColor: '#E84C3D',
             color: '#FFFFFF',
             textDecoration: 'none',
-            fontWeight: '600',
-            fontSize: '0.9rem',
+            fontWeight: '700',
+            fontSize: '0.85rem',
             padding: '0.45rem 1rem',
-            borderRadius: '0.5rem',
+            borderRadius: '3px',
             transition: 'background-color 0.15s',
+            textTransform: 'uppercase',
+            letterSpacing: '0.04em',
           }}>
             Free Tools
           </Link>

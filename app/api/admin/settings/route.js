@@ -10,7 +10,7 @@ function authCheck(request) {
 }
 
 const defaultSettings = {
-  siteName: 'Video Creator Gear',
+  siteName: 'Video Gear Guide',
   tagline: 'Honest reviews for video creators',
   contactEmail: 'andrew@videocreatorgear.com',
   maintenanceMode: false,

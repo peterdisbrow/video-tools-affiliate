@@ -111,7 +111,7 @@ export default function ProductReview({ product, onClose }) {
             <StarRating rating={review.rating} />
             <p style={{
               marginTop: '0.5rem', fontSize: '1.05rem', fontWeight: '600',
-              color: '#2563EB', lineHeight: '1.4', margin: '0.5rem 0 0 0'
+              color: '#E84C3D', lineHeight: '1.4', margin: '0.5rem 0 0 0'
             }}>
               {review.verdict}
             </p>
@@ -162,7 +162,7 @@ export default function ProductReview({ product, onClose }) {
             rel="noopener noreferrer"
             style={{
               display: 'block', width: '100%', padding: '0.85rem',
-              background: '#2563EB',
+              background: '#E84C3D',
               color: '#fff', textAlign: 'center', borderRadius: '0.6rem',
               textDecoration: 'none', fontWeight: 'bold', fontSize: '1rem',
               cursor: 'pointer', transition: 'opacity 0.2s', boxSizing: 'border-box',

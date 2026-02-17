@@ -8,7 +8,7 @@ import UrgencySignals from '../components/UrgencySignals';
 import SiteNav from '../components/SiteNav';
 import SiteFooter from '../components/SiteFooter';
 
-const ACCENT = '#2563EB';
+const ACCENT = '#E84C3D';
 
 // Seeded shuffle function (consistent within a day, changes daily)
 const seededShuffle = (array) => {

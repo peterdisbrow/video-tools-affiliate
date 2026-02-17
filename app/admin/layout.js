@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 const AuthContext = createContext();
 export const useAuth = () => useContext(AuthContext);
 
-const ACCENT = '#2563EB';
+const ACCENT = '#E84C3D';
 
 const navItems = [
   { href: '/admin', label: '📊 Dashboard', exact: true },

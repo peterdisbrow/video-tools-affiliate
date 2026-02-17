@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const ACCENT = '#2563EB';
+const ACCENT = '#E84C3D';
 const inputStyle = { width: '100%', padding: '0.4rem 0.6rem', borderRadius: '4px', border: '1px solid #d1d5db', fontSize: '0.8rem', boxSizing: 'border-box' };
 
 const SITE_PAGES = [
@@ -55,7 +55,7 @@ export default function SEOManager() {
       const res = await fetch('/api/admin/generate-meta', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ pageTitle: page.title, pageContent: `Page at ${page.path} on Video Creator Gear site` }),
+        body: JSON.stringify({ pageTitle: page.title, pageContent: `Page at ${page.path} on Video Gear Guide site` }),
       });
       const data = await res.json();
       if (data.description) {
@@ -103,7 +103,7 @@ export default function SEOManager() {
                       style={inputStyle}
                       value={data.metaTitle || ''}
                       onChange={e => updateSeo(page.path, 'metaTitle', e.target.value)}
-                      placeholder={`${page.title} | Video Creator Gear`}
+                      placeholder={`${page.title} | Video Gear Guide`}
                     />
                   </td>
                   <td style={{ padding: '0.5rem' }}>

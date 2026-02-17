@@ -8,7 +8,7 @@ import SiteNav from '../../components/SiteNav';
 import SiteFooter from '../../components/SiteFooter';
 import { markdownToHtml } from '../../lib/markdownToHtml';
 
-const ACCENT = '#2563EB';
+const ACCENT = '#E84C3D';
 
 function getRelatedPosts(slug, allPosts) {
   return allPosts.filter(p => p.slug !== slug).slice(0, 4);
@@ -26,7 +26,7 @@ export default function GuidesPost() {
 
   useEffect(() => {
     if (post) {
-      document.title = `${post.title} | Creator Gear`;
+      document.title = `${post.title} | Gear Guide`;
       let metaDesc = document.querySelector('meta[name="description"]');
       if (!metaDesc) {
         metaDesc = document.createElement('meta');

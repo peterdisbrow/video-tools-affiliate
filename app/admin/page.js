@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-const ACCENT = '#2563EB';
+const ACCENT = '#E84C3D';
 
 const cardStyle = {
   background: '#fff',

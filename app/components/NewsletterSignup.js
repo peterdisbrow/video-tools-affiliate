@@ -121,7 +121,7 @@ export default function NewsletterSignup() {
             disabled={status === 'loading'}
             style={{
               padding: '0.75rem 1.5rem', borderRadius: '0.5rem', border: 'none',
-              backgroundColor: '#2563EB', color: '#FFFFFF', fontWeight: 'bold',
+              backgroundColor: '#E84C3D', color: '#FFFFFF', fontWeight: 'bold',
               fontSize: '1rem', cursor: status === 'loading' ? 'wait' : 'pointer',
               whiteSpace: 'nowrap', transition: 'background-color 0.2s',
             }}

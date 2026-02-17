@@ -157,7 +157,7 @@ export default function HomePage() {
         <span style={{ color: '#aaa' }}>15 years broadcast engineering · Blackmagic Design reseller</span>
         <a href="https://atemschool.com" target="_blank" rel="noopener noreferrer"
           style={{ color: ACCENT, fontWeight: '700', textDecoration: 'none', fontSize: '0.75rem' }}>
-          🎓 Free Interview Guide →
+          🎓 ATEM School — Members get gear pricing →
         </a>
       </div>
 

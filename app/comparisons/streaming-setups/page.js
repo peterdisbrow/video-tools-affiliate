@@ -43,7 +43,7 @@ export default function StreamingSetupsComparison() {
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Header */}
         <div style={{ marginBottom: '50px', textAlign: 'center' }}>
-          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '15px', background: '#2563EB', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '15px', background: '#E84C3D', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Complete Streaming Setups Guide (2026)
           </h1>
           <p style={{ fontSize: '18px', color: '#6B7280', marginBottom: '10px', maxWidth: '600px', margin: '15px auto' }}>
@@ -62,7 +62,7 @@ export default function StreamingSetupsComparison() {
           border: '1px solid #BFDBFE',
           marginBottom: '40px',
         }}>
-          <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#2563EB' }}>Which Setup Should You Choose?</h3>
+          <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#E84C3D' }}>Which Setup Should You Choose?</h3>
           <ul style={{ margin: 0, paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <li><strong>Starting Out?</strong> Budget Starter Setup - Test the waters with minimal investment</li>
             <li><strong>Serious About Growth?</strong> Enthusiast Creator Setup - Balance of quality and value</li>
@@ -78,7 +78,7 @@ export default function StreamingSetupsComparison() {
               backgroundColor: '#FFFFFF',
               borderRadius: '8px',
               overflow: 'hidden',
-              border: '2px solid ' + (idx === 0 ? '#2563EB' : '#333'),
+              border: '2px solid ' + (idx === 0 ? '#E84C3D' : '#333'),
               position: 'relative',
             }}>
               {idx === 0 && (
@@ -86,7 +86,7 @@ export default function StreamingSetupsComparison() {
                   position: 'absolute',
                   top: '10px',
                   right: '10px',
-                  backgroundColor: '#2563EB',
+                  backgroundColor: '#E84C3D',
                   color: '#111827',
                   padding: '4px 12px',
                   borderRadius: '12px',
@@ -99,9 +99,9 @@ export default function StreamingSetupsComparison() {
               )}
 
               <div style={{ padding: '20px', borderBottom: '1px solid #333' }}>
-                <h3 style={{ marginTop: 0, marginBottom: '8px', fontSize: '20px', color: '#2563EB' }}>{setup.name}</h3>
+                <h3 style={{ marginTop: 0, marginBottom: '8px', fontSize: '20px', color: '#E84C3D' }}>{setup.name}</h3>
                 <p style={{ marginTop: 0, marginBottom: '10px', color: '#6B7280' }}>{setup.description}</p>
-                <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#2563EB', margin: '10px 0' }}>{setup.price}</p>
+                <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#E84C3D', margin: '10px 0' }}>{setup.price}</p>
                 <p style={{ fontSize: '12px', color: '#666', margin: 0 }}>Rating: <span style={{ color: '#F59E0B' }}>★</span> {setup.rating}</p>
               </div>
 
@@ -171,7 +171,7 @@ export default function StreamingSetupsComparison() {
           <Link href="/products" style={{
             display: 'inline-block',
             padding: '12px 30px',
-            background: '#2563EB',
+            background: '#E84C3D',
             color: '#111827',
             textDecoration: 'none',
             borderRadius: '6px',

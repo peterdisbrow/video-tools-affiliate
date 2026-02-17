@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Creator Gear – Honest Video Gear Reviews by Creators",
-  description: "Honest reviews of video cameras, audio gear, lighting, and software from creators with 500K+ YouTube subscribers. No sponsored content, real-world testing, affiliate disclosures.",
+  title: "Gear Guide – Video Gear Reviews from a 15-Year Broadcast Engineer",
+  description: "Honest video gear reviews by Andrew Disbrow — 15 years broadcast engineering, Blackmagic Design reseller. Cameras, lighting, audio, ATEM switchers. No fluff, no templates.",
 };
 
 import TrackingProvider from './components/TrackingProvider';
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
           }
-          a { color: #2563EB; }
+          a { color: #E84C3D; }
           img { max-width: 100%; }
           button { font-family: inherit; }
         `}</style>

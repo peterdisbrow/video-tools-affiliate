@@ -6,7 +6,7 @@ import { useState, useMemo } from 'react';
 import SiteNav from '../components/SiteNav';
 import SiteFooter from '../components/SiteFooter';
 
-const ACCENT = '#2563EB';
+const ACCENT = '#E84C3D';
 
 const CATEGORIES = ['all', ...Array.from(new Set(blogPosts.map(p => p.category))).sort()];
 
@@ -56,7 +56,7 @@ export default function BlogPage() {
             Latest Reviews &amp; Guides
           </div>
           <h1 style={{ fontSize: '2.25rem', fontWeight: '800', color: '#111827', marginBottom: '0.75rem', lineHeight: '1.25' }}>
-            Creator Gear Blog
+            Gear Guide Blog
           </h1>
           <p style={{ fontSize: '1rem', color: '#6B7280', marginBottom: '1.5rem', lineHeight: '1.6' }}>
             Honest gear reviews, buying guides, and production tips — from 15 years of broadcast engineering.

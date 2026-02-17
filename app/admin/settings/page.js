@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-const ACCENT = '#2563EB';
+const ACCENT = '#E84C3D';
 const inputStyle = { width: '100%', padding: '0.5rem 0.75rem', borderRadius: '6px', border: '1px solid #d1d5db', fontSize: '0.9rem', boxSizing: 'border-box' };
 const cardStyle = { background: '#fff', border: '1px solid #e5e7eb', borderRadius: '12px', padding: '1.5rem', marginBottom: '1.5rem' };
 const btnStyle = { padding: '0.5rem 1rem', borderRadius: '6px', border: 'none', cursor: 'pointer', fontSize: '0.85rem', fontWeight: '600' };

@@ -1,5 +1,5 @@
 /**
- * Product Lookup Utility for Creator Gear Affiliate Site
+ * Product Lookup Utility for Gear Guide Affiliate Site
  * Pure JavaScript — no external dependencies
  */
 

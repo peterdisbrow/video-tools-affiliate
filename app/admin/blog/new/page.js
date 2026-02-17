@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 
-const ACCENT = '#2563EB';
+const ACCENT = '#E84C3D';
 const categories = ['Audio', 'Camera', 'Lighting', 'Software', 'Streaming', 'Accessories'];
 
 export default function AIBlogWriter() {
