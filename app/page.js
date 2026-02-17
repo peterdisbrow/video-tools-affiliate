@@ -17,13 +17,31 @@ const generateAmazonLink = (asin) => {
   return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_TAG}`;
 };
 
-const products = productsData.products.map(product => ({
+// Seeded shuffle function (consistent within a day, changes daily)
+const seededShuffle = (array) => {
+  const seed = new Date().toDateString();
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) {
+    hash = ((hash << 5) - hash) + seed.charCodeAt(i);
+    hash |= 0;
+  }
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    hash = ((hash << 5) - hash) + i;
+    hash |= 0;
+    const j = Math.abs(hash) % (i + 1);
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+};
+
+const products = seededShuffle(productsData.products.map(product => ({
   ...product,
   link: product.asin 
     ? generateAmazonLink(product.asin)
     : product.affiliateLink,
   image: product.image || 'https://images.unsplash.com/photo-1606986628025-35d57e735ae0?w=400&h=300&fit=crop&q=80'
-}));
+})));
 
 const categories = [
   { id: 'all', name: 'All Gear' },

@@ -10,6 +10,24 @@ import SiteFooter from '../components/SiteFooter';
 
 const ACCENT = '#2563EB';
 
+// Seeded shuffle function (consistent within a day, changes daily)
+const seededShuffle = (array) => {
+  const seed = new Date().toDateString();
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) {
+    hash = ((hash << 5) - hash) + seed.charCodeAt(i);
+    hash |= 0;
+  }
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    hash = ((hash << 5) - hash) + i;
+    hash |= 0;
+    const j = Math.abs(hash) % (i + 1);
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+};
+
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
@@ -19,10 +37,10 @@ export default function ProductsPage() {
   }, []);
 
   const filteredProducts = useMemo(() => {
-    if (selectedCategory === 'all') {
-      return blogPosts;
-    }
-    return blogPosts.filter(post => post.category === selectedCategory);
+    const filtered = selectedCategory === 'all' 
+      ? blogPosts 
+      : blogPosts.filter(post => post.category === selectedCategory);
+    return seededShuffle(filtered);
   }, [selectedCategory]);
 
   return (
