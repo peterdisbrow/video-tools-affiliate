@@ -152,15 +152,6 @@ export default function HomePage() {
         }
       `}</style>
 
-      {/* ─── TOP BAR ─── */}
-      <div className="top-bar" style={{ backgroundColor: NAV_BG, color: '#fff', padding: '0.4rem 2rem', fontSize: '0.75rem' }}>
-        <span style={{ color: '#aaa' }}>15 years broadcast engineering · Blackmagic Design reseller</span>
-        <a href="https://atemschool.com" target="_blank" rel="noopener noreferrer"
-          style={{ color: ACCENT, fontWeight: '700', textDecoration: 'none', fontSize: '0.75rem' }}>
-          🎓 ATEM School — Members get gear pricing →
-        </a>
-      </div>
-
       <SiteNav />
 
       {/* ─── CATEGORY NAV BAR ─── */}
