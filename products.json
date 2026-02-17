@@ -9,7 +9,8 @@
       "rating": 4.9,
       "description": "The industry-standard dynamic microphone used by top podcasters and broadcasters worldwide. Exceptional voice isolation, warm tone, and built-in pop filter. #1 most mentioned on Reddit for streaming/podcasting.",
       "image": "https://m.media-amazon.com/images/I/51Wvs2GxZ1L._AC_SL1000_.jpg",
-      "redditMentions": 156
+      "redditMentions": 156,
+      "affiliateLink": "https://www.amazon.com/dp/B0CCSVYWMH?tag=disbrowproduc-20"
     },
     {
       "id": 1,
@@ -20,7 +21,8 @@
       "rating": 4.8,
       "description": "Full-frame hybrid mirrorless camera with 33MP sensor, 4K 60p video, real-time Eye AF, and 10-bit color depth. The go-to choice for creators who need both photo and video excellence.",
       "image": "https://m.media-amazon.com/images/I/81jlDvZPMnL._AC_SL1500_.jpg",
-      "redditMentions": 142
+      "redditMentions": 142,
+      "affiliateLink": "https://www.amazon.com/dp/B09JZRWRJN?tag=disbrowproduc-20"
     },
     {
       "id": 2,
@@ -31,7 +33,8 @@
       "rating": 4.7,
       "description": "Blazing-fast 40fps continuous shooting, 6K oversampled 4K video, and Canon's legendary Dual Pixel autofocus. Perfect for run-and-gun creators who need speed and reliability.",
       "image": "https://m.media-amazon.com/images/I/61S4Op1us3L._AC_SL1500_.jpg",
-      "redditMentions": 138
+      "redditMentions": 138,
+      "affiliateLink": "https://www.amazon.com/dp/B0BL7X3KLV?tag=disbrowproduc-20"
     },
     {
       "id": 3,
@@ -42,7 +45,8 @@
       "rating": 4.6,
       "description": "Ultra-compact gimbal camera with a 1-inch CMOS sensor, 4K/120fps, and a 2-inch rotatable touchscreen. The ultimate vlogging companion that fits in your pocket.",
       "image": "https://m.media-amazon.com/images/I/51d4Esi79-L._AC_SL1285_.jpg",
-      "redditMentions": 127
+      "redditMentions": 127,
+      "affiliateLink": "https://www.amazon.com/dp/B0CG19FGQ5?tag=disbrowproduc-20"
     },
     {
       "id": 10,
@@ -75,7 +79,8 @@
       "rating": 4.8,
       "description": "Dual-channel wireless mic system with built-in recording, 200m range, and broadcast-grade audio. Clip-on simplicity with professional results for interviews and vlogs.",
       "image": "https://m.media-amazon.com/images/I/81RrQygABHL._AC_SL1500_.jpg",
-      "redditMentions": 118
+      "redditMentions": 118,
+      "affiliateLink": "https://www.amazon.com/dp/B0G3YF6XTB?tag=disbrowproduc-20"
     },
     {
       "id": 4,
@@ -86,7 +91,8 @@
       "rating": 4.7,
       "description": "Studio-quality USB condenser mic with built-in DSP, high-res audio output, and zero-latency monitoring. Plug-and-play excellence for podcasters and streamers.",
       "image": "https://m.media-amazon.com/images/I/51mi31NUkvL._AC_SL1080_.jpg",
-      "redditMentions": 112
+      "redditMentions": 112,
+      "affiliateLink": "https://www.amazon.com/dp/B084P1CXFD?tag=disbrowproduc-20"
     },
     {
       "id": 16,
@@ -97,7 +103,8 @@
       "rating": 4.8,
       "description": "Revolutionary compact tripod that packs down to the size of a water bottle. Premium aluminum build, quick-deploy legs, and a phone mount included. Travel creators love it.",
       "image": "https://m.media-amazon.com/images/I/61c+tSlKovL._AC_SL1500_.jpg",
-      "redditMentions": 107
+      "redditMentions": 107,
+      "affiliateLink": "https://www.amazon.com/dp/B0G4NLPCKF?tag=disbrowproduc-20"
     },
     {
       "id": 26,
@@ -108,7 +115,8 @@
       "rating": 4.6,
       "description": "APS-C mirrorless with AI-based subject recognition, 4K 120fps, S-Cinetone, and in-body stabilization. The best compact camera for content creators on the move.",
       "image": "https://m.media-amazon.com/images/I/81bppr93c5L._AC_SL1500_.jpg",
-      "redditMentions": 104
+      "redditMentions": 104,
+      "affiliateLink": "https://www.amazon.com/dp/B0C5GCGJG3?tag=disbrowproduc-20"
     },
     {
       "id": 23,
@@ -119,7 +127,8 @@
       "rating": 4.7,
       "description": "Full-frame mirrorless with partially stacked sensor, 6K internal recording, N-RAW, and 120fps 4K. Nikon's most capable hybrid camera for video creators.",
       "image": "https://m.media-amazon.com/images/I/71vYxEQ-EHL._AC_SL1500_.jpg",
-      "redditMentions": 98
+      "redditMentions": 98,
+      "affiliateLink": "https://www.amazon.com/dp/B0D5DPFRHL?tag=disbrowproduc-20"
     },
     {
       "id": 15,
@@ -130,7 +139,8 @@
       "rating": 4.5,
       "description": "The webcam that defined the category. Full HD 1080p at 30fps with dual mics and automatic light correction. Reliable, affordable, and universally compatible.",
       "image": "https://m.media-amazon.com/images/I/61-6uAf8soL._AC_SL1500_.jpg",
-      "redditMentions": 96
+      "redditMentions": 96,
+      "affiliateLink": "https://www.amazon.com/dp/B07K986YLL?tag=disbrowproduc-20"
     },
     {
       "id": 13,
@@ -141,7 +151,8 @@
       "rating": 4.7,
       "description": "15 customizable LCD keys for one-touch control of your stream, smart home, and apps. Drag-and-drop setup with thousands of integrations via plugins.",
       "image": "https://m.media-amazon.com/images/I/61gtdFnK+UL._AC_SL1500_.jpg",
-      "redditMentions": 94
+      "redditMentions": 94,
+      "affiliateLink": "https://www.amazon.com/dp/B09738CV2G?tag=disbrowproduc-20"
     },
     {
       "id": 6,
@@ -152,7 +163,8 @@
       "rating": 4.7,
       "description": "Best-in-class entry-level condenser mic with a custom-engineered low-mass diaphragm for extended frequency response. Unbeatable quality at this price point.",
       "image": "https://m.media-amazon.com/images/I/71aLB289VuL._AC_SL1500_.jpg",
-      "redditMentions": 89
+      "redditMentions": 89,
+      "affiliateLink": "https://www.amazon.com/dp/B0006H92QK?tag=disbrowproduc-20"
     },
     {
       "id": 7,
@@ -163,7 +175,8 @@
       "rating": 4.6,
       "description": "Ultra-portable RGBWW pocket LED with magnetic mount, Sidus Link app control, and 3200K-6500K + full HSI color. The ultimate accent and travel light for creators.",
       "image": "https://m.media-amazon.com/images/I/51EKka43uxL._AC_SL1500_.jpg",
-      "redditMentions": 79
+      "redditMentions": 79,
+      "affiliateLink": "https://www.amazon.com/dp/B07TSXGKPM?tag=disbrowproduc-20"
     },
     {
       "id": 27,
@@ -174,7 +187,8 @@
       "rating": 4.5,
       "description": "Lightweight full-frame mirrorless with 4K 60fps, Dual Pixel CMOS AF II, and Canon Log 3. An accessible entry into full-frame video production.",
       "image": "https://m.media-amazon.com/images/I/91DyU5qcxiL._AC_SL1500_.jpg",
-      "redditMentions": 82
+      "redditMentions": 82,
+      "affiliateLink": "https://www.amazon.com/dp/B0BTLS2B8P?tag=disbrowproduc-20"
     },
     {
       "id": 17,
@@ -185,7 +199,8 @@
       "rating": 4.6,
       "description": "Lightweight 3-axis gimbal stabilizer with a 1.8\" OLED touchscreen, SuperSmooth mode, and automated axis locks. Buttery-smooth footage for any mirrorless camera.",
       "image": "https://m.media-amazon.com/images/I/51+9vmZgtVL._AC_SL1500_.jpg",
-      "redditMentions": 81
+      "redditMentions": 81,
+      "affiliateLink": "https://www.amazon.com/dp/B0CS6LC1ZQ?tag=disbrowproduc-20"
     },
     {
       "id": 52,
@@ -196,7 +211,8 @@
       "rating": 4.6,
       "description": "6-track portable recorder with 32-bit float recording, dual XLR/TRS inputs, and interchangeable capsules. Never clip your audio again\u201432-bit float is game-changing.",
       "image": "https://m.media-amazon.com/images/I/61qhiEHtIIL._AC_SL1500_.jpg",
-      "redditMentions": 78
+      "redditMentions": 78,
+      "affiliateLink": "https://www.amazon.com/dp/B0D2KJMC78?tag=disbrowproduc-20"
     },
     {
       "id": 9,
@@ -207,7 +223,8 @@
       "rating": 4.7,
       "description": "65W daylight-balanced LED with Bowens mount, Bluetooth app control, and ultra-quiet fan. Compact, lightweight, and perfect for key/fill lighting in any YouTube studio.",
       "image": "https://m.media-amazon.com/images/I/61iSuGswkTL._AC_SL1500_.jpg",
-      "redditMentions": 88
+      "redditMentions": 88,
+      "affiliateLink": "https://www.amazon.com/dp/B0BWDQR3HZ?tag=disbrowproduc-20"
     },
     {
       "id": 19,
@@ -218,7 +235,8 @@
       "rating": 4.7,
       "description": "APS-C cinema line camera with 4K 120fps, S-Cinetone color science, dual base ISO, and active stabilization. The most affordable entry into Sony's cinema ecosystem.",
       "image": "https://m.media-amazon.com/images/I/91pFgopul8L._AC_SL1500_.jpg",
-      "redditMentions": 74
+      "redditMentions": 74,
+      "affiliateLink": "https://www.amazon.com/dp/B0BHKL3GZL?tag=disbrowproduc-20"
     },
     {
       "id": 28,
@@ -229,7 +247,8 @@
       "rating": 4.7,
       "description": "Professional fluid video head with bridging technology, variable fluid drag, and 75mm half-ball. Industry-standard support for mid-range cinema cameras up to 26.5 lbs.",
       "image": "https://m.media-amazon.com/images/I/71250IKHHJL._AC_SL1500_.jpg",
-      "redditMentions": 72
+      "redditMentions": 72,
+      "affiliateLink": "https://www.amazon.com/dp/B08GKZBJP3?tag=disbrowproduc-20"
     },
     {
       "id": 64,
@@ -240,7 +259,8 @@
       "rating": 4.9,
       "description": "The ultimate standard zoom for Sony full-frame. Razor-sharp corner-to-corner, minimal focus breathing, nano AR coating, and the lightest f/2.8 zoom in its class.",
       "image": "https://m.media-amazon.com/images/I/91RrlqL7onL._AC_SL1500_.jpg",
-      "redditMentions": 71
+      "redditMentions": 71,
+      "affiliateLink": "https://www.amazon.com/dp/B09ZYP3P6N?tag=disbrowproduc-20"
     },
     {
       "id": 44,
@@ -251,7 +271,8 @@
       "rating": 4.8,
       "description": "300W bi-color LED with 2700K-6500K range, Bowens mount, Sidus Link app control, and weather-resistant build. The professional's choice for studio and on-location work.",
       "image": "https://m.media-amazon.com/images/I/714nDzpHSrL._AC_SL1500_.jpg",
-      "redditMentions": 72
+      "redditMentions": 72,
+      "affiliateLink": "https://www.amazon.com/dp/B09B9X7GV3?tag=disbrowproduc-20"
     },
     {
       "id": 20,
@@ -262,7 +283,8 @@
       "rating": 4.7,
       "description": "Full-frame mirrorless with phase-detect AF, 6K open-gate recording, unlimited recording time, and dual image stabilization. A game-changer for hybrid shooters.",
       "image": "https://m.media-amazon.com/images/I/81FZt-KEEmL._AC_SL1500_.jpg",
-      "redditMentions": 65
+      "redditMentions": 65,
+      "affiliateLink": "https://www.amazon.com/dp/B0BQNPMWNK?tag=disbrowproduc-20"
     },
     {
       "id": 46,
@@ -273,7 +295,8 @@
       "rating": 4.8,
       "description": "Professional shotgun microphone with switchable low-cut filter, phantom or battery power, and exceptional off-axis rejection. The go-to boom mic for indie film and documentary.",
       "image": "https://m.media-amazon.com/images/I/519nwYUEq8L._AC_SL1500_.jpg",
-      "redditMentions": 63
+      "redditMentions": 63,
+      "affiliateLink": "https://www.amazon.com/dp/B00B0IQPBQ?tag=disbrowproduc-20"
     },
     {
       "id": 12,
@@ -295,7 +318,8 @@
       "rating": 4.8,
       "description": "Professional-grade 200W daylight LED with Bowens mount compatibility. Ultra-quiet fan, app control, and stunning output for studio and on-location work.",
       "image": "https://m.media-amazon.com/images/I/61qcrx+GV3L._AC_SL1500_.jpg",
-      "redditMentions": 70
+      "redditMentions": 70,
+      "affiliateLink": "https://www.amazon.com/dp/B08RNW1HL6?tag=disbrowproduc-20"
     },
     {
       "id": 48,
@@ -306,7 +330,8 @@
       "rating": 4.7,
       "description": "2-in/2-out USB-C audio interface with Air mode, auto-gain, and 192kHz/24-bit conversion. The world's best-selling audio interface for creators and musicians.",
       "image": "https://m.media-amazon.com/images/I/51Q1P7SSAIL._AC_SL1500_.jpg",
-      "redditMentions": 59
+      "redditMentions": 59,
+      "affiliateLink": "https://www.amazon.com/dp/B0C5JRWFP7?tag=disbrowproduc-20"
     },
     {
       "id": 24,
@@ -317,7 +342,8 @@
       "rating": 4.7,
       "description": "APS-C flagship with stacked sensor, 6.2K 30fps, 4K 120fps, subject-detection AF, and F-Log2 for maximum dynamic range. Built for speed and video excellence.",
       "image": "https://m.media-amazon.com/images/I/81NOrFuc+NL._AC_SL1500_.jpg",
-      "redditMentions": 58
+      "redditMentions": 58,
+      "affiliateLink": "https://www.amazon.com/dp/B0B3Y9F82F?tag=disbrowproduc-20"
     },
     {
       "id": 38,
@@ -328,7 +354,8 @@
       "rating": 4.7,
       "description": "Bi-color 300W COB LED with Bowens mount, 2700K-6500K range, and built-in effects. Professional output with silent fan mode for interview and narrative work.",
       "image": "https://m.media-amazon.com/images/I/71imP6qIp0L._AC_SL1500_.jpg",
-      "redditMentions": 56
+      "redditMentions": 56,
+      "affiliateLink": "https://www.amazon.com/dp/B0BN2K4PWS?tag=disbrowproduc-20"
     },
     {
       "id": 29,
@@ -339,7 +366,8 @@
       "rating": 4.8,
       "description": "Lightweight carbon fiber tripod with fluid head, above-ground spreader, and pan bar. Broadcast-grade stability at just 5.5 lbs\u2014the ENG standard worldwide.",
       "image": "https://m.media-amazon.com/images/I/71UVb0IxvGL._AC_SL1500_.jpg",
-      "redditMentions": 55
+      "redditMentions": 55,
+      "affiliateLink": "https://www.amazon.com/dp/B00L3R5U0G?tag=disbrowproduc-20"
     },
     {
       "id": 49,
@@ -350,7 +378,8 @@
       "rating": 4.7,
       "description": "2-in/4-out USB interface with legendary SSL preamps, 4K DAC mode, and studio-grade monitoring. Brings mixing console heritage to your desktop at an accessible price.",
       "image": "https://m.media-amazon.com/images/I/61y+knHjBbL._AC_SL1500_.jpg",
-      "redditMentions": 53
+      "redditMentions": 53,
+      "affiliateLink": "https://www.amazon.com/dp/B084CVKL3G?tag=disbrowproduc-20"
     },
     {
       "id": 21,
@@ -361,7 +390,8 @@
       "rating": 4.6,
       "description": "Super 35 cinema camera with 6K resolution, 13 stops of dynamic range, built-in ND filters, and Blackmagic RAW recording. Hollywood image quality at indie prices.",
       "image": "https://m.media-amazon.com/images/I/71h0kdv4MsL._AC_SL1500_.jpg",
-      "redditMentions": 52
+      "redditMentions": 52,
+      "affiliateLink": "https://www.amazon.com/dp/B08WHJQPK7?tag=disbrowproduc-20"
     },
     {
       "id": 45,
@@ -372,7 +402,8 @@
       "rating": 4.6,
       "description": "RGBWW LED soft light panel with 2500K-7500K, Sidus Link control, and ultra-portable design. Perfect for travel creators and on-location interviews.",
       "image": "https://m.media-amazon.com/images/I/81NXvSanJzL._AC_SL1500_.jpg",
-      "redditMentions": 70
+      "redditMentions": 70,
+      "affiliateLink": "https://www.amazon.com/dp/B0B1H9V9NP?tag=disbrowproduc-20"
     },
     {
       "id": 37,
@@ -383,7 +414,8 @@
       "rating": 4.7,
       "description": "Flexible RGBWW LED mat with 2500K-7500K range, Sidus Link app control, and ultra-thin foldable design. Professional color accuracy in a portable, versatile form factor.",
       "image": "https://m.media-amazon.com/images/I/61oGOyRGEqL._AC_SL1500_.jpg",
-      "redditMentions": 70
+      "redditMentions": 70,
+      "affiliateLink": "https://www.amazon.com/dp/B0BVD2QG5Y?tag=disbrowproduc-20"
     },
     {
       "id": 53,
@@ -394,7 +426,8 @@
       "rating": 4.8,
       "description": "Broadcast dynamic microphone with Variable-D technology for zero proximity effect. The voice of radio for 50+ years\u2014consistent tone at any distance.",
       "image": "https://m.media-amazon.com/images/I/412OClklrBL._AC_SL1080_.jpg",
-      "redditMentions": 48
+      "redditMentions": 48,
+      "affiliateLink": "https://www.amazon.com/dp/B00KCN83V8?tag=disbrowproduc-20"
     },
     {
       "id": 18,
@@ -405,7 +438,8 @@
       "rating": 4.7,
       "description": "Instantly attach your camera to any backpack strap or belt. Arca-Swiss compatible, aircraft-grade aluminum, and a lifesaver for hiking filmmakers and travel creators.",
       "image": "https://m.media-amazon.com/images/I/71iNxGiM8hL._AC_SL1500_.jpg",
-      "redditMentions": 47
+      "redditMentions": 47,
+      "affiliateLink": "https://www.amazon.com/dp/B07818LB9D?tag=disbrowproduc-20"
     },
     {
       "id": 50,
@@ -416,7 +450,8 @@
       "rating": 4.8,
       "description": "Ultra-portable 12-in/12-out USB interface with reference-class converters, SteadyClock FS, and TotalMix FX. The interface professionals trust for critical recording.",
       "image": "https://m.media-amazon.com/images/I/51fPRAX6dUL._AC_SL1500_.jpg",
-      "redditMentions": 46
+      "redditMentions": 46,
+      "affiliateLink": "https://www.amazon.com/dp/B0872RRXP8?tag=disbrowproduc-20"
     },
     {
       "id": 39,
@@ -427,7 +462,8 @@
       "rating": 4.8,
       "description": "600W daylight point-source LED with 5600K, weather-resistant build, Sidus Link app control, and 8 built-in effects. Cinema-grade key light for professional sets.",
       "image": "https://m.media-amazon.com/images/I/61tq7OrVa-L._AC_SL1500_.jpg",
-      "redditMentions": 70
+      "redditMentions": 70,
+      "affiliateLink": "https://www.amazon.com/dp/B09MRYKTQV?tag=disbrowproduc-20"
     },
     {
       "id": 25,
@@ -438,7 +474,8 @@
       "rating": 4.6,
       "description": "Full-frame cinema mirrorless with 6K/24p, unlimited recording, V-Log/V-Gamut, dual native ISO, and Netflix-approved image quality. A documentary filmmaker's dream.",
       "image": "https://m.media-amazon.com/images/I/710I-iMH9LL._AC_SL1500_.jpg",
-      "redditMentions": 44
+      "redditMentions": 44,
+      "affiliateLink": "https://www.amazon.com/dp/B07WZDBPVX?tag=disbrowproduc-20"
     },
     {
       "id": 55,
@@ -449,7 +486,8 @@
       "rating": 4.6,
       "description": "Ultra-low noise shotgun microphone with brass body, interchangeable connectors, and exceptional sensitivity. Cinema-quality dialogue capture at indie pricing.",
       "image": "https://m.media-amazon.com/images/I/71HV-oX1VgL._AC_SL1500_.jpg",
-      "redditMentions": 43
+      "redditMentions": 43,
+      "affiliateLink": "https://www.amazon.com/dp/B07TWVS7HX?tag=disbrowproduc-20"
     },
     {
       "id": 58,
@@ -460,7 +498,8 @@
       "rating": 4.6,
       "description": "5.2-inch HDR monitor-recorder with 8K HDMI input, ProRes RAW recording, and 1000-nit display. See exactly what your camera sees with frame-accurate monitoring.",
       "image": "https://m.media-amazon.com/images/I/71aFYAOGHZL._AC_SL1500_.jpg",
-      "redditMentions": 42
+      "redditMentions": 42,
+      "affiliateLink": "https://www.amazon.com/dp/B09BFQ6DTS?tag=disbrowproduc-20"
     },
     {
       "id": 30,
@@ -471,7 +510,8 @@
       "rating": 4.8,
       "description": "Modular carbon fiber tripod with no center column, 39.6 lb capacity, and G-Lock Ultra twist locks. The most rigid tripod system for cinema and studio work.",
       "image": "https://m.media-amazon.com/images/I/6145NLZgDhL._AC_SL1500_.jpg",
-      "redditMentions": 41
+      "redditMentions": 41,
+      "affiliateLink": "https://www.amazon.com/dp/B002JCVP56?tag=disbrowproduc-20"
     },
     {
       "id": 61,
@@ -482,7 +522,8 @@
       "rating": 4.7,
       "description": "10-foot aluminum boom pole with internal coiled cable, ergonomic grip, and lightweight design. The industry-standard boom arm for film and documentary audio.",
       "image": "https://m.media-amazon.com/images/I/31jkkatsEvL._AC_SL1500_.jpg",
-      "redditMentions": 40
+      "redditMentions": 40,
+      "affiliateLink": "https://www.amazon.com/dp/B001DAQDMO?tag=disbrowproduc-20"
     },
     {
       "id": 51,
@@ -493,7 +534,8 @@
       "rating": 4.6,
       "description": "Professional UHF wireless lavalier system with 42 MHz bandwidth, 20-hour battery, and rock-solid RF performance. The broadcast standard for on-camera talent.",
       "image": "https://m.media-amazon.com/images/I/618-7engGYL._AC_SL1500_.jpg",
-      "redditMentions": 39
+      "redditMentions": 39,
+      "affiliateLink": "https://www.amazon.com/dp/B07CMTW1VQ?tag=disbrowproduc-20"
     },
     {
       "id": 57,
@@ -504,7 +546,8 @@
       "rating": 4.6,
       "description": "Professional wireless lens control with dual-channel motors, 300m range, and OLED display. Precise focus pulling for cinema productions and gimbal setups.",
       "image": "https://m.media-amazon.com/images/I/61rFTfIkRrL._AC_SL1500_.jpg",
-      "redditMentions": 38
+      "redditMentions": 38,
+      "affiliateLink": "https://www.amazon.com/dp/B07D36V6NL?tag=disbrowproduc-20"
     },
     {
       "id": 22,
@@ -515,7 +558,8 @@
       "rating": 4.8,
       "description": "Compact cinema camera with global shutter, 6K Super 35 sensor, REDCODE RAW, and wireless control. The smallest RED camera for professional productions.",
       "image": "https://m.media-amazon.com/images/I/61U89OHG7bL._AC_SL1500_.jpg",
-      "redditMentions": 37
+      "redditMentions": 37,
+      "affiliateLink": "https://www.amazon.com/dp/B09MTZS3FN?tag=disbrowproduc-20"
     },
     {
       "id": 40,
@@ -526,7 +570,8 @@
       "rating": 4.9,
       "description": "The gold standard in cinema soft lighting. Full RGB+W, tuneable white 2800K-10000K, DMX/ArtNet, and unmatched color accuracy. Used on virtually every major film set.",
       "image": "https://m.media-amazon.com/images/I/61-2FDcjENL._AC_SL1500_.jpg",
-      "redditMentions": 36
+      "redditMentions": 36,
+      "affiliateLink": "https://www.amazon.com/dp/B013DFLG4O?tag=disbrowproduc-20"
     },
     {
       "id": 62,
@@ -537,7 +582,8 @@
       "rating": 4.6,
       "description": "Universal shock mount with Lyre suspension, windshield, and mounting hardware. Eliminates handling noise and vibration for pristine studio and field recordings.",
       "image": "https://m.media-amazon.com/images/I/61CA5I5dyaL._AC_SL1500_.jpg",
-      "redditMentions": 35
+      "redditMentions": 35,
+      "affiliateLink": "https://www.amazon.com/dp/B005FHBCMU?tag=disbrowproduc-20"
     },
     {
       "id": 56,
@@ -548,7 +594,8 @@
       "rating": 4.7,
       "description": "The legendary cinema zoom with constant f/1.8 aperture across the range. Razor-sharp optics, beautiful bokeh, and the widest aperture zoom lens ever made for APS-C.",
       "image": "https://m.media-amazon.com/images/I/61swST1ii9L._AC_SL1500_.jpg",
-      "redditMentions": 34
+      "redditMentions": 34,
+      "affiliateLink": "https://www.amazon.com/dp/B00DBL0NLQ?tag=disbrowproduc-20"
     },
     {
       "id": 31,
@@ -559,7 +606,8 @@
       "rating": 4.7,
       "description": "Professional fluid head with 5-step counterbalance, SpeedLevel, and SA drag system. Smooth pan/tilt for documentary and corporate video production.",
       "image": "https://m.media-amazon.com/images/I/61I5f2f3ZqL._AC_SL1500_.jpg",
-      "redditMentions": 33
+      "redditMentions": 33,
+      "affiliateLink": "https://www.amazon.com/dp/B0BNSJ9J7C?tag=disbrowproduc-20"
     },
     {
       "id": 59,
@@ -570,7 +618,8 @@
       "rating": 4.5,
       "description": "5-inch daylight-viewable field monitor with full HD, touchscreen interface, and waveform/false color tools. Essential for confident exposure and focus in any lighting.",
       "image": "https://m.media-amazon.com/images/I/71sVhltbT9L._AC_SL1500_.jpg",
-      "redditMentions": 32
+      "redditMentions": 32,
+      "affiliateLink": "https://www.amazon.com/dp/B0D9GGVCJJ?tag=disbrowproduc-20"
     },
     {
       "id": 41,
@@ -581,7 +630,8 @@
       "rating": 4.7,
       "description": "Legendary soft LED panel with tuneable white, full color, and gel-matching presets. Ultra-thin design with True Match phosphor technology for flawless skin tones.",
       "image": "https://m.media-amazon.com/images/I/71VdBL58hSL._AC_SL1500_.jpg",
-      "redditMentions": 31
+      "redditMentions": 31,
+      "affiliateLink": "https://www.amazon.com/dp/B0BVXM7YMK?tag=disbrowproduc-20"
     },
     {
       "id": 54,
@@ -592,7 +642,8 @@
       "rating": 4.8,
       "description": "Premium 2-in/6-out Thunderbolt interface with Unison preamps and real-time UAD processing. Run vintage compressors and EQs with zero latency while recording.",
       "image": "https://m.media-amazon.com/images/I/61y+knHjBbL._AC_SL1500_.jpg",
-      "redditMentions": 30
+      "redditMentions": 30,
+      "affiliateLink": "https://www.amazon.com/dp/B0851HYWBK?tag=disbrowproduc-20"
     },
     {
       "id": 32,
@@ -603,7 +654,8 @@
       "rating": 4.7,
       "description": "Professional 3-axis gimbal with 4.5 kg payload, LiDAR focus, native vertical shooting, and extended battery. The ultimate stabilizer for full-size cinema cameras.",
       "image": "https://m.media-amazon.com/images/I/51ZkJaDFd7L._AC_SL1500_.jpg",
-      "redditMentions": 29
+      "redditMentions": 29,
+      "affiliateLink": "https://www.amazon.com/dp/B0D1K4XD8C?tag=disbrowproduc-20"
     },
     {
       "id": 63,
@@ -614,7 +666,8 @@
       "rating": 4.5,
       "description": "Professional windscreen for shotgun microphones with open-cell foam technology. Blocks wind noise without affecting high-frequency response\u2014used on indie and major sets.",
       "image": "https://m.media-amazon.com/images/I/81yej85z1xL._AC_SL1500_.jpg",
-      "redditMentions": 28
+      "redditMentions": 28,
+      "affiliateLink": "https://www.amazon.com/dp/B07CRG3C3N?tag=disbrowproduc-20"
     },
     {
       "id": 42,
@@ -625,7 +678,8 @@
       "rating": 4.7,
       "description": "Flexible LED mat with full RGBWW spectrum, ultra-thin profile, and Velcro mounting. Wraps around set pieces for creative lighting impossible with traditional fixtures.",
       "image": "https://m.media-amazon.com/images/I/61GpB+R0pgL._AC_SL1500_.jpg",
-      "redditMentions": 27
+      "redditMentions": 27,
+      "affiliateLink": "https://www.amazon.com/dp/B0B7RLKNNV?tag=disbrowproduc-20"
     },
     {
       "id": 60,
@@ -636,7 +690,8 @@
       "rating": 4.5,
       "description": "Monitor calibration tool for accurate color on any display. Ensures your color grade looks correct on every screen\u2014essential for professional color work.",
       "image": "https://m.media-amazon.com/images/I/71C7UOjQ8BL._AC_SL1500_.jpg",
-      "redditMentions": 26
+      "redditMentions": 26,
+      "affiliateLink": "https://www.amazon.com/dp/B07M6KCLWC?tag=disbrowproduc-20"
     },
     {
       "id": 43,
@@ -647,7 +702,8 @@
       "rating": 4.8,
       "description": "Wireless, battery-powered RGB LED tube with AsteraApp control, 20-hour runtime, and IP65 weather resistance. The practical light that revolutionized set design.",
       "image": "https://m.media-amazon.com/images/I/71NckzW7gvL._AC_SL1500_.jpg",
-      "redditMentions": 25
+      "redditMentions": 25,
+      "affiliateLink": "https://www.amazon.com/dp/B07VRMHPGF?tag=disbrowproduc-20"
     },
     {
       "id": 47,
@@ -658,7 +714,8 @@
       "rating": 4.9,
       "description": "The legendary large-diaphragm condenser microphone. Three polar patterns, -10dB pad, low-cut filter, and the warmth that defined decades of hit records and voiceovers.",
       "image": "https://m.media-amazon.com/images/I/71k6li+9vFL._AC_SL1500_.jpg",
-      "redditMentions": 24
+      "redditMentions": 24,
+      "affiliateLink": "https://www.amazon.com/dp/B0002H0QJW?tag=disbrowproduc-20"
     },
     {
       "id": 33,
@@ -669,7 +726,8 @@
       "rating": 4.5,
       "description": "Aluminum video tripod with 8 lb capacity fluid head, 3-step drag, and quick-release plate. Outstanding value for creators stepping up from photo tripods.",
       "image": "https://m.media-amazon.com/images/I/712kZDypMPL._AC_SL1500_.jpg",
-      "redditMentions": 23
+      "redditMentions": 23,
+      "affiliateLink": "https://www.amazon.com/dp/B00GWUAW2A?tag=disbrowproduc-20"
     },
     {
       "id": 65,
@@ -680,7 +738,8 @@
       "rating": 4.5,
       "description": "Wireless video transmitter with 450ft range, 0.07s latency, HDMI/SDI I/O, and app monitoring. Stream camera feeds wirelessly to monitors, directors, and clients.",
       "image": "https://m.media-amazon.com/images/I/61sABmzoDOL._AC_SL1500_.jpg",
-      "redditMentions": 22
+      "redditMentions": 22,
+      "affiliateLink": "https://www.amazon.com/dp/B0C7J44VBB?tag=disbrowproduc-20"
     },
     {
       "id": 34,
@@ -691,7 +750,8 @@
       "rating": 4.5,
       "description": "3-axis gimbal with built-in 2.65-inch display, Bluetooth shutter, and 4.9 lb payload. Smart features like gesture control and AI tracking for solo creators.",
       "image": "https://m.media-amazon.com/images/I/71UNaK4OYlL._AC_SL1500_.jpg",
-      "redditMentions": 21
+      "redditMentions": 21,
+      "affiliateLink": "https://www.amazon.com/dp/B0D6K8FXHV?tag=disbrowproduc-20"
     },
     {
       "id": 35,
@@ -702,7 +762,8 @@
       "rating": 4.6,
       "description": "Compact motorized slider with double travel distance, app control, and keyframe programming. Fits in a backpack but delivers cinema-grade camera movement.",
       "image": "https://m.media-amazon.com/images/I/71nANFqmKpL._AC_SL1500_.jpg",
-      "redditMentions": 20
+      "redditMentions": 20,
+      "affiliateLink": "https://www.amazon.com/dp/B08TWS5H9B?tag=disbrowproduc-20"
     },
     {
       "id": 66,
@@ -713,7 +774,8 @@
       "rating": 4.4,
       "description": "Lightweight carbon fiber camera slider with smooth ball-bearing track. Compact, portable, and produces buttery smooth lateral movements for product and interview shots.",
       "image": "https://m.media-amazon.com/images/I/71OlivUSOhL._AC_SL1500_.jpg",
-      "redditMentions": 19
+      "redditMentions": 19,
+      "affiliateLink": "https://www.amazon.com/dp/B07FNDKJXB?tag=disbrowproduc-20"
     },
     {
       "id": 36,
@@ -724,7 +786,8 @@
       "rating": 4.6,
       "description": "Versatile carbon fiber tripod with 90\u00b0 center column, Easy Link connector, and 19.8 lb capacity. Perfect for creators who shoot both photo and video.",
       "image": "https://m.media-amazon.com/images/I/611ev1ZCGlL._AC_SL1500_.jpg",
-      "redditMentions": 18
+      "redditMentions": 18,
+      "affiliateLink": "https://www.amazon.com/dp/B00L7B30CC?tag=disbrowproduc-20"
     },
     {
       "id": 67,
@@ -735,7 +798,8 @@
       "rating": 4.7,
       "description": "Quick-release softbox with Bowens mount, diffusion layers, and 34.8-inch diameter. Transforms any COB light into a beautiful, soft key light in seconds.",
       "image": "https://m.media-amazon.com/images/I/71YAddGzmBL._AC_SL1500_.jpg",
-      "redditMentions": 17
+      "redditMentions": 17,
+      "affiliateLink": "https://www.amazon.com/dp/B0C4XVKPVN?tag=disbrowproduc-20"
     },
     {
       "id": 68,
@@ -746,7 +810,8 @@
       "rating": 4.5,
       "description": "Dual V-mount battery kit with D-Tap and USB outputs, LED indicators, and 150Wh capacity each. Power your cinema lights and cameras anywhere without AC.",
       "image": "https://m.media-amazon.com/images/I/81E7CTZn1eL._AC_SL1500_.jpg",
-      "redditMentions": 16
+      "redditMentions": 16,
+      "affiliateLink": "https://www.amazon.com/dp/B0C6FZZH8M?tag=disbrowproduc-20"
     }
   ],
   "affiliateTag": "disbrowproduc-20"
