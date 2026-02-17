@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { blogPosts } from './blogData';
+import BlogSearch from './BlogSearch';
 
 export default function BlogPage() {
   return (
@@ -22,7 +23,12 @@ export default function BlogPage() {
       <section style={{ backgroundColor: '#667eea', color: '#fff', padding: '4rem 2rem', textAlign: 'center' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: 'bold' }}>Latest Creator Guides</h1>
-          <p style={{ fontSize: '1.1rem', opacity: 0.95 }}>Expert tips, gear reviews, and production techniques to level up your content creation game.</p>
+          <p style={{ fontSize: '1.1rem', opacity: 0.95, marginBottom: '2rem' }}>Expert tips, gear reviews, and production techniques to level up your content creation game.</p>
+          
+          {/* Search Component */}
+          <div style={{ marginTop: '2rem' }}>
+            <BlogSearch />
+          </div>
         </div>
       </section>
 
