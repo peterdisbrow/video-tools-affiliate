@@ -7,335 +7,284 @@ import productsData from '../products.json';
 import SiteNav from './components/SiteNav';
 import SiteFooter from './components/SiteFooter';
 
-const ACCENT = '#2563EB';
-const ACCENT_DARK = '#1D4ED8';
+const ACCENT = '#E84C3D'; // diyphotography red accent
+const NAV_BG = '#1a1a1a';
 const TAG = productsData.affiliateTag || 'disbrowproduc-20';
 
-// Category config
-const CATEGORIES = [
-  { id: 'all', label: 'All Posts', emoji: '📖' },
-  { id: 'streaming', label: 'Streaming', emoji: '📡' },
-  { id: 'lighting', label: 'Lighting', emoji: '💡' },
-  { id: 'audio', label: 'Audio', emoji: '🎙️' },
-  { id: 'cameras', label: 'Cameras', emoji: '📷' },
-  { id: 'accessories', label: 'Accessories', emoji: '🎒' },
-];
+const TAB_CATEGORIES = ['All', 'Streaming', 'Lighting', 'Audio', 'Cameras', 'Accessories'];
 
-// Featured posts — human-written, show first
 const FEATURED_SLUGS = [
   'which-atem-mini-should-you-buy',
-  'atem-constellation-me-explained',
   'why-your-lighting-looks-bad',
   'shure-sm7b-the-truth-about-gain',
+  'atem-constellation-me-explained',
   'hyperdeck-use-cases-playback-timecode',
-  'why-your-stream-looks-terrible',
   'bitfocus-companion-stream-deck-live-production',
+  'why-your-stream-looks-terrible',
 ];
 
-function PostCard({ post, size = 'normal' }) {
-  const isLarge = size === 'large';
+const TRENDING = [
+  'shure-sm7b-the-truth-about-gain',
+  'why-your-lighting-looks-bad',
+  'which-atem-mini-should-you-buy',
+  'why-your-stream-looks-terrible',
+  'atem-constellation-me-explained',
+];
+
+function CategoryBadge({ cat }) {
   return (
-    <Link href={`/blog/${post.slug}`} style={{ textDecoration: 'none', display: 'block', height: '100%' }}>
-      <article style={{
-        backgroundColor: '#fff',
-        borderRadius: '0.75rem',
-        overflow: 'hidden',
-        border: '1px solid #E5E7EB',
-        height: '100%',
-        display: 'flex',
-        flexDirection: isLarge ? 'row' : 'column',
-        transition: 'box-shadow 0.2s, transform 0.2s',
+    <span style={{
+      display: 'inline-block',
+      backgroundColor: ACCENT,
+      color: '#fff',
+      fontSize: '0.65rem',
+      fontWeight: '800',
+      padding: '0.15rem 0.5rem',
+      borderRadius: '2px',
+      textTransform: 'uppercase',
+      letterSpacing: '0.06em',
+      marginBottom: '0.4rem',
+    }}>{cat}</span>
+  );
+}
+
+// Large feature card (hero grid)
+function FeatureCard({ post }) {
+  if (!post) return null;
+  return (
+    <Link href={`/blog/${post.slug}`} style={{ textDecoration: 'none', display: 'block' }}>
+      <div style={{ position: 'relative', borderRadius: '4px', overflow: 'hidden', cursor: 'pointer' }}
+        onMouseEnter={e => e.currentTarget.querySelector('h2').style.color = ACCENT}
+        onMouseLeave={e => e.currentTarget.querySelector('h2').style.color = '#fff'}
+      >
+        <img src={post.image} alt={post.title}
+          style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
+        <div style={{
+          position: 'absolute', bottom: 0, left: 0, right: 0,
+          background: 'linear-gradient(transparent, rgba(0,0,0,0.85))',
+          padding: '1.5rem 1rem 0.85rem',
+        }}>
+          <CategoryBadge cat={post.category} />
+          <h2 style={{
+            fontSize: '0.95rem', fontWeight: '700', color: '#fff',
+            margin: 0, lineHeight: '1.35', transition: 'color 0.15s',
+          }}>{post.title}</h2>
+          <div style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.6)', marginTop: '0.35rem' }}>
+            {post.readTime}
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+// List row (image left, text right)
+function ListRow({ post, showImage = true }) {
+  if (!post) return null;
+  return (
+    <Link href={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
+      <div style={{
+        display: 'flex', gap: '0.75rem', alignItems: 'flex-start',
+        padding: '0.75rem 0', borderBottom: '1px solid #f0f0f0',
         cursor: 'pointer',
       }}
-      onMouseEnter={e => {
-        e.currentTarget.style.boxShadow = '0 8px 30px rgba(37,99,235,0.12)';
-        e.currentTarget.style.transform = 'translateY(-2px)';
-      }}
-      onMouseLeave={e => {
-        e.currentTarget.style.boxShadow = 'none';
-        e.currentTarget.style.transform = 'translateY(0)';
-      }}
+      onMouseEnter={e => e.currentTarget.querySelector('h3').style.color = ACCENT}
+      onMouseLeave={e => e.currentTarget.querySelector('h3').style.color = '#111827'}
       >
-        <div style={{
-          flexShrink: 0,
-          width: isLarge ? '45%' : '100%',
-          height: isLarge ? '100%' : '200px',
-          minHeight: isLarge ? '280px' : 'auto',
-          overflow: 'hidden',
-          backgroundColor: '#F3F4F6',
-        }}>
-          <img
-            src={post.image || '/images/blog/default-hero.jpg'}
-            alt={post.title}
-            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-          />
-        </div>
-        <div style={{ padding: isLarge ? '2rem' : '1.25rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
-          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
-            {post.category && (
-              <span style={{
-                backgroundColor: '#EFF6FF', color: ACCENT,
-                fontSize: '0.7rem', fontWeight: '700',
-                padding: '0.2rem 0.65rem', borderRadius: '9999px',
-                textTransform: 'uppercase', letterSpacing: '0.05em',
-              }}>
-                {post.category}
-              </span>
-            )}
-            <span style={{ fontSize: '0.78rem', color: '#9CA3AF' }}>{post.readTime}</span>
+        {showImage && (
+          <img src={post.image} alt={post.title}
+            style={{ width: '90px', height: '65px', objectFit: 'cover', borderRadius: '3px', flexShrink: 0 }} />
+        )}
+        <div>
+          <CategoryBadge cat={post.category} />
+          <h3 style={{
+            fontSize: '0.875rem', fontWeight: '700', color: '#111827',
+            margin: 0, lineHeight: '1.35', transition: 'color 0.15s',
+          }}>{post.title}</h3>
+          <div style={{ fontSize: '0.72rem', color: '#9CA3AF', marginTop: '0.25rem' }}>
+            Andrew Disbrow · {post.readTime}
           </div>
-          <h2 style={{
-            fontSize: isLarge ? '1.4rem' : '1.05rem',
-            fontWeight: '700',
-            color: '#111827',
-            lineHeight: '1.35',
-            margin: '0 0 0.65rem',
-          }}>
-            {post.title}
-          </h2>
-          <p style={{
-            color: '#6B7280', fontSize: isLarge ? '0.95rem' : '0.875rem',
-            lineHeight: '1.6', flex: 1, margin: '0 0 1rem',
-          }}>
-            {post.excerpt}
-          </p>
-          <span style={{ color: ACCENT, fontWeight: '600', fontSize: '0.875rem' }}>
-            Read more →
-          </span>
         </div>
-      </article>
+      </div>
     </Link>
   );
 }
 
 export default function HomePage() {
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeTab, setActiveTab] = useState('All');
 
-  const featuredPost = blogPosts.find(p => p.slug === FEATURED_SLUGS[0]);
-  const recentFeatured = FEATURED_SLUGS.slice(1, 4).map(s => blogPosts.find(p => p.slug === s)).filter(Boolean);
+  const featured3 = FEATURED_SLUGS.slice(0, 3).map(s => blogPosts.find(p => p.slug === s)).filter(Boolean);
+  const trending = TRENDING.map(s => blogPosts.find(p => p.slug === s)).filter(Boolean);
 
-  const filteredPosts = useMemo(() => {
-    const base = activeCategory === 'all'
+  const latestPosts = useMemo(() => {
+    const filtered = activeTab === 'All'
       ? blogPosts
-      : blogPosts.filter(p => p.category === activeCategory);
-    // Featured first, then rest
-    return base.filter(p => !FEATURED_SLUGS.includes(p.slug)).slice(0, 12);
-  }, [activeCategory]);
+      : blogPosts.filter(p => p.category?.toLowerCase() === activeTab.toLowerCase());
+    return filtered.slice(0, 8);
+  }, [activeTab]);
 
-  // Top products
   const topProducts = productsData.products
     .filter(p => p.asin)
     .sort((a, b) => (b.redditMentions || 0) - (a.redditMentions || 0))
-    .slice(0, 4)
-    .map(p => ({ ...p, link: `https://www.amazon.com/dp/${p.asin}?tag=${TAG}` }));
+    .slice(0, 5);
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF' }}>
-      <SiteNav />
+    <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
 
-      {/* ─── HERO: Featured Post ─── */}
-      {featuredPost && (
-        <section style={{ backgroundColor: '#F8F9FA', borderBottom: '1px solid #E5E7EB', padding: '2.5rem 2rem' }}>
-          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: '1rem' }}>
-              <span style={{ fontSize: '0.75rem', fontWeight: '700', color: ACCENT, textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                ✍️ Latest from Andrew
-              </span>
-            </div>
-            <PostCard post={featuredPost} size="large" />
-          </div>
-        </section>
-      )}
-
-      {/* ─── AUTHOR CREDIBILITY BAR ─── */}
-      <div style={{
-        backgroundColor: ACCENT_DARK, color: '#fff',
-        padding: '0.9rem 2rem',
-        textAlign: 'center',
-        fontSize: '0.9rem',
-      }}>
-        <span style={{ opacity: 0.85 }}>Written by </span>
-        <strong>Andrew Disbrow</strong>
-        <span style={{ opacity: 0.85 }}> — 15 years broadcast engineering · Blackmagic Design reseller · </span>
+      {/* ─── TOP BAR ─── */}
+      <div style={{ backgroundColor: NAV_BG, color: '#fff', padding: '0.4rem 2rem', fontSize: '0.75rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <span style={{ color: '#aaa' }}>15 years broadcast engineering · Blackmagic Design reseller</span>
         <a href="https://atemschool.com" target="_blank" rel="noopener noreferrer"
-          style={{ color: '#93C5FD', fontWeight: '600', textDecoration: 'none' }}>
-          Founder, ATEM School
+          style={{ color: ACCENT, fontWeight: '700', textDecoration: 'none', fontSize: '0.75rem' }}>
+          🎓 Free Interview Guide →
         </a>
       </div>
 
-      {/* ─── RECENT FEATURED POSTS ─── */}
-      <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '3rem 2rem 0' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-          <h2 style={{ fontSize: '1.3rem', fontWeight: '800', color: '#111827', margin: 0 }}>
-            🔥 Essential Guides
-          </h2>
-          <Link href="/blog" style={{ color: ACCENT, fontSize: '0.9rem', fontWeight: '600', textDecoration: 'none' }}>
-            View all posts →
-          </Link>
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '1.5rem' }}>
-          {recentFeatured.map(post => <PostCard key={post.slug} post={post} />)}
-        </div>
-      </section>
+      <SiteNav />
 
-      {/* ─── BROWSE BY CATEGORY + POSTS ─── */}
-      <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '3rem 2rem' }}>
-        <h2 style={{ fontSize: '1.3rem', fontWeight: '800', color: '#111827', marginBottom: '1.25rem' }}>
-          📚 Browse by Topic
-        </h2>
-
-        {/* Category tabs */}
-        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
-          {CATEGORIES.map(cat => (
-            <button key={cat.id} onClick={() => setActiveCategory(cat.id)} style={{
-              padding: '0.4rem 1rem',
-              borderRadius: '9999px',
+      {/* ─── CATEGORY NAV BAR ─── */}
+      <div style={{ borderBottom: '3px solid #111827', backgroundColor: '#fff' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem', display: 'flex', gap: 0 }}>
+          {TAB_CATEGORIES.map(tab => (
+            <button key={tab} onClick={() => setActiveTab(tab)} style={{
+              padding: '0.7rem 1.1rem',
               border: 'none',
-              backgroundColor: activeCategory === cat.id ? ACCENT : '#F3F4F6',
-              color: activeCategory === cat.id ? '#fff' : '#374151',
+              borderBottom: activeTab === tab ? `3px solid ${ACCENT}` : '3px solid transparent',
+              marginBottom: '-3px',
+              backgroundColor: 'transparent',
+              color: activeTab === tab ? ACCENT : '#374151',
+              fontWeight: activeTab === tab ? '800' : '500',
+              fontSize: '0.82rem',
+              textTransform: 'uppercase',
+              letterSpacing: '0.04em',
               cursor: 'pointer',
-              fontSize: '0.875rem',
-              fontWeight: activeCategory === cat.id ? '700' : '500',
-              transition: 'all 0.15s',
+              transition: 'color 0.15s',
             }}>
-              {cat.emoji} {cat.label}
+              {tab}
             </button>
           ))}
         </div>
+      </div>
 
-        {/* Posts grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
-          {filteredPosts.map(post => <PostCard key={post.slug} post={post} />)}
-        </div>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1.5rem 2rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '2rem' }}>
 
-        <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-          <Link href="/blog" style={{
-            display: 'inline-block',
-            padding: '0.75rem 2rem',
-            backgroundColor: ACCENT,
-            color: '#fff',
-            borderRadius: '0.5rem',
-            fontWeight: '600',
-            textDecoration: 'none',
-            fontSize: '0.95rem',
-          }}>
-            Read All {blogPosts.length} Posts →
-          </Link>
-        </div>
-      </section>
+          {/* ─── MAIN CONTENT ─── */}
+          <div>
+            {/* Featured 3-up grid */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '2rem' }}>
+              {featured3.map(post => <FeatureCard key={post.slug} post={post} />)}
+            </div>
 
-      {/* ─── NEWSLETTER ─── */}
-      <section style={{
-        backgroundColor: '#F8F9FA',
-        borderTop: '1px solid #E5E7EB',
-        borderBottom: '1px solid #E5E7EB',
-        padding: '3rem 2rem',
-        textAlign: 'center',
-      }}>
-        <div style={{ maxWidth: '520px', margin: '0 auto' }}>
-          <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>📬</div>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: '800', color: '#111827', marginBottom: '0.5rem' }}>
-            Get the Gear Guide
-          </h2>
-          <p style={{ color: '#6B7280', marginBottom: '1.5rem', lineHeight: '1.6' }}>
-            Honest picks, broadcast insights, and gear recommendations from 15 years in production. No fluff.
-          </p>
-          <form
-            action="https://formspree.io/f/placeholder"
-            method="POST"
-            style={{ display: 'flex', gap: '0.75rem', maxWidth: '420px', margin: '0 auto' }}
-            onSubmit={e => { e.preventDefault(); alert('Thanks! We\'ll be in touch.'); }}
-          >
-            <input
-              type="email"
-              name="email"
-              placeholder="your@email.com"
-              required
-              style={{
-                flex: 1, padding: '0.7rem 1rem',
-                border: '2px solid #E5E7EB', borderRadius: '0.5rem',
-                fontSize: '0.95rem', outline: 'none',
-              }}
-            />
-            <button type="submit" style={{
-              padding: '0.7rem 1.25rem',
-              backgroundColor: ACCENT, color: '#fff',
-              border: 'none', borderRadius: '0.5rem',
-              fontWeight: '700', fontSize: '0.95rem', cursor: 'pointer',
-              whiteSpace: 'nowrap',
-            }}>
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </section>
+            {/* Latest posts — list style */}
+            <div style={{ borderTop: '3px solid #111827', paddingTop: '1rem', marginBottom: '0.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span style={{ fontSize: '0.78rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#111827' }}>
+                The Latest
+              </span>
+              <Link href="/blog" style={{ fontSize: '0.75rem', color: ACCENT, textDecoration: 'none', fontWeight: '700' }}>
+                View All →
+              </Link>
+            </div>
 
-      {/* ─── TOP GEAR (secondary) ─── */}
-      <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '3rem 2rem' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-          <h2 style={{ fontSize: '1.3rem', fontWeight: '800', color: '#111827', margin: 0 }}>
-            🏆 Most Recommended Gear
-          </h2>
-          <Link href="/products" style={{ color: ACCENT, fontSize: '0.9rem', fontWeight: '600', textDecoration: 'none' }}>
-            View all gear →
-          </Link>
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1.25rem' }}>
-          {topProducts.map(product => (
-            <a key={product.id} href={product.link} target="_blank" rel="noopener noreferrer"
-              style={{ textDecoration: 'none' }}>
-              <div style={{
-                backgroundColor: '#fff', borderRadius: '0.75rem',
-                border: '1px solid #E5E7EB', padding: '1.25rem',
-                display: 'flex', gap: '1rem', alignItems: 'center',
-                transition: 'box-shadow 0.2s',
-              }}
-              onMouseEnter={e => e.currentTarget.style.boxShadow = '0 4px 16px rgba(37,99,235,0.1)'}
-              onMouseLeave={e => e.currentTarget.style.boxShadow = 'none'}
-              >
-                <img src={product.image} alt={product.name}
-                  style={{ width: '64px', height: '64px', objectFit: 'contain', flexShrink: 0 }} />
-                <div>
-                  <div style={{ fontSize: '0.75rem', color: ACCENT, fontWeight: '600', textTransform: 'capitalize', marginBottom: '0.2rem' }}>
-                    {product.category}
-                  </div>
-                  <div style={{ fontSize: '0.9rem', fontWeight: '700', color: '#111827', marginBottom: '0.25rem', lineHeight: '1.3' }}>
-                    {product.name}
-                  </div>
-                  <div style={{ fontSize: '0.85rem', color: '#f59e0b', fontWeight: '600' }}>
-                    {'★'.repeat(Math.round(product.rating))} <span style={{ color: '#374151' }}>{product.price}</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 2rem' }}>
+              {latestPosts.map(post => <ListRow key={post.slug} post={post} />)}
+            </div>
 
-      {/* ─── ATEM SCHOOL BANNER ─── */}
-      <section style={{ backgroundColor: ACCENT_DARK, padding: '3rem 2rem', textAlign: 'center' }}>
-        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-          <div style={{ fontSize: '0.8rem', fontWeight: '700', color: '#93C5FD', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>
-            Want to go deeper?
+            {latestPosts.length === 0 && (
+              <p style={{ color: '#9CA3AF', padding: '2rem 0' }}>No posts in this category yet.</p>
+            )}
           </div>
-          <h2 style={{ fontSize: '1.85rem', fontWeight: '800', color: '#FFFFFF', marginBottom: '0.75rem', lineHeight: '1.25' }}>
-            Learn Broadcast Production at ATEM School
-          </h2>
-          <p style={{ fontSize: '1rem', color: '#BFDBFE', marginBottom: '0.5rem', lineHeight: '1.6' }}>
-            Training for Blackmagic ATEM switchers, live production, and professional broadcast workflows — from someone who's been doing this for 15 years.
-          </p>
-          <p style={{ fontSize: '1rem', color: '#FCD34D', fontWeight: '600', marginBottom: '1.75rem' }}>
-            ★ Members get exclusive pricing on gear purchases.
-          </p>
-          <a href="https://atemschool.com" target="_blank" rel="noopener noreferrer" style={{
-            display: 'inline-block', backgroundColor: '#FFFFFF', color: ACCENT_DARK,
-            textDecoration: 'none', fontWeight: '700', fontSize: '1rem',
-            padding: '0.8rem 2rem', borderRadius: '0.5rem',
-          }}>
-            Join ATEM School →
-          </a>
+
+          {/* ─── SIDEBAR ─── */}
+          <aside>
+            {/* Trending */}
+            <div style={{ marginBottom: '2rem' }}>
+              <div style={{ borderTop: '3px solid #111827', paddingTop: '0.75rem', marginBottom: '0.75rem', display: 'flex', gap: '1rem' }}>
+                <span style={{ fontSize: '0.78rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#111827', borderBottom: `2px solid ${ACCENT}`, paddingBottom: '4px' }}>Trending</span>
+                <span style={{ fontSize: '0.78rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#9CA3AF', cursor: 'pointer' }}>Popular</span>
+              </div>
+              {trending.map((post, i) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
+                  <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', padding: '0.6rem 0', borderBottom: '1px solid #f0f0f0', cursor: 'pointer' }}
+                    onMouseEnter={e => e.currentTarget.querySelector('span.title').style.color = ACCENT}
+                    onMouseLeave={e => e.currentTarget.querySelector('span.title').style.color = '#111827'}
+                  >
+                    <span style={{ fontSize: '1.5rem', fontWeight: '800', color: '#E5E7EB', lineHeight: 1, flexShrink: 0, width: '28px', textAlign: 'center' }}>{i + 1}</span>
+                    <div>
+                      <span className="title" style={{ fontSize: '0.82rem', fontWeight: '700', color: '#111827', lineHeight: '1.3', display: 'block', transition: 'color 0.15s' }}>
+                        {post.title.length > 65 ? post.title.slice(0, 65) + '...' : post.title}
+                      </span>
+                      <span style={{ fontSize: '0.7rem', color: '#9CA3AF' }}>{post.readTime}</span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            {/* ATEM School promo */}
+            <div style={{ backgroundColor: NAV_BG, borderRadius: '4px', padding: '1.25rem', marginBottom: '2rem', textAlign: 'center' }}>
+              <div style={{ fontSize: '0.7rem', fontWeight: '800', color: ACCENT, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>
+                Learn Broadcast
+              </div>
+              <p style={{ color: '#fff', fontSize: '0.85rem', lineHeight: '1.5', marginBottom: '0.75rem' }}>
+                ATEM switchers, live production, Blackmagic workflows. Members get gear pricing.
+              </p>
+              <a href="https://atemschool.com" target="_blank" rel="noopener noreferrer" style={{
+                display: 'block', padding: '0.6rem', backgroundColor: ACCENT,
+                color: '#fff', textDecoration: 'none', fontWeight: '700',
+                fontSize: '0.82rem', borderRadius: '3px',
+              }}>
+                Join ATEM School →
+              </a>
+            </div>
+
+            {/* Newsletter */}
+            <div style={{ border: '2px solid #E5E7EB', borderRadius: '4px', padding: '1.25rem', marginBottom: '2rem' }}>
+              <div style={{ fontSize: '0.78rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem', color: '#111827' }}>
+                📬 Newsletter
+              </div>
+              <p style={{ fontSize: '0.82rem', color: '#6B7280', lineHeight: '1.5', marginBottom: '0.75rem' }}>
+                Gear picks + broadcast insights from Andrew. No fluff.
+              </p>
+              <input type="email" placeholder="your@email.com" style={{
+                width: '100%', padding: '0.5rem 0.75rem', border: '1px solid #E5E7EB',
+                borderRadius: '3px', fontSize: '0.85rem', marginBottom: '0.5rem', boxSizing: 'border-box',
+              }} />
+              <button style={{
+                width: '100%', padding: '0.55rem', backgroundColor: '#111827',
+                color: '#fff', border: 'none', borderRadius: '3px',
+                fontWeight: '700', fontSize: '0.82rem', cursor: 'pointer',
+              }}>
+                Subscribe
+              </button>
+            </div>
+
+            {/* Top Gear sidebar */}
+            <div>
+              <div style={{ borderTop: '3px solid #111827', paddingTop: '0.75rem', marginBottom: '0.75rem' }}>
+                <span style={{ fontSize: '0.78rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#111827' }}>Top Gear</span>
+              </div>
+              {topProducts.map(p => (
+                <a key={p.id} href={`https://www.amazon.com/dp/${p.asin}?tag=${TAG}`} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                  <div style={{ display: 'flex', gap: '0.6rem', padding: '0.6rem 0', borderBottom: '1px solid #f0f0f0', alignItems: 'center', cursor: 'pointer' }}
+                    onMouseEnter={e => e.currentTarget.querySelector('.gear-name').style.color = ACCENT}
+                    onMouseLeave={e => e.currentTarget.querySelector('.gear-name').style.color = '#111827'}
+                  >
+                    <img src={p.image} alt={p.name} style={{ width: '48px', height: '40px', objectFit: 'contain', flexShrink: 0 }} />
+                    <div>
+                      <span className="gear-name" style={{ fontSize: '0.8rem', fontWeight: '600', color: '#111827', display: 'block', lineHeight: '1.3', transition: 'color 0.15s' }}>{p.name}</span>
+                      <span style={{ fontSize: '0.75rem', color: '#6B7280' }}>{p.price}</span>
+                    </div>
+                  </div>
+                </a>
+              ))}
+              <Link href="/products" style={{ display: 'block', textAlign: 'center', marginTop: '0.75rem', fontSize: '0.78rem', color: ACCENT, fontWeight: '700', textDecoration: 'none' }}>
+                View all gear →
+              </Link>
+            </div>
+          </aside>
         </div>
-      </section>
+      </div>
 
       <SiteFooter />
     </div>
