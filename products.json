@@ -1703,6 +1703,156 @@
           "TSA limit of 160Wh for air travel"
         ]
       }
+    },
+    {
+      "id": 69,
+      "name": "Godox SL300 II",
+      "category": "lighting",
+      "asin": "B0B8X6RQ8C",
+      "price": "$799",
+      "rating": 4.7,
+      "description": "300W daylight LED with DMX control, ultra-silent fan, and weatherproof housing. Professional cinema-grade key light with exceptional color accuracy and thermal management.",
+      "image": "https://m.media-amazon.com/images/I/71G6K+8p0eL._AC_SL1500_.jpg",
+      "review": {
+        "rating": 4.7,
+        "verdict": "Professional daylight LED with exceptional color accuracy",
+        "pros": [
+          "300W powerful output",
+          "DMX control for flexibility",
+          "Ultra-quiet fan operation",
+          "Weather-resistant housing"
+        ],
+        "cons": [
+          "High price point",
+          "Requires external power",
+          "Large and heavy"
+        ]
+      }
+    },
+    {
+      "id": 70,
+      "name": "Aputure Amaran P80c",
+      "category": "lighting",
+      "asin": "B0CYN1LHVR",
+      "price": "$649",
+      "rating": 4.7,
+      "description": "Compact RGBWW LED panel with 80W output, Sidus Link app control, and 2500K-7500K range. Perfect for travel creators needing powerful color mixing in a compact form.",
+      "image": "https://m.media-amazon.com/images/I/61N5K1-A7zL._AC_SL1500_.jpg",
+      "review": {
+        "rating": 4.7,
+        "verdict": "Portable powerhouse for creative color mixing",
+        "pros": [
+          "80W output in compact form",
+          "Full RGBWW spectrum control",
+          "Sidus Link wireless app control",
+          "Lightweight and travel-friendly"
+        ],
+        "cons": [
+          "Battery not included",
+          "Learning curve for color control",
+          "Heat buildup with extended use"
+        ]
+      }
+    },
+    {
+      "id": 71,
+      "name": "Sennheiser EW 135P G4 Wireless Lavalier",
+      "category": "audio",
+      "asin": "B07K3ZZYPF",
+      "price": "$749",
+      "rating": 4.7,
+      "description": "Professional UHF wireless lavalier system with 42 MHz bandwidth, 20-hour battery, and rock-solid RF performance. Broadcast-grade reliability for on-camera talent.",
+      "image": "https://m.media-amazon.com/images/I/61jPvQQFoVL._AC_SL1500_.jpg",
+      "review": {
+        "rating": 4.7,
+        "verdict": "Reliable broadcast lavalier for professional productions",
+        "pros": [
+          "Rock-solid RF performance",
+          "42 MHz bandwidth",
+          "20-hour battery life",
+          "Broadcast-proven reliability"
+        ],
+        "cons": [
+          "Older technology compared to digital systems",
+          "Limited compatibility with other brands",
+          "Bulky receiver pack"
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "name": "Deity D-Mic 2",
+      "category": "audio",
+      "asin": "B07D3FGXFH",
+      "price": "$349",
+      "rating": 4.8,
+      "description": "Ultra-compact supercardioid condenser microphone with low proximity effect and extended frequency response. Cinema-quality dialogue capture in a portable package.",
+      "image": "https://m.media-amazon.com/images/I/51bW2fU5-eL._AC_SL1000_.jpg",
+      "review": {
+        "rating": 4.8,
+        "verdict": "Excellent compact shotgun for documentary and on-set work",
+        "pros": [
+          "Compact and lightweight",
+          "Low proximity effect",
+          "Extended frequency response",
+          "Great value for the price"
+        ],
+        "cons": [
+          "Limited off-axis rejection",
+          "Requires wind protection",
+          "Battery-powered only"
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "name": "Tilta Tacktum M Wireless Follow Focus",
+      "category": "accessories",
+      "asin": "B0CRXK1PMC",
+      "price": "$1,299",
+      "rating": 4.6,
+      "description": "Wireless lens control system with dual-channel motors, 300m range, and motorized focus wheel. Professional focus pulling for cinema productions and gimbal work.",
+      "image": "https://m.media-amazon.com/images/I/61EiKjYfPSL._AC_SL1500_.jpg",
+      "review": {
+        "rating": 4.6,
+        "verdict": "Professional wireless focus control for cinema productions",
+        "pros": [
+          "Dual-channel motor control",
+          "300m wireless range",
+          "Motorized focus wheel",
+          "Cinema-grade precision"
+        ],
+        "cons": [
+          "Premium pricing",
+          "Complex setup and calibration",
+          "Bulky controller unit"
+        ]
+      }
+    },
+    {
+      "id": 74,
+      "name": "Focusrite Scarlett 2i2 (8th Gen)",
+      "category": "audio",
+      "asin": "B0CXNQ6S1D",
+      "price": "$199",
+      "rating": 4.8,
+      "description": "Latest USB-C audio interface with Air mode, auto-gain, and 192kHz/24-bit conversion. Enhanced performance with improved preamps for professional recording and streaming.",
+      "image": "https://m.media-amazon.com/images/I/71JnJ7MVTEL._AC_SL1500_.jpg",
+      "review": {
+        "rating": 4.8,
+        "verdict": "Best value USB audio interface with latest features",
+        "pros": [
+          "USB-C connectivity for modern computers",
+          "Air mode for acoustic instruments",
+          "Auto-gain for easier setup",
+          "Excellent build quality and reliability"
+        ],
+        "cons": [
+          "No MIDI I/O on this model",
+          "Limited monitoring options",
+          "Requires software installation"
+        ]
+      }
     }
   ],
   "affiliateTag": "disbrowproduc-20"
