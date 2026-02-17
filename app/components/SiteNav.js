@@ -23,7 +23,6 @@ export default function SiteNav() {
 
   const NAV_LINKS = [
     { href: '/blog', label: 'Blog' },
-    { href: '/comparisons', label: 'Comparisons' },
     { href: '/about', label: 'About' },
   ];
 
