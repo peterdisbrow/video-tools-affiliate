@@ -11,7 +11,7 @@ const ACCENT = '#E84C3D'; // diyphotography red accent
 const NAV_BG = '#1a1a1a';
 const TAG = productsData.affiliateTag || 'disbrowproduc-20';
 
-const TAB_CATEGORIES = ['All', 'Streaming', 'Lighting', 'Audio', 'Cameras', 'Accessories'];
+const TAB_CATEGORIES = ['All', 'Cameras', 'Lighting', 'Audio', 'Streaming', 'Accessories'];
 
 const FEATURED_SLUGS = [
   'which-atem-mini-should-you-buy',
