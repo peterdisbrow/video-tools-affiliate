@@ -300,7 +300,7 @@ export default function HomePage() {
                   </div>
                 </a>
               ))}
-              <Link href="/products" style={{ display: 'block', textAlign: 'center', marginTop: '0.75rem', fontSize: '0.78rem', color: ACCENT, fontWeight: '700', textDecoration: 'none' }}>
+              <Link href="/gear" style={{ display: 'block', textAlign: 'center', marginTop: '0.75rem', fontSize: '0.78rem', color: ACCENT, fontWeight: '700', textDecoration: 'none' }}>
                 View all gear →
               </Link>
             </div>

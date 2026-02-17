@@ -5,6 +5,9 @@ const nextConfig = {
     return [
       { source: '/comparisons', destination: '/blog', permanent: true },
       { source: '/comparisons/:path*', destination: '/blog', permanent: true },
+      { source: '/products', destination: '/gear', permanent: true },
+      { source: '/guides', destination: '/gear', permanent: true },
+      { source: '/guides/:path*', destination: '/gear', permanent: true },
     ];
   },
 };
