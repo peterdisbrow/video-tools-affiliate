@@ -36,7 +36,7 @@ const testimonials = [
   { author: 'Mark Rivera', text: 'As a filmmaker on a budget, I needed honest comparisons — not sponsored fluff. This is the only gear resource I trust for real-world recommendations.', role: 'Indie Filmmaker', subs: '42K subscribers' },
   { author: 'Alex Thompson', text: 'The price-tier guides are genius. I started with the "under $1K" camera list and upgraded piece by piece. My production quality is unrecognizable now.', role: 'Content Creator', subs: '8K subscribers' },
   { author: 'Priya Sharma', text: 'I was drowning in Amazon reviews. This site cut through the noise and helped me build a complete studio setup in one afternoon.', role: 'Podcast & Video Creator', subs: '23K subscribers' },
-  { author: 'Jordan Blake', text: 'The blog posts alone are worth bookmarking. Detailed, no BS, and clearly written by someone who actually shoots video.', role: 'YouTube Educator', subs: '67K subscribers' },
+  { author: 'Jordan Blake', text: 'The guides alone are worth bookmarking. Detailed, no BS, and clearly written by someone who actually shoots video.', role: 'YouTube Educator', subs: '67K subscribers' },
 ];
 
 const faqs = [
@@ -149,7 +149,7 @@ export default function Home() {
           <Link href="/" style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#1f2937', textDecoration: 'none' }}>🎬 Creator Gear</Link>
           <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
             <a href="#tools" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Tools</a>
-            <Link href="/blog" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Blog</Link>
+            <Link href="/guides" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Guides</Link>
             <Link href="/free-gear-guide" style={{ color: '#f59e0b', textDecoration: 'none', fontWeight: '700' }}>🎁 Free Guides</Link>
             <a href="#faq" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>FAQ</a>
           </div>
@@ -292,7 +292,7 @@ export default function Home() {
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'center' }}>
           <div style={{ display: 'flex', gap: '2rem' }}>
             <Link href="/" style={{ color: '#d1d5db', textDecoration: 'none' }}>Home</Link>
-            <Link href="/blog" style={{ color: '#d1d5db', textDecoration: 'none' }}>Blog</Link>
+            <Link href="/guides" style={{ color: '#d1d5db', textDecoration: 'none' }}>Guides</Link>
             <a href="#tools" style={{ color: '#d1d5db', textDecoration: 'none' }}>Tools</a>
           </div>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', fontSize: '0.85rem', opacity: 0.7 }}>
