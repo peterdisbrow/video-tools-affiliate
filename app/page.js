@@ -150,6 +150,7 @@ export default function Home() {
           <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
             <a href="#tools" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Tools</a>
             <Link href="/blog" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Blog</Link>
+            <Link href="/free-gear-guide" style={{ color: '#f59e0b', textDecoration: 'none', fontWeight: '700' }}>🎁 Free Guides</Link>
             <a href="#faq" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>FAQ</a>
           </div>
         </div>
@@ -174,6 +175,16 @@ export default function Home() {
             </div>
           </div>
           <a href="#tools" style={{ display: 'inline-block', backgroundColor: '#fff', color: '#667eea', padding: '0.75rem 2rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold', cursor: 'pointer', transition: 'transform 0.2s' }}>Explore Recommended Gear</a>
+        </div>
+      </section>
+
+      {/* Free Guides CTA */}
+      <section style={{ background: '#1e293b', padding: '2rem', textAlign: 'center' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', gap: '1rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+          <span style={{ color: '#f59e0b', fontWeight: 700, fontSize: '1.1rem' }}>🎁 Free Creator Guides:</span>
+          <Link href="/free-gear-guide" style={{ background: '#f59e0b', color: '#1f2937', padding: '0.5rem 1rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>📋 Gear Checklist</Link>
+          <Link href="/free-gear-guide" style={{ background: '#3b82f6', color: '#fff', padding: '0.5rem 1rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>💰 Budget Planner</Link>
+          <Link href="/free-gear-guide" style={{ background: '#8b5cf6', color: '#fff', padding: '0.5rem 1rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>🚀 30-Day Plan</Link>
         </div>
       </section>
 

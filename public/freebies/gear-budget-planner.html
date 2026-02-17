@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gear Budget Planner — VideoToolsHub</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; padding: 2rem; line-height: 1.6; }
+.container { max-width: 900px; margin: 0 auto; }
+h1 { text-align: center; color: #f59e0b; font-size: 2rem; margin-bottom: 0.25rem; }
+.subtitle { text-align: center; color: #94a3b8; margin-bottom: 2rem; }
+.planner-grid { display: grid; gap: 1.5rem; }
+.category-card { background: #1e293b; border-radius: 1rem; padding: 1.5rem; }
+.category-card h2 { color: #f59e0b; margin-bottom: 1rem; }
+.product-row { display: grid; grid-template-columns: 1fr auto auto; gap: 1rem; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid #334155; }
+.product-row:last-child { border-bottom: none; }
+select { background: #334155; color: #e2e8f0; border: 1px solid #475569; border-radius: 0.5rem; padding: 0.5rem; font-size: 0.9rem; width: 100%; }
+.price-display { color: #22c55e; font-weight: 700; font-size: 1.1rem; min-width: 80px; text-align: right; }
+.link-btn { background: #3b82f6; color: white; border: none; border-radius: 0.5rem; padding: 0.4rem 0.8rem; font-size: 0.8rem; cursor: pointer; text-decoration: none; white-space: nowrap; }
+.link-btn:hover { background: #2563eb; }
+.total-bar { background: linear-gradient(135deg, #1e293b, #334155); border-radius: 1rem; padding: 2rem; text-align: center; margin-top: 2rem; position: sticky; bottom: 1rem; }
+.total-bar .label { color: #94a3b8; font-size: 1rem; }
+.total-bar .amount { font-size: 3rem; color: #22c55e; font-weight: 800; }
+.total-bar .verdict { margin-top: 0.5rem; font-size: 1.1rem; }
+.footer { text-align: center; margin-top: 2rem; color: #64748b; font-size: 0.8rem; }
+.footer a { color: #60a5fa; }
+.print-btn { display: block; margin: 1.5rem auto; padding: 1rem 2rem; background: #f59e0b; color: #1f2937; border: none; border-radius: 0.5rem; font-size: 1.1rem; font-weight: 700; cursor: pointer; }
+@media (max-width: 600px) { .product-row { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>💰 Gear Budget Planner</h1>
+<p class="subtitle">Select your gear, see the total. No surprises.</p>
+
+<div class="planner-grid">
+
+<div class="category-card">
+<h2>📷 Camera</h2>
+<div class="product-row">
+<select onchange="updateTotal()" data-category="camera">
+<option value="0">No camera (use smartphone) — $0</option>
+<option value="398">Sony ZV-1F — $398</option>
+<option value="798">Canon EOS R50 — $798</option>
+<option value="1398">Sony Alpha a6700 — $1,398</option>
+<option value="1798">Sony FX30 — $1,798</option>
+<option value="2498">Sony Alpha a7 IV — $2,498</option>
+<option value="2499">Canon EOS R6 Mark II — $2,499</option>
+</select>
+<span class="price-display" id="price-camera">$0</span>
+<a class="link-btn" href="https://www.amazon.com/s?k=youtube+camera&tag=disbrowproduc-20" target="_blank">Shop →</a>
+</div>
+</div>
+
+<div class="category-card">
+<h2>🎙️ Audio</h2>
+<div class="product-row">
+<select onchange="updateTotal()" data-category="audio">
+<option value="0">No mic (camera built-in) — $0</option>
+<option value="20">Boya BY-M1 Lavalier — $20</option>
+<option value="99">Audio-Technica AT2020 — $99</option>
+<option value="169">Rode NT-USB+ — $169</option>
+<option value="299">Rode Wireless GO II — $299</option>
+<option value="399">Shure SM7B — $399</option>
+</select>
+<span class="price-display" id="price-audio">$0</span>
+<a class="link-btn" href="https://www.amazon.com/s?k=youtube+microphone&tag=disbrowproduc-20" target="_blank">Shop →</a>
+</div>
+</div>
+
+<div class="category-card">
+<h2>💡 Lighting</h2>
+<div class="product-row">
+<select onchange="updateTotal()" data-category="lighting">
+<option value="0">Natural light only — $0</option>
+<option value="30">Ring Light 18" — $30</option>
+<option value="45">Neewer LED Panel — $45</option>
+<option value="90">Neewer 2-Pack LED Panels — $90</option>
+<option value="129">Godox SL60W — $129</option>
+<option value="289">Aputure Amaran 200d — $289</option>
+</select>
+<span class="price-display" id="price-lighting">$0</span>
+<a class="link-btn" href="https://www.amazon.com/s?k=youtube+lighting&tag=disbrowproduc-20" target="_blank">Shop →</a>
+</div>
+</div>
+
+<div class="category-card">
+<h2>🖥️ Editing Software</h2>
+<div class="product-row">
+<select onchange="updateTotal()" data-category="software">
+<option value="0">DaVinci Resolve (Free) — $0</option>
+<option value="0">CapCut Desktop (Free) — $0</option>
+<option value="299">Final Cut Pro — $299</option>
+<option value="660">Adobe Premiere Pro (1yr) — $660</option>
+</select>
+<span class="price-display" id="price-software">$0</span>
+<a class="link-btn" href="https://www.amazon.com/s?k=video+editing+software&tag=disbrowproduc-20" target="_blank">Shop →</a>
+</div>
+</div>
+
+<div class="category-card">
+<h2>🎒 Tripod / Stabilizer</h2>
+<div class="product-row">
+<select onchange="updateTotal()" data-category="tripod">
+<option value="0">None — $0</option>
+<option value="15">Phone tripod mount — $15</option>
+<option value="35">Basic video tripod — $35</option>
+<option value="299">Peak Design Travel Tripod — $299</option>
+<option value="449">DJI RS 3 Gimbal — $449</option>
+</select>
+<span class="price-display" id="price-tripod">$0</span>
+<a class="link-btn" href="https://www.amazon.com/s?k=video+tripod&tag=disbrowproduc-20" target="_blank">Shop →</a>
+</div>
+</div>
+
+<div class="category-card">
+<h2>🧩 Extras</h2>
+<div class="product-row">
+<select onchange="updateTotal()" data-category="extras">
+<option value="0">None — $0</option>
+<option value="20">128GB SD Card — $20</option>
+<option value="99">Elgato Stream Deck — $99</option>
+<option value="69">Logitech C920 Webcam — $69</option>
+<option value="30">Capture Clip + SD Card — $50</option>
+</select>
+<span class="price-display" id="price-extras">$0</span>
+<a class="link-btn" href="https://www.amazon.com/s?k=youtube+accessories&tag=disbrowproduc-20" target="_blank">Shop →</a>
+</div>
+</div>
+
+</div>
+
+<div class="total-bar">
+<div class="label">Your Setup Total</div>
+<div class="amount" id="grand-total">$0</div>
+<div class="verdict" id="verdict">Select your gear above to see the total</div>
+</div>
+
+<button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+<div class="footer">
+<p>Made with ❤️ by <a href="https://videotoolshub.com">VideoToolsHub</a> — Updated February 2026</p>
+<p style="margin-top:0.5rem">All links support independent gear journalism.</p>
+</div>
+</div>
+
+<script>
+function updateTotal() {
+  const categories = ['camera','audio','lighting','software','tripod','extras'];
+  let total = 0;
+  categories.forEach(cat => {
+    const sel = document.querySelector(`select[data-category="${cat}"]`);
+    const val = parseInt(sel.value) || 0;
+    document.getElementById(`price-${cat}`).textContent = val ? `$${val.toLocaleString()}` : '$0';
+    total += val;
+  });
+  document.getElementById('grand-total').textContent = `$${total.toLocaleString()}`;
+  const verdict = document.getElementById('verdict');
+  if (total === 0) verdict.textContent = 'Select your gear above to see the total';
+  else if (total < 200) { verdict.textContent = '🟢 Ultra Budget — Great start!'; verdict.style.color = '#22c55e'; }
+  else if (total < 700) { verdict.textContent = '🟢 Budget Friendly — Solid setup!'; verdict.style.color = '#22c55e'; }
+  else if (total < 1500) { verdict.textContent = '🟡 Mid-Range — Professional quality!'; verdict.style.color = '#eab308'; }
+  else if (total < 3000) { verdict.textContent = '🟠 Serious Creator — Excellent gear!'; verdict.style.color = '#f97316'; }
+  else { verdict.textContent = '🔴 Pro Setup — Cinema-grade quality!'; verdict.style.color = '#ef4444'; }
+}
+</script>
+</body>
+</html>

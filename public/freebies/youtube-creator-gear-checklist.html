@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Creator Gear Checklist — VideoToolsHub</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; padding: 2rem; }
+.container { max-width: 800px; margin: 0 auto; }
+h1 { text-align: center; font-size: 2rem; margin-bottom: 0.5rem; color: #f59e0b; }
+.subtitle { text-align: center; color: #94a3b8; margin-bottom: 2rem; }
+.budget-tabs { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; justify-content: center; }
+.budget-tab { padding: 0.5rem 1rem; border-radius: 2rem; border: 2px solid #334155; background: transparent; color: #94a3b8; cursor: pointer; font-size: 0.9rem; font-weight: 600; }
+.budget-tab.active { background: #f59e0b; color: #1f2937; border-color: #f59e0b; }
+.category { background: #1e293b; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem; }
+.category h2 { color: #f59e0b; margin-bottom: 1rem; font-size: 1.3rem; }
+.item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid #334155; }
+.item:last-child { border-bottom: none; }
+.item input[type="checkbox"] { width: 20px; height: 20px; margin-top: 3px; accent-color: #f59e0b; cursor: pointer; }
+.item-info { flex: 1; }
+.item-name { font-weight: 600; color: #f1f5f9; }
+.item-detail { font-size: 0.85rem; color: #94a3b8; }
+.item-price { color: #22c55e; font-weight: 700; white-space: nowrap; }
+.item a { color: #60a5fa; text-decoration: none; }
+.item a:hover { text-decoration: underline; }
+.budget-total { text-align: center; background: linear-gradient(135deg, #1e293b, #334155); border-radius: 1rem; padding: 1.5rem; margin-top: 1.5rem; }
+.budget-total .amount { font-size: 2rem; color: #22c55e; font-weight: 800; }
+.print-btn { display: block; margin: 2rem auto; padding: 1rem 2rem; background: #f59e0b; color: #1f2937; border: none; border-radius: 0.5rem; font-size: 1.1rem; font-weight: 700; cursor: pointer; }
+.footer { text-align: center; margin-top: 2rem; color: #64748b; font-size: 0.8rem; }
+.footer a { color: #60a5fa; }
+@media print { body { background: #fff; color: #000; } .category { border: 1px solid #ddd; } .print-btn { display: none; } .budget-tabs { display: none; } }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>📋 YouTube Creator Gear Checklist</h1>
+<p class="subtitle">Your complete buying guide — Updated February 2026</p>
+
+<div class="budget-tabs">
+<button class="budget-tab active" onclick="showBudget('500')">Under $500</button>
+<button class="budget-tab" onclick="showBudget('1000')">Under $1,000</button>
+<button class="budget-tab" onclick="showBudget('2000')">Under $2,000</button>
+<button class="budget-tab" onclick="showBudget('5000')">$5,000+</button>
+</div>
+
+<!-- CAMERAS -->
+<div class="category">
+<h2>📷 Camera</h2>
+<div class="item" data-budget="500">
+<input type="checkbox"><div class="item-info"><span class="item-name">Smartphone (iPhone/Pixel)</span><div class="item-detail">You already own one. Shoots 4K. Start here.</div></div><span class="item-price">$0</span>
+</div>
+<div class="item" data-budget="1000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Sony ZV-1F</span><div class="item-detail">Vlogging king. Flip screen, great autofocus. <a href="https://www.amazon.com/dp/B0BHKB5YN7?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$398</span>
+</div>
+<div class="item" data-budget="2000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Sony Alpha a6700</span><div class="item-detail">APS-C powerhouse. 4K/120fps. <a href="https://www.amazon.com/dp/B0C5SDNBM7?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$1,398</span>
+</div>
+<div class="item" data-budget="5000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Sony Alpha a7 IV</span><div class="item-detail">Full-frame. Pro-level. <a href="https://www.amazon.com/dp/B09JZT6YK5?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$2,498</span>
+</div>
+</div>
+
+<!-- AUDIO -->
+<div class="category">
+<h2>🎙️ Audio</h2>
+<div class="item" data-budget="500">
+<input type="checkbox"><div class="item-info"><span class="item-name">Boya BY-M1 Lavalier</span><div class="item-detail">Clip-on mic, surprisingly good. <a href="https://www.amazon.com/dp/B01BWHLISU?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$20</span>
+</div>
+<div class="item" data-budget="1000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Audio-Technica AT2020</span><div class="item-detail">Studio USB mic, great for voiceovers. <a href="https://www.amazon.com/dp/B0006H92QK?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$99</span>
+</div>
+<div class="item" data-budget="2000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Rode Wireless GO II</span><div class="item-detail">Wireless dual-channel. Reddit favorite. <a href="https://www.amazon.com/dp/B08XFL864F?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$299</span>
+</div>
+<div class="item" data-budget="5000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Shure SM7B</span><div class="item-detail">Industry standard. Podcast/YouTube legend. <a href="https://www.amazon.com/dp/B0002E4Z8M?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$399</span>
+</div>
+</div>
+
+<!-- LIGHTING -->
+<div class="category">
+<h2>💡 Lighting</h2>
+<div class="item" data-budget="500">
+<input type="checkbox"><div class="item-info"><span class="item-name">Ring Light (18")</span><div class="item-detail">Cheap, effective for face-cam. <a href="https://www.amazon.com/dp/B08B3X7NXC?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$30</span>
+</div>
+<div class="item" data-budget="1000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Neewer LED Panel Light (2-pack)</span><div class="item-detail">Bi-color, dimmable, versatile. <a href="https://www.amazon.com/dp/B07T8FBZC2?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$90</span>
+</div>
+<div class="item" data-budget="2000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Godox SL60W</span><div class="item-detail">COB LED. Bowens mount. Pro starter. <a href="https://www.amazon.com/dp/B079FJBCVS?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$129</span>
+</div>
+<div class="item" data-budget="5000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Aputure Amaran 200d</span><div class="item-detail">Daylight COB. Cinema-grade. <a href="https://www.amazon.com/dp/B09N3GS2T3?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$289</span>
+</div>
+</div>
+
+<!-- SOFTWARE -->
+<div class="category">
+<h2>🖥️ Software</h2>
+<div class="item" data-budget="500">
+<input type="checkbox"><div class="item-info"><span class="item-name">DaVinci Resolve (Free)</span><div class="item-detail">Hollywood-grade editor, free forever. <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank">Download →</a></div></div><span class="item-price">Free</span>
+</div>
+<div class="item" data-budget="1000">
+<input type="checkbox"><div class="item-info"><span class="item-name">CapCut Desktop</span><div class="item-detail">Fast, easy, auto-captions built in.</div></div><span class="item-price">Free</span>
+</div>
+<div class="item" data-budget="2000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Final Cut Pro</span><div class="item-detail">Mac only. One-time purchase. <a href="https://www.amazon.com/dp/B0CHM3CB14?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$299</span>
+</div>
+<div class="item" data-budget="5000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Adobe Premiere Pro</span><div class="item-detail">Industry standard. Subscription model. <a href="https://www.amazon.com/dp/B09MVYLZGB?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$55/mo</span>
+</div>
+</div>
+
+<!-- ACCESSORIES -->
+<div class="category">
+<h2>🎒 Accessories</h2>
+<div class="item" data-budget="500">
+<input type="checkbox"><div class="item-info"><span class="item-name">Phone tripod mount</span><div class="item-detail">Basic but essential. <a href="https://www.amazon.com/dp/B08B3X7NXC?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$15</span>
+</div>
+<div class="item" data-budget="1000">
+<input type="checkbox"><div class="item-info"><span class="item-name">SD Card (128GB V30)</span><div class="item-detail">Get a fast one. Don't cheap out here.</div></div><span class="item-price">$20</span>
+</div>
+<div class="item" data-budget="2000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Peak Design Travel Tripod</span><div class="item-detail">Compact, solid. <a href="https://www.amazon.com/dp/B0BT6MYZM7?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$299</span>
+</div>
+<div class="item" data-budget="5000">
+<input type="checkbox"><div class="item-info"><span class="item-name">Elgato Stream Deck</span><div class="item-detail">Scene switching, shortcuts. <a href="https://www.amazon.com/dp/B06XKNZT1P?tag=disbrowproduc-20" target="_blank">Buy →</a></div></div><span class="item-price">$99</span>
+</div>
+</div>
+
+<div class="budget-total">
+<p style="color:#94a3b8;margin-bottom:0.5rem">Estimated Total</p>
+<div class="amount" id="total">$65</div>
+<p style="color:#64748b;font-size:0.85rem;margin-top:0.5rem">Based on selected budget tier</p>
+</div>
+
+<button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+<div class="footer">
+<p>Made with ❤️ by <a href="https://videotoolshub.com">VideoToolsHub</a> — Updated February 2026</p>
+<p style="margin-top:0.5rem">All links support independent gear journalism. Thank you!</p>
+</div>
+</div>
+
+<script>
+const budgetTotals = { '500': '$65', '1000': '$209', '2000': '$2,225', '5000': '$3,340' };
+function showBudget(level) {
+  document.querySelectorAll('.budget-tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  const levels = ['500','1000','2000','5000'];
+  const idx = levels.indexOf(level);
+  document.querySelectorAll('.item').forEach(item => {
+    const itemLevel = levels.indexOf(item.dataset.budget);
+    item.style.display = itemLevel <= idx ? 'flex' : 'none';
+  });
+  document.getElementById('total').textContent = budgetTotals[level];
+}
+</script>
+</body>
+</html>
