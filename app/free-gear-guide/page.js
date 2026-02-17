@@ -46,7 +46,7 @@ export default function FreeGearGuidePage() {
             <div style={{ backgroundColor: '#F8F9FA', borderRadius: '1rem', padding: '2rem', border: '2px solid #22c55e' }}>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎉</div>
               <h2 style={{ color: '#16A34A', fontSize: '1.5rem', marginBottom: '0.5rem' }}>You&apos;re In!</h2>
-              <p style={{ color: '#6B7280', marginBottom: '1.5rem' }}>Check your email for your free gear guides.</p>
+              <p style={{ color: '#6B7280', marginBottom: '1.5rem' }}>Check your email for your free gear tools.</p>
               <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <a href="/freebies/youtube-creator-gear-checklist.html" style={{ backgroundColor: '#2563EB', color: '#FFFFFF', padding: '0.75rem 1.5rem', borderRadius: '0.5rem', fontWeight: 700, textDecoration: 'none' }}>📋 Gear Checklist</a>
                 <a href="/freebies/gear-budget-planner.html" style={{ background: '#2563EB', color: 'white', padding: '0.75rem 1.5rem', borderRadius: '0.5rem', fontWeight: 700, textDecoration: 'none' }}>💰 Budget Planner</a>
