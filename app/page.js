@@ -599,6 +599,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ATEM School Cross-Promo */}
+      <section style={{
+        backgroundColor: '#1D4ED8',
+        padding: '3rem 2rem',
+        textAlign: 'center',
+      }}>
+        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+          <div style={{ fontSize: '0.8rem', fontWeight: '700', color: '#93C5FD', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>
+            Want to go deeper?
+          </div>
+          <h2 style={{ fontSize: '1.85rem', fontWeight: '800', color: '#FFFFFF', marginBottom: '0.75rem', lineHeight: '1.25' }}>
+            Learn Broadcast Production at ATEM School
+          </h2>
+          <p style={{ fontSize: '1rem', color: '#BFDBFE', marginBottom: '1.75rem', lineHeight: '1.6' }}>
+            Training for Blackmagic ATEM switchers, live production, and professional broadcast workflows — from someone who's been doing this for 15 years.
+          </p>
+          <a
+            href="https://atemschool.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              backgroundColor: '#FFFFFF',
+              color: '#1D4ED8',
+              textDecoration: 'none',
+              fontWeight: '700',
+              fontSize: '1rem',
+              padding: '0.8rem 2rem',
+              borderRadius: '0.5rem',
+              transition: 'background-color 0.15s',
+            }}
+          >
+            Visit ATEM School →
+          </a>
+        </div>
+      </section>
+
       <SiteFooter />
     </div>
   );

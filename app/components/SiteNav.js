@@ -56,6 +56,21 @@ export default function SiteNav() {
           <Link href="/guides" style={linkStyle('/guides')}>Guides</Link>
           <Link href="/blog" style={linkStyle('/blog')}>Blog</Link>
           <Link href="/about" style={linkStyle('/about')}>About</Link>
+          <a href="https://atemschool.com" target="_blank" rel="noopener noreferrer" style={{
+            color: '#374151',
+            textDecoration: 'none',
+            fontWeight: '500',
+            fontSize: '0.95rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.3rem',
+            transition: 'color 0.15s',
+          }}
+          onMouseEnter={e => e.currentTarget.style.color = '#2563EB'}
+          onMouseLeave={e => e.currentTarget.style.color = '#374151'}
+          >
+            ATEM School ↗
+          </a>
           <Link href="/free-gear-guide" style={{
             backgroundColor: '#2563EB',
             color: '#FFFFFF',
