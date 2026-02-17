@@ -208,7 +208,7 @@ export default function Home() {
       {/* Newsletter Signup — ABOVE FOLD CONVERSION */}
       <NewsletterSignup />
 
-      {/* Free Guides CTA — light version */}
+      {/* Free Tools CTA — light version */}
       <section style={{
         backgroundColor: '#F8F9FA',
         borderBottom: '1px solid #E5E7EB',
@@ -216,7 +216,7 @@ export default function Home() {
         textAlign: 'center',
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', gap: '1rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
-          <span style={{ color: '#374151', fontWeight: '600', fontSize: '0.95rem' }}>🎁 Free Guides:</span>
+          <span style={{ color: '#374151', fontWeight: '600', fontSize: '0.95rem' }}>🎁 Free Tools:</span>
           <Link href="/free-gear-guide" style={{ background: '#EFF6FF', color: ACCENT, border: `1px solid #BFDBFE`, padding: '0.4rem 0.9rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: '600', fontSize: '0.875rem' }}>📋 Gear Checklist</Link>
           <Link href="/free-gear-guide" style={{ background: '#EFF6FF', color: ACCENT, border: `1px solid #BFDBFE`, padding: '0.4rem 0.9rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: '600', fontSize: '0.875rem' }}>💰 Budget Planner</Link>
           <Link href="/free-gear-guide" style={{ background: '#EFF6FF', color: ACCENT, border: `1px solid #BFDBFE`, padding: '0.4rem 0.9rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: '600', fontSize: '0.875rem' }}>🚀 30-Day Action Plan</Link>

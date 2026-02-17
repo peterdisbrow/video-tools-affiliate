@@ -10,6 +10,42 @@ import { markdownToHtml } from '../../lib/markdownToHtml';
 
 const ACCENT = '#2563EB';
 
+// Slug aliases: shortened/common slugs → correct full slugs
+const SLUG_ALIASES = {
+  'shure-sm7b': 'shure-sm7b-microphone',
+  'sm7b': 'shure-sm7b-microphone',
+  'rode-nt-usb': 'rode-nt-usb-microphone',
+  'at2020': 'audio-technica-at2020',
+  'audio-technica': 'audio-technica-at2020',
+  'sony-a7iv': 'sony-alpha-a7-iv',
+  'a7iv': 'sony-alpha-a7-iv',
+  'a7-iv': 'sony-alpha-a7-iv',
+  'canon-r6': 'canon-eos-r6-mark-ii',
+  'r6-mark-ii': 'canon-eos-r6-mark-ii',
+  'osmo-pocket-3': 'dji-osmo-pocket-3',
+  'pocket-3': 'dji-osmo-pocket-3',
+  'amaran-200d': 'aputure-amaran-200d',
+  'sl60w': 'godox-sl60w-led',
+  'godox-sl60w': 'godox-sl60w-led',
+  'stream-deck': 'elgato-stream-deck',
+  'wireless-go': 'rode-wireless-go-ii',
+  'wireless-go-ii': 'rode-wireless-go-ii',
+  'c920': 'logitech-c920-webcam',
+  'travel-tripod': 'peak-design-travel-tripod',
+  'rs3': 'dji-rs-3-gimbal',
+  'rs-3': 'dji-rs-3-gimbal',
+  'capture-clip': 'peak-design-capture-clip',
+  'fx30': 'sony-fx30',
+  'lumix-s5': 'panasonic-lumix-s5-ii',
+  's5-ii': 'panasonic-lumix-s5-ii',
+  'premiere-pro': 'adobe-premiere-pro',
+  'davinci': 'davinci-resolve',
+  'resolve': 'davinci-resolve',
+  'final-cut': 'final-cut-pro',
+  'fcpx': 'final-cut-pro',
+  'neewer-led': 'neewer-led-panel-light',
+};
+
 const categories = {
   cameras: ['best-cameras-for-youtube', 'best-cameras-under-1000', 'best-cameras-under-2000', 'best-cameras-under-5000'],
   lighting: ['video-lighting-101', 'best-video-lights-under-300', 'best-video-lights-under-800', 'best-video-lights-under-2000'],
@@ -31,9 +67,26 @@ function getRelatedPosts(slug) {
   return orderedSlugs.map(s => blogPosts.find(p => p.slug === s)).filter(Boolean);
 }
 
+function getRelatedProducts(category) {
+  if (!category) return [];
+  return blogPosts
+    .filter(p => p.category === category && p.affiliateLink)
+    .slice(0, 3);
+}
+
 export default function BlogPost() {
   const params = useParams();
-  const slug = params.slug;
+  let slug = params.slug;
+
+  // Check aliases if no direct match
+  if (!blogPosts.find(p => p.slug === slug) && SLUG_ALIASES[slug]) {
+    if (typeof window !== 'undefined') {
+      window.location.replace(`/blog/${SLUG_ALIASES[slug]}`);
+      return null;
+    }
+    slug = SLUG_ALIASES[slug];
+  }
+
   const post = blogPosts.find(p => p.slug === slug);
 
   const contentHtml = useMemo(() => {
@@ -68,6 +121,7 @@ export default function BlogPost() {
   }
 
   const relatedPosts = getRelatedPosts(slug);
+  const relatedProducts = getRelatedProducts(post.category).filter(p => p.slug !== slug);
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF' }}>
@@ -211,6 +265,113 @@ export default function BlogPost() {
               Affiliate link — we earn a small commission at no extra cost to you.
             </p>
           </div>
+        )}
+
+        {/* Email Signup CTA */}
+        <section style={{
+          backgroundColor: '#EFF6FF',
+          padding: '2rem',
+          borderRadius: '0.75rem',
+          border: '1px solid #BFDBFE',
+          marginBottom: '2rem',
+          textAlign: 'center',
+        }}>
+          <h3 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#111827', margin: '0 0 0.5rem 0' }}>
+            📬 Enjoyed this review? Get weekly gear tips + deals
+          </h3>
+          <p style={{ color: '#6B7280', fontSize: '0.9rem', marginBottom: '1.25rem', margin: '0 0 1.25rem 0' }}>
+            Join 8,000+ creators getting honest gear recommendations every Tuesday.
+          </p>
+          <form
+            action="/api/subscribe"
+            method="POST"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const form = e.target;
+              const email = form.email.value;
+              const firstName = form.firstName.value;
+              try {
+                const res = await fetch('/api/subscribe', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ firstName, email }),
+                });
+                if (res.ok) {
+                  form.innerHTML = '<p style="color:#059669;font-weight:600;font-size:1.1rem;margin:0;">🎉 You\'re in! Check your email.</p>';
+                }
+              } catch {}
+            }}
+            style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap' }}
+          >
+            <input name="firstName" type="text" placeholder="First name" style={{
+              padding: '0.65rem 1rem', borderRadius: '0.5rem', border: '1px solid #D1D5DB',
+              fontSize: '0.9rem', width: '130px', outline: 'none',
+            }} />
+            <input name="email" type="email" placeholder="you@email.com" required style={{
+              padding: '0.65rem 1rem', borderRadius: '0.5rem', border: '1px solid #D1D5DB',
+              fontSize: '0.9rem', flex: '1', minWidth: '180px', outline: 'none',
+            }} />
+            <button type="submit" style={{
+              padding: '0.65rem 1.5rem', borderRadius: '0.5rem', border: 'none',
+              backgroundColor: ACCENT, color: '#fff', fontWeight: '700', fontSize: '0.9rem',
+              cursor: 'pointer', whiteSpace: 'nowrap',
+            }}>
+              Subscribe Free →
+            </button>
+          </form>
+          <p style={{ color: '#9CA3AF', fontSize: '0.75rem', marginTop: '0.75rem' }}>No spam. Unsubscribe anytime.</p>
+        </section>
+
+        {/* Related Products */}
+        {relatedProducts.length > 0 && (
+          <section style={{
+            marginBottom: '2rem',
+          }}>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: '#111827', margin: '0 0 1rem 0' }}>
+              🛍️ You Might Also Like
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+              {relatedProducts.map((prod, i) => (
+                <a key={i} href={prod.affiliateLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <div style={{
+                    backgroundColor: '#FFFFFF',
+                    borderRadius: '0.75rem',
+                    border: '1px solid #E5E7EB',
+                    overflow: 'hidden',
+                    transition: 'all 0.2s',
+                    cursor: 'pointer',
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = '#BFDBFE';
+                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(37,99,235,0.1)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = '#E5E7EB';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}>
+                    {prod.image && (
+                      <div style={{ height: '120px', overflow: 'hidden', backgroundColor: '#F3F4F6' }}>
+                        <img src={prod.image} alt={prod.title.split(' Review')[0]} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      </div>
+                    )}
+                    <div style={{ padding: '0.75rem' }}>
+                      <p style={{ fontWeight: '600', fontSize: '0.85rem', color: '#111827', margin: '0 0 0.25rem 0', lineHeight: '1.3' }}>
+                        {prod.title.split(' Review')[0]}
+                      </p>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        {prod.price && <span style={{ fontSize: '0.85rem', fontWeight: '700', color: ACCENT }}>{prod.price}</span>}
+                        {prod.rating && <span style={{ fontSize: '0.8rem', color: '#F59E0B' }}>★ {prod.rating}</span>}
+                      </div>
+                      <span style={{ fontSize: '0.75rem', color: ACCENT, fontWeight: '600' }}>View on Amazon →</span>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+            <p style={{ fontSize: '0.75rem', color: '#9CA3AF', marginTop: '0.5rem' }}>
+              Affiliate links — we earn a small commission at no extra cost to you.
+            </p>
+          </section>
         )}
 
         {/* Continue Reading */}

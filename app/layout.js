@@ -3,6 +3,8 @@ export const metadata = {
   description: "Honest reviews of video cameras, audio gear, lighting, and software from creators with 500K+ YouTube subscribers. No sponsored content, real-world testing, affiliate disclosures.",
 };
 
+import TrackingProvider from './components/TrackingProvider';
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -32,7 +34,7 @@ export default function RootLayout({ children }) {
         `}</style>
       </head>
       <body>
-        {children}
+        <TrackingProvider>{children}</TrackingProvider>
       </body>
     </html>
   );

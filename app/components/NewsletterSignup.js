@@ -66,7 +66,7 @@ export default function NewsletterSignup() {
     }}>
       <div style={{ maxWidth: '700px', margin: '0 auto' }}>
         <h2 style={{ color: '#111827', fontSize: '1.6rem', marginBottom: '1rem', fontWeight: 'bold' }}>
-          📬 Get Gear Guides + Exclusive Deals
+          📬 Get Gear Tools + Exclusive Deals
         </h2>
         <p style={{ color: '#374151', marginBottom: '1rem', lineHeight: '1.8', fontSize: '0.95rem' }}>
           Join 8,000+ creators getting gear guides and exclusive deals delivered weekly:
@@ -126,7 +126,7 @@ export default function NewsletterSignup() {
               whiteSpace: 'nowrap', transition: 'background-color 0.2s',
             }}
           >
-            {status === 'loading' ? 'Subscribing...' : 'Get Free Guides'}
+            {status === 'loading' ? 'Subscribing...' : 'Get Free Tools'}
           </button>
         </form>
         {status === 'error' && (

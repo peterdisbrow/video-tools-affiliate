@@ -61,7 +61,7 @@ export default function FreeGearGuidePage() {
                 style={{ padding: '1rem', borderRadius: '0.5rem', border: 'none', fontSize: '1rem', flex: 1, minWidth: '200px', backgroundColor: '#F8F9FA', color: '#374151' }} />
               <button type="submit" disabled={status === 'loading'}
                 style={{ padding: '1rem 2rem', borderRadius: '0.5rem', border: 'none', backgroundColor: '#2563EB', color: '#FFFFFF', fontWeight: 800, fontSize: '1rem', cursor: 'pointer', whiteSpace: 'nowrap', width: '100%' }}>
-                {status === 'loading' ? 'Sending...' : '📬 Get Free Guides →'}
+                {status === 'loading' ? 'Sending...' : '📬 Get Free Tools →'}
               </button>
             </form>
           )}
@@ -125,7 +125,7 @@ export default function FreeGearGuidePage() {
         <p style={{ color: '#4B5563', marginBottom: '1.5rem' }}>Join creators who stopped guessing and started building.</p>
         <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
           style={{ display: 'inline-block', backgroundColor: '#2563EB', color: '#FFFFFF', padding: '1rem 2rem', borderRadius: '0.5rem', fontWeight: 800, textDecoration: 'none', fontSize: '1.1rem' }}>
-          Get Your Free Guides ↑
+          Get Your Free Tools ↑
         </a>
       </section>
 

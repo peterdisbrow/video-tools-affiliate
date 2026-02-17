@@ -43,7 +43,7 @@ export default function SiteFooter() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <Link href="/about" style={{ color: '#6B7280', textDecoration: 'none', fontSize: '0.875rem' }}>About</Link>
                 <Link href="/how-we-review" style={{ color: '#6B7280', textDecoration: 'none', fontSize: '0.875rem' }}>How We Review</Link>
-                <Link href="/free-gear-guide" style={{ color: '#6B7280', textDecoration: 'none', fontSize: '0.875rem' }}>Free Guides</Link>
+                <Link href="/free-gear-guide" style={{ color: '#6B7280', textDecoration: 'none', fontSize: '0.875rem' }}>Free Tools</Link>
               </div>
             </div>
           </div>

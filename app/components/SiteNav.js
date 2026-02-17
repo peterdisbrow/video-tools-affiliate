@@ -66,7 +66,7 @@ export default function SiteNav() {
             borderRadius: '0.5rem',
             transition: 'background-color 0.15s',
           }}>
-            Free Guides
+            Free Tools
           </Link>
         </div>
       </div>
