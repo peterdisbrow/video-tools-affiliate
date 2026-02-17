@@ -1,20 +1,9 @@
 import { NextResponse } from 'next/server';
-import Anthropic from '@anthropic-ai/sdk';
-import fs from 'fs';
-import path from 'path';
+import { spawn } from 'child_process';
 
 function authCheck(request) {
   const session = request.cookies.get('admin_session')?.value;
   return session && session.length === 64;
-}
-
-function getApiKey() {
-  if (process.env.ANTHROPIC_API_KEY) return process.env.ANTHROPIC_API_KEY;
-  // Try reading from OpenClaw config
-  try {
-    const config = JSON.parse(fs.readFileSync(path.join(process.env.HOME, '.openclaw/openclaw.json'), 'utf8'));
-    return config?.env?.vars?.ANTHROPIC_API_KEY || null;
-  } catch { return null; }
 }
 
 const SYSTEM_PROMPT = `You are writing a blog post for a video creator gear review site. The author is Andrew Disbrow — 15 years of video production + broadcast engineering experience. Voice: direct, opinionated, first-person, no fluff. Rules: unique opening hook specific to this product, conversational headings (not "Key Features"), prose over bullet dumps, no "In conclusion", natural ending. Write a full 800-1200 word review post in markdown.`;
@@ -29,33 +18,55 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Brain dump text is required' }, { status: 400 });
   }
 
-  const apiKey = getApiKey();
-  if (!apiKey) {
-    return NextResponse.json({ error: 'ANTHROPIC_API_KEY not configured. Set it as an environment variable.' }, { status: 500 });
-  }
-
-  const client = new Anthropic({ apiKey });
-
-  let userMessage = brainDump;
+  let userMessage = `${SYSTEM_PROMPT}\n\n---\n\n${brainDump}`;
   if (product) userMessage += `\n\nAssociated product: ${product}`;
   if (category) userMessage += `\nCategory: ${category}`;
 
-  try {
-    const stream = await client.messages.stream({
-      model: 'claude-sonnet-4-5-20250514',
-      max_tokens: 4096,
-      system: SYSTEM_PROMPT,
-      messages: [{ role: 'user', content: userMessage }],
-    });
+  const encoder = new TextEncoder();
+  const readable = new ReadableStream({
+    start(controller) {
+      const proc = spawn('openclaw', [
+        'agent',
+        '-m', userMessage,
+        '--session-id', `blog-writer-${Date.now()}`,
+        '--json',
+        '--timeout', '120',
+      ], {
+        env: { ...process.env, PATH: process.env.PATH + ':/opt/homebrew/bin:/usr/local/bin' },
+      });
 
-    const encoder = new TextEncoder();
-    const readable = new ReadableStream({
-      async start(controller) {
+      let stdout = '';
+      let stderr = '';
+
+      proc.stdout.on('data', (chunk) => {
+        stdout += chunk.toString();
+      });
+
+      proc.stderr.on('data', (chunk) => {
+        stderr += chunk.toString();
+      });
+
+      proc.on('close', (code) => {
         try {
-          for await (const event of stream) {
-            if (event.type === 'content_block_delta' && event.delta?.text) {
-              controller.enqueue(encoder.encode(`data: ${JSON.stringify({ text: event.delta.text })}\n\n`));
-            }
+          if (code !== 0) {
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify({ error: stderr || `Process exited with code ${code}` })}\n\n`));
+            controller.close();
+            return;
+          }
+
+          const result = JSON.parse(stdout);
+          const text = result?.result?.payloads?.map(p => p.text).filter(Boolean).join('\n') || '';
+
+          if (!text) {
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify({ error: 'No response from AI' })}\n\n`));
+            controller.close();
+            return;
+          }
+
+          // Send the full text in chunks to simulate streaming for the UI
+          const chunkSize = 50;
+          for (let i = 0; i < text.length; i += chunkSize) {
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify({ text: text.slice(i, i + chunkSize) })}\n\n`));
           }
           controller.enqueue(encoder.encode(`data: ${JSON.stringify({ done: true })}\n\n`));
           controller.close();
@@ -63,17 +74,20 @@ export async function POST(request) {
           controller.enqueue(encoder.encode(`data: ${JSON.stringify({ error: err.message })}\n\n`));
           controller.close();
         }
-      }
-    });
+      });
 
-    return new Response(readable, {
-      headers: {
-        'Content-Type': 'text/event-stream',
-        'Cache-Control': 'no-cache',
-        'Connection': 'keep-alive',
-      },
-    });
-  } catch (err) {
-    return NextResponse.json({ error: err.message }, { status: 500 });
-  }
+      proc.on('error', (err) => {
+        controller.enqueue(encoder.encode(`data: ${JSON.stringify({ error: `Failed to start: ${err.message}` })}\n\n`));
+        controller.close();
+      });
+    }
+  });
+
+  return new Response(readable, {
+    headers: {
+      'Content-Type': 'text/event-stream',
+      'Cache-Control': 'no-cache',
+      'Connection': 'keep-alive',
+    },
+  });
 }

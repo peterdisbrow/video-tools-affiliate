@@ -168,6 +168,7 @@ export default function AIBlogWriter() {
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
         <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#111827' }}>🤖 AI Blog Writer</h2>
+        <span style={{ fontSize: '0.75rem', color: '#9ca3af', fontWeight: '400' }}>Powered by your local AI</span>
         <a href="/admin/blog" style={{ color: '#6b7280', textDecoration: 'none', fontSize: '0.9rem' }}>← Back to Posts</a>
       </div>
 
