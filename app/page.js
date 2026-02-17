@@ -612,8 +612,11 @@ export default function Home() {
           <h2 style={{ fontSize: '1.85rem', fontWeight: '800', color: '#FFFFFF', marginBottom: '0.75rem', lineHeight: '1.25' }}>
             Learn Broadcast Production at ATEM School
           </h2>
-          <p style={{ fontSize: '1rem', color: '#BFDBFE', marginBottom: '1.75rem', lineHeight: '1.6' }}>
+          <p style={{ fontSize: '1rem', color: '#BFDBFE', marginBottom: '0.5rem', lineHeight: '1.6' }}>
             Training for Blackmagic ATEM switchers, live production, and professional broadcast workflows — from someone who's been doing this for 15 years.
+          </p>
+          <p style={{ fontSize: '1rem', color: '#FCD34D', fontWeight: '600', marginBottom: '1.75rem' }}>
+            ★ Members get exclusive pricing on gear purchases.
           </p>
           <a
             href="https://atemschool.com"
@@ -631,7 +634,7 @@ export default function Home() {
               transition: 'background-color 0.15s',
             }}
           >
-            Visit ATEM School →
+            Join ATEM School →
           </a>
         </div>
       </section>
