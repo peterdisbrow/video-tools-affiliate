@@ -92,7 +92,7 @@ That church livestream was a disaster. But it became the most valuable lesson I 
     "readTimeMinutes": 12,
     "wordCount": 4920,
     "category": "lighting",
-    "relatedProducts": ["Neewer LED Panels", "Aputure Amaran Series", "Godox Lighting Kits", "White Poster Board", "Light Stands"],
+    "relatedProducts": ["Aputure MC", "Aputure Amaran Series", "Amaran 60d S", "White Poster Board", "Light Stands"],
     "content": `## Video Lighting 101: The Product Shoot That Cost Me a Client
 
 **Date:** 2026-02-17
@@ -117,7 +117,7 @@ I had four days to figure it out.
 
 ### The Preparation Disaster
 
-I showed up at their office on Tuesday with a rented camera (Sony a6400), my laptop, and one LED panel light I'd purchased the week before—a basic Neewer panel that cost about $60.
+I showed up at their office on Tuesday with a rented camera (Sony a6400), my laptop, and one LED panel light I'd purchased the week before—a basic Amaran 60d S panel.
 
 The client's warehouse had white concrete walls, fluorescent overhead lighting, and industrial shelving. It was the opposite of ideal for shooting products. I didn't realize this yet.
 
@@ -181,7 +181,7 @@ I called the client back that afternoon. "I want to redo the shoot with a better
 
 They agreed, mostly out of a desire to not lose their money entirely.
 
-That night, I made an emergency purchase: another LED panel. Same Neewer brand—$60, a roll of white poster board, and some clamps.
+That night, I made an emergency purchase: another Amaran panel, a roll of white poster board, and some clamps.
 
 I watched every product lighting tutorial I could find and planned out the new setup on paper. Two LED panels at 5600K, white poster board fill on the opposite side, white background, with each element positioned to control shadows.
 
@@ -217,7 +217,7 @@ For most creators, mastering Tier 1 principles is sufficient. The three-point sy
 
 After all this learning, here's what I actually use:
 
-- Two Neewer LED panels ($120 total)
+- Two Amaran LED panels ($200 total)
 - White poster board and reflectors ($20)
 - Light stands ($60)
 - Diffusion fabric ($20)
@@ -844,7 +844,7 @@ My $40 tripod that survived that Utah trip taught me more about gear than any pr
     "readTimeMinutes": 10,
     "wordCount": 4234,
     "category": "lighting",
-    "relatedProducts": ["Rosco DigiComp Green Paint", "Neewer LED Panels", "Canvas Backdrop Stands", "DaVinci Resolve"],
+    "relatedProducts": ["Rosco DigiComp Green Paint", "Aputure MC", "Canvas Backdrop Stands", "DaVinci Resolve"],
     "content": `## DIY Green Screen Setup: The $600 Screen That Looked Terrible
 
 **Date:** 2026-02-17
@@ -1032,7 +1032,7 @@ When I need portability, I use a canvas green screen on an Amazon backdrop stand
 Once I understood that lighting was the real issue, I invested properly:
 
 **Screen Lighting:**
-- Two Neewer LED panels ($120 total)
+- Two Amaran LED panels ($200 total)
 - Set to 5600K daylight temperature
 - Positioned 45 degrees each side of the screen
 - Both at same brightness for even illumination
@@ -1115,7 +1115,7 @@ That's the lesson a very expensive green screen taught me.`
     "readTimeMinutes": 11,
     "wordCount": 4511,
     "category": "cameras",
-    "relatedProducts": ["Sony a6400", "DaVinci Resolve", "Rode NT-USB+", "Neewer LED Panels", "Peak Design Tripod"],
+    "relatedProducts": ["Sony a6400", "DaVinci Resolve", "Rode NT-USB+", "Aputure MC", "Peak Design Tripod"],
     "content": `## YouTube Equipment Timeline: The $5K Mistake That Sat Unused
 
 **Date:** 2026-02-17
@@ -1133,7 +1133,7 @@ I loaded up a cart with:
 - Rode NT-USB+ microphone ($200)
 - Elgato Key Light ($200)
 - Peak Design tripod ($100)
-- Neewer LED panels ($150)
+- Amaran LED panels ($200)
 - DJI gimbal ($400)
 - External SSD ($300)
 
@@ -1229,7 +1229,7 @@ Cost: $230
 
 **Month 5-6: Upgrade Lighting**
 
-- Buy two Neewer LED panels ($120)
+- Buy two Amaran 60d S panels ($200)
 - Add light stands ($40)
 - Improve your visual appeal
 
@@ -1283,7 +1283,7 @@ After a year of learning what content works, I made intentional upgrades:
 
 **What I kept:**
 - Rode NT-USB+ (still the best microphone for my workflow)
-- Neewer LED panels (still adequate for my lighting needs)
+- Amaran LED panels (still adequate for my lighting needs)
 - Peak Design tripod (still my favorite tripod)
 
 **What I upgraded:**
