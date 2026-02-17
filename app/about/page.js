@@ -1,13 +1,17 @@
 'use client';
 
 import Link from 'next/link';
+import SiteNav from '../components/SiteNav';
+import SiteFooter from '../components/SiteFooter';
 
 export default function About() {
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF' }}>
+      <SiteNav />
+    <div style={{ maxWidth: '900px', margin: '0 auto', padding: '3rem 2rem' }}>
       {/* Header */}
       <div style={{ marginBottom: '3rem' }}>
-        <Link href="/" style={{ color: '#f59e0b', textDecoration: 'none', fontSize: '0.9rem', marginBottom: '1rem', display: 'inline-block' }}>
+        <Link href="/" style={{ color: '#2563EB', textDecoration: 'none', fontSize: '0.875rem', marginBottom: '1.5rem', display: 'inline-block', fontWeight: '500' }}>
           ← Back to Home
         </Link>
         <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '1rem' }}>
@@ -256,6 +260,8 @@ export default function About() {
           <strong>Interested in collaborating?</strong> If you're a creator (100K+ in your niche) and want to contribute reviews or test gear with us, <strong>we'd love to hear from you</strong>. Email us about joining the collective.
         </p>
       </section>
+    </div>
+    <SiteFooter />
     </div>
   );
 }

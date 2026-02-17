@@ -2,31 +2,16 @@
 
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { blogPosts } from '../blogData';
+import SiteNav from '../../components/SiteNav';
+import SiteFooter from '../../components/SiteFooter';
+import { markdownToHtml } from '../../lib/markdownToHtml';
 
-// Category mapping for smart related posts
-const categories = {
-  cameras: ['best-cameras-for-youtube', 'best-cameras-under-1000', 'best-cameras-under-2000', 'best-cameras-under-5000'],
-  lighting: ['video-lighting-101', 'best-video-lights-under-300', 'best-video-lights-under-800', 'best-video-lights-under-2000'],
-  audio: ['pro-audio-budget', 'best-microphones-under-200', 'best-microphones-under-500', 'best-audio-interfaces-under-300'],
-  tripods: ['best-tripods-under-200', 'best-tripods-under-500', 'best-tripods-under-1500', 'stabilization-techniques'],
-  general: ['free-vs-paid-editing', 'streaming-gear-essentials', 'youtube-equipment-timeline', 'diy-green-screen-setup'],
-};
+const ACCENT = '#2563EB';
 
-function getRelatedPosts(slug) {
-  // Find which category current post belongs to
-  let currentCategory = 'general';
-  for (const [cat, slugs] of Object.entries(categories)) {
-    if (slugs.includes(slug)) { currentCategory = cat; break; }
-  }
-  // Get same-category posts first, then others
-  const sameCat = categories[currentCategory].filter(s => s !== slug);
-  const otherCats = Object.entries(categories)
-    .filter(([cat]) => cat !== currentCategory)
-    .flatMap(([, slugs]) => slugs);
-  const orderedSlugs = [...sameCat, ...otherCats].slice(0, 4);
-  return orderedSlugs.map(s => blogPosts.find(p => p.slug === s)).filter(Boolean);
+function getRelatedPosts(slug, allPosts) {
+  return allPosts.filter(p => p.slug !== slug).slice(0, 4);
 }
 
 export default function GuidesPost() {
@@ -34,10 +19,14 @@ export default function GuidesPost() {
   const slug = params.slug;
   const post = blogPosts.find(p => p.slug === slug);
 
+  const contentHtml = useMemo(() => {
+    if (!post) return '';
+    return markdownToHtml(post.content);
+  }, [post]);
+
   useEffect(() => {
     if (post) {
       document.title = `${post.title} | Creator Gear`;
-      // Set meta description
       let metaDesc = document.querySelector('meta[name="description"]');
       if (!metaDesc) {
         metaDesc = document.createElement('meta');
@@ -50,99 +39,173 @@ export default function GuidesPost() {
 
   if (!post) {
     return (
-      <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb', padding: '2rem' }}>
-        <div style={{ textAlign: 'center', paddingTop: '4rem' }}>
-          <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Guide Not Found</h1>
-          <Link href="/guides" style={{ color: '#667eea', textDecoration: 'none', fontWeight: 'bold' }}>← Back to Guides</Link>
+      <div style={{ minHeight: '100vh', backgroundColor: '#F8F9FA' }}>
+        <SiteNav />
+        <div style={{ textAlign: 'center', padding: '6rem 2rem' }}>
+          <h1 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#111827' }}>Guide Not Found</h1>
+          <Link href="/guides" style={{ color: ACCENT, textDecoration: 'none', fontWeight: '600' }}>← Back to Guides</Link>
         </div>
+        <SiteFooter />
       </div>
     );
   }
 
-  const relatedPosts = getRelatedPosts(slug);
+  const relatedPosts = getRelatedPosts(slug, blogPosts);
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
-      {/* Navigation */}
-      <nav style={{ backgroundColor: '#fff', borderBottom: '1px solid #e5e7eb', position: 'sticky', top: 0, zIndex: 10 }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <Link href="/" style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#1f2937', textDecoration: 'none' }}>🎬 Creator Gear</Link>
-          <div style={{ display: 'flex', gap: '2rem' }}>
-            <Link href="/#tools" style={{ color: '#6b7280', textDecoration: 'none' }}>Tools</Link>
-            <Link href="/guides" style={{ color: '#6b7280', textDecoration: 'none' }}>Guides</Link>
-            <Link href="/#faq" style={{ color: '#6b7280', textDecoration: 'none' }}>FAQ</Link>
-          </div>
-        </div>
-      </nav>
+    <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF' }}>
+      <SiteNav />
 
       {/* Featured Image */}
-      <div style={{ width: '100%', height: '400px', overflow: 'hidden' }}>
-        <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-      </div>
+      {post.image && (
+        <div style={{ width: '100%', height: '380px', overflow: 'hidden', backgroundColor: '#F0F2F5' }}>
+          <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </div>
+      )}
 
       <article style={{ maxWidth: '800px', margin: '0 auto', padding: '3rem 2rem' }}>
+        {/* Breadcrumb */}
+        <nav style={{ marginBottom: '1.5rem', fontSize: '0.85rem', color: '#6B7280' }}>
+          <Link href="/" style={{ color: '#6B7280', textDecoration: 'none' }}>Home</Link>
+          <span style={{ margin: '0 0.5rem' }}>›</span>
+          <Link href="/guides" style={{ color: '#6B7280', textDecoration: 'none' }}>Guides</Link>
+          <span style={{ margin: '0 0.5rem' }}>›</span>
+          <span style={{ color: '#374151' }}>{post.title.slice(0, 50)}{post.title.length > 50 ? '…' : ''}</span>
+        </nav>
+
         {/* Post Header */}
-        <header style={{ marginBottom: '2rem', borderBottom: '2px solid #e5e7eb', paddingBottom: '2rem' }}>
-          <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1f2937' }}>{post.title}</h1>
-          <div style={{ display: 'flex', gap: '1rem', color: '#6b7280', fontSize: '0.95rem' }}>
-            <span>{post.date}</span>
-            <span>•</span>
-            <span>{post.readTime}</span>
+        <header style={{ marginBottom: '2.5rem', paddingBottom: '2rem', borderBottom: '1px solid #E5E7EB' }}>
+          <div style={{ marginBottom: '0.75rem' }}>
+            <span style={{
+              display: 'inline-block',
+              backgroundColor: '#EFF6FF',
+              color: ACCENT,
+              fontSize: '0.75rem',
+              fontWeight: '600',
+              padding: '0.25rem 0.75rem',
+              borderRadius: '9999px',
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+            }}>
+              {post.category || 'Guide'}
+            </span>
+          </div>
+          <h1 style={{ fontSize: '2.25rem', fontWeight: '800', marginBottom: '1rem', color: '#111827', lineHeight: '1.25' }}>
+            {post.title}
+          </h1>
+          <div style={{ display: 'flex', gap: '1.25rem', color: '#6B7280', fontSize: '0.9rem', flexWrap: 'wrap' }}>
+            <span>📅 {post.date}</span>
+            <span>⏱ {post.readTime}</span>
+            {post.wordCount && <span>📝 {post.wordCount.toLocaleString()} words</span>}
           </div>
         </header>
 
-        {/* Content */}
+        {/* Rendered Content */}
         <div style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#374151', marginBottom: '3rem' }}>
           <style>{`
-            article h2 { font-size: 1.5rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; color: #1f2937; }
-            article h3 { font-size: 1.2rem; font-weight: bold; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1f2937; }
-            article p { margin-bottom: 1rem; }
-            article ul, article ol { margin-left: 1.5rem; margin-bottom: 1rem; }
-            article li { margin-bottom: 0.5rem; }
-            article a { color: #667eea; text-decoration: none; font-weight: 500; }
-            article a:hover { text-decoration: underline; }
-            article strong { font-weight: 600; }
+            .prose-content h1 { font-size: 2rem; font-weight: 800; margin: 2.5rem 0 1rem; color: #111827; line-height: 1.3; }
+            .prose-content h2 { font-size: 1.6rem; font-weight: 700; margin: 2rem 0 0.75rem; color: #111827; line-height: 1.3; padding-top: 0.5rem; border-top: 1px solid #F0F2F5; }
+            .prose-content h3 { font-size: 1.25rem; font-weight: 600; margin: 1.5rem 0 0.5rem; color: #111827; }
+            .prose-content h4 { font-size: 1.05rem; font-weight: 600; margin: 1.25rem 0 0.4rem; color: #374151; }
+            .prose-content p { margin-bottom: 1.25rem; }
+            .prose-content ul { list-style: disc; margin-left: 1.5rem; margin-bottom: 1.25rem; }
+            .prose-content ol { list-style: decimal; margin-left: 1.5rem; margin-bottom: 1.25rem; }
+            .prose-content li { margin-bottom: 0.4rem; }
+            .prose-content a { color: ${ACCENT}; text-decoration: none; font-weight: 500; border-bottom: 1px solid #BFDBFE; }
+            .prose-content a:hover { border-bottom-color: ${ACCENT}; }
+            .prose-content strong { font-weight: 700; color: #111827; }
+            .prose-content em { font-style: italic; }
+            .prose-content blockquote { border-left: 4px solid ${ACCENT}; margin: 1.5rem 0; padding: 0.75rem 1.25rem; background: #EFF6FF; border-radius: 0 0.5rem 0.5rem 0; color: #1E40AF; font-style: italic; }
+            .prose-content code { background: #F0F2F5; padding: 0.15em 0.4em; border-radius: 0.25rem; font-size: 0.9em; font-family: 'Courier New', monospace; color: #374151; }
+            .prose-content pre { background: #1E293B; color: #E2E8F0; padding: 1.25rem; border-radius: 0.75rem; overflow-x: auto; margin-bottom: 1.5rem; }
+            .prose-content pre code { background: none; padding: 0; color: inherit; font-size: 0.9rem; }
+            .prose-content hr { border: none; border-top: 1px solid #E5E7EB; margin: 2rem 0; }
+            .prose-content table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: 0.95rem; }
+            .prose-content th { background: #F8F9FA; padding: 0.75rem 1rem; border: 1px solid #E5E7EB; text-align: left; font-weight: 600; color: #111827; }
+            .prose-content td { padding: 0.75rem 1rem; border: 1px solid #E5E7EB; }
+            .prose-content tr:nth-child(even) td { background: #F8F9FA; }
+            .prose-content img { border-radius: 0.75rem; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
           `}</style>
-          <div dangerouslySetInnerHTML={{ __html: post.content }} />
+          <div className="prose-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </div>
 
         {/* Related Products Box */}
         {post.relatedProducts && post.relatedProducts.length > 0 && (
-          <section style={{ backgroundColor: '#f0f4ff', padding: '2rem', borderRadius: '0.75rem', marginBottom: '3rem', border: '1px solid #d4deff' }}>
-            <h3 style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1f2937' }}>🛒 Products Mentioned in This Post</h3>
+          <section style={{
+            backgroundColor: '#EFF6FF',
+            padding: '1.75rem',
+            borderRadius: '0.75rem',
+            marginBottom: '3rem',
+            border: '1px solid #BFDBFE',
+          }}>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '1rem', color: '#111827', margin: '0 0 1rem 0' }}>
+              🛒 Products Mentioned in This Guide
+            </h3>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               {post.relatedProducts.map((product, i) => (
-                <li key={i} style={{ marginBottom: '0.75rem', padding: '0.5rem 0', borderBottom: i < post.relatedProducts.length - 1 ? '1px solid #e0e7ff' : 'none' }}>
-                  <a href={product.link} target="_blank" rel="noopener noreferrer" style={{ color: '#667eea', textDecoration: 'none', fontWeight: '600', fontSize: '1rem' }}>
-                    {product.name} <span style={{ fontSize: '0.85rem' }}>→ Check Price on Amazon</span>
-                  </a>
+                <li key={i} style={{
+                  marginBottom: '0.6rem',
+                  paddingBottom: '0.6rem',
+                  borderBottom: i < post.relatedProducts.length - 1 ? '1px solid #DBEAFE' : 'none',
+                }}>
+                  {typeof product === 'string' ? (
+                    <span style={{ color: '#374151', fontWeight: '500' }}>{product}</span>
+                  ) : (
+                    <a href={product.link} target="_blank" rel="noopener noreferrer" style={{
+                      color: ACCENT, textDecoration: 'none', fontWeight: '600',
+                    }}>
+                      {product.name} <span style={{ fontSize: '0.85rem', fontWeight: '400' }}>→ Check on Amazon</span>
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
           </section>
         )}
 
-        {/* Continue Reading - Smart Related */}
-        <section style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '0.75rem', border: '1px solid #e5e7eb' }}>
-          <h3 style={{ fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '1.5rem', color: '#1f2937' }}>📖 Continue Reading</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
-            {relatedPosts.map((relPost, i) => (
-              <Link key={i} href={`/guides/${relPost.slug}`} style={{ textDecoration: 'none' }}>
-                <div style={{ padding: '1rem', backgroundColor: '#f9fafb', borderRadius: '0.5rem', transition: 'background-color 0.2s', cursor: 'pointer', height: '100%' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f0f4ff'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#f9fafb'}>
-                  <p style={{ fontWeight: 'bold', color: '#667eea', marginBottom: '0.5rem', fontSize: '0.95rem' }}>{relPost.title}</p>
-                  <span style={{ color: '#667eea', fontSize: '0.85rem' }}>Read more →</span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
+        {/* Continue Reading */}
+        {relatedPosts.length > 0 && (
+          <section style={{
+            backgroundColor: '#F8F9FA',
+            padding: '1.75rem',
+            borderRadius: '0.75rem',
+            border: '1px solid #E5E7EB',
+          }}>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '1.25rem', color: '#111827', margin: '0 0 1.25rem 0' }}>
+              📖 Continue Reading
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem' }}>
+              {relatedPosts.map((relPost, i) => (
+                <Link key={i} href={`/guides/${relPost.slug}`} style={{ textDecoration: 'none' }}>
+                  <div style={{
+                    padding: '1rem',
+                    backgroundColor: '#FFFFFF',
+                    borderRadius: '0.5rem',
+                    border: '1px solid #E5E7EB',
+                    transition: 'border-color 0.15s, box-shadow 0.15s',
+                    cursor: 'pointer',
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = ACCENT;
+                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(37,99,235,0.1)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = '#E5E7EB';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}>
+                    <p style={{ fontWeight: '600', color: '#111827', marginBottom: '0.35rem', fontSize: '0.9rem', margin: '0 0 0.35rem 0', lineHeight: '1.4' }}>
+                      {relPost.title.length > 70 ? relPost.title.slice(0, 70) + '…' : relPost.title}
+                    </p>
+                    <span style={{ color: ACCENT, fontSize: '0.8rem', fontWeight: '500' }}>Read more →</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
       </article>
 
-      {/* Footer */}
-      <footer style={{ backgroundColor: '#1f2937', color: '#fff', padding: '2rem', textAlign: 'center', marginTop: '4rem' }}>
-        <p style={{ marginBottom: '0.5rem' }}>© 2026 Creator Gear. Affiliate links support this site at no extra cost to you.</p>
-        <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Curated recommendations for video creators, filmmakers, and content professionals.</p>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

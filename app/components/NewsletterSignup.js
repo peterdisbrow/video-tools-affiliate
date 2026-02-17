@@ -41,16 +41,16 @@ export default function NewsletterSignup() {
   if (status === 'success') {
     return (
       <section style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: '#EFF6FF',
         padding: '3rem 2rem',
         textAlign: 'center',
       }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
           <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎉</div>
-          <h2 style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '0.5rem', fontWeight: 'bold' }}>
+          <h2 style={{ color: '#111827', fontSize: '1.5rem', marginBottom: '0.5rem', fontWeight: 'bold' }}>
             You&apos;re In!
           </h2>
-          <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.1rem' }}>
+          <p style={{ color: '#374151', fontSize: '1.1rem' }}>
             Check your email for exclusive gear guides!
           </p>
         </div>
@@ -60,19 +60,19 @@ export default function NewsletterSignup() {
 
   return (
     <section style={{
-      background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+      background: '#F8F9FA', borderBottom: '1px solid #E5E7EB',
       padding: '3rem 2rem',
       textAlign: 'center',
     }}>
       <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-        <h2 style={{ color: '#fff', fontSize: '1.6rem', marginBottom: '1rem', fontWeight: 'bold' }}>
+        <h2 style={{ color: '#111827', fontSize: '1.6rem', marginBottom: '1rem', fontWeight: 'bold' }}>
           📬 Weekly Gear Intel (No Sponsored BS)
         </h2>
-        <p style={{ color: 'rgba(255,255,255,0.9)', marginBottom: '1rem', lineHeight: '1.8', fontSize: '0.95rem' }}>
+        <p style={{ color: '#374151', marginBottom: '1rem', lineHeight: '1.8', fontSize: '0.95rem' }}>
           Join 8,000+ creators getting the deals and insights we don't publish on the site:
         </p>
         <ul style={{
-          color: 'rgba(255,255,255,0.8)',
+          color: '#374151',
           lineHeight: '1.8',
           listStyle: 'none',
           padding: '0 0 1.5rem 0',
@@ -89,7 +89,7 @@ export default function NewsletterSignup() {
           <li>✅ Budget setup guides ($500, $2K, $5K tiers)</li>
           <li>✅ Creator interviews & real workflows</li>
         </ul>
-        <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>
+        <p style={{ color: '#6B7280', marginBottom: '1.5rem', fontSize: '0.9rem' }}>
           Sent every Tuesday. Unsubscribe anytime. No spam, ever.
         </p>
         <form onSubmit={handleSubmit} style={{
@@ -101,7 +101,7 @@ export default function NewsletterSignup() {
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             style={{
-              padding: '0.75rem 1rem', borderRadius: '0.5rem', border: 'none',
+              padding: '0.75rem 1rem', borderRadius: '0.5rem', border: '1px solid #D1D5DB',
               fontSize: '1rem', width: '150px', outline: 'none',
             }}
           />
@@ -112,7 +112,7 @@ export default function NewsletterSignup() {
             onChange={(e) => { setEmail(e.target.value); if (status === 'error') setStatus('idle'); }}
             required
             style={{
-              padding: '0.75rem 1rem', borderRadius: '0.5rem', border: 'none',
+              padding: '0.75rem 1rem', borderRadius: '0.5rem', border: '1px solid #D1D5DB',
               fontSize: '1rem', flex: '1', minWidth: '200px', outline: 'none',
             }}
           />

@@ -4,7 +4,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 import NewsletterSignup from './components/NewsletterSignup';
 import ProductReview from './components/ProductReview';
+import SiteNav from './components/SiteNav';
+import SiteFooter from './components/SiteFooter';
 import productsData from '../products.json';
+
+const ACCENT = '#2563EB';
 
 const AFFILIATE_TAG = productsData.affiliateTag;
 
@@ -99,16 +103,16 @@ function ProductCard({ product, onReview }) {
           flex: 1,
         }}>{product.description}</p>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
-          <span style={{ fontSize: '1.35rem', fontWeight: 'bold', color: '#667eea' }}>{product.price}</span>
+          <span style={{ fontSize: '1.35rem', fontWeight: 'bold', color: '#2563EB' }}>{product.price}</span>
         </div>
         <div style={{ display: 'flex', gap: '0.5rem' }}>
           {product.review && (
             <button
               onClick={() => onReview(product)}
               style={{
-                flex: 1, padding: '0.7rem', backgroundColor: '#f3f4f6', color: '#667eea',
+                flex: 1, padding: '0.7rem', backgroundColor: '#f3f4f6', color: '#2563EB',
                 textAlign: 'center', borderRadius: '0.5rem', fontWeight: 'bold',
-                cursor: 'pointer', transition: 'background-color 0.2s', border: '2px solid #667eea',
+                cursor: 'pointer', transition: 'background-color 0.2s', border: '2px solid #2563EB',
                 fontSize: '0.85rem',
               }}
               onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#eef2ff'; }}
@@ -116,13 +120,13 @@ function ProductCard({ product, onReview }) {
             >⭐ Reviews</button>
           )}
           <a href={product.link} target="_blank" rel="noopener noreferrer" style={{
-            flex: 1, padding: '0.7rem', backgroundColor: '#667eea', color: '#fff',
+            flex: 1, padding: '0.7rem', backgroundColor: '#2563EB', color: '#fff',
             textAlign: 'center', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold',
             cursor: 'pointer', transition: 'background-color 0.2s', boxSizing: 'border-box',
             fontSize: '0.85rem',
           }}
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a6fd6'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#667eea'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#2563EB'}
           >View & Buy (Affiliate) →</a>
         </div>
       </div>
@@ -138,56 +142,81 @@ export default function Home() {
   const filteredProducts = activeCategory === 'all' ? products : products.filter(p => p.category === activeCategory);
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF' }}>
       {/* Review Modal */}
       {reviewProduct && (
         <ProductReview product={reviewProduct} onClose={() => setReviewProduct(null)} />
       )}
-      {/* Navigation */}
-      <nav style={{ backgroundColor: '#fff', borderBottom: '1px solid #e5e7eb', position: 'sticky', top: 0, zIndex: 10 }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <Link href="/" style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#1f2937', textDecoration: 'none' }}>🎬 Creator Gear</Link>
-          <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-            <a href="#tools" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Tools</a>
-            <Link href="/comparisons" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Comparisons</Link>
-            <Link href="/guides" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>Guides</Link>
-            <Link href="/how-we-review" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>How We Review</Link>
-            <Link href="/about" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>About</Link>
-            <Link href="/free-gear-guide" style={{ color: '#f59e0b', textDecoration: 'none', fontWeight: '700' }}>🎁 Free Guides</Link>
-            <a href="#faq" style={{ color: '#6b7280', textDecoration: 'none', fontWeight: '500' }}>FAQ</a>
-          </div>
-        </div>
-      </nav>
 
-      {/* Hero Section */}
-      <section style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: '#fff', padding: '5rem 2rem', textAlign: 'center' }}>
+      <SiteNav />
+
+      {/* Hero Section — light, professional */}
+      <section style={{
+        background: 'linear-gradient(135deg, #EFF6FF 0%, #F0F4FF 100%)',
+        borderBottom: '1px solid #E5E7EB',
+        padding: '5rem 2rem',
+        textAlign: 'center',
+      }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div style={{ display: 'inline-block', backgroundColor: 'rgba(255,255,255,0.15)', padding: '0.4rem 1rem', borderRadius: '9999px', fontSize: '0.85rem', marginBottom: '1rem', fontWeight: '500' }}>🔥 Updated February 2026 · Limited-time gear guides</div>
-          <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: 'bold' }}>Level Up Your Content: The Ultimate Video Creator&apos;s Toolkit</h1>
-          <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem', opacity: 0.95, lineHeight: '1.6' }}>Discover the exact gear and software top creators trust. Handpicked recommendations with affiliate links – your trusted source for smart purchasing decisions.</p>
-          {/* Social Proof Badges */}
-          <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem', opacity: 0.9 }}>
-              <span style={{ fontSize: '1.2rem' }}>👥</span> Trusted by 50K+ creators
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem', opacity: 0.9 }}>
-              <span style={{ fontSize: '1.2rem' }}>🎯</span> 68 products reviewed
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem', opacity: 0.9 }}>
-              <span style={{ fontSize: '1.2rem' }}>📖</span> 26,000+ words of expert guides
-            </div>
+          <div style={{
+            display: 'inline-block',
+            backgroundColor: '#DBEAFE',
+            color: ACCENT,
+            padding: '0.35rem 1rem',
+            borderRadius: '9999px',
+            fontSize: '0.82rem',
+            marginBottom: '1.25rem',
+            fontWeight: '600',
+            letterSpacing: '0.03em',
+          }}>
+            🔥 Updated February 2026 · Honest reviews, no sponsored bias
           </div>
-          <a href="#tools" style={{ display: 'inline-block', backgroundColor: '#fff', color: '#667eea', padding: '0.75rem 2rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold', cursor: 'pointer', transition: 'transform 0.2s' }}>Explore Recommended Gear</a>
+          <h1 style={{ fontSize: '2.75rem', marginBottom: '1rem', fontWeight: '800', color: '#111827', lineHeight: '1.2' }}>
+            The Ultimate Video Creator&apos;s Gear Guide
+          </h1>
+          <p style={{ fontSize: '1.1rem', marginBottom: '2rem', color: '#4B5563', lineHeight: '1.7', maxWidth: '620px', margin: '0 auto 2rem' }}>
+            Discover the exact gear top creators trust. Handpicked, honestly reviewed, and curated for every budget.
+          </p>
+          {/* Social Proof */}
+          <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
+            {[
+              { icon: '👥', text: '50K+ creators trust us' },
+              { icon: '🎯', text: '68 products reviewed' },
+              { icon: '📖', text: '26K+ words of expert guides' },
+            ].map((item, i) => (
+              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', color: '#374151', fontWeight: '500' }}>
+                <span>{item.icon}</span> {item.text}
+              </div>
+            ))}
+          </div>
+          <a href="#tools" style={{
+            display: 'inline-block',
+            backgroundColor: ACCENT,
+            color: '#FFFFFF',
+            padding: '0.875rem 2.25rem',
+            borderRadius: '0.5rem',
+            textDecoration: 'none',
+            fontWeight: '700',
+            fontSize: '1rem',
+            transition: 'background-color 0.15s',
+          }}>
+            Explore Recommended Gear
+          </a>
         </div>
       </section>
 
-      {/* Free Guides CTA */}
-      <section style={{ background: '#1e293b', padding: '2rem', textAlign: 'center' }}>
+      {/* Free Guides CTA — light version */}
+      <section style={{
+        backgroundColor: '#F8F9FA',
+        borderBottom: '1px solid #E5E7EB',
+        padding: '1.5rem 2rem',
+        textAlign: 'center',
+      }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', gap: '1rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
-          <span style={{ color: '#f59e0b', fontWeight: 700, fontSize: '1.1rem' }}>🎁 Free Creator Guides:</span>
-          <Link href="/free-gear-guide" style={{ background: '#f59e0b', color: '#1f2937', padding: '0.5rem 1rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>📋 Gear Checklist</Link>
-          <Link href="/free-gear-guide" style={{ background: '#3b82f6', color: '#fff', padding: '0.5rem 1rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>💰 Budget Planner</Link>
-          <Link href="/free-gear-guide" style={{ background: '#8b5cf6', color: '#fff', padding: '0.5rem 1rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>🚀 30-Day Plan</Link>
+          <span style={{ color: '#374151', fontWeight: '600', fontSize: '0.95rem' }}>🎁 Free Guides:</span>
+          <Link href="/free-gear-guide" style={{ background: '#EFF6FF', color: ACCENT, border: `1px solid #BFDBFE`, padding: '0.4rem 0.9rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: '600', fontSize: '0.875rem' }}>📋 Gear Checklist</Link>
+          <Link href="/free-gear-guide" style={{ background: '#EFF6FF', color: ACCENT, border: `1px solid #BFDBFE`, padding: '0.4rem 0.9rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: '600', fontSize: '0.875rem' }}>💰 Budget Planner</Link>
+          <Link href="/free-gear-guide" style={{ background: '#EFF6FF', color: ACCENT, border: `1px solid #BFDBFE`, padding: '0.4rem 0.9rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: '600', fontSize: '0.875rem' }}>🚀 30-Day Action Plan</Link>
         </div>
       </section>
 
@@ -214,7 +243,7 @@ export default function Home() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-4px)';
               e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
-              e.currentTarget.style.borderColor = '#667eea';
+              e.currentTarget.style.borderColor = '#2563EB';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)';
@@ -240,7 +269,7 @@ export default function Home() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-4px)';
               e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
-              e.currentTarget.style.borderColor = '#667eea';
+              e.currentTarget.style.borderColor = '#2563EB';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)';
@@ -266,7 +295,7 @@ export default function Home() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-4px)';
               e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
-              e.currentTarget.style.borderColor = '#667eea';
+              e.currentTarget.style.borderColor = '#2563EB';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)';
@@ -292,7 +321,7 @@ export default function Home() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-4px)';
               e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
-              e.currentTarget.style.borderColor = '#667eea';
+              e.currentTarget.style.borderColor = '#2563EB';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)';
@@ -318,7 +347,7 @@ export default function Home() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-4px)';
               e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.1)';
-              e.currentTarget.style.borderColor = '#667eea';
+              e.currentTarget.style.borderColor = '#2563EB';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'translateY(0)';
@@ -337,7 +366,7 @@ export default function Home() {
               backgroundColor: '#fff',
               borderRadius: '0.75rem',
               padding: '1.5rem',
-              border: '2px solid #667eea',
+              border: '2px solid #2563EB',
               transition: 'all 0.3s',
               cursor: 'pointer',
             }}
@@ -351,7 +380,7 @@ export default function Home() {
             }}
             >
               <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>👀</div>
-              <h3 style={{ marginTop: 0, marginBottom: '0.5rem', color: '#667eea' }}>View All</h3>
+              <h3 style={{ marginTop: 0, marginBottom: '0.5rem', color: '#2563EB' }}>View All</h3>
               <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: 0 }}>See all comparisons</p>
             </div>
           </Link>
@@ -374,7 +403,7 @@ export default function Home() {
                 borderRadius: '9999px',
                 border: 'none',
                 cursor: 'pointer',
-                backgroundColor: activeCategory === cat.id ? '#667eea' : '#e5e7eb',
+                backgroundColor: activeCategory === cat.id ? '#2563EB' : '#e5e7eb',
                 color: activeCategory === cat.id ? '#fff' : '#374151',
                 fontWeight: activeCategory === cat.id ? 'bold' : '500',
                 whiteSpace: 'nowrap',
@@ -401,7 +430,7 @@ export default function Home() {
           <h2 style={{ fontSize: '1.5rem', marginBottom: '2rem', textAlign: 'center', color: '#1f2937', fontWeight: 'bold' }}>Trusted by Creators Worldwide</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             {testimonials.map((t, i) => (
-              <div key={i} style={{ padding: '1.5rem', backgroundColor: '#f9fafb', borderRadius: '0.75rem', borderLeft: '4px solid #667eea' }}>
+              <div key={i} style={{ padding: '1.5rem', backgroundColor: '#f9fafb', borderRadius: '0.75rem', borderLeft: '4px solid #2563EB' }}>
                 <p style={{ marginBottom: '1rem', fontStyle: 'italic', color: '#374151' }}>&ldquo;{t.text}&rdquo;</p>
                 <p style={{ fontWeight: 'bold', color: '#1f2937', margin: '0' }}>
                   {t.channelUrl ? (
@@ -415,7 +444,7 @@ export default function Home() {
                 <p style={{ fontSize: '0.9rem', color: '#6b7280', margin: '0.25rem 0 0 0' }}>
                   {t.role} · 
                   {t.channelUrl ? (
-                    <a href={t.channelUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#667eea', marginLeft: '0.3rem', textDecoration: 'none' }}>
+                    <a href={t.channelUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#2563EB', marginLeft: '0.3rem', textDecoration: 'none' }}>
                       {t.subs}
                     </a>
                   ) : (
@@ -442,10 +471,10 @@ export default function Home() {
             <h3 style={{ fontWeight: 'bold', color: '#1f2937', marginBottom: '0.5rem', fontSize: '1rem' }}>vs. B&H Photo</h3>
             <p style={{ fontSize: '0.85rem', color: '#6b7280', lineHeight: '1.5', margin: 0 }}>Great store, but no buying guides or price-tier breakdowns. Plus, Amazon often has better deals.</p>
           </div>
-          <div style={{ padding: '1.5rem', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', borderRadius: '0.75rem', textAlign: 'center', color: '#fff' }}>
+          <div style={{ padding: '1.5rem', background: '#EFF6FF', borderRadius: '0.75rem', textAlign: 'center', border: `2px solid #BFDBFE` }}>
             <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>⭐</div>
-            <h3 style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1rem' }}>Creator Gear</h3>
-            <p style={{ fontSize: '0.85rem', opacity: 0.95, lineHeight: '1.5', margin: 0 }}>Curated picks + 20 free expert guides + price-tier comparisons. Everything a creator needs in one place.</p>
+            <h3 style={{ fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '1rem', color: '#1E40AF' }}>Creator Gear</h3>
+            <p style={{ fontSize: '0.85rem', lineHeight: '1.5', margin: 0, color: '#1E40AF' }}>Curated picks + 20 free expert guides + price-tier comparisons. Everything a creator needs in one place.</p>
           </div>
         </div>
       </section>
@@ -471,23 +500,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer style={{ backgroundColor: '#1f2937', color: '#fff', padding: '2rem', textAlign: 'center', marginTop: '3rem' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'center' }}>
-          <div style={{ display: 'flex', gap: '2rem' }}>
-            <Link href="/" style={{ color: '#d1d5db', textDecoration: 'none' }}>Home</Link>
-            <Link href="/guides" style={{ color: '#d1d5db', textDecoration: 'none' }}>Guides</Link>
-            <a href="#tools" style={{ color: '#d1d5db', textDecoration: 'none' }}>Tools</a>
-          </div>
-          <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', fontSize: '0.85rem', opacity: 0.7 }}>
-            <span>👥 50K+ creators</span>
-            <span>🎯 68 products</span>
-            <span>📖 26K+ words of guides</span>
-          </div>
-          <p style={{ marginBottom: '0', opacity: 0.8, margin: 0 }}>© 2026 Creator Gear. Affiliate links support this site at no extra cost to you.</p>
-          <p style={{ fontSize: '0.85rem', opacity: 0.6, margin: 0 }}>Curated recommendations for video creators, filmmakers, and content professionals.</p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import SiteNav from '../../components/SiteNav';
+import SiteFooter from '../../components/SiteFooter';
 
 export default function LightingComparison() {
   const lighting = [
@@ -40,14 +42,14 @@ export default function LightingComparison() {
   ];
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#1a1a1a', color: '#fff', padding: '40px 20px' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF', color: '#111827', padding: '40px 20px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Header */}
         <div style={{ marginBottom: '50px', textAlign: 'center' }}>
-          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '15px', background: 'linear-gradient(135deg, #FF6B35 0%, #FF8C5A 100%)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '15px', background: '#2563EB', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Best Lighting for Video Production (2026)
           </h1>
-          <p style={{ fontSize: '18px', color: '#aaa', marginBottom: '10px', maxWidth: '600px', margin: '15px auto' }}>
+          <p style={{ fontSize: '18px', color: '#6B7280', marginBottom: '10px', maxWidth: '600px', margin: '15px auto' }}>
             Complete comparison of LED panels, key lights, and studio lighting solutions for creators
           </p>
           <p style={{ fontSize: '14px', color: '#666' }}>
@@ -58,12 +60,12 @@ export default function LightingComparison() {
         {/* Quick Verdict */}
         <div style={{
           padding: '20px',
-          background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(119, 39, 126, 0.1) 100%)',
+          background: '#EFF6FF',
           borderRadius: '8px',
-          border: '1px solid rgba(255, 107, 53, 0.3)',
+          border: '1px solid #BFDBFE',
           marginBottom: '40px',
         }}>
-          <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#FF6B35' }}>Quick Verdict</h3>
+          <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#2563EB' }}>Quick Verdict</h3>
           <ul style={{ margin: 0, paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <li><strong>Best Overall:</strong> Nanlite Pavo 15X RGB - Professional RGB panel with unlimited color grading</li>
             <li><strong>Best for Streaming:</strong> Elgato Key Light Air - Simple, reliable, app-controlled lighting</li>
@@ -80,11 +82,11 @@ export default function LightingComparison() {
           }}>
             <thead>
               <tr style={{ borderBottom: '2px solid #FF6B35' }}>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>Light</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>Price</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>Rating</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>Type</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>Best For</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Light</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Price</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Rating</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Type</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Best For</th>
               </tr>
             </thead>
             <tbody>
@@ -94,16 +96,16 @@ export default function LightingComparison() {
                   backgroundColor: idx % 2 === 0 ? '#222' : 'transparent',
                 }}>
                   <td style={{ padding: '15px' }}>
-                    <Link href={`/guides/${light.slug}`} style={{ color: '#FF6B35', textDecoration: 'none', fontWeight: '600' }}>
+                    <Link href={`/guides/${light.slug}`} style={{ color: '#2563EB', textDecoration: 'none', fontWeight: '600' }}>
                       {light.name} →
                     </Link>
                   </td>
-                  <td style={{ padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>{light.price}</td>
+                  <td style={{ padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>{light.price}</td>
                   <td style={{ padding: '15px' }}>
-                    <span style={{ color: '#FFB81C' }}>★</span> {light.rating}
+                    <span style={{ color: '#F59E0B' }}>★</span> {light.rating}
                   </td>
-                  <td style={{ padding: '15px', color: '#aaa' }}>RGB LED</td>
-                  <td style={{ padding: '15px', color: '#aaa', fontSize: '13px' }}>{light.bestFor}</td>
+                  <td style={{ padding: '15px', color: '#6B7280' }}>RGB LED</td>
+                  <td style={{ padding: '15px', color: '#6B7280', fontSize: '13px' }}>{light.bestFor}</td>
                 </tr>
               ))}
             </tbody>
@@ -115,19 +117,19 @@ export default function LightingComparison() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '50px' }}>
           {lighting.map((light, idx) => (
             <div key={idx} style={{
-              backgroundColor: '#222',
+              backgroundColor: '#FFFFFF',
               borderRadius: '8px',
               overflow: 'hidden',
-              border: '1px solid #333',
+              border: '1px solid #E5E7EB',
             }}>
               <img src={light.image} alt={light.name} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
               <div style={{ padding: '20px' }}>
                 <h3 style={{ marginTop: 0, marginBottom: '8px', fontSize: '18px' }}>{light.name}</h3>
-                <p style={{ color: '#FF6B35', fontWeight: 'bold', marginBottom: '15px' }}>{light.price}</p>
+                <p style={{ color: '#2563EB', fontWeight: 'bold', marginBottom: '15px' }}>{light.price}</p>
 
                 <div style={{ marginBottom: '15px' }}>
                   <h4 style={{ color: '#059669', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', marginBottom: '8px' }}>✅ Pros</h4>
-                  <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#aaa' }}>
+                  <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#6B7280' }}>
                     {light.pros.map((pro, i) => (
                       <li key={i} style={{ marginBottom: '4px' }}>{pro}</li>
                     ))}
@@ -136,7 +138,7 @@ export default function LightingComparison() {
 
                 <div style={{ marginBottom: '15px' }}>
                   <h4 style={{ color: '#dc2626', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', marginBottom: '8px' }}>⚠️ Cons</h4>
-                  <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#aaa' }}>
+                  <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#6B7280' }}>
                     {light.cons.map((con, i) => (
                       <li key={i} style={{ marginBottom: '4px' }}>{con}</li>
                     ))}
@@ -148,7 +150,7 @@ export default function LightingComparison() {
                   width: '100%',
                   padding: '10px',
                   background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                  color: '#fff',
+                  color: '#111827',
                   textAlign: 'center',
                   borderRadius: '6px',
                   textDecoration: 'none',
@@ -167,7 +169,7 @@ export default function LightingComparison() {
         {/* SEO Content */}
         <div style={{
           padding: '30px',
-          backgroundColor: '#222',
+          backgroundColor: '#FFFFFF',
           borderRadius: '8px',
           marginBottom: '40px',
           lineHeight: '1.8',
@@ -184,13 +186,13 @@ export default function LightingComparison() {
         </div>
 
         {/* CTA */}
-        <div style={{ textAlign: 'center', padding: '40px 20px', background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(119, 39, 126, 0.1) 100%)', borderRadius: '8px' }}>
+        <div style={{ textAlign: 'center', padding: '40px 20px', background: '#EFF6FF', borderRadius: '8px' }}>
           <h3 style={{ marginTop: 0 }}>Brighten Your Content</h3>
           <Link href="/products" style={{
             display: 'inline-block',
             padding: '12px 30px',
-            background: 'linear-gradient(135deg, #FF6B35 0%, #FF8C5A 100%)',
-            color: '#fff',
+            background: '#2563EB',
+            color: '#111827',
             textDecoration: 'none',
             borderRadius: '6px',
             fontWeight: 'bold',

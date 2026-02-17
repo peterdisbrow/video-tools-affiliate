@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import SiteNav from '../../components/SiteNav';
+import SiteFooter from '../../components/SiteFooter';
 
 export default function BestAudioGearComparison() {
   const audioGear = [
@@ -40,14 +42,14 @@ export default function BestAudioGearComparison() {
   ];
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#1a1a1a', color: '#fff', padding: '40px 20px' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF', color: '#111827', padding: '40px 20px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Header */}
         <div style={{ marginBottom: '50px', textAlign: 'center' }}>
-          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '15px', background: 'linear-gradient(135deg, #FF6B35 0%, #FF8C5A 100%)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '15px', background: '#2563EB', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Best Audio Gear for Video Creators (2026)
           </h1>
-          <p style={{ fontSize: '18px', color: '#aaa', marginBottom: '10px', maxWidth: '600px', margin: '15px auto' }}>
+          <p style={{ fontSize: '18px', color: '#6B7280', marginBottom: '10px', maxWidth: '600px', margin: '15px auto' }}>
             Complete guide to microphones, headphones, and audio equipment for podcasters, streamers, and content creators
           </p>
           <p style={{ fontSize: '14px', color: '#666' }}>
@@ -58,12 +60,12 @@ export default function BestAudioGearComparison() {
         {/* Quick Verdict */}
         <div style={{
           padding: '20px',
-          background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(119, 39, 126, 0.1) 100%)',
+          background: '#EFF6FF',
           borderRadius: '8px',
-          border: '1px solid rgba(255, 107, 53, 0.3)',
+          border: '1px solid #BFDBFE',
           marginBottom: '40px',
         }}>
-          <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#FF6B35' }}>Quick Verdict</h3>
+          <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#2563EB' }}>Quick Verdict</h3>
           <ul style={{ margin: 0, paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <li><strong>Best Overall Microphone:</strong> Shure SM7B - Industry-standard dynamic mic used by top podcasters</li>
             <li><strong>Best for Streaming:</strong> Rode NT-USB+ - Broadcast-quality USB microphone with built-in DSP</li>
@@ -80,11 +82,11 @@ export default function BestAudioGearComparison() {
           }}>
             <thead>
               <tr style={{ borderBottom: '2px solid #FF6B35' }}>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>Audio Gear</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>Price</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>Rating</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>Key Strength</th>
-                <th style={{ textAlign: 'left', padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>Best For</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Audio Gear</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Price</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Rating</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Key Strength</th>
+                <th style={{ textAlign: 'left', padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>Best For</th>
               </tr>
             </thead>
             <tbody>
@@ -94,16 +96,16 @@ export default function BestAudioGearComparison() {
                   backgroundColor: idx % 2 === 0 ? '#222' : 'transparent',
                 }}>
                   <td style={{ padding: '15px' }}>
-                    <Link href={`/guides/${gear.slug}`} style={{ color: '#FF6B35', textDecoration: 'none', fontWeight: '600' }}>
+                    <Link href={`/guides/${gear.slug}`} style={{ color: '#2563EB', textDecoration: 'none', fontWeight: '600' }}>
                       {gear.name} →
                     </Link>
                   </td>
-                  <td style={{ padding: '15px', color: '#FF6B35', fontWeight: 'bold' }}>{gear.price}</td>
+                  <td style={{ padding: '15px', color: '#2563EB', fontWeight: 'bold' }}>{gear.price}</td>
                   <td style={{ padding: '15px' }}>
-                    <span style={{ color: '#FFB81C' }}>★</span> {gear.rating}
+                    <span style={{ color: '#F59E0B' }}>★</span> {gear.rating}
                   </td>
-                  <td style={{ padding: '15px', color: '#aaa' }}>{gear.verdict}</td>
-                  <td style={{ padding: '15px', color: '#aaa', fontSize: '13px' }}>{gear.bestFor}</td>
+                  <td style={{ padding: '15px', color: '#6B7280' }}>{gear.verdict}</td>
+                  <td style={{ padding: '15px', color: '#6B7280', fontSize: '13px' }}>{gear.bestFor}</td>
                 </tr>
               ))}
             </tbody>
@@ -115,19 +117,19 @@ export default function BestAudioGearComparison() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '50px' }}>
           {audioGear.map((gear, idx) => (
             <div key={idx} style={{
-              backgroundColor: '#222',
+              backgroundColor: '#FFFFFF',
               borderRadius: '8px',
               overflow: 'hidden',
-              border: '1px solid #333',
+              border: '1px solid #E5E7EB',
             }}>
               <img src={gear.image} alt={gear.name} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
               <div style={{ padding: '20px' }}>
                 <h3 style={{ marginTop: 0, marginBottom: '8px', fontSize: '18px' }}>{gear.name}</h3>
-                <p style={{ color: '#FF6B35', fontWeight: 'bold', marginBottom: '15px' }}>{gear.price}</p>
+                <p style={{ color: '#2563EB', fontWeight: 'bold', marginBottom: '15px' }}>{gear.price}</p>
 
                 <div style={{ marginBottom: '15px' }}>
                   <h4 style={{ color: '#059669', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', marginBottom: '8px' }}>✅ Pros</h4>
-                  <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#aaa' }}>
+                  <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#6B7280' }}>
                     {gear.pros.map((pro, i) => (
                       <li key={i} style={{ marginBottom: '4px' }}>{pro}</li>
                     ))}
@@ -136,7 +138,7 @@ export default function BestAudioGearComparison() {
 
                 <div style={{ marginBottom: '15px' }}>
                   <h4 style={{ color: '#dc2626', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', marginBottom: '8px' }}>⚠️ Cons</h4>
-                  <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#aaa' }}>
+                  <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#6B7280' }}>
                     {gear.cons.map((con, i) => (
                       <li key={i} style={{ marginBottom: '4px' }}>{con}</li>
                     ))}
@@ -148,7 +150,7 @@ export default function BestAudioGearComparison() {
                   width: '100%',
                   padding: '10px',
                   background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                  color: '#fff',
+                  color: '#111827',
                   textAlign: 'center',
                   borderRadius: '6px',
                   textDecoration: 'none',
@@ -167,7 +169,7 @@ export default function BestAudioGearComparison() {
         {/* SEO Content */}
         <div style={{
           padding: '30px',
-          backgroundColor: '#222',
+          backgroundColor: '#FFFFFF',
           borderRadius: '8px',
           marginBottom: '40px',
           lineHeight: '1.8',
@@ -188,13 +190,13 @@ export default function BestAudioGearComparison() {
         </div>
 
         {/* CTA */}
-        <div style={{ textAlign: 'center', padding: '40px 20px', background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(119, 39, 126, 0.1) 100%)', borderRadius: '8px' }}>
+        <div style={{ textAlign: 'center', padding: '40px 20px', background: '#EFF6FF', borderRadius: '8px' }}>
           <h3 style={{ marginTop: 0 }}>Upgrade Your Audio Today</h3>
           <Link href="/products" style={{
             display: 'inline-block',
             padding: '12px 30px',
-            background: 'linear-gradient(135deg, #FF6B35 0%, #FF8C5A 100%)',
-            color: '#fff',
+            background: '#2563EB',
+            color: '#111827',
             textDecoration: 'none',
             borderRadius: '6px',
             fontWeight: 'bold',

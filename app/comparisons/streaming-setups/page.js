@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import SiteNav from '../../components/SiteNav';
+import SiteFooter from '../../components/SiteFooter';
 
 export default function StreamingSetupsComparison() {
   const setups = [
@@ -37,14 +39,14 @@ export default function StreamingSetupsComparison() {
   ];
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#1a1a1a', color: '#fff', padding: '40px 20px' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF', color: '#111827', padding: '40px 20px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Header */}
         <div style={{ marginBottom: '50px', textAlign: 'center' }}>
-          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '15px', background: 'linear-gradient(135deg, #FF6B35 0%, #FF8C5A 100%)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '15px', background: '#2563EB', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Complete Streaming Setups Guide (2026)
           </h1>
-          <p style={{ fontSize: '18px', color: '#aaa', marginBottom: '10px', maxWidth: '600px', margin: '15px auto' }}>
+          <p style={{ fontSize: '18px', color: '#6B7280', marginBottom: '10px', maxWidth: '600px', margin: '15px auto' }}>
             Pre-built streaming configurations for every budget and use case
           </p>
           <p style={{ fontSize: '14px', color: '#666' }}>
@@ -55,12 +57,12 @@ export default function StreamingSetupsComparison() {
         {/* Quick Verdict */}
         <div style={{
           padding: '20px',
-          background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(119, 39, 126, 0.1) 100%)',
+          background: '#EFF6FF',
           borderRadius: '8px',
-          border: '1px solid rgba(255, 107, 53, 0.3)',
+          border: '1px solid #BFDBFE',
           marginBottom: '40px',
         }}>
-          <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#FF6B35' }}>Which Setup Should You Choose?</h3>
+          <h3 style={{ marginTop: 0, marginBottom: '15px', color: '#2563EB' }}>Which Setup Should You Choose?</h3>
           <ul style={{ margin: 0, paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <li><strong>Starting Out?</strong> Budget Starter Setup - Test the waters with minimal investment</li>
             <li><strong>Serious About Growth?</strong> Enthusiast Creator Setup - Balance of quality and value</li>
@@ -73,10 +75,10 @@ export default function StreamingSetupsComparison() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '50px' }}>
           {setups.map((setup, idx) => (
             <div key={idx} style={{
-              backgroundColor: '#222',
+              backgroundColor: '#FFFFFF',
               borderRadius: '8px',
               overflow: 'hidden',
-              border: '2px solid ' + (idx === 0 ? '#FF6B35' : '#333'),
+              border: '2px solid ' + (idx === 0 ? '#2563EB' : '#333'),
               position: 'relative',
             }}>
               {idx === 0 && (
@@ -84,8 +86,8 @@ export default function StreamingSetupsComparison() {
                   position: 'absolute',
                   top: '10px',
                   right: '10px',
-                  backgroundColor: '#FF6B35',
-                  color: '#fff',
+                  backgroundColor: '#2563EB',
+                  color: '#111827',
                   padding: '4px 12px',
                   borderRadius: '12px',
                   fontSize: '11px',
@@ -97,29 +99,29 @@ export default function StreamingSetupsComparison() {
               )}
 
               <div style={{ padding: '20px', borderBottom: '1px solid #333' }}>
-                <h3 style={{ marginTop: 0, marginBottom: '8px', fontSize: '20px', color: '#FF6B35' }}>{setup.name}</h3>
-                <p style={{ marginTop: 0, marginBottom: '10px', color: '#aaa' }}>{setup.description}</p>
-                <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#FF6B35', margin: '10px 0' }}>{setup.price}</p>
-                <p style={{ fontSize: '12px', color: '#666', margin: 0 }}>Rating: <span style={{ color: '#FFB81C' }}>★</span> {setup.rating}</p>
+                <h3 style={{ marginTop: 0, marginBottom: '8px', fontSize: '20px', color: '#2563EB' }}>{setup.name}</h3>
+                <p style={{ marginTop: 0, marginBottom: '10px', color: '#6B7280' }}>{setup.description}</p>
+                <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#2563EB', margin: '10px 0' }}>{setup.price}</p>
+                <p style={{ fontSize: '12px', color: '#666', margin: 0 }}>Rating: <span style={{ color: '#F59E0B' }}>★</span> {setup.rating}</p>
               </div>
 
               <div style={{ padding: '20px' }}>
                 <h4 style={{ color: '#059669', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', marginTop: 0, marginBottom: '10px' }}>📦 What's Included</h4>
-                <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#aaa', marginBottom: '15px' }}>
+                <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#6B7280', marginBottom: '15px' }}>
                   {setup.components.map((comp, i) => (
                     <li key={i} style={{ marginBottom: '4px' }}>{comp}</li>
                   ))}
                 </ul>
 
                 <h4 style={{ color: '#059669', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', marginBottom: '8px' }}>✅ Advantages</h4>
-                <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#aaa', marginBottom: '15px' }}>
+                <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#6B7280', marginBottom: '15px' }}>
                   {setup.pros.map((pro, i) => (
                     <li key={i} style={{ marginBottom: '4px' }}>{pro}</li>
                   ))}
                 </ul>
 
                 <h4 style={{ color: '#dc2626', fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', marginBottom: '8px' }}>⚠️ Considerations</h4>
-                <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#aaa' }}>
+                <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '13px', color: '#6B7280' }}>
                   {setup.cons.map((con, i) => (
                     <li key={i} style={{ marginBottom: '4px' }}>{con}</li>
                   ))}
@@ -136,7 +138,7 @@ export default function StreamingSetupsComparison() {
         {/* SEO Content */}
         <div style={{
           padding: '30px',
-          backgroundColor: '#222',
+          backgroundColor: '#FFFFFF',
           borderRadius: '8px',
           marginBottom: '40px',
           lineHeight: '1.8',
@@ -164,13 +166,13 @@ export default function StreamingSetupsComparison() {
         </div>
 
         {/* CTA */}
-        <div style={{ textAlign: 'center', padding: '40px 20px', background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(119, 39, 126, 0.1) 100%)', borderRadius: '8px' }}>
+        <div style={{ textAlign: 'center', padding: '40px 20px', background: '#EFF6FF', borderRadius: '8px' }}>
           <h3 style={{ marginTop: 0 }}>Build Your Streaming Setup Now</h3>
           <Link href="/products" style={{
             display: 'inline-block',
             padding: '12px 30px',
-            background: 'linear-gradient(135deg, #FF6B35 0%, #FF8C5A 100%)',
-            color: '#fff',
+            background: '#2563EB',
+            color: '#111827',
             textDecoration: 'none',
             borderRadius: '6px',
             fontWeight: 'bold',
