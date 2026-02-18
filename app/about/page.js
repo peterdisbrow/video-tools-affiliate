@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import SiteNav from '../components/SiteNav';
 import SiteFooter from '../components/SiteFooter';
+import TestimonialSection from '../components/TestimonialSection';
+import WhyBuyThrough from '../components/WhyBuyThrough';
 
 export const metadata = {
   title: 'About Andrew Disbrow — Gear Guide',
@@ -118,6 +120,10 @@ export default function About() {
         </div>
 
       </div>
+
+      <WhyBuyThrough />
+      <TestimonialSection />
+
       <SiteFooter />
     </div>
   );
