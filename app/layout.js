@@ -1,6 +1,32 @@
 export const metadata = {
   title: "Gear Guide – Video Gear Reviews from a 15-Year Broadcast Engineer",
   description: "Honest video gear reviews by Andrew Disbrow — 15 years broadcast engineering, Blackmagic Design reseller. Cameras, lighting, audio, ATEM switchers. No fluff, no templates.",
+  metadataBase: new URL('https://video-tools-affiliate.vercel.app'),
+  alternates: {
+    canonical: 'https://video-tools-affiliate.vercel.app',
+  },
+  openGraph: {
+    title: 'Gear Guide – Video Gear Reviews from a 15-Year Broadcast Engineer',
+    description: 'Honest video gear reviews by Andrew Disbrow — 15 years broadcast engineering, Blackmagic Design reseller. Cameras, lighting, audio, ATEM switchers. No fluff, no templates.',
+    url: 'https://video-tools-affiliate.vercel.app',
+    siteName: 'Gear Guide',
+    images: [
+      {
+        url: 'https://video-tools-affiliate.vercel.app/images/blog/elgato-stream-deck-hero.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Gear Guide – Video Gear Reviews',
+      },
+    ],
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gear Guide – Video Gear Reviews from a 15-Year Broadcast Engineer',
+    description: 'Honest video gear reviews by Andrew Disbrow — 15 years broadcast engineering, Blackmagic Design reseller.',
+    images: ['https://video-tools-affiliate.vercel.app/images/blog/elgato-stream-deck-hero.jpg'],
+  },
 };
 
 import TrackingProvider from './components/TrackingProvider';

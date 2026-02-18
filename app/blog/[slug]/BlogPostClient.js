@@ -54,10 +54,38 @@ export default function BlogPostClient({ slug, aliases = {} }) {
     <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF' }}>
       <SiteNav />
 
-      {/* Featured Image */}
-      {post.image && (
-        <div style={{ width: '100%', height: '380px', overflow: 'hidden', backgroundColor: '#F0F2F5' }}>
-          <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      {/* Hero — featured image with dark overlay OR solid dark fallback */}
+      {post.image ? (
+        <div style={{ position: 'relative', width: '100%', height: '380px', overflow: 'hidden', backgroundColor: '#111827' }}>
+          <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.55 }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.25) 100%)' }} />
+          <div style={{ position: 'absolute', bottom: '2rem', left: 0, right: 0, maxWidth: '800px', margin: '0 auto', padding: '0 2rem' }}>
+            {post.category && (
+              <span style={{
+                display: 'inline-block', backgroundColor: ACCENT, color: '#fff',
+                fontSize: '0.7rem', fontWeight: '800', padding: '0.2rem 0.65rem',
+                borderRadius: '2px', textTransform: 'uppercase', letterSpacing: '0.07em', marginBottom: '0.6rem',
+              }}>{post.category}</span>
+            )}
+            <h1 style={{ fontSize: '2rem', fontWeight: '800', color: '#fff', margin: 0, lineHeight: '1.2', textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+              {post.title}
+            </h1>
+          </div>
+        </div>
+      ) : (
+        <div style={{ width: '100%', backgroundColor: '#111827', padding: '3.5rem 2rem 3rem' }}>
+          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+            {post.category && (
+              <span style={{
+                display: 'inline-block', backgroundColor: ACCENT, color: '#fff',
+                fontSize: '0.7rem', fontWeight: '800', padding: '0.2rem 0.65rem',
+                borderRadius: '2px', textTransform: 'uppercase', letterSpacing: '0.07em', marginBottom: '0.75rem',
+              }}>{post.category}</span>
+            )}
+            <h1 style={{ fontSize: '2rem', fontWeight: '800', color: '#fff', margin: 0, lineHeight: '1.25' }}>
+              {post.title}
+            </h1>
+          </div>
         </div>
       )}
 
@@ -72,28 +100,8 @@ export default function BlogPostClient({ slug, aliases = {} }) {
           <span style={{ color: '#374151' }}>{post.title.slice(0, 50)}{post.title.length > 50 ? '…' : ''}</span>
         </nav>
 
-        {/* Post Header */}
-        <header style={{ marginBottom: '2.5rem', paddingBottom: '2rem', borderBottom: '1px solid #E5E7EB' }}>
-          {post.category && (
-            <div style={{ marginBottom: '0.75rem' }}>
-              <span style={{
-                display: 'inline-block',
-                backgroundColor: '#FEF2F2',
-                color: ACCENT,
-                fontSize: '0.75rem',
-                fontWeight: '700',
-                padding: '0.25rem 0.75rem',
-                borderRadius: '2px',
-                textTransform: 'uppercase',
-                letterSpacing: '0.06em',
-              }}>
-                {post.category}
-              </span>
-            </div>
-          )}
-          <h1 style={{ fontSize: '2.25rem', fontWeight: '800', marginBottom: '1rem', color: '#111827', lineHeight: '1.25' }}>
-            {post.title}
-          </h1>
+        {/* Post Header — author/date meta only (title is in the hero above) */}
+        <header style={{ marginBottom: '2.5rem', paddingBottom: '1.5rem', borderBottom: '1px solid #E5E7EB' }}>
           <div style={{ display: 'flex', gap: '1.25rem', color: '#6B7280', fontSize: '0.9rem', flexWrap: 'wrap', alignItems: 'center' }}>
             <span style={{ fontWeight: '600', color: '#374151' }}>Andrew Disbrow</span>
             <span>·</span>

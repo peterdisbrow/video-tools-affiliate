@@ -30,20 +30,30 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const canonicalUrl = `https://video-tools-affiliate.vercel.app/blog/${slug}`;
+  const ogImage = post.image
+    ? `https://video-tools-affiliate.vercel.app${post.image}`
+    : 'https://video-tools-affiliate.vercel.app/images/blog/elgato-stream-deck-hero.jpg';
+
   return {
     title: `${post.title} — Gear Guide`,
     description: post.metaDescription || post.excerpt || `${post.title} — honest gear review from a 15-year broadcast engineer.`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: post.title,
       description: post.metaDescription || post.excerpt || '',
-      images: post.image ? [{ url: post.image }] : [],
+      url: canonicalUrl,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
       type: 'article',
+      siteName: 'Gear Guide',
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.metaDescription || post.excerpt || '',
-      images: post.image ? [post.image] : [],
+      images: [ogImage],
     },
   };
 }
