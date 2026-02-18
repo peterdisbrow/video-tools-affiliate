@@ -69,7 +69,7 @@ export default function NewsletterSignup() {
           📬 Get Gear Tools + Exclusive Deals
         </h2>
         <p style={{ color: '#374151', marginBottom: '1rem', lineHeight: '1.8', fontSize: '0.95rem' }}>
-          Join 8,000+ creators getting gear guides and exclusive deals delivered weekly:
+          Gear picks and broadcast insights from Andrew. No fluff, no templates.
         </p>
         <ul style={{
           color: '#374151',
