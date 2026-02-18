@@ -4,16 +4,27 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useMemo } from 'react';
 import { blogPosts } from '../blogData';
+import productsData from '../../../products.json';
 import SiteNav from '../../components/SiteNav';
 import SiteFooter from '../../components/SiteFooter';
 import { markdownToHtml } from '../../lib/markdownToHtml';
+import { getRelatedForProduct } from '../../data/relatedProducts';
 
 const ACCENT = '#E84C3D';
+const TAG = productsData.affiliateTag || 'disbrowproduc-20';
 
-function getRelatedProducts(category, currentSlug) {
+function getRelatedBlogPosts(category, currentSlug) {
   if (!category) return [];
   return blogPosts
     .filter(p => p.category?.toLowerCase() === category?.toLowerCase() && p.slug !== currentSlug && p.affiliateLink)
+    .slice(0, 3);
+}
+
+function getRelatedGearProducts(category) {
+  if (!category) return [];
+  return productsData.products
+    .filter(p => p.category?.toLowerCase() === category?.toLowerCase() && (p.asin || p.affiliateLink))
+    .sort((a, b) => (b.redditMentions || 0) - (a.redditMentions || 0))
     .slice(0, 3);
 }
 
@@ -48,7 +59,11 @@ export default function BlogPostClient({ slug, aliases = {} }) {
     );
   }
 
-  const relatedProducts = getRelatedProducts(post.category, resolvedSlug);
+  const relatedBlogPosts = getRelatedBlogPosts(post.category, resolvedSlug);
+  const relatedGear = useMemo(() => getRelatedGearProducts(post.category), [post]);
+  const furtherReadingSlugs = (post.relatedProducts || [])
+    .map(s => blogPosts.find(p => p.slug === s))
+    .filter(Boolean);
 
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#FFFFFF' }}>
@@ -242,14 +257,81 @@ export default function BlogPostClient({ slug, aliases = {} }) {
           <p style={{ color: '#9CA3AF', fontSize: '0.72rem', marginTop: '0.75rem' }}>No spam. Unsubscribe anytime.</p>
         </section>
 
+        {/* Related Gear — product cards from products.json */}
+        {relatedGear.length > 0 && (
+          <section style={{ marginBottom: '2rem' }}>
+            <h3 style={{ fontSize: '0.78rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#111827', borderTop: '3px solid #111827', paddingTop: '1rem', margin: '0 0 1rem 0' }}>
+              Recommended Gear for This Topic
+            </h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              {relatedGear.map((p) => {
+                const href = p.affiliateLink || (p.asin ? `https://www.amazon.com/dp/${p.asin}?tag=${TAG}` : null);
+                const related = getRelatedForProduct(p.name);
+                return (
+                  <div key={p.id} style={{
+                    display: 'flex', gap: '1rem', padding: '1rem',
+                    border: '1px solid #E5E7EB', borderRadius: '4px', alignItems: 'flex-start',
+                  }}>
+                    {p.image && (
+                      <img src={p.image} alt={p.name} style={{ width: '90px', height: '70px', objectFit: 'contain', flexShrink: 0 }} />
+                    )}
+                    <div style={{ flex: 1 }}>
+                      <h4 style={{ fontSize: '0.95rem', fontWeight: '700', color: '#111827', margin: '0 0 0.25rem' }}>{p.name}</h4>
+                      {p.description && (
+                        <p style={{ fontSize: '0.82rem', color: '#6B7280', margin: '0 0 0.5rem', lineHeight: 1.4 }}>
+                          {p.description.length > 100 ? p.description.slice(0, 100) + '…' : p.description}
+                        </p>
+                      )}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+                        {p.price && <span style={{ fontWeight: '700', color: '#111827', fontSize: '0.9rem' }}>{p.price}</span>}
+                        {href && (
+                          <a href={href} target="_blank" rel="noopener noreferrer" style={{
+                            backgroundColor: ACCENT, color: '#fff', textDecoration: 'none',
+                            fontWeight: '700', fontSize: '0.78rem', padding: '0.4rem 1rem', borderRadius: '3px',
+                          }}>Buy on Amazon →</a>
+                        )}
+                      </div>
+                      {related.length > 0 && (
+                        <p style={{ fontSize: '0.75rem', color: '#9CA3AF', marginTop: '0.4rem', marginBottom: 0 }}>
+                          Pairs well with:{' '}
+                          {related.map((r, i) => (
+                            <span key={r.name}>
+                              {i > 0 && ' · '}
+                              <a href={r.url} target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, textDecoration: 'none' }}>{r.name}</a>
+                            </span>
+                          ))}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            {/* Further reading from relatedProducts slugs */}
+            {furtherReadingSlugs.length > 0 && (
+              <div style={{ marginTop: '1rem', paddingTop: '0.75rem', borderTop: '1px solid #E5E7EB' }}>
+                <p style={{ fontSize: '0.78rem', fontWeight: '700', color: '#6B7280', margin: '0 0 0.5rem' }}>Further reading:</p>
+                {furtherReadingSlugs.map(fp => (
+                  <Link key={fp.slug} href={`/blog/${fp.slug}`} style={{
+                    display: 'block', color: ACCENT, textDecoration: 'none', fontWeight: '600',
+                    fontSize: '0.85rem', marginBottom: '0.3rem',
+                  }}>
+                    {fp.title} →
+                  </Link>
+                ))}
+              </div>
+            )}
+          </section>
+        )}
+
         {/* Related Posts — same category */}
-        {relatedProducts.length > 0 && (
+        {relatedBlogPosts.length > 0 && (
           <section style={{ marginBottom: '2rem' }}>
             <h3 style={{ fontSize: '0.78rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#111827', borderTop: '3px solid #111827', paddingTop: '1rem', margin: '0 0 1rem 0' }}>
               More {post.category} Reading
             </h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
-              {relatedProducts.map((prod) => (
+              {relatedBlogPosts.map((prod) => (
                 <Link key={prod.slug} href={`/blog/${prod.slug}`} style={{ textDecoration: 'none' }}>
                   <div style={{
                     border: '1px solid #E5E7EB', borderRadius: '3px', overflow: 'hidden', cursor: 'pointer',

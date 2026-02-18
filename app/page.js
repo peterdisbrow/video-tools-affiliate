@@ -260,25 +260,27 @@ export default function HomePage() {
               </a>
             </div>
 
-            {/* Newsletter */}
-            <div style={{ border: '2px solid #E5E7EB', borderRadius: '4px', padding: '1.25rem', marginBottom: '2rem' }}>
-              <div style={{ fontSize: '0.78rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem', color: '#111827' }}>
-                📬 Newsletter
+            {/* Lead Magnet CTA */}
+            <div style={{ border: '2px solid #E5E7EB', borderRadius: '4px', padding: '1.25rem', marginBottom: '2rem', backgroundColor: '#FEF2F2' }}>
+              <div style={{ fontSize: '0.78rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem', color: ACCENT }}>
+                🎁 Free Download
               </div>
-              <p style={{ fontSize: '0.82rem', color: '#6B7280', lineHeight: '1.5', marginBottom: '0.75rem' }}>
-                Gear picks + broadcast insights from Andrew. No fluff.
+              <p style={{ fontSize: '0.9rem', fontWeight: '700', color: '#111827', lineHeight: '1.4', marginBottom: '0.35rem' }}>
+                15 years of production work — here&apos;s what I&apos;d actually buy.
               </p>
-              <input type="email" placeholder="your@email.com" style={{
-                width: '100%', padding: '0.5rem 0.75rem', border: '1px solid #E5E7EB',
-                borderRadius: '3px', fontSize: '0.85rem', marginBottom: '0.5rem', boxSizing: 'border-box',
-              }} />
-              <button style={{
-                width: '100%', padding: '0.55rem', backgroundColor: '#111827',
-                color: '#fff', border: 'none', borderRadius: '3px',
-                fontWeight: '700', fontSize: '0.82rem', cursor: 'pointer',
+              <p style={{ fontSize: '0.82rem', color: '#6B7280', lineHeight: '1.5', marginBottom: '0.75rem' }}>
+                Free gear checklist + budget planner. No fluff.
+              </p>
+              <Link href="/free-gear-guide" style={{
+                display: 'block', textAlign: 'center', padding: '0.6rem', backgroundColor: ACCENT,
+                color: '#fff', textDecoration: 'none', fontWeight: '700',
+                fontSize: '0.82rem', borderRadius: '3px',
               }}>
-                Subscribe
-              </button>
+                Get the Free Guide →
+              </Link>
+              <p style={{ fontSize: '0.7rem', color: '#9CA3AF', textAlign: 'center', marginTop: '0.5rem', marginBottom: 0 }}>
+                No spam. Unsubscribe anytime.
+              </p>
             </div>
 
             {/* Top Gear sidebar */}

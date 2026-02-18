@@ -30,6 +30,8 @@ export const metadata = {
 };
 
 import TrackingProvider from './components/TrackingProvider';
+import EmailCaptureModal from './components/EmailCaptureModal';
+import EmailStickyBar from './components/EmailStickyBar';
 
 export default function RootLayout({ children }) {
   return (
@@ -60,7 +62,11 @@ export default function RootLayout({ children }) {
         `}</style>
       </head>
       <body>
-        <TrackingProvider>{children}</TrackingProvider>
+        <TrackingProvider>
+          {children}
+          <EmailCaptureModal />
+          <EmailStickyBar />
+        </TrackingProvider>
       </body>
     </html>
   );
