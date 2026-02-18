@@ -92,7 +92,7 @@ That church livestream was a disaster. But it became the most valuable lesson I 
     "readTimeMinutes": 12,
     "wordCount": 4920,
     "category": "lighting",
-    "relatedProducts": ["Aputure MC", "Aputure Amaran Series", "Amaran 60d S", "White Poster Board", "Light Stands"],
+    "relatedProducts": ["Aputure MC", "Aputure Amaran Series", "Amaran Ray 120v", "White Poster Board", "Light Stands"],
     "content": `## Video Lighting 101: The Product Shoot That Cost Me a Client
 
 **Date:** 2026-02-17
@@ -117,7 +117,7 @@ I had four days to figure it out.
 
 ### The Preparation Disaster
 
-I showed up at their office on Tuesday with a rented camera (Sony a6400), my laptop, and one LED panel light I'd purchased the week before—a basic Amaran 60d S panel.
+I showed up at their office on Tuesday with a rented camera (Sony a6400), my laptop, and one LED panel light I'd purchased the week before—a basic Amaran Ray 120v panel.
 
 The client's warehouse had white concrete walls, fluorescent overhead lighting, and industrial shelving. It was the opposite of ideal for shooting products. I didn't realize this yet.
 
@@ -1229,7 +1229,7 @@ Cost: $230
 
 **Month 5-6: Upgrade Lighting**
 
-- Buy two Amaran 60d S panels ($200)
+- Buy two Amaran Ray 120v panels ($200)
 - Add light stands ($40)
 - Improve your visual appeal
 
