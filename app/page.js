@@ -6,6 +6,9 @@ import { blogPosts } from './blog/blogData';
 import productsData from '../products.json';
 import SiteNav from './components/SiteNav';
 import SiteFooter from './components/SiteFooter';
+import HeroSection from './components/HeroSection';
+import TestimonialSection from './components/TestimonialSection';
+import WhyBuyThrough from './components/WhyBuyThrough';
 
 const ACCENT = '#E84C3D'; // diyphotography red accent
 const NAV_BG = '#1a1a1a';
@@ -161,6 +164,9 @@ export default function HomePage() {
 
       <SiteNav />
 
+      {/* Hero Section with Urgency & Social Proof */}
+      <HeroSection />
+
       {/* ─── CATEGORY NAV BAR ─── */}
       <div style={{ borderBottom: '3px solid #111827', backgroundColor: '#fff' }}>
         <div className="cat-nav" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
@@ -191,7 +197,7 @@ export default function HomePage() {
           {/* ─── MAIN CONTENT ─── */}
           <div className="main-content">
             {/* Featured 3-up grid */}
-            <div className="feature-grid">
+            <div className="feature-grid" id="featured">
               {featured3.map(post => <FeatureCard key={post.slug} post={post} />)}
             </div>
 
@@ -309,6 +315,12 @@ export default function HomePage() {
           </aside>
         </div>
       </div>
+
+      {/* Why Buy Through Us Section */}
+      <WhyBuyThrough />
+
+      {/* Testimonials Section */}
+      <TestimonialSection />
 
       <SiteFooter />
     </div>
