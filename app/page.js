@@ -162,9 +162,6 @@ export default function HomePage() {
 
       <SiteNav />
 
-      {/* ─── NEWSLETTER SIGNUP (ABOVE THE FOLD) ─── */}
-      <NewsletterSignup />
-
       {/* ─── CATEGORY NAV BAR ─── */}
       <div style={{ borderBottom: '3px solid #111827', backgroundColor: '#fff' }}>
         <div className="cat-nav" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
@@ -264,28 +261,8 @@ export default function HomePage() {
               </a>
             </div>
 
-            {/* Lead Magnet CTA */}
-            <div style={{ border: '2px solid #E5E7EB', borderRadius: '4px', padding: '1.25rem', marginBottom: '2rem', backgroundColor: '#FEF2F2' }}>
-              <div style={{ fontSize: '0.78rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.5rem', color: ACCENT }}>
-                🎁 Free Download
-              </div>
-              <p style={{ fontSize: '0.9rem', fontWeight: '700', color: '#111827', lineHeight: '1.4', marginBottom: '0.35rem' }}>
-                15 years of production work — here&apos;s what I&apos;d actually buy.
-              </p>
-              <p style={{ fontSize: '0.82rem', color: '#6B7280', lineHeight: '1.5', marginBottom: '0.75rem' }}>
-                Free gear checklist + budget planner. No fluff.
-              </p>
-              <Link href="/free-gear-guide" style={{
-                display: 'block', textAlign: 'center', padding: '0.6rem', backgroundColor: ACCENT,
-                color: '#fff', textDecoration: 'none', fontWeight: '700',
-                fontSize: '0.82rem', borderRadius: '3px',
-              }}>
-                Get the Free Guide →
-              </Link>
-              <p style={{ fontSize: '0.7rem', color: '#9CA3AF', textAlign: 'center', marginTop: '0.5rem', marginBottom: 0 }}>
-                No spam. Unsubscribe anytime.
-              </p>
-            </div>
+            {/* Lead Magnet — inline signup */}
+            <NewsletterSignup compact />
 
             {/* Top Gear sidebar */}
             <div>
@@ -311,6 +288,22 @@ export default function HomePage() {
               </Link>
             </div>
           </aside>
+        </div>
+      </div>
+
+      {/* ─── PRE-FOOTER SIGNUP BAND ─── */}
+      <div style={{ backgroundColor: '#111827', borderTop: `4px solid ${ACCENT}`, padding: '3rem 2rem' }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+          <div style={{ fontSize: '0.72rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.12em', color: ACCENT, marginBottom: '0.75rem' }}>
+            🎁 Free Gear Guide
+          </div>
+          <h3 style={{ fontSize: '1.4rem', fontWeight: '900', color: '#fff', margin: '0 0 0.5rem', letterSpacing: '-0.01em' }}>
+            15 years of production. Here&apos;s what I&apos;d actually buy.
+          </h3>
+          <p style={{ fontSize: '0.9rem', color: '#9CA3AF', margin: '0 0 1.5rem', lineHeight: '1.6' }}>
+            Gear checklist + budget planner — free for subscribers. No fluff, no upsell.
+          </p>
+          <NewsletterSignup inline />
         </div>
       </div>
 

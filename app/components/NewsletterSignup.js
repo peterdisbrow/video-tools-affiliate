@@ -2,167 +2,164 @@
 
 import { useState } from 'react';
 
-export default function NewsletterSignup() {
+const ACCENT = '#E84C3D';
+
+/**
+ * NewsletterSignup
+ * Props:
+ *   compact  — sidebar mode: stacked, small, fits in ~220px column
+ *   inline   — pre-footer mode: horizontal row, dark bg assumed
+ *   (none)   — default standalone section (kept for any other uses)
+ */
+export default function NewsletterSignup({ compact = false, inline = false }) {
   const [firstName, setFirstName] = useState('');
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState('idle');
-  const [errorMsg, setErrorMsg] = useState('');
+  const [email, setEmail]         = useState('');
+  const [status, setStatus]       = useState('idle');
+  const [errorMsg, setErrorMsg]   = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorMsg('');
-
-    if (!firstName.trim()) {
-      setErrorMsg('Please enter your first name.');
-      setStatus('error');
-      return;
-    }
-
     if (!email || !email.includes('@')) {
-      setErrorMsg('Please enter a valid email address.');
+      setErrorMsg('Enter a valid email.');
       setStatus('error');
       return;
     }
-
     setStatus('loading');
     try {
-      const res = await fetch('/api/subscribe', {
+      const res  = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ firstName, email }),
       });
       const data = await res.json();
-      if (res.ok) {
-        setStatus('success');
-      } else {
-        setErrorMsg(data.error || 'Something went wrong. Please try again.');
-        setStatus('error');
-      }
+      if (res.ok) setStatus('success');
+      else { setErrorMsg(data.error || 'Something went wrong.'); setStatus('error'); }
     } catch {
-      setErrorMsg('Network error. Please try again.');
+      setErrorMsg('Network error. Try again.');
       setStatus('error');
     }
   };
 
+  // ── Success state ────────────────────────────────────────────────────────
   if (status === 'success') {
-    return (
-      <section style={{
-        background: '#EFF6FF',
-        padding: '2.5rem 2rem',
-        textAlign: 'center',
-        borderBottom: '1px solid #E5E7EB',
-      }}>
-        <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-          <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>✅</div>
-          <h2 style={{ color: '#111827', fontSize: '1.4rem', marginBottom: '0.5rem', fontWeight: '700' }}>
-            Check Your Email!
-          </h2>
-          <p style={{ color: '#374151', fontSize: '1rem' }}>
-            Your gear guides are on the way. Welcome to the newsletter!
-          </p>
+    if (compact) {
+      return (
+        <div style={{ border: `2px solid #22c55e`, borderRadius: '4px', padding: '1rem', marginBottom: '2rem', backgroundColor: '#F0FDF4', textAlign: 'center' }}>
+          <div style={{ fontSize: '1.2rem', marginBottom: '0.25rem' }}>✅</div>
+          <p style={{ fontSize: '0.82rem', fontWeight: '700', color: '#166534', margin: 0 }}>You&apos;re in! Check your email.</p>
         </div>
-      </section>
+      );
+    }
+    return (
+      <div style={{ textAlign: 'center', padding: '1rem 0' }}>
+        <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>✅</div>
+        <p style={{ color: '#fff', fontWeight: '700', fontSize: '1rem', margin: 0 }}>You&apos;re in! Check your email for the guide.</p>
+      </div>
     );
   }
 
-  return (
-    <section style={{
-      background: '#FFFFFF',
-      borderBottom: '2px solid #E5E7EB',
-      padding: '2.5rem 2rem',
-      textAlign: 'center',
-    }}>
-      <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-        <h2 style={{ color: '#111827', fontSize: '1.5rem', marginBottom: '0.5rem', fontWeight: '700' }}>
-          📬 Get Gear Guides + Exclusive Deals Delivered Weekly
-        </h2>
-        <p style={{ color: '#6B7280', marginBottom: '1.5rem', fontSize: '0.95rem', lineHeight: '1.6' }}>
-          Industry-leading gear picks, unbiased reviews, and exclusive deals — straight to your inbox every week.
+  // ── Compact (sidebar) ────────────────────────────────────────────────────
+  if (compact) {
+    return (
+      <div style={{ border: `2px solid #E5E7EB`, borderRadius: '4px', padding: '1.25rem', marginBottom: '2rem', backgroundColor: '#FEF2F2' }}>
+        <div style={{ fontSize: '0.72rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.4rem', color: ACCENT }}>
+          🎁 Free Download
+        </div>
+        <p style={{ fontSize: '0.88rem', fontWeight: '700', color: '#111827', lineHeight: '1.4', margin: '0 0 0.3rem' }}>
+          15 years of production — here&apos;s what I&apos;d actually buy.
         </p>
-        <form onSubmit={handleSubmit} style={{
-          display: 'flex',
-          gap: '0.75rem',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          alignItems: 'flex-end',
-        }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            <input
-              type="text"
-              placeholder="First Name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-              style={{
-                padding: '0.75rem 1rem',
-                borderRadius: '0.375rem',
-                border: '1px solid #D1D5DB',
-                fontSize: '0.95rem',
-                width: '160px',
-                outline: 'none',
-                transition: 'border-color 0.2s',
-              }}
-              onFocus={(e) => e.target.style.borderColor = '#E84C3D'}
-              onBlur={(e) => e.target.style.borderColor = '#D1D5DB'}
-            />
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            <input
-              type="email"
-              placeholder="Your email address"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-                if (status === 'error') setStatus('idle');
-              }}
-              required
-              style={{
-                padding: '0.75rem 1rem',
-                borderRadius: '0.375rem',
-                border: '1px solid #D1D5DB',
-                fontSize: '0.95rem',
-                minWidth: '220px',
-                outline: 'none',
-                transition: 'border-color 0.2s',
-              }}
-              onFocus={(e) => e.target.style.borderColor = '#E84C3D'}
-              onBlur={(e) => e.target.style.borderColor = '#D1D5DB'}
-            />
-          </div>
-          <button
-            type="submit"
-            disabled={status === 'loading'}
-            style={{
-              padding: '0.75rem 1.75rem',
-              borderRadius: '0.375rem',
-              border: 'none',
-              backgroundColor: '#E84C3D',
-              color: '#FFFFFF',
-              fontWeight: '600',
-              fontSize: '0.95rem',
-              cursor: status === 'loading' ? 'wait' : 'pointer',
-              whiteSpace: 'nowrap',
-              transition: 'background-color 0.2s, transform 0.1s',
-              opacity: status === 'loading' ? 0.8 : 1,
-            }}
-            onMouseEnter={(e) => {
-              if (status !== 'loading') e.target.style.backgroundColor = '#D43E33';
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.backgroundColor = '#E84C3D';
-            }}
-          >
-            {status === 'loading' ? 'Subscribing...' : 'Get Free Guides'}
+        <p style={{ fontSize: '0.78rem', color: '#6B7280', lineHeight: '1.5', margin: '0 0 0.75rem' }}>
+          Free checklist + budget planner.
+        </p>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <input
+            type="text"
+            placeholder="First name"
+            value={firstName}
+            onChange={e => setFirstName(e.target.value)}
+            style={inputStyle}
+          />
+          <input
+            type="email"
+            placeholder="Email address"
+            value={email}
+            onChange={e => { setEmail(e.target.value); if (status === 'error') setStatus('idle'); }}
+            required
+            style={inputStyle}
+          />
+          <button type="submit" disabled={status === 'loading'} style={btnStyle(status)}>
+            {status === 'loading' ? 'Sending…' : 'Get Free Guides →'}
           </button>
         </form>
-        {status === 'error' && (
-          <p style={{ color: '#DC2626', marginTop: '0.75rem', fontSize: '0.85rem', fontWeight: '500' }}>
-            {errorMsg}
-          </p>
-        )}
-        <p style={{ color: '#9CA3AF', fontSize: '0.75rem', marginTop: '1rem' }}>
-          No spam, ever. Unsubscribe anytime.
-        </p>
+        {status === 'error' && <p style={{ color: '#DC2626', fontSize: '0.72rem', marginTop: '0.4rem', marginBottom: 0 }}>{errorMsg}</p>}
+        <p style={{ fontSize: '0.68rem', color: '#9CA3AF', textAlign: 'center', marginTop: '0.4rem', marginBottom: 0 }}>No spam. Unsubscribe anytime.</p>
       </div>
-    </section>
+    );
+  }
+
+  // ── Inline (pre-footer, dark bg) ─────────────────────────────────────────
+  return (
+    <form onSubmit={handleSubmit} style={{
+      display: 'flex', gap: '0.6rem', flexWrap: 'wrap', justifyContent: 'center',
+    }}>
+      <input
+        type="text"
+        placeholder="First name"
+        value={firstName}
+        onChange={e => setFirstName(e.target.value)}
+        style={{ ...inputStyleDark, width: '140px' }}
+      />
+      <input
+        type="email"
+        placeholder="Email address"
+        value={email}
+        onChange={e => { setEmail(e.target.value); if (status === 'error') setStatus('idle'); }}
+        required
+        style={{ ...inputStyleDark, minWidth: '220px' }}
+      />
+      <button type="submit" disabled={status === 'loading'} style={btnStyle(status)}>
+        {status === 'loading' ? 'Sending…' : 'Get Free Guides →'}
+      </button>
+      {status === 'error' && (
+        <p style={{ width: '100%', textAlign: 'center', color: '#FCA5A5', fontSize: '0.8rem', margin: '0.25rem 0 0' }}>{errorMsg}</p>
+      )}
+    </form>
   );
 }
+
+// ── Shared styles ────────────────────────────────────────────────────────────
+
+const inputStyle = {
+  padding: '0.55rem 0.75rem',
+  borderRadius: '3px',
+  border: '1px solid #D1D5DB',
+  fontSize: '0.82rem',
+  width: '100%',
+  outline: 'none',
+  backgroundColor: '#fff',
+  color: '#111827',
+};
+
+const inputStyleDark = {
+  padding: '0.7rem 1rem',
+  borderRadius: '4px',
+  border: '1px solid #374151',
+  fontSize: '0.9rem',
+  outline: 'none',
+  backgroundColor: '#1F2937',
+  color: '#fff',
+};
+
+const btnStyle = (status) => ({
+  padding: '0.7rem 1.4rem',
+  borderRadius: '4px',
+  border: 'none',
+  backgroundColor: ACCENT,
+  color: '#fff',
+  fontWeight: '700',
+  fontSize: '0.9rem',
+  cursor: status === 'loading' ? 'wait' : 'pointer',
+  whiteSpace: 'nowrap',
+  opacity: status === 'loading' ? 0.75 : 1,
+});
