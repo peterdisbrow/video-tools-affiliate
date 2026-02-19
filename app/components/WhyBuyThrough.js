@@ -76,35 +76,6 @@ export default function WhyBuyThrough() {
         maxWidth: '1200px',
         margin: '0 auto',
       }}>
-        {/* Urgency Banner */}
-        <div style={{
-          background: `linear-gradient(135deg, ${ACCENT}15 0%, ${ACCENT}08 100%)`,
-          border: `2px solid ${ACCENT}`,
-          borderRadius: '8px',
-          padding: '1.5rem',
-          marginBottom: '2rem',
-          textAlign: 'center',
-        }}>
-          <div style={{
-            fontSize: '0.9rem',
-            fontWeight: '700',
-            color: ACCENT,
-            textTransform: 'uppercase',
-            letterSpacing: '0.05em',
-            marginBottom: '0.5rem',
-          }}>
-            💡 Smart Buyers Know This
-          </div>
-          <p style={{
-            fontSize: '1.1rem',
-            color: '#111827',
-            margin: 0,
-            fontWeight: '600',
-          }}>
-            Same prices as Amazon & B&H. Better decisions with our 15-year expert guidance.
-          </p>
-        </div>
-
         {/* Section Header */}
         <div style={{
           textAlign: 'center',
@@ -117,14 +88,14 @@ export default function WhyBuyThrough() {
             marginBottom: '0.5rem',
             letterSpacing: '-0.01em',
           }}>
-            Why Professionals Shop With Us
+            Why Shop Through Us vs Direct
           </h2>
           <p style={{
             fontSize: '1.05rem',
             color: '#6b7280',
             lineHeight: '1.6',
           }}>
-            The advantages of expert curation over generic shopping
+            Same prices. Better decisions. 15+ years of expertise.
           </p>
         </div>
 

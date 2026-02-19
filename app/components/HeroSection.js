@@ -42,7 +42,7 @@ export default function HeroSection() {
           background: `${ACCENT}20`,
           border: `2px solid ${ACCENT}`,
           color: ACCENT,
-          padding: '0.6rem 1.2rem',
+          padding: '0.5rem 1rem',
           borderRadius: '20px',
           fontSize: '0.85rem',
           fontWeight: '700',
@@ -51,7 +51,7 @@ export default function HeroSection() {
           marginBottom: '1rem',
           animation: 'pulse 2s infinite',
         }}>
-          ⏰ Live Updates · 68 Products · 50K+ Creators Trust Us
+          ⏰ Updated Daily · 68 Products Reviewed
         </div>
 
         {/* Main Headline */}
@@ -62,9 +62,9 @@ export default function HeroSection() {
           marginBottom: '1rem',
           letterSpacing: '-0.02em',
         }}>
-          Stop Wasting Money on Gear
+          Professional Gear Advice
           <br />
-          <span style={{ color: ACCENT }}>Get Expert Advice from a Broadcast Engineer</span>
+          <span style={{ color: ACCENT }}>From Someone Who Actually Uses It</span>
         </h1>
 
         {/* Subheading */}
@@ -76,7 +76,7 @@ export default function HeroSection() {
           maxWidth: '700px',
           margin: '0 auto 1.5rem',
         }}>
-          15 years of production experience. Real reviews tested in actual studios—not clickbait. 50,000+ creators use our recommendations to build better productions.
+          15 years of broadcast production work. Real gear reviews based on actual experience—not affiliate commissions. 50,000+ creators trust our recommendations.
         </p>
 
         {/* CTA Buttons */}
@@ -144,37 +144,21 @@ export default function HeroSection() {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
           gap: '1.5rem',
-          maxWidth: '700px',
+          maxWidth: '600px',
           margin: '0 auto',
           padding: '1rem 0',
-          marginTop: '1.5rem',
         }}>
-          <div style={{
-            padding: '1rem',
-            background: 'rgba(232, 76, 61, 0.1)',
-            borderRadius: '6px',
-            border: `1px solid ${ACCENT}30`,
-          }}>
-            <div style={{ fontSize: '2rem', fontWeight: '800', color: ACCENT }}>50K+</div>
-            <div style={{ fontSize: '0.85rem', color: '#9ca3af', fontWeight: '600' }}>Creators Trust Us</div>
+          <div>
+            <div style={{ fontSize: '1.8rem', fontWeight: '800', color: ACCENT }}>50K+</div>
+            <div style={{ fontSize: '0.9rem', color: '#9ca3af' }}>Creator Users</div>
           </div>
-          <div style={{
-            padding: '1rem',
-            background: 'rgba(232, 76, 61, 0.1)',
-            borderRadius: '6px',
-            border: `1px solid ${ACCENT}30`,
-          }}>
-            <div style={{ fontSize: '2rem', fontWeight: '800', color: ACCENT }}>68</div>
-            <div style={{ fontSize: '0.85rem', color: '#9ca3af', fontWeight: '600' }}>Products Reviewed</div>
+          <div>
+            <div style={{ fontSize: '1.8rem', fontWeight: '800', color: ACCENT }}>68</div>
+            <div style={{ fontSize: '0.9rem', color: '#9ca3af' }}>Products Reviewed</div>
           </div>
-          <div style={{
-            padding: '1rem',
-            background: 'rgba(232, 76, 61, 0.1)',
-            borderRadius: '6px',
-            border: `1px solid ${ACCENT}30`,
-          }}>
-            <div style={{ fontSize: '2rem', fontWeight: '800', color: ACCENT }}>15+</div>
-            <div style={{ fontSize: '0.85rem', color: '#9ca3af', fontWeight: '600' }}>Years In Production</div>
+          <div>
+            <div style={{ fontSize: '1.8rem', fontWeight: '800', color: ACCENT }}>15 yrs</div>
+            <div style={{ fontSize: '0.9rem', color: '#9ca3af' }}>Industry Experience</div>
           </div>
         </div>
       </div>
