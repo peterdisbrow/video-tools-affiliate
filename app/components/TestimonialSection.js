@@ -64,6 +64,46 @@ export default function TestimonialSection() {
         maxWidth: '1200px',
         margin: '0 auto',
       }}>
+        {/* Trust Badges Row */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+          gap: '1rem',
+          marginBottom: '3rem',
+          textAlign: 'center',
+        }}>
+          <div style={{
+            padding: '1.5rem',
+            background: '#fff',
+            borderRadius: '6px',
+            border: '1px solid #e5e7eb',
+          }}>
+            <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>👥</div>
+            <div style={{ fontSize: '1.5rem', fontWeight: '800', color: '#111827' }}>50,000+</div>
+            <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>Active Users</div>
+          </div>
+          <div style={{
+            padding: '1.5rem',
+            background: '#fff',
+            borderRadius: '6px',
+            border: '1px solid #e5e7eb',
+          }}>
+            <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>⭐</div>
+            <div style={{ fontSize: '1.5rem', fontWeight: '800', color: '#111827' }}>100%</div>
+            <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>Independent Reviews</div>
+          </div>
+          <div style={{
+            padding: '1.5rem',
+            background: '#fff',
+            borderRadius: '6px',
+            border: '1px solid #e5e7eb',
+          }}>
+            <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🔬</div>
+            <div style={{ fontSize: '1.5rem', fontWeight: '800', color: '#111827' }}>Tested</div>
+            <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>In Real Studios</div>
+          </div>
+        </div>
+
         {/* Section Header */}
         <div style={{
           textAlign: 'center',
@@ -76,14 +116,14 @@ export default function TestimonialSection() {
             marginBottom: '0.5rem',
             letterSpacing: '-0.01em',
           }}>
-            Trusted by Creators & Professionals
+            Join 50,000+ Creators Who Trust Us
           </h2>
           <p style={{
             fontSize: '1.05rem',
             color: '#6b7280',
             lineHeight: '1.6',
           }}>
-            Real feedback from people using our recommendations in production
+            See what professionals are saying about our gear recommendations
           </p>
         </div>
 
