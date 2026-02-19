@@ -6,6 +6,7 @@ import { blogPosts } from './blog/blogData';
 import productsData from '../products.json';
 import SiteNav from './components/SiteNav';
 import SiteFooter from './components/SiteFooter';
+import NewsletterSignup from './components/NewsletterSignup';
 
 const ACCENT = '#E84C3D'; // diyphotography red accent
 const NAV_BG = '#1a1a1a';
@@ -160,6 +161,9 @@ export default function HomePage() {
       `}</style>
 
       <SiteNav />
+
+      {/* ─── NEWSLETTER SIGNUP (ABOVE THE FOLD) ─── */}
+      <NewsletterSignup />
 
       {/* ─── CATEGORY NAV BAR ─── */}
       <div style={{ borderBottom: '3px solid #111827', backgroundColor: '#fff' }}>
